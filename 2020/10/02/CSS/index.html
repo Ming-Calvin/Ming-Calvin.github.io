@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="一、CSS概述1. css语法规范CSS 规则由两个主要的部分构成：选择器以及一条或多条声明。   选择器是用于指定 CSS 样式的 HTML 标签  花括号内是对该对象设置的具体样式  属性和属性值以“键值对”的形式出现  属性是对指定的对象设置的样式属性，例如字体大小、文本颜色等  属性和属性值之间用英文“:”分开  多个“键值对”之间用英文“;”进行区分   2．代码分格A．样式格式书写（">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS">
+<meta property="og:url" content="https:&#x2F;&#x2F;ming-clavin.github.io&#x2F;2020&#x2F;10&#x2F;02&#x2F;CSS&#x2F;index.html">
+<meta property="og:site_name" content="Ming-Clavin">
+<meta property="og:description" content="一、CSS概述1. css语法规范CSS 规则由两个主要的部分构成：选择器以及一条或多条声明。   选择器是用于指定 CSS 样式的 HTML 标签  花括号内是对该对象设置的具体样式  属性和属性值以“键值对”的形式出现  属性是对指定的对象设置的样式属性，例如字体大小、文本颜色等  属性和属性值之间用英文“:”分开  多个“键值对”之间用英文“;”进行区分   2．代码分格A．样式格式书写（">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https:&#x2F;&#x2F;ming-clavin.github.io&#x2F;2020&#x2F;10&#x2F;02&#x2F;CSS&#x2F;CSS&#x2F;f22d852524327c3c8f6ada6d923028bc.jpeg">
+<meta property="og:image" content="https:&#x2F;&#x2F;ming-clavin.github.io&#x2F;2020&#x2F;10&#x2F;02&#x2F;CSS&#x2F;media&#x2F;2d45a5f2180505f701d5ccd5e516577e.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;ming-clavin.github.io&#x2F;2020&#x2F;10&#x2F;02&#x2F;CSS&#x2F;media&#x2F;473ce1075bd49b56113ba564a998fa05.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;ming-clavin.github.io&#x2F;2020&#x2F;10&#x2F;02&#x2F;CSS&#x2F;media&#x2F;822a46ce87048bb6d8e5da1aa5362613.jpeg">
+<meta property="og:image" content="https:&#x2F;&#x2F;ming-clavin.github.io&#x2F;2020&#x2F;10&#x2F;02&#x2F;CSS&#x2F;media&#x2F;5b7b32c69a219cda3ca4b2bc6f2884c3.jpeg">
+<meta property="og:image" content="https:&#x2F;&#x2F;ming-clavin.github.io&#x2F;2020&#x2F;10&#x2F;02&#x2F;CSS&#x2F;media&#x2F;9795d03e6f27616fb5928da2f4a3598a.png">
+<meta property="og:updated_time" content="2020-10-02T14:08:12.298Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;ming-clavin.github.io&#x2F;2020&#x2F;10&#x2F;02&#x2F;CSS&#x2F;CSS&#x2F;f22d852524327c3c8f6ada6d923028bc.jpeg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://ming-clavin.github.io/2020/10/02/CSS/"/>
+
+
+
+
+
+  <title>CSS | Ming-Clavin</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Ming-Clavin</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">一个技术宅的博客</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ming-clavin.github.io/2020/10/02/CSS/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Ming-Clavin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ming-Clavin">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">CSS</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-10-02T22:06:53+08:00">
+                2020-10-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="CSS/f22d852524327c3c8f6ada6d923028bc.jpeg" alt=""></p>
+<h1 id="一、CSS概述"><a href="#一、CSS概述" class="headerlink" title="一、CSS概述"></a>一、CSS概述</h1><h2 id="1-css语法规范"><a href="#1-css语法规范" class="headerlink" title="1. css语法规范"></a>1. css语法规范</h2><p>CSS 规则由两个主要的部分构成：选择器以及一条或多条声明。</p>
+<p><img src="media/2d45a5f2180505f701d5ccd5e516577e.jpg" alt=""></p>
+<ul>
+<li><p>选择器是用于指定 CSS 样式的 HTML 标签</p>
+</li>
+<li><p>花括号内是对该对象设置的具体样式</p>
+</li>
+<li><p>属性和属性值以“键值对”的形式出现</p>
+</li>
+<li><p>属性是对指定的对象设置的样式属性，例如字体大小、文本颜色等</p>
+</li>
+<li><p>属性和属性值之间用英文“:”分开</p>
+</li>
+<li><p>多个“键值对”之间用英文“;”进行区分</p>
+</li>
+</ul>
+<h2 id="2．代码分格"><a href="#2．代码分格" class="headerlink" title="2．代码分格"></a>2．代码分格</h2><p>A．样式格式书写（展开式）</p>
+<p>B．样式大小写（样式选择器，属性名，属性值关键字全部使用小写字母）</p>
+<p>C. 空格规范</p>
+<p>注：</p>
+<ul>
+<li><p>属性值前面，冒号后面，保留一个空格</p>
+</li>
+<li><p>选择器（标签）和大括号中间保留空格<br>二、Emmet语法</p>
+</li>
+</ul>
+<h2 id="1-快速生成HTML结构语法"><a href="#1-快速生成HTML结构语法" class="headerlink" title="1. 快速生成HTML结构语法"></a>1. 快速生成HTML结构语法</h2><ul>
+<li><p>生成标签直接输入标签名，按tab键。（ 比如 div 然后tab 键， 就可以生成<br>&lt;div&gt;&lt;/div&gt; ）</p>
+</li>
+<li><p>生成多个相同标签，加上 * 号。（ 比如 div*3 就可以快速生成3个div ）</p>
+</li>
+<li><p>生成父子级关系的标签，用 &gt; 号。（ 比如 ul &gt; li ）</p>
+</li>
+<li><p>生成兄弟关系的标签，用 + 号。（ 比如 div+p ）</p>
+</li>
+<li><p>生成带有类名或者id名的标签，用 .类名 、#id名（ 默认生成div标签 ） 或者<br>标签名.类名 、标签名#id名，按tab键 （ 比如 p.one ）</p>
+</li>
+<li><p>生成的div类名是有顺序的，用自增符号 $ （ 比如 .demo$*5 ）</p>
+</li>
+<li><p>生成的标签内部写内容可以用 { } 表示</p>
+</li>
+</ul>
+<h2 id="2-快速生成CSS样式语法"><a href="#2-快速生成CSS样式语法" class="headerlink" title="2. 快速生成CSS样式语法"></a>2. 快速生成CSS样式语法</h2><p>CSS采取简写形式：</p>
+<ul>
+<li><p>比如 w200 按tab 可以 生成 width: 200px;</p>
+</li>
+<li><p>比如 lh26px 按tab 可以生成 line-height: 26px;</p>
+</li>
+</ul>
+<h1 id="三、基础选择器"><a href="#三、基础选择器" class="headerlink" title="三、基础选择器"></a>三、基础选择器</h1><h2 id="1-CSS选择器的作用"><a href="#1-CSS选择器的作用" class="headerlink" title="1. CSS选择器的作用"></a>1. CSS选择器的作用</h2><p>作用：根据不同需求选择不同的标签</p>
+<h2 id="2-选择器分类"><a href="#2-选择器分类" class="headerlink" title="2. 选择器分类"></a>2. 选择器分类</h2><blockquote>
+<p>  基础选择器</p>
+</blockquote>
+<p>选择器</p>
+<blockquote>
+<p>  复合选择器</p>
+</blockquote>
+<h2 id="3-基础选择器"><a href="#3-基础选择器" class="headerlink" title="3. 基础选择器"></a>3. 基础选择器</h2><p>由单个选择器组成，包括：</p>
+<h2 id="4-标签选择器"><a href="#4-标签选择器" class="headerlink" title="4. 标签选择器"></a>4. 标签选择器</h2><p>使用HTML标签名称作为选择器，为页面中某一类标签指定统一的 CSS 样式</p>
+<ol>
+<li><p>标签名{</p>
+</li>
+<li><p>属性1: 属性值1;</p>
+</li>
+<li><p>属性2: 属性值2;</p>
+</li>
+<li><p>属性3: 属性值3;</p>
+</li>
+<li><p>…</p>
+</li>
+<li><p>}</p>
+</li>
+</ol>
+<p>作用：把某一类标签全部选择出来</p>
+<p>优点：能快速为页面中同类型的标签统一设置样式</p>
+<p>缺点：不能设计差异化样式，只能选择全部的当前标签<br><strong>5. 类选择器</strong></p>
+<p>用于差异化选择不同的标签，可以单独选一个或者某几个标签。</p>
+<ul>
+<li>在 CSS 中，类选择器以一个点“.”号显示</li>
+</ul>
+<ol>
+<li><p>.类名 {</p>
+</li>
+<li><p>属性1: 属性值1;</p>
+</li>
+<li><p>…</p>
+</li>
+<li><p>}</p>
+</li>
+</ol>
+<ul>
+<li>在 HTML 中以 class 属性表示</li>
+</ul>
+<ol>
+<li><strong>&lt;div</strong> class=’red’<strong>&gt;</strong> 变红色 <strong>&lt;/div&gt;</strong></li>
+</ol>
+<p>注意：</p>
+<ul>
+<li><p>类选择器使用“.”进行标识，后面紧跟类名</p>
+</li>
+<li><p>长名称或词组可以使用中横线来为选择器命名。</p>
+</li>
+<li><p>不要使用纯数字、中文等命名，尽量使用英文字母来表示。</p>
+</li>
+</ul>
+<h2 id="6-类选择器-多类名"><a href="#6-类选择器-多类名" class="headerlink" title="6. 类选择器-多类名"></a>6. 类选择器-多类名</h2><p>用于给一个标签指定多个类名，这些类名都可以选出这个标签</p>
+<ol>
+<li><p><strong>&lt;style&gt;</strong></p>
+</li>
+<li><p>.red {</p>
+</li>
+<li><p>color: red;</p>
+</li>
+<li><p>}</p>
+</li>
+<li><p>.font35{</p>
+</li>
+<li><p>font-size: 35px;</p>
+</li>
+<li><p>}</p>
+</li>
+<li><p><strong>&lt;/style&gt;</strong></p>
+</li>
+<li><p><strong>&lt;body&gt;</strong></p>
+</li>
+<li><p><strong>&lt;div</strong> class=”red font35”<strong>&gt;</strong> 小明是男神 <strong>&lt;/div&gt;</strong></p>
+</li>
+<li><p><strong>&lt;/body&gt;</strong></p>
+</li>
+</ol>
+<p>注意：</p>
+<ul>
+<li><p>在标签class 属性中写多个类名</p>
+</li>
+<li><p>多个类名中间必须用空格分开</p>
+</li>
+</ul>
+<p>使用场景：</p>
+<ul>
+<li><p>把公共部分放在一个类里</p>
+</li>
+<li><p>标签可以先调用公共的类再调用单独的类</p>
+</li>
+</ul>
+<h2 id="7-id选择器"><a href="#7-id选择器" class="headerlink" title="7. id选择器"></a>7. id选择器</h2><ol>
+<li><p>#id名 {</p>
+</li>
+<li><p>属性1: 属性值1;</p>
+</li>
+<li><p>…</p>
+</li>
+<li><p>}</p>
+</li>
+</ol>
+<p>id 选择器和类选择器的区别：</p>
+<ul>
+<li><p>类选择器可以多次使用，id选择器只能调用一次</p>
+</li>
+<li><p>类选择器主要用于修改样式</p>
+</li>
+<li><p>id 选择器一般用于页面中唯一性的元素（和JavaScript搭配使用）</p>
+</li>
+</ul>
+<h2 id="8-通配符选择器"><a href="#8-通配符选择器" class="headerlink" title="8.通配符选择器"></a>8.通配符选择器</h2><p>使用“*”定义，用于选取页面中所有元素（标签）。</p>
+<ol>
+<li><p>* {</p>
+</li>
+<li><p>属性1: 属性值1;</p>
+</li>
+<li><p>…</p>
+</li>
+<li><p>}</p>
+</li>
+</ol>
+<h1 id="四、复合选择器"><a href="#四、复合选择器" class="headerlink" title="四、复合选择器"></a>四、复合选择器</h1><h2 id="1-概述"><a href="#1-概述" class="headerlink" title="1. 概述"></a>1. 概述</h2><p>复合选择器是由两个或多个基础选择器，通过不同的方式组合而成的</p>
+<p><strong>分类</strong></p>
+<h2 id="2-后代选择器-重要）"><a href="#2-后代选择器-重要）" class="headerlink" title="2. 后代选择器 (重要）"></a>2. 后代选择器 (重要）</h2><p>后代选择器可以选择父元素里面子元素。</p>
+<ol>
+<li><p>/*把ol的li选出来改成pink色 */</p>
+</li>
+<li><p>ol li {</p>
+</li>
+<li><p>color: pink;</p>
+</li>
+<li><p>}</p>
+</li>
+</ol>
+<p>注：</p>
+<ul>
+<li><p>元素2只要是元素1 的后代即可</p>
+</li>
+<li><p>元素1是父级，元素2是子级，最终选择的是元素2</p>
+</li>
+<li><p>元素1和元素2可以是任意基础选择器</p>
+</li>
+</ul>
+<ol>
+<li><p>.nav li a {</p>
+</li>
+<li><p>color: yellow;</p>
+</li>
+<li><p>}</p>
+</li>
+</ol>
+<h2 id="3-子选择器-重要）"><a href="#3-子选择器-重要）" class="headerlink" title="3. 子选择器 (重要）"></a>3. 子选择器 (重要）</h2><p>子元素选择器只能选择作为某元素的最近一级子元素</p>
+<ol>
+<li><p><strong>&lt;style&gt;</strong></p>
+</li>
+<li><p>.nav &gt; a {</p>
+</li>
+<li><p>color: red;</p>
+</li>
+<li><p>}</p>
+</li>
+<li><p><strong>&lt;/style&gt;</strong></p>
+</li>
+</ol>
+<h2 id="4-并集选择器-重要）"><a href="#4-并集选择器-重要）" class="headerlink" title="4. 并集选择器 (重要）"></a>4. 并集选择器 (重要）</h2><p>并集选择器可以选择多组标签, 同时为他们定义相同的样式</p>
+<ol>
+<li><p>div,</p>
+</li>
+<li><p>p,</p>
+</li>
+<li><p>.pig li {</p>
+</li>
+<li><p>color: pink;</p>
+</li>
+<li><p>}</p>
+</li>
+</ol>
+<p>注意：</p>
+<ul>
+<li><p>并集选择器喜欢竖着写</p>
+</li>
+<li><p>最后一个选择器不需要加逗号</p>
+</li>
+</ul>
+<h2 id="5-伪类选择器"><a href="#5-伪类选择器" class="headerlink" title="5. 伪类选择器"></a>5. 伪类选择器</h2><p>伪类选择器用于向某些选择器添加特殊的效果（常用链接伪类选择器）</p>
+<ol>
+<li><p>a:hover {</p>
+</li>
+<li><p>color: red; /* 鼠标经过的时候，由原来的 灰色 变成了红色 */</p>
+</li>
+<li><p>}</p>
+</li>
+</ol>
+<h2 id="6-链接伪类选择器"><a href="#6-链接伪类选择器" class="headerlink" title="6. 链接伪类选择器"></a>6. 链接伪类选择器</h2><p>A． a:link 选择未被访问的链接</p>
+<ol>
+<li><p>a:link {</p>
+</li>
+<li><p>color: #333;</p>
+</li>
+<li><p>text-decoration: none;</p>
+</li>
+<li><p>}</p>
+</li>
+</ol>
+<p>B． a:visited 选择已被访问过的链接</p>
+<ol>
+<li><p>a:visited {</p>
+</li>
+<li><p>color: orange;</p>
+</li>
+<li><p>}</p>
+</li>
+</ol>
+<p>C． a:hover 选择鼠标经过时的链接</p>
+<ol>
+<li><p>a:hover {</p>
+</li>
+<li><p>color: skyblue;</p>
+</li>
+<li><p>}</p>
+</li>
+</ol>
+<p>D． a:active 选择鼠标按下未弹起的链接</p>
+<ol>
+<li><p>a:active {</p>
+</li>
+<li><p>color: green;</p>
+</li>
+<li><p>}</p>
+</li>
+</ol>
+<p><strong>注意：</strong>按照LVHA的循顺序声明 :link － :visited － :hover － :active</p>
+<h2 id="7-focus-伪类选择器"><a href="#7-focus-伪类选择器" class="headerlink" title="7. :focus 伪类选择器"></a>7. :focus 伪类选择器</h2><p>:focus 伪类选择器用于选取获得焦点(光标)的表单元素。（ &lt;input&gt;<br>类表单元素才能获取 ）</p>
+<ol>
+<li><p>input:focus {</p>
+</li>
+<li><p>background-color: pink;</p>
+</li>
+<li><p>color: red;</p>
+</li>
+<li><p>}</p>
+</li>
+</ol>
+<h2 id="8-选择器总结"><a href="#8-选择器总结" class="headerlink" title="8.选择器总结"></a>8.选择器总结</h2><p>A．基础选择器选择</p>
+<p><img src="media/473ce1075bd49b56113ba564a998fa05.jpg" alt=""></p>
+<p>B.复合选择器总结</p>
+<p><img src="media/822a46ce87048bb6d8e5da1aa5362613.jpeg" alt=""></p>
+<h1 id="五、元素显示模式"><a href="#五、元素显示模式" class="headerlink" title="五、元素显示模式"></a>五、元素显示模式</h1><h2 id="1-概述-1"><a href="#1-概述-1" class="headerlink" title="1. 概述"></a>1. 概述</h2><p>元素的显示模式就是元素（标签）以什么方式来显示，根据元素显示模式的不同元素标签被分为了两类:行内元素、块级元素</p>
+<h2 id="2-块元素"><a href="#2-块元素" class="headerlink" title="2. 块元素"></a>2. 块元素</h2><p>常见的块元素有 &lt;h1&gt; …<br>&lt;h6&gt;、&lt;p&gt;、&lt;div&gt;、&lt;ul&gt;、&lt;ol&gt;、&lt;li&gt;等，&lt;div&gt; 标签是最典型的块元素。</p>
+<p><strong>特点：</strong></p>
+<ul>
+<li><p>独占一行</p>
+</li>
+<li><p>高度，宽度、外边距以及内边距都可以控制。</p>
+</li>
+<li><p>宽度默认是容器（父级宽度）的100%。</p>
+</li>
+<li><p>是一个容器及盒子，里面可以放行内或者块级元素。</p>
+</li>
+</ul>
+<p><strong>注意：</strong>文字类的元素（ &lt;p&gt; 、&lt;h1&gt; … &lt;h6&gt; ）内不能使用块级元素</p>
+<h2 id="3-行内元素"><a href="#3-行内元素" class="headerlink" title="3.行内元素"></a>3.行内元素</h2><p>常见的行内元素有<br>&lt;a&gt;、&lt;strong&gt;、&lt;b&gt;、&lt;em&gt;、&lt;i&gt;、&lt;del&gt;、&lt;s&gt;、&lt;ins&gt;、&lt;u&gt;、&lt;span&gt;等，&lt;span&gt;<br>标签是最典型的行内元素。</p>
+<p><strong>特点：</strong></p>
+<ul>
+<li><p>相邻行内元素在一行上，一行可以显示多个</p>
+</li>
+<li><p>高、宽直接设置是无效的</p>
+</li>
+<li><p>默认宽度是它本身内容的宽度</p>
+</li>
+<li><p>行内元素只能容纳文本或其他行内元素</p>
+</li>
+</ul>
+<p><strong>注意：</strong>链接里面不能再放链接，链接 &lt;a&gt; 里面可以放块级元素（转换块级模式）</p>
+<h2 id="4-行内块元素"><a href="#4-行内块元素" class="headerlink" title="4. 行内块元素"></a>4. 行内块元素</h2><p>行内块元素同时具有块元素和行内元素的特点，常见标签：&lt;img/&gt;、&lt;input/&gt;、&lt;td&gt;</p>
+<p><strong>特点：</strong></p>
+<ul>
+<li><p>和相邻行内元素（行内块）在一行上，但是之间会有空白缝隙</p>
+</li>
+<li><p>一行可以显示多个（行内元素特点）</p>
+</li>
+<li><p>默认宽度就是它本身内容的宽度（行内元素特点）。</p>
+</li>
+<li><p>高度，行高、外边距以及内边距都可以控制（块级元素特点）</p>
+</li>
+</ul>
+<h2 id="5-元素显示模式总结"><a href="#5-元素显示模式总结" class="headerlink" title="5. 元素显示模式总结"></a>5. 元素显示模式总结</h2><p><img src="media/5b7b32c69a219cda3ca4b2bc6f2884c3.jpeg" alt="0DBYL(Z0IVD77SA1E8AE\~PG"></p>
+<h2 id="6-元素显示模式转换"><a href="#6-元素显示模式转换" class="headerlink" title="6. 元素显示模式转换"></a>6. 元素显示模式转换</h2><p>一个模式的元素需要另外一种模式的特性</p>
+<p><strong>方法：</strong></p>
+<ul>
+<li>转换为块元素：display:block;</li>
+</ul>
+<ol>
+<li><p>a {</p>
+</li>
+<li><p>width: 150px;</p>
+</li>
+<li><p>height: 50px;</p>
+</li>
+<li><p>background-color: pink;</p>
+</li>
+<li><p>/* 把行内元素 a 转换为 块级元素 */</p>
+</li>
+<li><p>display: block;</p>
+</li>
+<li><p>}</p>
+</li>
+</ol>
+<ul>
+<li>转换为行内元素：display:inline;</li>
+</ul>
+<ol>
+<li><p>div {</p>
+</li>
+<li><p>background-color: purple;</p>
+</li>
+<li><p>/* 把 div 块级元素转换为行内元素 */</p>
+</li>
+<li><p>display: inline;</p>
+</li>
+<li><p>}</p>
+</li>
+</ol>
+<ul>
+<li>转换为行内块：display: inline-block;</li>
+</ul>
+<ol>
+<li><p>span {</p>
+</li>
+<li><p>width: 300px;</p>
+</li>
+<li><p>height: 30px;</p>
+</li>
+<li><p>background-color: skyblue;</p>
+</li>
+<li><p>display: inline-block;</p>
+</li>
+<li><p>}</p>
+</li>
+</ol>
+<h2 id="7-单行文字垂直居中"><a href="#7-单行文字垂直居中" class="headerlink" title="7. 单行文字垂直居中"></a>7. 单行文字垂直居中</h2><p>解决方案：让文字的行高等于盒子的高度</p>
+<p><strong>原理：</strong></p>
+<p><img src="media/9795d03e6f27616fb5928da2f4a3598a.png" alt=""></p>
+<p>行高的上空隙和下空隙把文字挤到中间了.<br>是如果行高小于盒子高度,文字会偏上,如果行高大于盒子高度,则文字偏下</p>
+<h1 id="六、CSS文字属性"><a href="#六、CSS文字属性" class="headerlink" title="六、CSS文字属性"></a>六、CSS文字属性</h1><h1 id="七、CSS背景"><a href="#七、CSS背景" class="headerlink" title="七、CSS背景"></a>七、CSS背景</h1><h2 id="1-背景颜色"><a href="#1-背景颜色" class="headerlink" title="1. 背景颜色"></a>1. 背景颜色</h2><p>background-color 属性定义了元素的背景颜色，一般情况下元素背景颜色默认值是<br>transparent（透明）</p>
+<ol>
+<li><p>div {</p>
+</li>
+<li><p>width: 200px;</p>
+</li>
+<li><p>height: 200px;</p>
+</li>
+<li><p>/* background-color: transparent;*/</p>
+</li>
+<li><p>background-color: pink;</p>
+</li>
+<li><p>}</p>
+</li>
+</ol>
+<h2 id="2-背景图片"><a href="#2-背景图片" class="headerlink" title="2. 背景图片"></a>2. 背景图片</h2><p>background-image 属性描述了元素的背景图像。常见于 logo<br>或者一些装饰性的小图片或者是超大的背景图片,非常便于控制位置。（精灵图）</p>
+<p>![0HG4]D7TTNURPUGGAQBUB2G](media/8bcec6284e3b4a96f14aaa76612e5743.png)</p>
+<h2 id="3-背景平铺"><a href="#3-背景平铺" class="headerlink" title="3. 背景平铺"></a>3. 背景平铺</h2><p>background-repeat 属性可以控制背景图像的平铺</p>
+<p>![CYG)A6T08Y4{$<a href="media/243eed82a6484ed4e839893c5c815cab.jpeg">`_A}AFVND</a></p>
+<ol>
+<li><p>div {</p>
+</li>
+<li><p>width: 300px;</p>
+</li>
+<li><p>height: 300px;</p>
+</li>
+<li><p>background-color: pink;</p>
+</li>
+<li><p>background-image: url(images/logo.png);</p>
+</li>
+</ol>
+<ul>
+<li>背景图片不平铺</li>
+</ul>
+<ol>
+<li>background-repeat: no-repeat;</li>
+</ol>
+<ul>
+<li>默认的情况下,背景图片是平铺的</li>
+</ul>
+<ol>
+<li>background-repeat: repeat;</li>
+</ol>
+<ul>
+<li>沿着x轴平铺</li>
+</ul>
+<ol>
+<li>background-repeat: repeat-x;</li>
+</ol>
+<ul>
+<li>沿着Y轴平铺</li>
+</ul>
+<ol>
+<li>background-repeat: repeat-y;</li>
+</ol>
+<p>注：页面元素既可以添加背景颜色也可以添加背景图片 只不过背景图片会压住背景颜色</p>
+<h2 id="4-背景图片位置"><a href="#4-背景图片位置" class="headerlink" title="4. 背景图片位置"></a>4. 背景图片位置</h2><p>background-position 属性可以改变图片在背景中的位置</p>
+<p>参数：x 坐标和 y 坐标（方位名词 或者 精确单位）</p>
+<p>![FP]CGHU6NBY@%HRLV9Z]L9J](media/ea64b64c4687d56dd83142a2e62e0ceb.png)</p>
+<p>注：</p>
+<p>A．参数是方位名词</p>
+<ul>
+<li><p>如果指定的两个值都是方位名词，则两个值前后顺序无关 </p>
+</li>
+<li><p>如果只指定了一个方位名词，另一个值省略，则第二个值默认居中对齐</p>
+</li>
+</ul>
+<p>B. 参数是精确单位</p>
+<ul>
+<li><p>如果参数值是精确坐标，那么第一个肯定是 x 坐标，第二个一定是 y 坐标</p>
+</li>
+<li><p>如果只指定一个数值，那该数值一定是 x 坐标，另一个默认垂直居中</p>
+</li>
+</ul>
+<p>C．参数是混合单位</p>
+<p> 如果指定的两个值是精确单位和方位名词混合使用，则第一个值是 x 坐标，第二个值是<br>y 坐标</p>
+<h2 id="5-背景图像固定（背景附着）"><a href="#5-背景图像固定（背景附着）" class="headerlink" title="5. 背景图像固定（背景附着）"></a>5. 背景图像固定（背景附着）</h2><p>background-attachment 属性设置背景图像是否固定或者随着页面的其余部分滚动</p>
+<p>![YMC5E}YOCJDGRW<a href="media/5b1c0de6deb5271d1fc0d23412b11400.png">VJT8Q5YF</a></p>
+<h2 id="6-背景复合写法"><a href="#6-背景复合写法" class="headerlink" title="6. 背景复合写法"></a>6. 背景复合写法</h2><p>background: 背景颜色 背景图片地址 背景平铺 背景图像滚动 背景图片位置</p>
+<h2 id="7-背景色半透明"><a href="#7-背景色半透明" class="headerlink" title="7. 背景色半透明"></a>7. 背景色半透明</h2><p><strong>注意：</strong></p>
+<ul>
+<li><p>最后一个参数是alpha透明度，取值范围在 0~1之间</p>
+</li>
+<li><p>习惯把0.3的0省略掉，写为background: rgba(0, 0, 0, .3);</p>
+</li>
+<li><p>背景半透明是指盒子背景半透明，盒子里面的内容不受影响</p>
+</li>
+</ul>
+<ol>
+<li><p>div {</p>
+</li>
+<li><p>width: 300px;</p>
+</li>
+<li><p>height: 300px;</p>
+</li>
+<li><p>/* background: rgba(0, 0, 0, 0.3); */</p>
+</li>
+<li><p>background: rgba(0, 0, 0, .3);</p>
+</li>
+<li><p>}</p>
+</li>
+</ol>
+<h2 id="8-背景总结"><a href="#8-背景总结" class="headerlink" title="8. 背景总结"></a>8. 背景总结</h2><p>![5EN0XOLTCOP@<a href="media/2b541abc38878b857f09d761e5bacf49.jpeg">7OI7@Q}Q9R</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/04/15/Html%E5%AD%A6%E4%B9%A0/" rel="next" title="Html学习">
+                <i class="fa fa-chevron-left"></i> Html学习
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Ming-Clavin</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、CSS概述"><span class="nav-number">1.</span> <span class="nav-text">一、CSS概述</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-css语法规范"><span class="nav-number">1.1.</span> <span class="nav-text">1. css语法规范</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2．代码分格"><span class="nav-number">1.2.</span> <span class="nav-text">2．代码分格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-快速生成HTML结构语法"><span class="nav-number">1.3.</span> <span class="nav-text">1. 快速生成HTML结构语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-快速生成CSS样式语法"><span class="nav-number">1.4.</span> <span class="nav-text">2. 快速生成CSS样式语法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、基础选择器"><span class="nav-number">2.</span> <span class="nav-text">三、基础选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-CSS选择器的作用"><span class="nav-number">2.1.</span> <span class="nav-text">1. CSS选择器的作用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-选择器分类"><span class="nav-number">2.2.</span> <span class="nav-text">2. 选择器分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-基础选择器"><span class="nav-number">2.3.</span> <span class="nav-text">3. 基础选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-标签选择器"><span class="nav-number">2.4.</span> <span class="nav-text">4. 标签选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-类选择器-多类名"><span class="nav-number">2.5.</span> <span class="nav-text">6. 类选择器-多类名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-id选择器"><span class="nav-number">2.6.</span> <span class="nav-text">7. id选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-通配符选择器"><span class="nav-number">2.7.</span> <span class="nav-text">8.通配符选择器</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、复合选择器"><span class="nav-number">3.</span> <span class="nav-text">四、复合选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-概述"><span class="nav-number">3.1.</span> <span class="nav-text">1. 概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-后代选择器-重要）"><span class="nav-number">3.2.</span> <span class="nav-text">2. 后代选择器 (重要）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-子选择器-重要）"><span class="nav-number">3.3.</span> <span class="nav-text">3. 子选择器 (重要）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-并集选择器-重要）"><span class="nav-number">3.4.</span> <span class="nav-text">4. 并集选择器 (重要）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-伪类选择器"><span class="nav-number">3.5.</span> <span class="nav-text">5. 伪类选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-链接伪类选择器"><span class="nav-number">3.6.</span> <span class="nav-text">6. 链接伪类选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-focus-伪类选择器"><span class="nav-number">3.7.</span> <span class="nav-text">7. :focus 伪类选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-选择器总结"><span class="nav-number">3.8.</span> <span class="nav-text">8.选择器总结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五、元素显示模式"><span class="nav-number">4.</span> <span class="nav-text">五、元素显示模式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-概述-1"><span class="nav-number">4.1.</span> <span class="nav-text">1. 概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-块元素"><span class="nav-number">4.2.</span> <span class="nav-text">2. 块元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-行内元素"><span class="nav-number">4.3.</span> <span class="nav-text">3.行内元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-行内块元素"><span class="nav-number">4.4.</span> <span class="nav-text">4. 行内块元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-元素显示模式总结"><span class="nav-number">4.5.</span> <span class="nav-text">5. 元素显示模式总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-元素显示模式转换"><span class="nav-number">4.6.</span> <span class="nav-text">6. 元素显示模式转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-单行文字垂直居中"><span class="nav-number">4.7.</span> <span class="nav-text">7. 单行文字垂直居中</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#六、CSS文字属性"><span class="nav-number">5.</span> <span class="nav-text">六、CSS文字属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#七、CSS背景"><span class="nav-number">6.</span> <span class="nav-text">七、CSS背景</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-背景颜色"><span class="nav-number">6.1.</span> <span class="nav-text">1. 背景颜色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-背景图片"><span class="nav-number">6.2.</span> <span class="nav-text">2. 背景图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-背景平铺"><span class="nav-number">6.3.</span> <span class="nav-text">3. 背景平铺</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-背景图片位置"><span class="nav-number">6.4.</span> <span class="nav-text">4. 背景图片位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-背景图像固定（背景附着）"><span class="nav-number">6.5.</span> <span class="nav-text">5. 背景图像固定（背景附着）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-背景复合写法"><span class="nav-number">6.6.</span> <span class="nav-text">6. 背景复合写法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-背景色半透明"><span class="nav-number">6.7.</span> <span class="nav-text">7. 背景色半透明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-背景总结"><span class="nav-number">6.8.</span> <span class="nav-text">8. 背景总结</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Ming-Clavin</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
