@@ -259,10 +259,272 @@ target 用于链接页面的打开方式
       </tags>
   </entry>
   <entry>
+    <title>Mrkdown使用指南</title>
+    <url>/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</url>
+    <content><![CDATA[<h1 id="一、Makedown-标题"><a href="#一、Makedown-标题" class="headerlink" title="一、Makedown 标题"></a>一、Makedown 标题</h1><h2 id="1-使用-和-标记一级和二级标题"><a href="#1-使用-和-标记一级和二级标题" class="headerlink" title="1. 使用 = 和 - 标记一级和二级标题"></a>1. 使用 = 和 - 标记一级和二级标题</h2><img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(1).jpg" class>
+
+<h2 id="2-使用-号标记"><a href="#2-使用-号标记" class="headerlink" title="2. 使用 # 号标记"></a>2. 使用 # 号标记</h2><img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(2).jpg" class>
+
+<a id="more"></a>
+
+<h1 id="二、Markdown-段落格式"><a href="#二、Markdown-段落格式" class="headerlink" title="二、Markdown 段落格式"></a>二、Markdown 段落格式</h1><h2 id="1-Markdown-段落"><a href="#1-Markdown-段落" class="headerlink" title="1.Markdown 段落"></a>1.Markdown 段落</h2><p>Markdown<br>段落没有特殊的格式，可以编写文字。段落的换行使用两个以上空格加上回车,也可以在段落后面使用一个空行来表示重新开始一个段落。</p>
+<h2 id="2-字体"><a href="#2-字体" class="headerlink" title="2.字体"></a>2.字体</h2><img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(3).jpg" class>
+
+<h2 id="3-分隔线"><a href="#3-分隔线" class="headerlink" title="3.分隔线"></a>3.分隔线</h2><img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(4).jpg" class>
+
+<h2 id="4-删除线"><a href="#4-删除线" class="headerlink" title="4.删除线"></a>4.删除线</h2><p>在文字的两端加上两个波浪线 ~~ 即可</p>
+<img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(5).jpg" class>
+
+<h2 id="5-下划线"><a href="#5-下划线" class="headerlink" title="5.下划线"></a>5.下划线</h2><p>通过 HTML 的 &lt;u&gt; 标签来实现：</p>
+<img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(6).jpg" class>
+
+<h2 id="6-脚注"><a href="#6-脚注" class="headerlink" title="6.脚注"></a>6.脚注</h2><p>脚注是对文本的补充说明，格式：</p>
+<img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(7).jpg" class>
+
+<h1 id="三、Markdown-列表"><a href="#三、Markdown-列表" class="headerlink" title="三、Markdown 列表"></a>三、Markdown 列表</h1><h2 id="1-无序列表"><a href="#1-无序列表" class="headerlink" title="1.无序列表"></a>1.无序列表</h2><p>无序列表使用星号(*)、加号(+)或是减号(-)作为列表标记：</p>
+<img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(8).jpg" class>
+
+<h2 id="2-有序列表"><a href="#2-有序列表" class="headerlink" title="2.有序列表"></a>2.有序列表</h2><p>有序列表使用数字并加上 . 号来表示，如：</p>
+<img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(9).jpg" class>
+
+<h2 id="3-嵌套结构"><a href="#3-嵌套结构" class="headerlink" title="3.嵌套结构"></a>3.嵌套结构</h2><p>列表嵌套只需在子列表中的选项添加四个空格即可：</p>
+<img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(10).jpg" class>
+
+<h1 id="四、Markdown-区块"><a href="#四、Markdown-区块" class="headerlink" title="四、Markdown 区块"></a>四、Markdown 区块</h1><p>Markdown 区块引用是在段落开头使用 &gt; 符号 ，然后后面紧跟一个空格符号：</p>
+<img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(11).jpg" class>
+
+<p>嵌套用法：</p>
+<img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(12).jpg" class>
+
+<h2 id="1-区块中使用列表"><a href="#1-区块中使用列表" class="headerlink" title="1.区块中使用列表"></a>1.区块中使用列表</h2><img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(13).jpg" class>
+
+<h2 id="2-列表中使用区块"><a href="#2-列表中使用区块" class="headerlink" title="2.列表中使用区块"></a>2.列表中使用区块</h2><img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(14).jpg" class>
+
+<h1 id="五、Markdown代码"><a href="#五、Markdown代码" class="headerlink" title="五、Markdown代码"></a>五、Markdown代码</h1><h2 id="1-代码"><a href="#1-代码" class="headerlink" title="1.代码"></a>1.代码</h2><p>代码段落上的一个函数或片段的代码可以用反引号把它包起来（`）</p>
+<img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(15).jpg" class>
+
+<h2 id="2-代码区块"><a href="#2-代码区块" class="headerlink" title="2.代码区块"></a>2.代码区块</h2><p>代码区块使用 4 个空格或者一个制表符（Tab 键）, 也可以用 ```<br>包裹一段代码，并指定一种语言：</p>
+<img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(16).jpg" class>
+
+<h1 id="六、Markdown-图片"><a href="#六、Markdown-图片" class="headerlink" title="六、Markdown 图片"></a>六、Markdown 图片</h1><h2 id="1-本地图片"><a href="#1-本地图片" class="headerlink" title="1.本地图片"></a>1.本地图片</h2><img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(17).jpg" class>
+
+<p>开头一个感叹号 !</p>
+<p>接着一个方括号，里面放上图片的替代文字</p>
+<p>接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 ‘title’<br>属性的文字。</p>
+<h2 id="2-网络图片"><a href="#2-网络图片" class="headerlink" title="2.网络图片"></a>2.网络图片</h2><p>这个链接用 1 作为网址变量 [RUNOOB][1].</p>
+<p>然后在文档的结尾位变量赋值（网址）</p>
+<img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(18).jpg" class>
+
+<h1 id="七、Markdown-表格"><a href="#七、Markdown-表格" class="headerlink" title="七、Markdown 表格"></a>七、Markdown 表格</h1><p>Markdown 制作表格使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。</p>
+<h2 id="1-语法格式"><a href="#1-语法格式" class="headerlink" title="1.语法格式"></a>1.语法格式</h2><img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(19).jpg" class>
+
+<h2 id="2-对齐方式"><a href="#2-对齐方式" class="headerlink" title="2.对齐方式"></a>2.对齐方式</h2><p>-: 设置内容和标题栏居右对齐。</p>
+<p>:- 设置内容和标题栏居左对齐。</p>
+<p>:-: 设置内容和标题栏居中对齐。</p>
+<img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(20).jpg" class>
+
+<h2 id="3-注意事项"><a href="#3-注意事项" class="headerlink" title="3.注意事项"></a>3.注意事项</h2><p>1.“ — ” 前面要有一个空格</p>
+<p>2.“ # ” 后面要有空格，才可以表示标题</p>
+<h1 id="八、参考页面"><a href="#八、参考页面" class="headerlink" title="八、参考页面"></a>八、参考页面</h1><p><a href="https://www.runoob.com/markdown/md-tutorial.html">Markdown 教程</a></p>
+]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+        <tag>Github_page</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2019/12/01/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>开启MySQL常见问题</title>
+    <url>/2020/11/06/%E5%BC%80%E5%90%AFMySQL%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="问题一"><a href="#问题一" class="headerlink" title="问题一"></a>问题一</h1><p><strong>问题描述：</strong></p>
+<blockquote>
+<p>在命令行输入 mysql -u root -p 登录mysql，返回”Can’t connect to MySQL server on localhost (10061)”错误</p>
+</blockquote>
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201105233916432.png" alt="image-20201105233916432"></p>
+<p><strong>处理方式：</strong></p>
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201105234201467.png" alt="image-20201105234201467"></p>
+<a id="more"></a>
+
+<h1 id="问题二"><a href="#问题二" class="headerlink" title="问题二"></a>问题二</h1><p><strong>问题描述：</strong></p>
+<blockquote>
+<p>在windos 的cmd下安装mysql，在mysql的bin目录下面执行： mysqld –install。</p>
+<p>报错：Install/Remove of the Service Denied</p>
+</blockquote>
+<p><strong>处理方式：</strong></p>
+<p>打开cmd.exe程序的时候选择“用管理员身份打开”。</p>
+<h1 id="问题三"><a href="#问题三" class="headerlink" title="问题三"></a>问题三</h1><p><strong>问题描述：</strong></p>
+<blockquote>
+<p>打开Navicat 软件，点击数据库，报错：1045 Access denied for user ‘root’@’localhost’ (using password: YES)</p>
+</blockquote>
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/916611-20171108104341934-1669606114.png" alt="img"></p>
+<p><strong>解决方式：</strong></p>
+<p>右击”root“ - ”修改连接“，进行修改密码</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201106002338078.png" alt="image-20201106002338078" style="zoom:50%;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>Vue_Shop项目</category>
+      </categories>
+      <tags>
+        <tag>VUE</tag>
+        <tag>后端</tag>
+        <tag>数据库</tag>
+        <tag>MySql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>积分商城（商家端）总结</title>
+    <url>/2020/11/07/%E7%A7%AF%E5%88%86%E5%95%86%E5%9F%8E%EF%BC%88%E5%95%86%E5%AE%B6%E7%AB%AF%EF%BC%89%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h1 id="一、组件的调用方式"><a href="#一、组件的调用方式" class="headerlink" title="一、组件的调用方式"></a>一、组件的调用方式</h1><br>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/1.png" alt="1"></p>
+<h1 id="二、element-ui表单必填写法"><a href="#二、element-ui表单必填写法" class="headerlink" title="二、element-ui表单必填写法"></a>二、element-ui表单必填写法</h1><br>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2.png" alt="2"></p>
+<a id="more"></a>
+
+<h1 id="三、this-nextTick-函数的用法"><a href="#三、this-nextTick-函数的用法" class="headerlink" title="三、this.$nextTick()函数的用法"></a>三、this.$nextTick()函数的用法</h1><br>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/3.png" alt="3"></p>
+<h1 id="四、element-ui输入框提示写法"><a href="#四、element-ui输入框提示写法" class="headerlink" title="四、element-ui输入框提示写法"></a>四、element-ui输入框提示写法</h1><br>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/4.png" alt="4"></p>
+<h1 id="五、判断路由是否满足条件"><a href="#五、判断路由是否满足条件" class="headerlink" title="五、判断路由是否满足条件"></a>五、判断路由是否满足条件</h1><br>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/5.png" alt="5"></p>
+<p><font size="4"> <strong>flist属性：</strong></font></p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/6.png" alt="6" style="zoom: 80%;">
+
+<h1 id="六、路由赋值"><a href="#六、路由赋值" class="headerlink" title="六、路由赋值"></a>六、路由赋值</h1><br>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/7.png" alt="7"></p>
+<h1 id="七、主页路由跳转出错改善方法"><a href="#七、主页路由跳转出错改善方法" class="headerlink" title="七、主页路由跳转出错改善方法"></a>七、主页路由跳转出错改善方法</h1><br>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">router.push(location, onComplete(), onAbort())</span></pre></td></tr></table></figure>
+
+<blockquote>
+<p>router.push( … ) =&gt;跳转到某个子页面，并在history中添加一条记录。</p>
+<p>onComplete和onAbort是在路由跳转完成和失败时分别执行的回调函数</p>
+</blockquote>
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/11.png" alt="11"></p>
+<h1 id="八、修改测试接口"><a href="#八、修改测试接口" class="headerlink" title="八、修改测试接口"></a>八、修改测试接口</h1><br>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/12.png" alt="12" style="zoom: 50%;">
+
+<h1 id="九、查看接口地址"><a href="#九、查看接口地址" class="headerlink" title="九、查看接口地址"></a>九、查看接口地址</h1><br>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-02_17-23-31.png" alt="Snipaste_2020-11-02_17-23-31"></p>
+<h1 id="十、设置参数默认值"><a href="#十、设置参数默认值" class="headerlink" title="十、设置参数默认值"></a>十、设置参数默认值</h1><br>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-03_15-11-11.png" alt="Snipaste_2020-11-03_15-11-11" style="zoom: 67%;">
+
+<h1 id="十一、element-ui对话框组件写法"><a href="#十一、element-ui对话框组件写法" class="headerlink" title="十一、element-ui对话框组件写法"></a>十一、element-ui对话框组件写法</h1><br>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-05_16-23-53.png" alt="Snipaste_2020-11-05_16-23-53"></p>
+<h1 id="十二、修改图片访问地址"><a href="#十二、修改图片访问地址" class="headerlink" title="十二、修改图片访问地址"></a>十二、修改图片访问地址</h1><br>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-02_17-33-32.png" alt="Snipaste_2020-11-02_17-33-32"></p>
+]]></content>
+      <categories>
+        <category>积分商城</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>VUE</tag>
+        <tag>积分商城</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>后端接口配置</title>
+    <url>/2020/11/03/%E5%90%8E%E7%AB%AF%E6%8E%A5%E5%8F%A3%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="一、安装MySql"><a href="#一、安装MySql" class="headerlink" title="一、安装MySql"></a>一、安装MySql</h1><h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1.安装"></a>1.安装</h2><p>镜像安装（zip），配置初始化的my.ini文件的文件，按照命令操作（管理员打开），</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/1.png" alt="1" style="zoom: 50%;">
+
+<h2 id="2-配置环境变量"><a href="#2-配置环境变量" class="headerlink" title="2.配置环境变量"></a>2.配置环境变量</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2.png" alt="2" style="zoom:50%;">
+
+<a id="more"></a>
+
+<h1 id="二、安装Navicat，导入数据库"><a href="#二、安装Navicat，导入数据库" class="headerlink" title="二、安装Navicat，导入数据库"></a>二、安装Navicat，导入数据库</h1><h2 id="1-新建MySQL连接"><a href="#1-新建MySQL连接" class="headerlink" title="1.新建MySQL连接"></a>1.新建MySQL连接</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/3.png" alt="3" style="zoom:50%;">
+
+<h2 id="2-新建连接，导入sql文件"><a href="#2-新建连接，导入sql文件" class="headerlink" title="2.新建连接，导入sql文件"></a>2.新建连接，导入sql文件</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/4.png" alt="4" style="zoom:50%;">
+
+<h1 id="三、运行api"><a href="#三、运行api" class="headerlink" title="三、运行api"></a>三、运行api</h1><p>在目标接口打开Git Bash，输入npm install下载需要的组件，输入$ node app.js运行api接口</p>
+<blockquote>
+<p><strong>遇到问题：</strong>登入失败</p>
+<p><strong>解决方案：</strong>修改D:\Vue\2020.10\vue_shop_api\config\default.json 文件里面的账号密码</p>
+</blockquote>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/5.png" alt="5" style="zoom:80%;">
+
+<h1 id="四、安装Postman并检测接口"><a href="#四、安装Postman并检测接口" class="headerlink" title="四、安装Postman并检测接口"></a>四、安装Postman并检测接口</h1> <br>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/6.png" alt="6"></p>
+<h1 id="五、参考资料"><a href="#五、参考资料" class="headerlink" title="五、参考资料"></a>五、参考资料</h1><p>1.<a href="https://www.cnblogs.com/winton-nfs/p/11524007.html">安装mysql教程</a></p>
+]]></content>
+      <categories>
+        <category>Vue_Shop项目</category>
+      </categories>
+      <tags>
+        <tag>VUE</tag>
+        <tag>后端</tag>
+        <tag>数据库</tag>
+        <tag>MySql</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Typora图床教程--阿里云</title>
     <url>/2020/10/31/Typora%E5%9B%BE%E5%BA%8A%E6%95%99%E7%A8%8B-%E9%98%BF%E9%87%8C%E4%BA%91/</url>
     <content><![CDATA[<h1 id="一、下载Typora并安装插件"><a href="#一、下载Typora并安装插件" class="headerlink" title="一、下载Typora并安装插件"></a>一、下载Typora并安装插件</h1><h2 id="1-下载软件"><a href="#1-下载软件" class="headerlink" title="1.下载软件"></a>1.下载软件</h2><p>到官网下载对应版本软件（<a href="[https://typora.io](https://typora.io/)">Typora下载连接</a>）</p>
 <p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201031143535666.png" alt="image-20201031143535666"></p>
+<a id="more"></a>
+
 <h2 id="2-安装插件"><a href="#2-安装插件" class="headerlink" title="2.安装插件"></a>2.安装插件</h2><blockquote>
 <p>注：先在 “帮助“ - ”检查更新“ 中升级版本，确保可以使用</p>
 </blockquote>
@@ -375,235 +637,6 @@ target 用于链接页面的打开方式
       </categories>
       <tags>
         <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>后端接口配置</title>
-    <url>/2020/11/03/%E5%90%8E%E7%AB%AF%E6%8E%A5%E5%8F%A3%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="一、安装MySql"><a href="#一、安装MySql" class="headerlink" title="一、安装MySql"></a>一、安装MySql</h1><h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1.安装"></a>1.安装</h2><p>镜像安装（zip），配置初始化的my.ini文件的文件，按照命令操作（管理员打开），</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/1.png" alt="1" style="zoom: 50%;">
-
-<h2 id="2-配置环境变量"><a href="#2-配置环境变量" class="headerlink" title="2.配置环境变量"></a>2.配置环境变量</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2.png" alt="2" style="zoom:50%;">
-
-<h1 id="二、安装Navicat，导入数据库"><a href="#二、安装Navicat，导入数据库" class="headerlink" title="二、安装Navicat，导入数据库"></a>二、安装Navicat，导入数据库</h1><h2 id="1-新建MySQL连接"><a href="#1-新建MySQL连接" class="headerlink" title="1.新建MySQL连接"></a>1.新建MySQL连接</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/3.png" alt="3" style="zoom:50%;">
-
-<h2 id="2-新建连接，导入sql文件"><a href="#2-新建连接，导入sql文件" class="headerlink" title="2.新建连接，导入sql文件"></a>2.新建连接，导入sql文件</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/4.png" alt="4" style="zoom:50%;">
-
-<h1 id="三、运行api"><a href="#三、运行api" class="headerlink" title="三、运行api"></a>三、运行api</h1><p>在目标接口打开Git Bash，输入npm install下载需要的组件，输入$ node app.js运行api接口</p>
-<blockquote>
-<p><strong>遇到问题：</strong>登入失败</p>
-<p><strong>解决方案：</strong>修改D:\Vue\2020.10\vue_shop_api\config\default.json 文件里面的账号密码</p>
-</blockquote>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/5.png" alt="5" style="zoom:80%;">
-
-<h1 id="四、安装Postman并检测接口"><a href="#四、安装Postman并检测接口" class="headerlink" title="四、安装Postman并检测接口"></a>四、安装Postman并检测接口</h1> <br>
-
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/6.png" alt="6"></p>
-<h1 id="五、参考资料"><a href="#五、参考资料" class="headerlink" title="五、参考资料"></a>五、参考资料</h1><p>1.<a href="https://www.cnblogs.com/winton-nfs/p/11524007.html">安装mysql教程</a></p>
-]]></content>
-      <categories>
-        <category>Vue_Shop项目</category>
-      </categories>
-      <tags>
-        <tag>VUE</tag>
-        <tag>后端</tag>
-        <tag>数据库</tag>
-        <tag>MySql</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>开启MySQL常见问题</title>
-    <url>/2020/11/06/%E5%BC%80%E5%90%AFMySQL%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h1 id="问题一"><a href="#问题一" class="headerlink" title="问题一"></a>问题一</h1><p><strong>问题描述：</strong></p>
-<blockquote>
-<p>在命令行输入 mysql -u root -p 登录mysql，返回”Can’t connect to MySQL server on localhost (10061)”错误</p>
-</blockquote>
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201105233916432.png" alt="image-20201105233916432"></p>
-<p><strong>处理方式：</strong></p>
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201105234201467.png" alt="image-20201105234201467"></p>
-<h1 id="问题二"><a href="#问题二" class="headerlink" title="问题二"></a>问题二</h1><p><strong>问题描述：</strong></p>
-<blockquote>
-<p>在windos 的cmd下安装mysql，在mysql的bin目录下面执行： mysqld –install。</p>
-<p>报错：Install/Remove of the Service Denied</p>
-</blockquote>
-<p><strong>处理方式：</strong></p>
-<p>打开cmd.exe程序的时候选择“用管理员身份打开”。</p>
-<h1 id="问题三"><a href="#问题三" class="headerlink" title="问题三"></a>问题三</h1><p><strong>问题描述：</strong></p>
-<blockquote>
-<p>打开Navicat 软件，点击数据库，报错：1045 Access denied for user ‘root’@’localhost’ (using password: YES)</p>
-</blockquote>
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/916611-20171108104341934-1669606114.png" alt="img"></p>
-<p><strong>解决方式：</strong></p>
-<p>右击”root“ - ”修改连接“，进行修改密码</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201106002338078.png" alt="image-20201106002338078" style="zoom:50%;">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-]]></content>
-      <categories>
-        <category>Vue_Shop项目</category>
-      </categories>
-      <tags>
-        <tag>VUE</tag>
-        <tag>后端</tag>
-        <tag>数据库</tag>
-        <tag>MySql</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>积分商城（商家端）总结</title>
-    <url>/2020/11/07/%E7%A7%AF%E5%88%86%E5%95%86%E5%9F%8E%EF%BC%88%E5%95%86%E5%AE%B6%E7%AB%AF%EF%BC%89%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<h1 id="一、组件的调用方式"><a href="#一、组件的调用方式" class="headerlink" title="一、组件的调用方式"></a>一、组件的调用方式</h1><p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/1.png" alt="1"></p>
-<h1 id="二、element-ui表单必填写法"><a href="#二、element-ui表单必填写法" class="headerlink" title="二、element-ui表单必填写法"></a>二、element-ui表单必填写法</h1><p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2.png" alt="2"></p>
-<h1 id="三、this-nextTick-函数的用法"><a href="#三、this-nextTick-函数的用法" class="headerlink" title="三、this.$nextTick()函数的用法"></a>三、this.$nextTick()函数的用法</h1><p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/3.png" alt="3"></p>
-<h1 id="四、element-ui输入框提示写法"><a href="#四、element-ui输入框提示写法" class="headerlink" title="四、element-ui输入框提示写法"></a>四、element-ui输入框提示写法</h1><p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/4.png" alt="4"></p>
-<h1 id="五、判断路由是否满足条件"><a href="#五、判断路由是否满足条件" class="headerlink" title="五、判断路由是否满足条件"></a>五、判断路由是否满足条件</h1><p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/5.png" alt="5"></p>
-<h2 id="list属性："><a href="#list属性：" class="headerlink" title="list属性："></a>list属性：</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/6.png" alt="6" style="zoom: 80%;">
-
-<h1 id="六、路由赋值"><a href="#六、路由赋值" class="headerlink" title="六、路由赋值"></a>六、路由赋值</h1><p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/7.png" alt="7"></p>
-<h1 id="七、主页路由跳转出错改善方法"><a href="#七、主页路由跳转出错改善方法" class="headerlink" title="七、主页路由跳转出错改善方法"></a>七、主页路由跳转出错改善方法</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">router.push(location, onComplete(), onAbort())</span></pre></td></tr></table></figure>
-
-<blockquote>
-<p>router.push( … ) =&gt;跳转到某个子页面，并在history中添加一条记录。</p>
-<p>onComplete和onAbort是在路由跳转完成和失败时分别执行的回调函数</p>
-</blockquote>
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/11.png" alt="11"></p>
-<h1 id="八、修改测试接口"><a href="#八、修改测试接口" class="headerlink" title="八、修改测试接口"></a>八、修改测试接口</h1><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/12.png" alt="12" style="zoom: 50%;">
-
-<h1 id="九、查看接口地址"><a href="#九、查看接口地址" class="headerlink" title="九、查看接口地址"></a>九、查看接口地址</h1><p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-02_17-23-31.png" alt="Snipaste_2020-11-02_17-23-31"></p>
-<h1 id="十、设置参数默认值"><a href="#十、设置参数默认值" class="headerlink" title="十、设置参数默认值"></a>十、设置参数默认值</h1><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-03_15-11-11.png" alt="Snipaste_2020-11-03_15-11-11" style="zoom: 67%;">
-
-<h1 id="十一、element-ui对话框组件写法"><a href="#十一、element-ui对话框组件写法" class="headerlink" title="十一、element-ui对话框组件写法"></a>十一、element-ui对话框组件写法</h1><p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-05_16-23-53.png" alt="Snipaste_2020-11-05_16-23-53"></p>
-<h1 id="十二、修改图片访问地址"><a href="#十二、修改图片访问地址" class="headerlink" title="十二、修改图片访问地址"></a>十二、修改图片访问地址</h1><p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-02_17-33-32.png" alt="Snipaste_2020-11-02_17-33-32"></p>
-]]></content>
-      <categories>
-        <category>积分商城</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>VUE</tag>
-        <tag>积分商城</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2019/12/01/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Mrkdown使用指南</title>
-    <url>/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</url>
-    <content><![CDATA[<h1 id="一、Makedown-标题"><a href="#一、Makedown-标题" class="headerlink" title="一、Makedown 标题"></a>一、Makedown 标题</h1><h2 id="1-使用-和-标记一级和二级标题"><a href="#1-使用-和-标记一级和二级标题" class="headerlink" title="1. 使用 = 和 - 标记一级和二级标题"></a>1. 使用 = 和 - 标记一级和二级标题</h2><img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(1).jpg" class>
-
-<h2 id="2-使用-号标记"><a href="#2-使用-号标记" class="headerlink" title="2. 使用 # 号标记"></a>2. 使用 # 号标记</h2><img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(2).jpg" class>
-
-<a id="more"></a>
-
-<h1 id="二、Markdown-段落格式"><a href="#二、Markdown-段落格式" class="headerlink" title="二、Markdown 段落格式"></a>二、Markdown 段落格式</h1><h2 id="1-Markdown-段落"><a href="#1-Markdown-段落" class="headerlink" title="1.Markdown 段落"></a>1.Markdown 段落</h2><p>Markdown<br>段落没有特殊的格式，可以编写文字。段落的换行使用两个以上空格加上回车,也可以在段落后面使用一个空行来表示重新开始一个段落。</p>
-<h2 id="2-字体"><a href="#2-字体" class="headerlink" title="2.字体"></a>2.字体</h2><img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(3).jpg" class>
-
-<h2 id="3-分隔线"><a href="#3-分隔线" class="headerlink" title="3.分隔线"></a>3.分隔线</h2><img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(4).jpg" class>
-
-<h2 id="4-删除线"><a href="#4-删除线" class="headerlink" title="4.删除线"></a>4.删除线</h2><p>在文字的两端加上两个波浪线 ~~ 即可</p>
-<img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(5).jpg" class>
-
-<h2 id="5-下划线"><a href="#5-下划线" class="headerlink" title="5.下划线"></a>5.下划线</h2><p>通过 HTML 的 &lt;u&gt; 标签来实现：</p>
-<img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(6).jpg" class>
-
-<h2 id="6-脚注"><a href="#6-脚注" class="headerlink" title="6.脚注"></a>6.脚注</h2><p>脚注是对文本的补充说明，格式：</p>
-<img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(7).jpg" class>
-
-<h1 id="三、Markdown-列表"><a href="#三、Markdown-列表" class="headerlink" title="三、Markdown 列表"></a>三、Markdown 列表</h1><h2 id="1-无序列表"><a href="#1-无序列表" class="headerlink" title="1.无序列表"></a>1.无序列表</h2><p>无序列表使用星号(*)、加号(+)或是减号(-)作为列表标记：</p>
-<img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(8).jpg" class>
-
-<h2 id="2-有序列表"><a href="#2-有序列表" class="headerlink" title="2.有序列表"></a>2.有序列表</h2><p>有序列表使用数字并加上 . 号来表示，如：</p>
-<img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(9).jpg" class>
-
-<h2 id="3-嵌套结构"><a href="#3-嵌套结构" class="headerlink" title="3.嵌套结构"></a>3.嵌套结构</h2><p>列表嵌套只需在子列表中的选项添加四个空格即可：</p>
-<img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(10).jpg" class>
-
-<h1 id="四、Markdown-区块"><a href="#四、Markdown-区块" class="headerlink" title="四、Markdown 区块"></a>四、Markdown 区块</h1><p>Markdown 区块引用是在段落开头使用 &gt; 符号 ，然后后面紧跟一个空格符号：</p>
-<img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(11).jpg" class>
-
-<p>嵌套用法：</p>
-<img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(12).jpg" class>
-
-<h2 id="1-区块中使用列表"><a href="#1-区块中使用列表" class="headerlink" title="1.区块中使用列表"></a>1.区块中使用列表</h2><img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(13).jpg" class>
-
-<h2 id="2-列表中使用区块"><a href="#2-列表中使用区块" class="headerlink" title="2.列表中使用区块"></a>2.列表中使用区块</h2><img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(14).jpg" class>
-
-<h1 id="五、Markdown代码"><a href="#五、Markdown代码" class="headerlink" title="五、Markdown代码"></a>五、Markdown代码</h1><h2 id="1-代码"><a href="#1-代码" class="headerlink" title="1.代码"></a>1.代码</h2><p>代码段落上的一个函数或片段的代码可以用反引号把它包起来（`）</p>
-<img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(15).jpg" class>
-
-<h2 id="2-代码区块"><a href="#2-代码区块" class="headerlink" title="2.代码区块"></a>2.代码区块</h2><p>代码区块使用 4 个空格或者一个制表符（Tab 键）, 也可以用 ```<br>包裹一段代码，并指定一种语言：</p>
-<img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(16).jpg" class>
-
-<h1 id="六、Markdown-图片"><a href="#六、Markdown-图片" class="headerlink" title="六、Markdown 图片"></a>六、Markdown 图片</h1><h2 id="1-本地图片"><a href="#1-本地图片" class="headerlink" title="1.本地图片"></a>1.本地图片</h2><img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(17).jpg" class>
-
-<p>开头一个感叹号 !</p>
-<p>接着一个方括号，里面放上图片的替代文字</p>
-<p>接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 ‘title’<br>属性的文字。</p>
-<h2 id="2-网络图片"><a href="#2-网络图片" class="headerlink" title="2.网络图片"></a>2.网络图片</h2><p>这个链接用 1 作为网址变量 [RUNOOB][1].</p>
-<p>然后在文档的结尾位变量赋值（网址）</p>
-<img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(18).jpg" class>
-
-<h1 id="七、Markdown-表格"><a href="#七、Markdown-表格" class="headerlink" title="七、Markdown 表格"></a>七、Markdown 表格</h1><p>Markdown 制作表格使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。</p>
-<h2 id="1-语法格式"><a href="#1-语法格式" class="headerlink" title="1.语法格式"></a>1.语法格式</h2><img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(19).jpg" class>
-
-<h2 id="2-对齐方式"><a href="#2-对齐方式" class="headerlink" title="2.对齐方式"></a>2.对齐方式</h2><p>-: 设置内容和标题栏居右对齐。</p>
-<p>:- 设置内容和标题栏居左对齐。</p>
-<p>:-: 设置内容和标题栏居中对齐。</p>
-<img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(20).jpg" class>
-
-<h2 id="3-注意事项"><a href="#3-注意事项" class="headerlink" title="3.注意事项"></a>3.注意事项</h2><p>1.“ — ” 前面要有一个空格</p>
-<p>2.“ # ” 后面要有空格，才可以表示标题</p>
-<h1 id="八、参考页面"><a href="#八、参考页面" class="headerlink" title="八、参考页面"></a>八、参考页面</h1><p><a href="https://www.runoob.com/markdown/md-tutorial.html">Markdown 教程</a></p>
-]]></content>
-      <categories>
-        <category>Markdown</category>
-      </categories>
-      <tags>
-        <tag>Markdown</tag>
-        <tag>Github_page</tag>
       </tags>
   </entry>
 </search>
