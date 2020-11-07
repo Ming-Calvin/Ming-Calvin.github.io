@@ -6,7 +6,7 @@
   <link href="https://ming-clavin.github.io/atom.xml" rel="self"/>
   
   <link href="https://ming-clavin.github.io/"/>
-  <updated>2020-11-05T16:30:05.063Z</updated>
+  <updated>2020-11-07T08:30:35.322Z</updated>
   <id>https://ming-clavin.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>积分商城（商家端）总结</title>
+    <link href="https://ming-clavin.github.io/2020/11/07/%E7%A7%AF%E5%88%86%E5%95%86%E5%9F%8E%EF%BC%88%E5%95%86%E5%AE%B6%E7%AB%AF%EF%BC%89%E6%80%BB%E7%BB%93/"/>
+    <id>https://ming-clavin.github.io/2020/11/07/%E7%A7%AF%E5%88%86%E5%95%86%E5%9F%8E%EF%BC%88%E5%95%86%E5%AE%B6%E7%AB%AF%EF%BC%89%E6%80%BB%E7%BB%93/</id>
+    <published>2020-11-07T08:28:47.000Z</published>
+    <updated>2020-11-07T08:30:35.322Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一、组件的调用方式"><a href="#一、组件的调用方式" class="headerlink" title="一、组件的调用方式"></a>一、组件的调用方式</h1><p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/1.png" alt="1"></p><h1 id="二、element-ui表单必填写法"><a href="#二、element-ui表单必填写法" class="headerlink" title="二、element-ui表单必填写法"></a>二、element-ui表单必填写法</h1><p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2.png" alt="2"></p><h1 id="三、this-nextTick-函数的用法"><a href="#三、this-nextTick-函数的用法" class="headerlink" title="三、this.$nextTick()函数的用法"></a>三、this.$nextTick()函数的用法</h1><p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/3.png" alt="3"></p><h1 id="四、element-ui输入框提示写法"><a href="#四、element-ui输入框提示写法" class="headerlink" title="四、element-ui输入框提示写法"></a>四、element-ui输入框提示写法</h1><p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/4.png" alt="4"></p><h1 id="五、判断路由是否满足条件"><a href="#五、判断路由是否满足条件" class="headerlink" title="五、判断路由是否满足条件"></a>五、判断路由是否满足条件</h1><p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/5.png" alt="5"></p><h2 id="list属性："><a href="#list属性：" class="headerlink" title="list属性："></a>list属性：</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/6.png" alt="6" style="zoom: 80%;"><h1 id="六、路由赋值"><a href="#六、路由赋值" class="headerlink" title="六、路由赋值"></a>六、路由赋值</h1><p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/7.png" alt="7"></p><h1 id="七、主页路由跳转出错改善方法"><a href="#七、主页路由跳转出错改善方法" class="headerlink" title="七、主页路由跳转出错改善方法"></a>七、主页路由跳转出错改善方法</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">router.push(location, onComplete(), onAbort())</span></pre></td></tr></table></figure><blockquote><p>router.push( … ) =&gt;跳转到某个子页面，并在history中添加一条记录。</p><p>onComplete和onAbort是在路由跳转完成和失败时分别执行的回调函数</p></blockquote><p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/11.png" alt="11"></p><h1 id="八、修改测试接口"><a href="#八、修改测试接口" class="headerlink" title="八、修改测试接口"></a>八、修改测试接口</h1><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/12.png" alt="12" style="zoom: 50%;"><h1 id="九、查看接口地址"><a href="#九、查看接口地址" class="headerlink" title="九、查看接口地址"></a>九、查看接口地址</h1><p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-02_17-23-31.png" alt="Snipaste_2020-11-02_17-23-31"></p><h1 id="十、设置参数默认值"><a href="#十、设置参数默认值" class="headerlink" title="十、设置参数默认值"></a>十、设置参数默认值</h1><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-03_15-11-11.png" alt="Snipaste_2020-11-03_15-11-11" style="zoom: 67%;"><h1 id="十一、element-ui对话框组件写法"><a href="#十一、element-ui对话框组件写法" class="headerlink" title="十一、element-ui对话框组件写法"></a>十一、element-ui对话框组件写法</h1><p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-05_16-23-53.png" alt="Snipaste_2020-11-05_16-23-53"></p><h1 id="十二、修改图片访问地址"><a href="#十二、修改图片访问地址" class="headerlink" title="十二、修改图片访问地址"></a>十二、修改图片访问地址</h1><p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-02_17-33-32.png" alt="Snipaste_2020-11-02_17-33-32"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;一、组件的调用方式&quot;&gt;&lt;a href=&quot;#一、组件的调用方式&quot; class=&quot;headerlink&quot; title=&quot;一、组件的调用方式&quot;&gt;&lt;/a&gt;一、组件的调用方式&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://calvin-typora-image.oss-</summary>
+      
+    
+    
+    
+    <category term="积分商城" scheme="https://ming-clavin.github.io/categories/%E7%A7%AF%E5%88%86%E5%95%86%E5%9F%8E/"/>
+    
+    
+    <category term="前端" scheme="https://ming-clavin.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="VUE" scheme="https://ming-clavin.github.io/tags/VUE/"/>
+    
+    <category term="积分商城" scheme="https://ming-clavin.github.io/tags/%E7%A7%AF%E5%88%86%E5%95%86%E5%9F%8E/"/>
+    
+  </entry>
   
   <entry>
     <title>开启MySQL常见问题</title>
