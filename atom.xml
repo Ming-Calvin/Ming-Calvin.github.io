@@ -6,7 +6,7 @@
   <link href="https://ming-clavin.github.io/atom.xml" rel="self"/>
   
   <link href="https://ming-clavin.github.io/"/>
-  <updated>2020-11-09T17:20:57.825Z</updated>
+  <updated>2020-11-10T16:31:01.800Z</updated>
   <id>https://ming-clavin.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>el-if、el-else-if、el-else</title>
+    <link href="https://ming-clavin.github.io/2020/11/11/el-if%E3%80%81el-else-if%E3%80%81el-else/"/>
+    <id>https://ming-clavin.github.io/2020/11/11/el-if%E3%80%81el-else-if%E3%80%81el-else/</id>
+    <published>2020-11-10T16:28:49.000Z</published>
+    <updated>2020-11-10T16:31:01.800Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="v-if-与-v-else"><a href="#v-if-与-v-else" class="headerlink" title="v-if 与 v-else"></a>v-if 与 v-else</h1><p><strong>v-if为真 时，显示v-if的内容，否则显示v-else的内容</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;h2 v-if&#x3D;&quot;true&quot;&gt;v-if&lt;&#x2F;h2&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&lt;h2 v-else&gt;v-else&lt;&#x2F;h2&gt;</span></pre></td></tr></table></figure><blockquote><p>v-else 元素必须紧跟在带 v-if 或者 v-else-if 的元素的后面，否则它将不会被识别。</p></blockquote><h1 id="v-else-if"><a href="#v-else-if" class="headerlink" title="v-else-if"></a>v-else-if</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;div v-if&#x3D;&quot;type &#x3D;&#x3D;&#x3D; &#39;A&#39;&quot;&gt; A &lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&lt;div v-else-if&#x3D;&quot;type &#x3D;&#x3D;&#x3D; &#39;B&#39;&quot;&gt; B &lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&lt;div v-else-if&#x3D;&quot;type &#x3D;&#x3D;&#x3D; &#39;C&#39;&quot;&gt; C &lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&lt;div v-else&gt;</span></pre></td></tr></table></figure><blockquote><p>类似于 v-else，v-else-if 也必须紧跟在带 v-if 或者 v-else-if 的元素之后</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;v-if-与-v-else&quot;&gt;&lt;a href=&quot;#v-if-与-v-else&quot; class=&quot;headerlink&quot; title=&quot;v-if 与 v-else&quot;&gt;&lt;/a&gt;v-if 与 v-else&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;v-if为真 时，显示v-if的内容</summary>
+      
+    
+    
+    
+    <category term="vue归纳" scheme="https://ming-clavin.github.io/categories/vue%E5%BD%92%E7%BA%B3/"/>
+    
+    
+    <category term="前端" scheme="https://ming-clavin.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="VUE" scheme="https://ming-clavin.github.io/tags/VUE/"/>
+    
+  </entry>
   
   <entry>
     <title>积分商城（商家端）总结</title>
