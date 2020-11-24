@@ -84,12 +84,12 @@
 <meta name="description" content="一、Vue路由传参query和params的区别1. 区别 query使用path和name传参跳转都可以，而params只能使用name传参跳转 传参跳转页面时，query和params不需要在路由上配参数就能在新的页面获取到参数，但是params不在路由配参数的话，当用户刷新当前页面的时候，参数就会消失。  2. 样例query传参1&amp;#x2F;&amp;#x2F;在方法里面写 也可以用name2th">
 <meta name="keywords" content="前端,VUE">
 <meta property="og:type" content="article">
-<meta property="og:title" content="“vue-router模块”">
-<meta property="og:url" content="https:&#x2F;&#x2F;ming-clavin.github.io&#x2F;2020&#x2F;11&#x2F;24&#x2F;%E2%80%9Cvue-router%E6%A8%A1%E5%9D%97%E2%80%9D&#x2F;index.html">
+<meta property="og:title" content="vue-router模块">
+<meta property="og:url" content="https:&#x2F;&#x2F;ming-clavin.github.io&#x2F;2020&#x2F;11&#x2F;24&#x2F;vue-router%E6%A8%A1%E5%9D%97&#x2F;index.html">
 <meta property="og:site_name" content="Ming-Calvin">
 <meta property="og:description" content="一、Vue路由传参query和params的区别1. 区别 query使用path和name传参跳转都可以，而params只能使用name传参跳转 传参跳转页面时，query和params不需要在路由上配参数就能在新的页面获取到参数，但是params不在路由配参数的话，当用户刷新当前页面的时候，参数就会消失。  2. 样例query传参1&amp;#x2F;&amp;#x2F;在方法里面写 也可以用name2th">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-11-24T13:01:37.493Z">
+<meta property="og:updated_time" content="2020-11-24T13:07:13.321Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://ming-clavin.github.io/2020/11/24/“vue-router模块”/"/>
+  <link rel="canonical" href="https://ming-clavin.github.io/2020/11/24/vue-router模块/"/>
 
 
 
 
 
-  <title>“vue-router模块” | Ming-Calvin</title>
+  <title>vue-router模块 | Ming-Calvin</title>
   
 
 
@@ -278,7 +278,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ming-clavin.github.io/2020/11/24/%E2%80%9Cvue-router%E6%A8%A1%E5%9D%97%E2%80%9D/">
+    <link itemprop="mainEntityOfPage" href="https://ming-clavin.github.io/2020/11/24/vue-router%E6%A8%A1%E5%9D%97/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Ming-Clavin">
@@ -295,7 +295,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">“vue-router模块”</h1>
+          <h1 class="post-title" itemprop="name headline">vue-router模块</h1>
         
 
         <div class="post-meta">
@@ -373,11 +373,13 @@
 </ol>
 <h2 id="2-样例"><a href="#2-样例" class="headerlink" title="2. 样例"></a>2. 样例</h2><h3 id="query传参"><a href="#query传参" class="headerlink" title="query传参"></a>query传参</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;在方法里面写 也可以用name</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">this.$router.push(&#123; path:&#39;&#x2F;search&#39;, query: &#123; categoryId: this.categoryId &#125;&#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; router-link里面的to</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&lt;router-link :to&#x3D;&quot;&#123;path:&#39;&#x2F;search&#39;,query: &#123;categoryId: item.categoryId&#125;&#125;&quot;&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">接收参数：this.categoryId &#x3D; this.$route.query.categoryId ;</span></pre></td></tr></table></figure>
 
+<a id="more"></a>
+
 <h3 id="params传参"><a href="#params传参" class="headerlink" title="params传参"></a>params传参</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;在方法里面写</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">this.$router.push(&#123; name::&#39;&#x2F;search&#39;, query: &#123; categoryId: this.categoryId &#125;&#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; router-link里面的to</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&lt;router-link :to&#x3D;&quot;&#123;name::&#39;&#x2F;search&#39;,query: &#123;categoryId: item.categoryId&#125;&#125;&quot;&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">接收参数：this.categoryId &#x3D; this.$route.params.categoryId ;</span></pre></td></tr></table></figure>
 
-
-
 <h2 id="3-参考"><a href="#3-参考" class="headerlink" title="3. 参考"></a>3. 参考</h2><p><a href="https://blog.csdn.net/Brian_Jing/article/details/100987080">Vue路由传参query和params的区别</a></p>
+<br>
+
 <h1 id="二、Vue-详解设置路由导航的两种方法"><a href="#二、Vue-详解设置路由导航的两种方法" class="headerlink" title="二、Vue-详解设置路由导航的两种方法"></a>二、Vue-详解设置路由导航的两种方法</h1><h2 id="1-方法"><a href="#1-方法" class="headerlink" title="1. 方法"></a>1. 方法</h2><h3 id="使用-lt-router-link-to-quot-quot-gt"><a href="#使用-lt-router-link-to-quot-quot-gt" class="headerlink" title="使用&lt;router-link :to=&quot;...&quot;&gt;"></a>使用<code>&lt;router-link :to=&quot;...&quot;&gt;</code></h3><p><strong>to里的值可以是一个字符串路径，或者一个描述地址的对象</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 字符串</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&lt;router-link to&#x3D;&quot;apple&quot;&gt; to apple&lt;&#x2F;router-link&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 对象</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&lt;router-link :to&#x3D;&quot;&#123; path:&#39;apple&#39; &#125;&quot;&gt; to apple&lt;&#x2F;router-link&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 命名路由</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">&lt;router-link :to&#x3D;&quot;&#123; name:&#39;applename&#39; &#125;&quot;&gt; to apple&lt;&#x2F;router-link&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 直接路由带查询参数query，地址栏变成 &#x2F;apple?color&#x3D;red</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">&lt;router-link :to&#x3D;&quot;&#123; path:&#39;apple&#39;, query: &#123; color:&#39;red&#39; &#125;&#125;&quot;&gt; to apple&lt;&#x2F;router-link&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 命名路由带查询参数query，地址栏变成&#x2F;apple?color&#x3D;red</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">&lt;router-link :to&#x3D;&quot;&#123; name:&#39;applename&#39;, query: &#123; color:&#39;red&#39; &#125;&#125;&quot;&gt; to apple&lt;&#x2F;router-link&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 直接路由带路由参数params，params 不生效，如果提供了 path，params 会被忽略</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">&lt;router-link :to&#x3D;&quot;&#123; path:&#39;apple&#39;, params: &#123; color:&#39;red&#39; &#125;&#125;&quot;&gt; to apple&lt;&#x2F;router-link&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 命名路由带路由参数params，地址栏是&#x2F;apple&#x2F;red</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">&lt;router-link :to&#x3D;&quot;&#123; name:&#39;applename&#39;, params: &#123; color:&#39;red&#39; &#125;&#125;&quot;&gt; to apple&lt;&#x2F;router-link&gt;</span></pre></td></tr></table></figure>
 
@@ -394,8 +396,17 @@
 <p>直接路由“path” 带路由参数params  params 不生效;<br>命名路由“name” 带路由参数params 地址栏保持是“/url/路由参数值”;</p>
 </blockquote>
 <h3 id="2-设置路由map里的path值"><a href="#2-设置路由map里的path值" class="headerlink" title="2. 设置路由map里的path值"></a>2. <strong>设置路由map里的path值</strong></h3><p> 带路由参数params时，路由map里的path应该写成: path:’/apple/:color’ ;<br> 带查询参数query时，路由map里的path应该写成: path:’/apple’ ；</p>
-<h3 id="3-获取参数方法"><a href="#3-获取参数方法" class="headerlink" title="3. 获取参数方法"></a>3. 获取参数方法</h3><p>在组件中：<code></code><br>在js里：<code>this.$route.params.color</code></p>
-<h2 id="3-参考-1"><a href="#3-参考-1" class="headerlink" title="3. 参考"></a>3. 参考</h2><p><a href="https://www.cnblogs.com/superlizhao/p/8527317.html">Vue-详解设置路由导航的两种方法：<code>&lt;router-link :to=&quot;...&quot;&gt;</code> 和router.push(…)</a></p>
+<h3 id="3-获取参数方法"><a href="#3-获取参数方法" class="headerlink" title="3. 获取参数方法"></a>3. 获取参数方法</h3><p>在组件中：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#123;&#123;$route.params.color&#125;&#125;</span></pre></td></tr></table></figure>
+
+<p>在js里：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">this.$route.params.color</span></pre></td></tr></table></figure>
+
+
+
+<h2 id="3-参考-1"><a href="#3-参考-1" class="headerlink" title="3. 参考"></a>3. 参考</h2><p><a href="https://www.cnblogs.com/superlizhao/p/8527317.html">Vue-详解设置路由导航的两种方法</a></p>
+<br>
+
 <h1 id="三、命名路由"><a href="#三、命名路由" class="headerlink" title="三、命名路由"></a>三、命名路由</h1><h2 id="1-概述"><a href="#1-概述" class="headerlink" title="1. 概述"></a>1. 概述</h2><p><strong>给一个路由命一个唯一的名称，然后跳转调用这个名称即可</strong></p>
 <h2 id="2-样例-1"><a href="#2-样例-1" class="headerlink" title="2. 样例"></a>2. 样例</h2><p>（1）在src/router/index.js中加一个带name的路由</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    path: &#39;one&#39;, &#x2F;&#x2F; 子页面1</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    name: &#39;one&#39;, &#x2F;&#x2F; 路由名称-命名路由</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    component: One &#x2F;&#x2F; 页面组件</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
