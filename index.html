@@ -895,210 +895,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ming-clavin.github.io/2020/11/11/vue%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Ming-Clavin">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/Ming-Calvin.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ming-Calvin">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/11/11/vue%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" itemprop="url">vue的生命周期</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-11-11T00:33:57+08:00">
-                2020-11-11
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/VUE%E5%BD%92%E7%BA%B3/" itemprop="url" rel="index">
-                    <span itemprop="name">VUE归纳</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="1-Vue的生命周期"><a href="#1-Vue的生命周期" class="headerlink" title="1.Vue的生命周期"></a>1.Vue的生命周期</h1><h2 id="1-1-生命周期含义"><a href="#1-1-生命周期含义" class="headerlink" title="1.1 生命周期含义"></a>1.1 生命周期含义</h2><p>​    每个Vue实例在被<strong>创建</strong>之前都要经过一系列的初始化过程,这个过程就是vue的生命周期。一整个的生命周期中会有很多<strong>钩子函数</strong>提供给我们在vue生命周期不同的时刻进行操作。</p>
-<blockquote>
-<p><strong>钩子函数：</strong>在一个事件触发的，被系统级捕获到了后，进行一些操作</p>
-<blockquote>
-<p><strong>特点：</strong>1、是个函数，在系统消息触发时被系统调用  </p>
-<p>​            2、不是用户自己触发的</p>
-<p>​            3、钩子函数的名称是确定的，当系统消息触发，==自动会调用==</p>
-</blockquote>
-</blockquote>
-<h2 id="1-2-代码测试"><a href="#1-2-代码测试" class="headerlink" title="1.2 代码测试"></a>1.2 代码测试</h2><p><code>测试代码</code>：<a href="#jump">点击跳转测试代码</a></p>
-<blockquote>
-<p>运行后打开console可以看到打印出来内容如下:</p>
-</blockquote>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-10_14-45-28.png" alt="Snipaste_2020-11-10_14-45-28" style="zoom: 67%;">
-
-
-
-<h1 id="2-在beforeCreate和created钩子函数之间的生命周期"><a href="#2-在beforeCreate和created钩子函数之间的生命周期" class="headerlink" title="2. 在beforeCreate和created钩子函数之间的生命周期"></a>2. 在beforeCreate和created钩子函数之间的生命周期</h1><br>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-10_15-47-47.png" alt="Snipaste_2020-11-10_15-47-47" style="zoom: 50%;">
-
-<br>
-
-<blockquote>
-<p>​    在这个生命周期之间，进行<strong>初始化事件，进行数据的观测</strong>，可以看到在<strong>created</strong>的时候数据已经和<strong>data属性进行绑定</strong>，此时还是没有el选项</p>
-</blockquote>
-<h1 id="3-created钩子函数和beforeMount间的生命周期"><a href="#3-created钩子函数和beforeMount间的生命周期" class="headerlink" title="3.created钩子函数和beforeMount间的生命周期"></a>3.created钩子函数和beforeMount间的生命周期</h1><br>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-10_15-56-45.png" alt="Snipaste_2020-11-10_15-56-45" style="zoom: 50%;">
-
-<br>
-
-<blockquote>
-<p>​    首先判断对象是否有<strong>el选项</strong>。<strong>如果有的话就继续向下编译，如果没有</strong>el选项，则停止编译，也就意味着<strong>停止生命周期</strong>，直到在该vue实例上调用<strong>vm.$mount(el)</strong></p>
-</blockquote>
-<h2 id="3-1-template参数"><a href="#3-1-template参数" class="headerlink" title="3.1 template参数"></a>3.1 template参数</h2><h1 id="4-beforeMount和mounted-钩子函数间的生命周期"><a href="#4-beforeMount和mounted-钩子函数间的生命周期" class="headerlink" title="4.beforeMount和mounted 钩子函数间的生命周期"></a>4.beforeMount和mounted 钩子函数间的生命周期</h1><br>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-10_16-08-18.png" alt="Snipaste_2020-11-10_16-08-18" style="zoom: 50%;">
-
-<br>
-
-<blockquote>
-<p>​    此时给vue实例对象添加<strong>$el成员</strong>，并且替换掉挂在的DOM元素。因为之前console中打印的结果可以看到<strong>beforeMount</strong>之前el上还是undefined</p>
-</blockquote>
-<h2 id="4-1-mounted"><a href="#4-1-mounted" class="headerlink" title="4.1 mounted"></a>4.1 mounted</h2><h1 id="5-beforeUpdate钩子函数和updated钩子函数间的生命周期"><a href="#5-beforeUpdate钩子函数和updated钩子函数间的生命周期" class="headerlink" title="5.beforeUpdate钩子函数和updated钩子函数间的生命周期"></a>5.beforeUpdate钩子函数和updated钩子函数间的生命周期</h1><br>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-10_16-33-21.png" alt="Snipaste_2020-11-10_16-33-21" style="zoom: 50%;">
-
-<h1 id="6-beforeDestroy和destroyed钩子函数间的生命周期"><a href="#6-beforeDestroy和destroyed钩子函数间的生命周期" class="headerlink" title="6.beforeDestroy和destroyed钩子函数间的生命周期"></a>6.beforeDestroy和destroyed钩子函数间的生命周期</h1><br>
-
-<h6 id><a href="#" class="headerlink" title></a><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-10_16-43-24.png" alt="Snipaste_2020-11-10_16-43-24" style="zoom: 80%;"></h6><h1 id="7-vue生命周期图（完整版）"><a href="#7-vue生命周期图（完整版）" class="headerlink" title="7.vue生命周期图（完整版）"></a>7.vue生命周期图（完整版）</h1><br>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10_14-37.png" alt="2020-11-10_14-37" style="zoom: 50%;">
-
-<h1 id="8-测试代码"><a href="#8-测试代码" class="headerlink" title="8.测试代码"></a>8.测试代码</h1><p><span id="jump"></span></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&lt;html lang&#x3D;&quot;en&quot;&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  &lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, initial-scale&#x3D;1.0&quot;&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">  &lt;meta http-equiv&#x3D;&quot;X-UA-Compatible&quot; content&#x3D;&quot;ie&#x3D;edge&quot;&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">  &lt;title&gt;vue生命周期学习&lt;&#x2F;title&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">  &lt;script src&#x3D;&quot;https:&#x2F;&#x2F;cdn.bootcss.com&#x2F;vue&#x2F;2.4.2&#x2F;vue.js&quot;&gt;&lt;&#x2F;script&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">&lt;&#x2F;head&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">  &lt;div id&#x3D;&quot;app&quot;&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">    &lt;h1&gt;&#123;&#123;message&#125;&#125;&lt;&#x2F;h1&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">  &lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">&lt;&#x2F;body&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">  var vm &#x3D; new Vue(&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">    el: &#39;#app&#39;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">    data: &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">      message: &#39;Vue的生命周期&#39;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">    &#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">    beforeCreate: function() &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">      console.group(&#39;------beforeCreate创建前状态------&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot; , &quot;el     : &quot; + this.$el); &#x2F;&#x2F;undefined</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;data   : &quot; + this.$data); &#x2F;&#x2F;undefined </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;message: &quot; + this.message) </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line">    &#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line">    created: function() &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line">      console.group(&#39;------created创建完毕状态------&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">29</span></pre></td><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;el     : &quot; + this.$el); &#x2F;&#x2F;undefined</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">30</span></pre></td><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;data   : &quot; + this.$data); &#x2F;&#x2F;已被初始化 </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">31</span></pre></td><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;message: &quot; + this.message); &#x2F;&#x2F;已被初始化</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">32</span></pre></td><td class="code"><pre><span class="line">    &#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">33</span></pre></td><td class="code"><pre><span class="line">    beforeMount: function() &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">34</span></pre></td><td class="code"><pre><span class="line">      console.group(&#39;------beforeMount挂载前状态------&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">35</span></pre></td><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;el     : &quot; + (this.$el)); &#x2F;&#x2F;已被初始化</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">36</span></pre></td><td class="code"><pre><span class="line">      console.log(this.$el);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">37</span></pre></td><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;data   : &quot; + this.$data); &#x2F;&#x2F;已被初始化  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">38</span></pre></td><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;message: &quot; + this.message); &#x2F;&#x2F;已被初始化  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">39</span></pre></td><td class="code"><pre><span class="line">    &#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">40</span></pre></td><td class="code"><pre><span class="line">    mounted: function() &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">41</span></pre></td><td class="code"><pre><span class="line">      console.group(&#39;------mounted 挂载结束状态------&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">42</span></pre></td><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;el     : &quot; + this.$el); &#x2F;&#x2F;已被初始化</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">43</span></pre></td><td class="code"><pre><span class="line">      console.log(this.$el);    </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">44</span></pre></td><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;data   : &quot; + this.$data); &#x2F;&#x2F;已被初始化</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">45</span></pre></td><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;message: &quot; + this.message); &#x2F;&#x2F;已被初始化 </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">46</span></pre></td><td class="code"><pre><span class="line">    &#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">47</span></pre></td><td class="code"><pre><span class="line">    beforeUpdate: function () &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">48</span></pre></td><td class="code"><pre><span class="line">      console.group(&#39;beforeUpdate 更新前状态&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;》&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">49</span></pre></td><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;el     : &quot; + this.$el);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">50</span></pre></td><td class="code"><pre><span class="line">      console.log(this.$el);   </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">51</span></pre></td><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;data   : &quot; + this.$data); </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">52</span></pre></td><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;message: &quot; + this.message); </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">53</span></pre></td><td class="code"><pre><span class="line">    &#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">54</span></pre></td><td class="code"><pre><span class="line">    updated: function () &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">55</span></pre></td><td class="code"><pre><span class="line">      console.group(&#39;updated 更新完成状态&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;》&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">56</span></pre></td><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;el     : &quot; + this.$el);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">57</span></pre></td><td class="code"><pre><span class="line">      console.log(this.$el); </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">58</span></pre></td><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;data   : &quot; + this.$data); </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">59</span></pre></td><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;message: &quot; + this.message); </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">60</span></pre></td><td class="code"><pre><span class="line">    &#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">61</span></pre></td><td class="code"><pre><span class="line">    beforeDestroy: function () &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">62</span></pre></td><td class="code"><pre><span class="line">      console.group(&#39;beforeDestroy 销毁前状态&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;》&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">63</span></pre></td><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;el     : &quot; + this.$el);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">64</span></pre></td><td class="code"><pre><span class="line">      console.log(this.$el);    </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">65</span></pre></td><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;data   : &quot; + this.$data); </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">66</span></pre></td><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;message: &quot; + this.message); </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">67</span></pre></td><td class="code"><pre><span class="line">    &#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">68</span></pre></td><td class="code"><pre><span class="line">    destroyed: function () &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">69</span></pre></td><td class="code"><pre><span class="line">      console.group(&#39;destroyed 销毁完成状态&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;》&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">70</span></pre></td><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;el     : &quot; + this.$el);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">71</span></pre></td><td class="code"><pre><span class="line">      console.log(this.$el);  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">72</span></pre></td><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;data   : &quot; + this.$data); </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">73</span></pre></td><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;message: &quot; + this.message)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">74</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">75</span></pre></td><td class="code"><pre><span class="line">  &#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">76</span></pre></td><td class="code"><pre><span class="line">&lt;&#x2F;script&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">77</span></pre></td><td class="code"><pre><span class="line">&lt;&#x2F;html&gt;</span></pre></td></tr></table></figure>
-
-<h1 id="9-参考"><a href="#9-参考" class="headerlink" title="9.参考"></a>9.参考</h1><p><a href="https://www.jianshu.com/p/96aec8916fd3">1.前端开发面试必备的13道可以举一反三的Vue面试题</a></p>
-<p><a href="https://segmentfault.com/a/1190000011381906#comment-area">2.详解vue生命周期</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-	
-	<div>
-		
-	</div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://ming-clavin.github.io/2020/11/11/el-if%E3%80%81el-else-if%E3%80%81el-else/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1857,6 +1653,158 @@
 
 
     
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ming-clavin.github.io/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Ming-Clavin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Ming-Calvin.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ming-Calvin">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" itemprop="url">Mrkdown使用指南</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-02T22:37:06+08:00">
+                2019-12-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Markdown/" itemprop="url" rel="index">
+                    <span itemprop="name">Markdown</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="一、Makedown-标题"><a href="#一、Makedown-标题" class="headerlink" title="一、Makedown 标题"></a>一、Makedown 标题</h1><h2 id="1-使用-和-标记一级和二级标题"><a href="#1-使用-和-标记一级和二级标题" class="headerlink" title="1. 使用 = 和 - 标记一级和二级标题"></a>1. 使用 = 和 - 标记一级和二级标题</h2><img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(1).jpg" class>
+
+<h2 id="2-使用-号标记"><a href="#2-使用-号标记" class="headerlink" title="2. 使用 # 号标记"></a>2. 使用 # 号标记</h2><img src="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/(2).jpg" class>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+	
+	<div>
+		
+	</div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
   </section>
 
   
@@ -1911,7 +1859,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

@@ -336,6 +336,56 @@ target 用于链接页面的打开方式
       </tags>
   </entry>
   <entry>
+    <title>a标签去除默认样式</title>
+    <url>/2020/11/24/a%E6%A0%87%E7%AD%BE%E5%8E%BB%E9%99%A4%E9%BB%98%E8%AE%A4%E6%A0%B7%E5%BC%8F/</url>
+    <content><![CDATA[<h1 id="一、初始的链接"><a href="#一、初始的链接" class="headerlink" title="一、初始的链接"></a>一、初始的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+<h1 id="二、正常的未被访问过的链接"><a href="#二、正常的未被访问过的链接" class="headerlink" title="二、正常的未被访问过的链接"></a>二、正常的未被访问过的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:link</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+<h1 id="三、已经访问过的链接"><a href="#三、已经访问过的链接" class="headerlink" title="三、已经访问过的链接"></a>三、已经访问过的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:visited</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h1 id="四、-鼠标划过-停留-的链接"><a href="#四、-鼠标划过-停留-的链接" class="headerlink" title="四、 鼠标划过(停留)的链接"></a>四、 鼠标划过(停留)的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+<h1 id="五、-正在点击的链接"><a href="#五、-正在点击的链接" class="headerlink" title="五、 正在点击的链接"></a>五、 正在点击的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:active</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+<h1 id="六、-参考"><a href="#六、-参考" class="headerlink" title="六、 参考"></a>六、 参考</h1><p><a href="https://www.cnblogs.com/PHP0222wangdong/p/11360624.html"><code>&lt;a&gt;</code> 标签去除默认样式</a></p>
+]]></content>
+      <categories>
+        <category>日常学习</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>el-if、el-else-if、el-else</title>
+    <url>/2020/11/11/el-if%E3%80%81el-else-if%E3%80%81el-else/</url>
+    <content><![CDATA[<h1 id="v-if-与-v-else"><a href="#v-if-与-v-else" class="headerlink" title="v-if 与 v-else"></a>v-if 与 v-else</h1><p><strong>v-if为真时，显示v-if的内容，否则显示v-else的内容</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;h2 v-if&#x3D;&quot;true&quot;&gt;v-if&lt;&#x2F;h2&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;h2 v-else&gt;v-else&lt;&#x2F;h2&gt;</span></pre></td></tr></table></figure>
+
+<blockquote>
+<p>v-else 元素必须紧跟在带 v-if 或者 v-else-if 的元素的后面，否则它将不会被识别。</p>
+</blockquote>
+<br>
+
+<h1 id="v-else-if"><a href="#v-else-if" class="headerlink" title="v-else-if"></a>v-else-if</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div v-if&#x3D;&quot;type &#x3D;&#x3D;&#x3D; &#39;A&#39;&quot;&gt; A &lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;div v-else-if&#x3D;&quot;type &#x3D;&#x3D;&#x3D; &#39;B&#39;&quot;&gt; B &lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;div v-else-if&#x3D;&quot;type &#x3D;&#x3D;&#x3D; &#39;C&#39;&quot;&gt; C &lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;div v-else&gt;</span></pre></td></tr></table></figure>
+
+<blockquote>
+<p>类似于 v-else，v-else-if 也必须紧跟在带 v-if 或者 v-else-if 的元素之后</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>VUE归纳</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>VUE</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Typora图床教程--阿里云</title>
     <url>/2020/10/31/Typora%E5%9B%BE%E5%BA%8A%E6%95%99%E7%A8%8B-%E9%98%BF%E9%87%8C%E4%BA%91/</url>
     <content><![CDATA[<h1 id="一、下载Typora并安装插件"><a href="#一、下载Typora并安装插件" class="headerlink" title="一、下载Typora并安装插件"></a>一、下载Typora并安装插件</h1><h2 id="1-下载软件"><a href="#1-下载软件" class="headerlink" title="1.下载软件"></a>1.下载软件</h2><p>到官网下载对应版本软件（<a href="[https://typora.io](https://typora.io/)">Typora下载连接</a>）</p>
@@ -457,21 +507,29 @@ target 用于链接页面的打开方式
       </tags>
   </entry>
   <entry>
-    <title>a标签去除默认样式</title>
-    <url>/2020/11/24/a%E6%A0%87%E7%AD%BE%E5%8E%BB%E9%99%A4%E9%BB%98%E8%AE%A4%E6%A0%B7%E5%BC%8F/</url>
-    <content><![CDATA[<h1 id="一、初始的链接"><a href="#一、初始的链接" class="headerlink" title="一、初始的链接"></a>一、初始的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+    <title>img和div之间有间隙的原因及解决方法</title>
+    <url>/2020/11/24/img%E5%92%8Cdiv%E4%B9%8B%E9%97%B4%E6%9C%89%E9%97%B4%E9%9A%99%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h1><br>
 
-<h1 id="二、正常的未被访问过的链接"><a href="#二、正常的未被访问过的链接" class="headerlink" title="二、正常的未被访问过的链接"></a>二、正常的未被访问过的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:link</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
-
-<h1 id="三、已经访问过的链接"><a href="#三、已经访问过的链接" class="headerlink" title="三、已经访问过的链接"></a>三、已经访问过的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:visited</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+<p>问题：display:inline-block布局的元素在chrome<strong>下会出现几像素的间隙</strong></p>
+<p>原因：div 中 存在 img标签，由于img标签的 <strong>display:inline-block</strong> 属性。</p>
+<blockquote>
+<p><strong>inline-block的“换行符/空格间隙问题”：</strong></p>
+<p>​    在编辑器里写代码的时候，同级别的标签不写在同一行，以保持代码的整齐可读性。即inline-block布局的元素在编辑器里不在同一行，即存在换行符，当inline-block元素间有空格或是换行则会产生间隙。</p>
+</blockquote>
+<h1 id="二、解决方法"><a href="#二、解决方法" class="headerlink" title="二、解决方法"></a>二、解决方法</h1><h2 id="1-把img标签的display属性改成block："><a href="#1-把img标签的display属性改成block：" class="headerlink" title="1. 把img标签的display属性改成block："></a>1. 把img标签的display属性改成block：</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">img</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">dispaly</span>:block;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
 
 <a id="more"></a>
 
-<h1 id="四、-鼠标划过-停留-的链接"><a href="#四、-鼠标划过-停留-的链接" class="headerlink" title="四、 鼠标划过(停留)的链接"></a>四、 鼠标划过(停留)的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+<h2 id="2-把div中的字体大小设为0"><a href="#2-把div中的字体大小设为0" class="headerlink" title="2. 把div中的字体大小设为0"></a>2. 把div中的字体大小设为0</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">font-size</span>:<span class="number">0</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
 
-<h1 id="五、-正在点击的链接"><a href="#五、-正在点击的链接" class="headerlink" title="五、 正在点击的链接"></a>五、 正在点击的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:active</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
 
-<h1 id="六、-参考"><a href="#六、-参考" class="headerlink" title="六、 参考"></a>六、 参考</h1><p><a href="https://www.cnblogs.com/PHP0222wangdong/p/11360624.html"><code>&lt;a&gt;</code> 标签去除默认样式</a></p>
+
+<h2 id="3-修改img的vertical-align属性"><a href="#3-修改img的vertical-align属性" class="headerlink" title="3. 修改img的vertical-align属性"></a>3. 修改img的vertical-align属性</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">img</span> &#123; <span class="attribute">vertical-align</span>:buttom; &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="selector-tag">img</span> &#123; <span class="attribute">vertical-align</span>:middle; &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="selector-tag">img</span> &#123; <span class="attribute">vertical-align</span>:top; &#125;</span></pre></td></tr></table></figure>
+
+
+
+<h1 id="三、参考"><a href="#三、参考" class="headerlink" title="三、参考"></a>三、参考</h1><p><a href="https://www.cnblogs.com/vanstrict/p/4961300.html">div之间有间隙以及img和div之间有间隙的原因及解决方法</a></p>
 ]]></content>
       <categories>
         <category>日常学习</category>
@@ -479,31 +537,6 @@ target 用于链接页面的打开方式
       <tags>
         <tag>前端</tag>
         <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>el-if、el-else-if、el-else</title>
-    <url>/2020/11/11/el-if%E3%80%81el-else-if%E3%80%81el-else/</url>
-    <content><![CDATA[<h1 id="v-if-与-v-else"><a href="#v-if-与-v-else" class="headerlink" title="v-if 与 v-else"></a>v-if 与 v-else</h1><p><strong>v-if为真时，显示v-if的内容，否则显示v-else的内容</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;h2 v-if&#x3D;&quot;true&quot;&gt;v-if&lt;&#x2F;h2&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;h2 v-else&gt;v-else&lt;&#x2F;h2&gt;</span></pre></td></tr></table></figure>
-
-<blockquote>
-<p>v-else 元素必须紧跟在带 v-if 或者 v-else-if 的元素的后面，否则它将不会被识别。</p>
-</blockquote>
-<br>
-
-<h1 id="v-else-if"><a href="#v-else-if" class="headerlink" title="v-else-if"></a>v-else-if</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div v-if&#x3D;&quot;type &#x3D;&#x3D;&#x3D; &#39;A&#39;&quot;&gt; A &lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;div v-else-if&#x3D;&quot;type &#x3D;&#x3D;&#x3D; &#39;B&#39;&quot;&gt; B &lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;div v-else-if&#x3D;&quot;type &#x3D;&#x3D;&#x3D; &#39;C&#39;&quot;&gt; C &lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;div v-else&gt;</span></pre></td></tr></table></figure>
-
-<blockquote>
-<p>类似于 v-else，v-else-if 也必须紧跟在带 v-if 或者 v-else-if 的元素之后</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>VUE归纳</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>VUE</tag>
       </tags>
   </entry>
   <entry>
@@ -607,110 +640,6 @@ target 用于链接页面的打开方式
       <tags>
         <tag>前端</tag>
         <tag>VUE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>vue的生命周期</title>
-    <url>/2020/11/11/vue%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</url>
-    <content><![CDATA[<h1 id="1-Vue的生命周期"><a href="#1-Vue的生命周期" class="headerlink" title="1.Vue的生命周期"></a>1.Vue的生命周期</h1><h2 id="1-1-生命周期含义"><a href="#1-1-生命周期含义" class="headerlink" title="1.1 生命周期含义"></a>1.1 生命周期含义</h2><p>​    每个Vue实例在被<strong>创建</strong>之前都要经过一系列的初始化过程,这个过程就是vue的生命周期。一整个的生命周期中会有很多<strong>钩子函数</strong>提供给我们在vue生命周期不同的时刻进行操作。</p>
-<blockquote>
-<p><strong>钩子函数：</strong>在一个事件触发的，被系统级捕获到了后，进行一些操作</p>
-<blockquote>
-<p><strong>特点：</strong>1、是个函数，在系统消息触发时被系统调用  </p>
-<p>​            2、不是用户自己触发的</p>
-<p>​            3、钩子函数的名称是确定的，当系统消息触发，==自动会调用==</p>
-</blockquote>
-</blockquote>
-<h2 id="1-2-代码测试"><a href="#1-2-代码测试" class="headerlink" title="1.2 代码测试"></a>1.2 代码测试</h2><p><code>测试代码</code>：<a href="#jump">点击跳转测试代码</a></p>
-<blockquote>
-<p>运行后打开console可以看到打印出来内容如下:</p>
-</blockquote>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-10_14-45-28.png" alt="Snipaste_2020-11-10_14-45-28" style="zoom: 67%;">
-
-
-
-<h1 id="2-在beforeCreate和created钩子函数之间的生命周期"><a href="#2-在beforeCreate和created钩子函数之间的生命周期" class="headerlink" title="2. 在beforeCreate和created钩子函数之间的生命周期"></a>2. 在beforeCreate和created钩子函数之间的生命周期</h1><br>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-10_15-47-47.png" alt="Snipaste_2020-11-10_15-47-47" style="zoom: 50%;">
-
-<br>
-
-<blockquote>
-<p>​    在这个生命周期之间，进行<strong>初始化事件，进行数据的观测</strong>，可以看到在<strong>created</strong>的时候数据已经和<strong>data属性进行绑定</strong>，此时还是没有el选项</p>
-</blockquote>
-<h1 id="3-created钩子函数和beforeMount间的生命周期"><a href="#3-created钩子函数和beforeMount间的生命周期" class="headerlink" title="3.created钩子函数和beforeMount间的生命周期"></a>3.created钩子函数和beforeMount间的生命周期</h1><br>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-10_15-56-45.png" alt="Snipaste_2020-11-10_15-56-45" style="zoom: 50%;">
-
-<br>
-
-<blockquote>
-<p>​    首先判断对象是否有<strong>el选项</strong>。<strong>如果有的话就继续向下编译，如果没有</strong>el选项，则停止编译，也就意味着<strong>停止生命周期</strong>，直到在该vue实例上调用<strong>vm.$mount(el)</strong></p>
-</blockquote>
-<h2 id="3-1-template参数"><a href="#3-1-template参数" class="headerlink" title="3.1 template参数"></a>3.1 template参数</h2><h1 id="4-beforeMount和mounted-钩子函数间的生命周期"><a href="#4-beforeMount和mounted-钩子函数间的生命周期" class="headerlink" title="4.beforeMount和mounted 钩子函数间的生命周期"></a>4.beforeMount和mounted 钩子函数间的生命周期</h1><br>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-10_16-08-18.png" alt="Snipaste_2020-11-10_16-08-18" style="zoom: 50%;">
-
-<br>
-
-<blockquote>
-<p>​    此时给vue实例对象添加<strong>$el成员</strong>，并且替换掉挂在的DOM元素。因为之前console中打印的结果可以看到<strong>beforeMount</strong>之前el上还是undefined</p>
-</blockquote>
-<h2 id="4-1-mounted"><a href="#4-1-mounted" class="headerlink" title="4.1 mounted"></a>4.1 mounted</h2><h1 id="5-beforeUpdate钩子函数和updated钩子函数间的生命周期"><a href="#5-beforeUpdate钩子函数和updated钩子函数间的生命周期" class="headerlink" title="5.beforeUpdate钩子函数和updated钩子函数间的生命周期"></a>5.beforeUpdate钩子函数和updated钩子函数间的生命周期</h1><br>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-10_16-33-21.png" alt="Snipaste_2020-11-10_16-33-21" style="zoom: 50%;">
-
-<h1 id="6-beforeDestroy和destroyed钩子函数间的生命周期"><a href="#6-beforeDestroy和destroyed钩子函数间的生命周期" class="headerlink" title="6.beforeDestroy和destroyed钩子函数间的生命周期"></a>6.beforeDestroy和destroyed钩子函数间的生命周期</h1><br>
-
-<h6 id><a href="#" class="headerlink" title></a><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-10_16-43-24.png" alt="Snipaste_2020-11-10_16-43-24" style="zoom: 80%;"></h6><h1 id="7-vue生命周期图（完整版）"><a href="#7-vue生命周期图（完整版）" class="headerlink" title="7.vue生命周期图（完整版）"></a>7.vue生命周期图（完整版）</h1><br>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10_14-37.png" alt="2020-11-10_14-37" style="zoom: 50%;">
-
-<h1 id="8-测试代码"><a href="#8-测试代码" class="headerlink" title="8.测试代码"></a>8.测试代码</h1><p><span id="jump"></span></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;html lang&#x3D;&quot;en&quot;&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;head&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  &lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, initial-scale&#x3D;1.0&quot;&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  &lt;meta http-equiv&#x3D;&quot;X-UA-Compatible&quot; content&#x3D;&quot;ie&#x3D;edge&quot;&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  &lt;title&gt;vue生命周期学习&lt;&#x2F;title&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  &lt;script src&#x3D;&quot;https:&#x2F;&#x2F;cdn.bootcss.com&#x2F;vue&#x2F;2.4.2&#x2F;vue.js&quot;&gt;&lt;&#x2F;script&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;&#x2F;head&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;body&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  &lt;div id&#x3D;&quot;app&quot;&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &lt;h1&gt;&#123;&#123;message&#125;&#125;&lt;&#x2F;h1&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  &lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;&#x2F;body&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;script&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  var vm &#x3D; new Vue(&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    el: &#39;#app&#39;,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    data: &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      message: &#39;Vue的生命周期&#39;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    beforeCreate: function() &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.group(&#39;------beforeCreate创建前状态------&#39;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot; , &quot;el     : &quot; + this.$el); &#x2F;&#x2F;undefined</span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;data   : &quot; + this.$data); &#x2F;&#x2F;undefined </span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;message: &quot; + this.message) </span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    created: function() &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.group(&#39;------created创建完毕状态------&#39;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;el     : &quot; + this.$el); &#x2F;&#x2F;undefined</span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;data   : &quot; + this.$data); &#x2F;&#x2F;已被初始化 </span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;message: &quot; + this.message); &#x2F;&#x2F;已被初始化</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    beforeMount: function() &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.group(&#39;------beforeMount挂载前状态------&#39;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;el     : &quot; + (this.$el)); &#x2F;&#x2F;已被初始化</span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(this.$el);</span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;data   : &quot; + this.$data); &#x2F;&#x2F;已被初始化  </span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;message: &quot; + this.message); &#x2F;&#x2F;已被初始化  </span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    mounted: function() &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.group(&#39;------mounted 挂载结束状态------&#39;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;el     : &quot; + this.$el); &#x2F;&#x2F;已被初始化</span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(this.$el);    </span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;data   : &quot; + this.$data); &#x2F;&#x2F;已被初始化</span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;message: &quot; + this.message); &#x2F;&#x2F;已被初始化 </span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    beforeUpdate: function () &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.group(&#39;beforeUpdate 更新前状态&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;》&#39;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;el     : &quot; + this.$el);</span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(this.$el);   </span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;data   : &quot; + this.$data); </span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;message: &quot; + this.message); </span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    updated: function () &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.group(&#39;updated 更新完成状态&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;》&#39;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;el     : &quot; + this.$el);</span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(this.$el); </span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;data   : &quot; + this.$data); </span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;message: &quot; + this.message); </span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    beforeDestroy: function () &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.group(&#39;beforeDestroy 销毁前状态&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;》&#39;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;el     : &quot; + this.$el);</span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(this.$el);    </span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;data   : &quot; + this.$data); </span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;message: &quot; + this.message); </span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    destroyed: function () &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.group(&#39;destroyed 销毁完成状态&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;》&#39;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;el     : &quot; + this.$el);</span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(this.$el);  </span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;data   : &quot; + this.$data); </span></pre></td></tr><tr><td class="code"><pre><span class="line">      console.log(&quot;%c%s&quot;, &quot;color:red&quot;,&quot;message: &quot; + this.message)</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  &#125;)</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;&#x2F;script&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;&#x2F;html&gt;</span></pre></td></tr></table></figure>
-
-<h1 id="9-参考"><a href="#9-参考" class="headerlink" title="9.参考"></a>9.参考</h1><p><a href="https://www.jianshu.com/p/96aec8916fd3">1.前端开发面试必备的13道可以举一反三的Vue面试题</a></p>
-<p><a href="https://segmentfault.com/a/1190000011381906#comment-area">2.详解vue生命周期</a></p>
-]]></content>
-      <categories>
-        <category>VUE归纳</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>VUE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>img和div之间有间隙的原因及解决方法</title>
-    <url>/2020/11/24/img%E5%92%8Cdiv%E4%B9%8B%E9%97%B4%E6%9C%89%E9%97%B4%E9%9A%99%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h1><br>
-
-<p>问题：display:inline-block布局的元素在chrome<strong>下会出现几像素的间隙</strong></p>
-<p>原因：div 中 存在 img标签，由于img标签的 <strong>display:inline-block</strong> 属性。</p>
-<blockquote>
-<p><strong>inline-block的“换行符/空格间隙问题”：</strong></p>
-<p>​    在编辑器里写代码的时候，同级别的标签不写在同一行，以保持代码的整齐可读性。即inline-block布局的元素在编辑器里不在同一行，即存在换行符，当inline-block元素间有空格或是换行则会产生间隙。</p>
-</blockquote>
-<h1 id="二、解决方法"><a href="#二、解决方法" class="headerlink" title="二、解决方法"></a>二、解决方法</h1><h2 id="1-把img标签的display属性改成block："><a href="#1-把img标签的display属性改成block：" class="headerlink" title="1. 把img标签的display属性改成block："></a>1. 把img标签的display属性改成block：</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">img</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">dispaly</span>:block;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<h2 id="2-把div中的字体大小设为0"><a href="#2-把div中的字体大小设为0" class="headerlink" title="2. 把div中的字体大小设为0"></a>2. 把div中的字体大小设为0</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">font-size</span>:<span class="number">0</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
-
-
-
-<h2 id="3-修改img的vertical-align属性"><a href="#3-修改img的vertical-align属性" class="headerlink" title="3. 修改img的vertical-align属性"></a>3. 修改img的vertical-align属性</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">img</span> &#123; <span class="attribute">vertical-align</span>:buttom; &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="selector-tag">img</span> &#123; <span class="attribute">vertical-align</span>:middle; &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="selector-tag">img</span> &#123; <span class="attribute">vertical-align</span>:top; &#125;</span></pre></td></tr></table></figure>
-
-
-
-<h1 id="三、参考"><a href="#三、参考" class="headerlink" title="三、参考"></a>三、参考</h1><p><a href="https://www.cnblogs.com/vanstrict/p/4961300.html">div之间有间隙以及img和div之间有间隙的原因及解决方法</a></p>
-]]></content>
-      <categories>
-        <category>日常学习</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>CSS</tag>
       </tags>
   </entry>
   <entry>
