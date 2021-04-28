@@ -1,6 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Mrkdown使用指南</title>
+    <url>/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</url>
+    <content><![CDATA[<h1 id="一、Makedown-标题"><a href="#一、Makedown-标题" class="headerlink" title="一、Makedown 标题"></a>一、Makedown 标题</h1><h2 id="1-使用-和-标记一级和二级标题"><a href="#1-使用-和-标记一级和二级标题" class="headerlink" title="1. 使用 = 和 - 标记一级和二级标题"></a>1. 使用 = 和 - 标记一级和二级标题</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220358.jpg" alt="(1)" style="zoom:80%;">
+
+<h2 id="2-使用-号标记"><a href="#2-使用-号标记" class="headerlink" title="2. 使用 # 号标记"></a>2. 使用 # 号标记</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220409.jpg" alt="(2)" style="zoom:80%;">
+
+<a id="more"></a>
+
+
+
+<h1 id="二、Markdown-段落格式"><a href="#二、Markdown-段落格式" class="headerlink" title="二、Markdown 段落格式"></a>二、Markdown 段落格式</h1><h2 id="1-Markdown-段落"><a href="#1-Markdown-段落" class="headerlink" title="1.Markdown 段落"></a>1.Markdown 段落</h2><p>Markdown<br>段落没有特殊的格式，可以编写文字。段落的换行使用两个以上空格加上回车,也可以在段落后面使用一个空行来表示重新开始一个段落。</p>
+<h2 id="2-字体"><a href="#2-字体" class="headerlink" title="2.字体"></a>2.字体</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220418.jpg" alt="(3)" style="zoom:80%;">
+
+<h2 id="3-分隔线"><a href="#3-分隔线" class="headerlink" title="3.分隔线"></a>3.分隔线</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220421.jpg" alt="(4)" style="zoom:80%;">
+
+<h2 id="4-删除线"><a href="#4-删除线" class="headerlink" title="4.删除线"></a>4.删除线</h2><p>在文字的两端加上两个波浪线 ~~ 即可</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220426.jpg" alt="(5)" style="zoom:80%;">
+
+<h2 id="5-下划线"><a href="#5-下划线" class="headerlink" title="5.下划线"></a>5.下划线</h2><p>通过 HTML 的 &lt;u&gt; 标签来实现：</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220430.jpg" alt="(6)" style="zoom:80%;">
+
+<h2 id="6-脚注"><a href="#6-脚注" class="headerlink" title="6.脚注"></a>6.脚注</h2><p>脚注是对文本的补充说明，格式：</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220437.jpg" alt="(7)" style="zoom:80%;">
+
+
+
+<h1 id="三、Markdown-列表"><a href="#三、Markdown-列表" class="headerlink" title="三、Markdown 列表"></a>三、Markdown 列表</h1><h2 id="1-无序列表"><a href="#1-无序列表" class="headerlink" title="1.无序列表"></a>1.无序列表</h2><p>无序列表使用星号(*)、加号(+)或是减号(-)作为列表标记：</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220442.jpg" alt="(8)" style="zoom: 67%;">
+
+<h2 id="2-有序列表"><a href="#2-有序列表" class="headerlink" title="2.有序列表"></a>2.有序列表</h2><p>有序列表使用数字并加上 . 号来表示，如：</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220448.jpg" alt="(9)" style="zoom:80%;">
+
+<h2 id="3-嵌套结构"><a href="#3-嵌套结构" class="headerlink" title="3.嵌套结构"></a>3.嵌套结构</h2><p>列表嵌套只需在子列表中的选项添加四个空格即可：</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220453.jpg" alt="(10)" style="zoom:80%;">
+
+
+
+<h1 id="四、Markdown-区块"><a href="#四、Markdown-区块" class="headerlink" title="四、Markdown 区块"></a>四、Markdown 区块</h1><p>Markdown 区块引用是在段落开头使用 &gt; 符号 ，然后后面紧跟一个空格符号：</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220501.jpg" alt="(11)" style="zoom:80%;">
+
+<p>嵌套用法：</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220505.jpg" alt="(12)" style="zoom:80%;">
+
+<h2 id="1-区块中使用列表"><a href="#1-区块中使用列表" class="headerlink" title="1.区块中使用列表"></a>1.区块中使用列表</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220510.jpg" alt="(13)" style="zoom: 80%;">
+
+<h2 id="2-列表中使用区块"><a href="#2-列表中使用区块" class="headerlink" title="2.列表中使用区块"></a>2.列表中使用区块</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220516.jpg" alt="(14)" style="zoom:80%;">
+
+
+
+<h1 id="五、Markdown代码"><a href="#五、Markdown代码" class="headerlink" title="五、Markdown代码"></a>五、Markdown代码</h1><h2 id="1-代码"><a href="#1-代码" class="headerlink" title="1.代码"></a>1.代码</h2><p>代码段落上的一个函数或片段的代码可以用反引号把它包起来（`）</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220521.jpg" alt="(15)" style="zoom:80%;">
+
+<h2 id="2-代码区块"><a href="#2-代码区块" class="headerlink" title="2.代码区块"></a>2.代码区块</h2><p>代码区块使用 4 个空格或者一个制表符（Tab 键）, 也可以用 ```<br>包裹一段代码，并指定一种语言：</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220527.jpg" alt="(16)" style="zoom:80%;">
+
+
+
+<h1 id="六、Markdown-图片"><a href="#六、Markdown-图片" class="headerlink" title="六、Markdown 图片"></a>六、Markdown 图片</h1><h2 id="1-本地图片"><a href="#1-本地图片" class="headerlink" title="1.本地图片"></a>1.本地图片</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220532.jpg" alt="(17)" style="zoom:80%;">
+
+<p>开头一个感叹号 !</p>
+<p>接着一个方括号，里面放上图片的替代文字</p>
+<p>接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 ‘title’<br>属性的文字。</p>
+<h2 id="2-网络图片"><a href="#2-网络图片" class="headerlink" title="2.网络图片"></a>2.网络图片</h2><p>这个链接用 1 作为网址变量 [RUNOOB][1].</p>
+<p>然后在文档的结尾位变量赋值（网址）</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220538.jpg" alt="(18)" style="zoom:80%;">
+
+
+
+<h1 id="七、Markdown-表格"><a href="#七、Markdown-表格" class="headerlink" title="七、Markdown 表格"></a>七、Markdown 表格</h1><p>Markdown 制作表格使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。</p>
+<h2 id="1-语法格式"><a href="#1-语法格式" class="headerlink" title="1.语法格式"></a>1.语法格式</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220542.jpg" alt="(19)" style="zoom: 67%;">
+
+<h2 id="2-对齐方式"><a href="#2-对齐方式" class="headerlink" title="2.对齐方式"></a>2.对齐方式</h2><p>-: 设置内容和标题栏居右对齐。</p>
+<p>:- 设置内容和标题栏居左对齐。</p>
+<p>:-: 设置内容和标题栏居中对齐。</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220548.jpg" alt="(20)" style="zoom:67%;">
+
+<h2 id="3-注意事项"><a href="#3-注意事项" class="headerlink" title="3.注意事项"></a>3.注意事项</h2><p>1.“ — ” 前面要有一个空格</p>
+<p>2.“ # ” 后面要有空格，才可以表示标题</p>
+<h1 id="八、参考页面"><a href="#八、参考页面" class="headerlink" title="八、参考页面"></a>八、参考页面</h1><p><a href="https://www.runoob.com/markdown/md-tutorial.html">Markdown 教程</a></p>
+]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+        <tag>Github_page</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>a</title>
     <url>/2018/10/05/Html%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h3 id="Html概述"><a href="#Html概述" class="headerlink" title="Html概述"></a>Html概述</h3><p>&nbsp;&nbsp;Html是一种<strong>标记语言</strong>，它使用<strong>标记标签</strong>来描述页面</p>
@@ -259,92 +348,86 @@ target 用于链接页面的打开方式
       </tags>
   </entry>
   <entry>
-    <title>Mrkdown使用指南</title>
-    <url>/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</url>
-    <content><![CDATA[<h1 id="一、Makedown-标题"><a href="#一、Makedown-标题" class="headerlink" title="一、Makedown 标题"></a>一、Makedown 标题</h1><h2 id="1-使用-和-标记一级和二级标题"><a href="#1-使用-和-标记一级和二级标题" class="headerlink" title="1. 使用 = 和 - 标记一级和二级标题"></a>1. 使用 = 和 - 标记一级和二级标题</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220358.jpg" alt="(1)" style="zoom:80%;">
+    <title>el-if、el-else-if、el-else</title>
+    <url>/2020/11/11/el-if%E3%80%81el-else-if%E3%80%81el-else/</url>
+    <content><![CDATA[<h1 id="一、v-if-与-v-else"><a href="#一、v-if-与-v-else" class="headerlink" title="一、v-if 与 v-else"></a>一、v-if 与 v-else</h1><p><strong>v-if为真时，显示v-if的内容，否则显示v-else的内容</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;h2 v-if&#x3D;&quot;true&quot;&gt;v-if&lt;&#x2F;h2&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;h2 v-else&gt;v-else&lt;&#x2F;h2&gt;</span></pre></td></tr></table></figure>
 
-<h2 id="2-使用-号标记"><a href="#2-使用-号标记" class="headerlink" title="2. 使用 # 号标记"></a>2. 使用 # 号标记</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220409.jpg" alt="(2)" style="zoom:80%;">
+<blockquote>
+<p>v-else 元素必须紧跟在带 v-if 或者 v-else-if 的元素的后面，否则它将不会被识别。</p>
+</blockquote>
+<br>
+
+<h1 id="二、v-else-if"><a href="#二、v-else-if" class="headerlink" title="二、v-else-if"></a>二、v-else-if</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div v-if&#x3D;&quot;type &#x3D;&#x3D;&#x3D; &#39;A&#39;&quot;&gt; A &lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;div v-else-if&#x3D;&quot;type &#x3D;&#x3D;&#x3D; &#39;B&#39;&quot;&gt; B &lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;div v-else-if&#x3D;&quot;type &#x3D;&#x3D;&#x3D; &#39;C&#39;&quot;&gt; C &lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;div v-else&gt;</span></pre></td></tr></table></figure>
+
+<blockquote>
+<p>类似于 v-else，v-else-if 也必须紧跟在带 v-if 或者 v-else-if 的元素之后</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>VUE整理</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>VUE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>a标签去除默认样式</title>
+    <url>/2020/11/24/a%E6%A0%87%E7%AD%BE%E5%8E%BB%E9%99%A4%E9%BB%98%E8%AE%A4%E6%A0%B7%E5%BC%8F/</url>
+    <content><![CDATA[<h1 id="一、初始的链接"><a href="#一、初始的链接" class="headerlink" title="一、初始的链接"></a>一、初始的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+<h1 id="二、正常的未被访问过的链接"><a href="#二、正常的未被访问过的链接" class="headerlink" title="二、正常的未被访问过的链接"></a>二、正常的未被访问过的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:link</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+<h1 id="三、已经访问过的链接"><a href="#三、已经访问过的链接" class="headerlink" title="三、已经访问过的链接"></a>三、已经访问过的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:visited</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
 
 <a id="more"></a>
 
+<h1 id="四、-鼠标划过-停留-的链接"><a href="#四、-鼠标划过-停留-的链接" class="headerlink" title="四、 鼠标划过(停留)的链接"></a>四、 鼠标划过(停留)的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
 
+<h1 id="五、-正在点击的链接"><a href="#五、-正在点击的链接" class="headerlink" title="五、 正在点击的链接"></a>五、 正在点击的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:active</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
 
-<h1 id="二、Markdown-段落格式"><a href="#二、Markdown-段落格式" class="headerlink" title="二、Markdown 段落格式"></a>二、Markdown 段落格式</h1><h2 id="1-Markdown-段落"><a href="#1-Markdown-段落" class="headerlink" title="1.Markdown 段落"></a>1.Markdown 段落</h2><p>Markdown<br>段落没有特殊的格式，可以编写文字。段落的换行使用两个以上空格加上回车,也可以在段落后面使用一个空行来表示重新开始一个段落。</p>
-<h2 id="2-字体"><a href="#2-字体" class="headerlink" title="2.字体"></a>2.字体</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220418.jpg" alt="(3)" style="zoom:80%;">
+<h1 id="六、-参考"><a href="#六、-参考" class="headerlink" title="六、 参考"></a>六、 参考</h1><p><a href="https://www.cnblogs.com/PHP0222wangdong/p/11360624.html"><code>&lt;a&gt;</code> 标签去除默认样式</a></p>
+]]></content>
+      <categories>
+        <category>日常学习</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Typora上传图片时,文件以时间戳命名</title>
+    <url>/2020/12/14/Typora%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E6%97%B6-%E6%96%87%E4%BB%B6%E4%BB%A5%E6%97%B6%E9%97%B4%E6%88%B3%E5%91%BD%E5%90%8D/</url>
+    <content><![CDATA[<h1 id="一、查询之前安装的PicGo执行路径"><a href="#一、查询之前安装的PicGo执行路径" class="headerlink" title="一、查询之前安装的PicGo执行路径"></a>一、查询之前安装的PicGo执行路径</h1><br>
 
-<h2 id="3-分隔线"><a href="#3-分隔线" class="headerlink" title="3.分隔线"></a>3.分隔线</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220421.jpg" alt="(4)" style="zoom:80%;">
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214170157.png" alt="image-20201214170155882" style="zoom: 67%;">
 
-<h2 id="4-删除线"><a href="#4-删除线" class="headerlink" title="4.删除线"></a>4.删除线</h2><p>在文字的两端加上两个波浪线 ~~ 即可</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220426.jpg" alt="(5)" style="zoom:80%;">
+<a id="more"></a>
 
-<h2 id="5-下划线"><a href="#5-下划线" class="headerlink" title="5.下划线"></a>5.下划线</h2><p>通过 HTML 的 &lt;u&gt; 标签来实现：</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220430.jpg" alt="(6)" style="zoom:80%;">
-
-<h2 id="6-脚注"><a href="#6-脚注" class="headerlink" title="6.脚注"></a>6.脚注</h2><p>脚注是对文本的补充说明，格式：</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220437.jpg" alt="(7)" style="zoom:80%;">
-
-
-
-<h1 id="三、Markdown-列表"><a href="#三、Markdown-列表" class="headerlink" title="三、Markdown 列表"></a>三、Markdown 列表</h1><h2 id="1-无序列表"><a href="#1-无序列表" class="headerlink" title="1.无序列表"></a>1.无序列表</h2><p>无序列表使用星号(*)、加号(+)或是减号(-)作为列表标记：</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220442.jpg" alt="(8)" style="zoom: 67%;">
-
-<h2 id="2-有序列表"><a href="#2-有序列表" class="headerlink" title="2.有序列表"></a>2.有序列表</h2><p>有序列表使用数字并加上 . 号来表示，如：</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220448.jpg" alt="(9)" style="zoom:80%;">
-
-<h2 id="3-嵌套结构"><a href="#3-嵌套结构" class="headerlink" title="3.嵌套结构"></a>3.嵌套结构</h2><p>列表嵌套只需在子列表中的选项添加四个空格即可：</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220453.jpg" alt="(10)" style="zoom:80%;">
-
-
-
-<h1 id="四、Markdown-区块"><a href="#四、Markdown-区块" class="headerlink" title="四、Markdown 区块"></a>四、Markdown 区块</h1><p>Markdown 区块引用是在段落开头使用 &gt; 符号 ，然后后面紧跟一个空格符号：</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220501.jpg" alt="(11)" style="zoom:80%;">
-
-<p>嵌套用法：</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220505.jpg" alt="(12)" style="zoom:80%;">
-
-<h2 id="1-区块中使用列表"><a href="#1-区块中使用列表" class="headerlink" title="1.区块中使用列表"></a>1.区块中使用列表</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220510.jpg" alt="(13)" style="zoom: 80%;">
-
-<h2 id="2-列表中使用区块"><a href="#2-列表中使用区块" class="headerlink" title="2.列表中使用区块"></a>2.列表中使用区块</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220516.jpg" alt="(14)" style="zoom:80%;">
+<h1 id="二、安装插件"><a href="#二、安装插件" class="headerlink" title="二、安装插件"></a>二、安装插件</h1><p>进入cmd输入代码安装插件（super-prefix插件 —— 用于上传图片时能自动使用时间戳重命名）</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd C:\Users\Administrator\AppData\Roaming\Typora\picgo\win64</span></pre></td></tr><tr><td class="code"><pre><span class="line">.\picgo.exe install super-prefix</span></pre></td></tr></table></figure>
 
 
 
-<h1 id="五、Markdown代码"><a href="#五、Markdown代码" class="headerlink" title="五、Markdown代码"></a>五、Markdown代码</h1><h2 id="1-代码"><a href="#1-代码" class="headerlink" title="1.代码"></a>1.代码</h2><p>代码段落上的一个函数或片段的代码可以用反引号把它包起来（`）</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220521.jpg" alt="(15)" style="zoom:80%;">
-
-<h2 id="2-代码区块"><a href="#2-代码区块" class="headerlink" title="2.代码区块"></a>2.代码区块</h2><p>代码区块使用 4 个空格或者一个制表符（Tab 键）, 也可以用 ```<br>包裹一段代码，并指定一种语言：</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220527.jpg" alt="(16)" style="zoom:80%;">
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214170742.png" alt="image-20201214170740861">
 
 
 
-<h1 id="六、Markdown-图片"><a href="#六、Markdown-图片" class="headerlink" title="六、Markdown 图片"></a>六、Markdown 图片</h1><h2 id="1-本地图片"><a href="#1-本地图片" class="headerlink" title="1.本地图片"></a>1.本地图片</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220532.jpg" alt="(17)" style="zoom:80%;">
+<h1 id="三、修改配置文件"><a href="#三、修改配置文件" class="headerlink" title="三、修改配置文件"></a>三、修改配置文件</h1><figure class="highlight"><table><tr><td class="code"><pre><span class="line">"picgoPlugins": &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    "picgo-plugin-super-prefix": true</span></pre></td></tr><tr><td class="code"><pre><span class="line">  &#125;, // 为插件预留</span></pre></td></tr><tr><td class="code"><pre><span class="line">  "picgo-plugin-super-prefix": &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    "fileFormat": "YYYYMMDDHHmmss"</span></pre></td></tr><tr><td class="code"><pre><span class="line">  &#125; //super-prefix插件配置</span></pre></td></tr></table></figure>
 
-<p>开头一个感叹号 !</p>
-<p>接着一个方括号，里面放上图片的替代文字</p>
-<p>接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 ‘title’<br>属性的文字。</p>
-<h2 id="2-网络图片"><a href="#2-网络图片" class="headerlink" title="2.网络图片"></a>2.网络图片</h2><p>这个链接用 1 作为网址变量 [RUNOOB][1].</p>
-<p>然后在文档的结尾位变量赋值（网址）</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220538.jpg" alt="(18)" style="zoom:80%;">
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214171510.png" alt="image-20201214171508681" style="zoom:80%;">
 
 
 
-<h1 id="七、Markdown-表格"><a href="#七、Markdown-表格" class="headerlink" title="七、Markdown 表格"></a>七、Markdown 表格</h1><p>Markdown 制作表格使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。</p>
-<h2 id="1-语法格式"><a href="#1-语法格式" class="headerlink" title="1.语法格式"></a>1.语法格式</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220542.jpg" alt="(19)" style="zoom: 67%;">
-
-<h2 id="2-对齐方式"><a href="#2-对齐方式" class="headerlink" title="2.对齐方式"></a>2.对齐方式</h2><p>-: 设置内容和标题栏居右对齐。</p>
-<p>:- 设置内容和标题栏居左对齐。</p>
-<p>:-: 设置内容和标题栏居中对齐。</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220548.jpg" alt="(20)" style="zoom:67%;">
-
-<h2 id="3-注意事项"><a href="#3-注意事项" class="headerlink" title="3.注意事项"></a>3.注意事项</h2><p>1.“ — ” 前面要有一个空格</p>
-<p>2.“ # ” 后面要有空格，才可以表示标题</p>
-<h1 id="八、参考页面"><a href="#八、参考页面" class="headerlink" title="八、参考页面"></a>八、参考页面</h1><p><a href="https://www.runoob.com/markdown/md-tutorial.html">Markdown 教程</a></p>
+<h1 id="四、参考"><a href="#四、参考" class="headerlink" title="四、参考"></a>四、参考</h1><p><a href="https://blog.csdn.net/in_the_road/article/details/105733292">Typora自动上传图片配置，集成PicGo-Core，文件以时间戳命名</a></p>
 ]]></content>
       <categories>
         <category>Markdown</category>
       </categories>
       <tags>
         <tag>Markdown</tag>
-        <tag>Github_page</tag>
       </tags>
   </entry>
   <entry>
@@ -469,162 +552,6 @@ target 用于链接页面的打开方式
       </tags>
   </entry>
   <entry>
-    <title>a标签去除默认样式</title>
-    <url>/2020/11/24/a%E6%A0%87%E7%AD%BE%E5%8E%BB%E9%99%A4%E9%BB%98%E8%AE%A4%E6%A0%B7%E5%BC%8F/</url>
-    <content><![CDATA[<h1 id="一、初始的链接"><a href="#一、初始的链接" class="headerlink" title="一、初始的链接"></a>一、初始的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
-
-<h1 id="二、正常的未被访问过的链接"><a href="#二、正常的未被访问过的链接" class="headerlink" title="二、正常的未被访问过的链接"></a>二、正常的未被访问过的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:link</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
-
-<h1 id="三、已经访问过的链接"><a href="#三、已经访问过的链接" class="headerlink" title="三、已经访问过的链接"></a>三、已经访问过的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:visited</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<h1 id="四、-鼠标划过-停留-的链接"><a href="#四、-鼠标划过-停留-的链接" class="headerlink" title="四、 鼠标划过(停留)的链接"></a>四、 鼠标划过(停留)的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
-
-<h1 id="五、-正在点击的链接"><a href="#五、-正在点击的链接" class="headerlink" title="五、 正在点击的链接"></a>五、 正在点击的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:active</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
-
-<h1 id="六、-参考"><a href="#六、-参考" class="headerlink" title="六、 参考"></a>六、 参考</h1><p><a href="https://www.cnblogs.com/PHP0222wangdong/p/11360624.html"><code>&lt;a&gt;</code> 标签去除默认样式</a></p>
-]]></content>
-      <categories>
-        <category>日常学习</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>el-if、el-else-if、el-else</title>
-    <url>/2020/11/11/el-if%E3%80%81el-else-if%E3%80%81el-else/</url>
-    <content><![CDATA[<h1 id="一、v-if-与-v-else"><a href="#一、v-if-与-v-else" class="headerlink" title="一、v-if 与 v-else"></a>一、v-if 与 v-else</h1><p><strong>v-if为真时，显示v-if的内容，否则显示v-else的内容</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;h2 v-if&#x3D;&quot;true&quot;&gt;v-if&lt;&#x2F;h2&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;h2 v-else&gt;v-else&lt;&#x2F;h2&gt;</span></pre></td></tr></table></figure>
-
-<blockquote>
-<p>v-else 元素必须紧跟在带 v-if 或者 v-else-if 的元素的后面，否则它将不会被识别。</p>
-</blockquote>
-<br>
-
-<h1 id="二、v-else-if"><a href="#二、v-else-if" class="headerlink" title="二、v-else-if"></a>二、v-else-if</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div v-if&#x3D;&quot;type &#x3D;&#x3D;&#x3D; &#39;A&#39;&quot;&gt; A &lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;div v-else-if&#x3D;&quot;type &#x3D;&#x3D;&#x3D; &#39;B&#39;&quot;&gt; B &lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;div v-else-if&#x3D;&quot;type &#x3D;&#x3D;&#x3D; &#39;C&#39;&quot;&gt; C &lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;div v-else&gt;</span></pre></td></tr></table></figure>
-
-<blockquote>
-<p>类似于 v-else，v-else-if 也必须紧跟在带 v-if 或者 v-else-if 的元素之后</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>VUE整理</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>VUE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2019/12/01/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>img和div之间有间隙的原因及解决方法</title>
-    <url>/2020/11/24/img%E5%92%8Cdiv%E4%B9%8B%E9%97%B4%E6%9C%89%E9%97%B4%E9%9A%99%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h1><br>
-
-<p>问题：display:inline-block布局的元素在chrome<strong>下会出现几像素的间隙</strong></p>
-<p>原因：div 中 存在 img标签，由于img标签的 <strong>display:inline-block</strong> 属性。</p>
-<blockquote>
-<p><strong>inline-block的“换行符/空格间隙问题”：</strong></p>
-<p>​    在编辑器里写代码的时候，同级别的标签不写在同一行，以保持代码的整齐可读性。即inline-block布局的元素在编辑器里不在同一行，即存在换行符，当inline-block元素间有空格或是换行则会产生间隙。</p>
-</blockquote>
-<h1 id="二、解决方法"><a href="#二、解决方法" class="headerlink" title="二、解决方法"></a>二、解决方法</h1><h2 id="1-把img标签的display属性改成block："><a href="#1-把img标签的display属性改成block：" class="headerlink" title="1. 把img标签的display属性改成block："></a>1. 把img标签的display属性改成block：</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">img</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">dispaly</span>:block;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<h2 id="2-把div中的字体大小设为0"><a href="#2-把div中的字体大小设为0" class="headerlink" title="2. 把div中的字体大小设为0"></a>2. 把div中的字体大小设为0</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">font-size</span>:<span class="number">0</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
-
-
-
-<h2 id="3-修改img的vertical-align属性"><a href="#3-修改img的vertical-align属性" class="headerlink" title="3. 修改img的vertical-align属性"></a>3. 修改img的vertical-align属性</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">img</span> &#123; <span class="attribute">vertical-align</span>:buttom; &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="selector-tag">img</span> &#123; <span class="attribute">vertical-align</span>:middle; &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="selector-tag">img</span> &#123; <span class="attribute">vertical-align</span>:top; &#125;</span></pre></td></tr></table></figure>
-
-
-
-<h1 id="三、参考"><a href="#三、参考" class="headerlink" title="三、参考"></a>三、参考</h1><p><a href="https://www.cnblogs.com/vanstrict/p/4961300.html">div之间有间隙以及img和div之间有间隙的原因及解决方法</a></p>
-]]></content>
-      <categories>
-        <category>日常学习</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Typora上传图片时,文件以时间戳命名</title>
-    <url>/2020/12/14/Typora%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E6%97%B6-%E6%96%87%E4%BB%B6%E4%BB%A5%E6%97%B6%E9%97%B4%E6%88%B3%E5%91%BD%E5%90%8D/</url>
-    <content><![CDATA[<h1 id="一、查询之前安装的PicGo执行路径"><a href="#一、查询之前安装的PicGo执行路径" class="headerlink" title="一、查询之前安装的PicGo执行路径"></a>一、查询之前安装的PicGo执行路径</h1><br>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214170157.png" alt="image-20201214170155882" style="zoom: 67%;">
-
-<a id="more"></a>
-
-<h1 id="二、安装插件"><a href="#二、安装插件" class="headerlink" title="二、安装插件"></a>二、安装插件</h1><p>进入cmd输入代码安装插件（super-prefix插件 —— 用于上传图片时能自动使用时间戳重命名）</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd C:\Users\Administrator\AppData\Roaming\Typora\picgo\win64</span></pre></td></tr><tr><td class="code"><pre><span class="line">.\picgo.exe install super-prefix</span></pre></td></tr></table></figure>
-
-
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214170742.png" alt="image-20201214170740861">
-
-
-
-<h1 id="三、修改配置文件"><a href="#三、修改配置文件" class="headerlink" title="三、修改配置文件"></a>三、修改配置文件</h1><figure class="highlight"><table><tr><td class="code"><pre><span class="line">"picgoPlugins": &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    "picgo-plugin-super-prefix": true</span></pre></td></tr><tr><td class="code"><pre><span class="line">  &#125;, // 为插件预留</span></pre></td></tr><tr><td class="code"><pre><span class="line">  "picgo-plugin-super-prefix": &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    "fileFormat": "YYYYMMDDHHmmss"</span></pre></td></tr><tr><td class="code"><pre><span class="line">  &#125; //super-prefix插件配置</span></pre></td></tr></table></figure>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214171510.png" alt="image-20201214171508681" style="zoom:80%;">
-
-
-
-<h1 id="四、参考"><a href="#四、参考" class="headerlink" title="四、参考"></a>四、参考</h1><p><a href="https://blog.csdn.net/in_the_road/article/details/105733292">Typora自动上传图片配置，集成PicGo-Core，文件以时间戳命名</a></p>
-]]></content>
-      <categories>
-        <category>Markdown</category>
-      </categories>
-      <tags>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>js获取对象属性值的2种方法</title>
-    <url>/2020/11/25/js%E8%8E%B7%E5%8F%96%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E5%80%BC%E7%9A%842%E7%A7%8D%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="第一种：通过-的方式获取"><a href="#第一种：通过-的方式获取" class="headerlink" title="第一种：通过 . 的方式获取"></a>第一种：通过 . 的方式获取</h1><br>
-
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201125140648489.png" alt="image-20201125140648489"></p>
-<h1 id="第二种：通过-的方式获取"><a href="#第二种：通过-的方式获取" class="headerlink" title="第二种：通过 [ ] 的方式获取"></a>第二种：通过 [ ] 的方式获取</h1><br>
-
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201125141041462.png" alt="image-20201125141041462"></p>
-<blockquote>
-<p>注意：用数组下标获取值的方式获取属性，记得要给属性加引号</p>
-</blockquote>
-<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://www.cnblogs.com/tu-0718/p/13218006.html">js获取对象属性值的2种方法</a></p>
-]]></content>
-      <categories>
-        <category>日常学习</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>vue-router模块</title>
     <url>/2020/11/24/vue-router%E6%A8%A1%E5%9D%97/</url>
     <content><![CDATA[<h1 id="一、Vue路由传参query和params的区别"><a href="#一、Vue路由传参query和params的区别" class="headerlink" title="一、Vue路由传参query和params的区别"></a>一、Vue路由传参query和params的区别</h1><h2 id="1-区别"><a href="#1-区别" class="headerlink" title="1. 区别"></a>1. 区别</h2><ol>
@@ -636,13 +563,13 @@ target 用于链接页面的打开方式
 
 <a id="more"></a>
 
-<h3 id="2-2-params传参"><a href="#2-2-params传参" class="headerlink" title="2.2 params传参"></a>2.2 params传参</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;在方法里面写</span></pre></td></tr><tr><td class="code"><pre><span class="line">this.$router.push(&#123; name::&#39;&#x2F;search&#39;, query: &#123; categoryId: this.categoryId &#125;&#125;)</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; router-link里面的to</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;router-link :to&#x3D;&quot;&#123;name::&#39;&#x2F;search&#39;,query: &#123;categoryId: item.categoryId&#125;&#125;&quot;&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">接收参数：this.categoryId &#x3D; this.$route.params.categoryId ;</span></pre></td></tr></table></figure>
+<h3 id="2-2-params传参"><a href="#2-2-params传参" class="headerlink" title="2.2 params传参"></a>2.2 params传参</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//在方法里面写</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">this</span>.$router.push(&#123; <span class="attr">name</span>::<span class="string">'/search'</span>, <span class="attr">query</span>: &#123; <span class="attr">categoryId</span>: <span class="keyword">this</span>.categoryId &#125;&#125;)</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// router-link里面的to</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;router-link :to=<span class="string">"&#123;name::'/search',query: &#123;categoryId: item.categoryId&#125;&#125;"</span>&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">接收参数：<span class="keyword">this</span>.categoryId = <span class="keyword">this</span>.$route.params.categoryId ;</span></pre></td></tr></table></figure>
 
 <h2 id="3-参考"><a href="#3-参考" class="headerlink" title="3. 参考"></a>3. 参考</h2><p><a href="https://blog.csdn.net/Brian_Jing/article/details/100987080">Vue路由传参query和params的区别</a></p>
 <br>
 
 <h1 id="二、Vue-详解设置路由导航的两种方法"><a href="#二、Vue-详解设置路由导航的两种方法" class="headerlink" title="二、Vue-详解设置路由导航的两种方法"></a>二、Vue-详解设置路由导航的两种方法</h1><h2 id="1-方法"><a href="#1-方法" class="headerlink" title="1. 方法"></a>1. 方法</h2><h3 id="1-1-使用-lt-router-link-to-quot-quot-gt"><a href="#1-1-使用-lt-router-link-to-quot-quot-gt" class="headerlink" title="1.1 使用&lt;router-link :to=&quot;...&quot;&gt;"></a>1.1 使用<code>&lt;router-link :to=&quot;...&quot;&gt;</code></h3><p><strong>to里的值可以是一个字符串路径，或者一个描述地址的对象</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 字符串</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;router-link to&#x3D;&quot;apple&quot;&gt; to apple&lt;&#x2F;router-link&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 对象</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;router-link :to&#x3D;&quot;&#123; path:&#39;apple&#39; &#125;&quot;&gt; to apple&lt;&#x2F;router-link&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 命名路由</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;router-link :to&#x3D;&quot;&#123; name:&#39;applename&#39; &#125;&quot;&gt; to apple&lt;&#x2F;router-link&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 直接路由带查询参数query，地址栏变成 &#x2F;apple?color&#x3D;red</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;router-link :to&#x3D;&quot;&#123; path:&#39;apple&#39;, query: &#123; color:&#39;red&#39; &#125;&#125;&quot;&gt; to apple&lt;&#x2F;router-link&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 命名路由带查询参数query，地址栏变成&#x2F;apple?color&#x3D;red</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;router-link :to&#x3D;&quot;&#123; name:&#39;applename&#39;, query: &#123; color:&#39;red&#39; &#125;&#125;&quot;&gt; to apple&lt;&#x2F;router-link&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 直接路由带路由参数params，params 不生效，如果提供了 path，params 会被忽略</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;router-link :to&#x3D;&quot;&#123; path:&#39;apple&#39;, params: &#123; color:&#39;red&#39; &#125;&#125;&quot;&gt; to apple&lt;&#x2F;router-link&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 命名路由带路由参数params，地址栏是&#x2F;apple&#x2F;red</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;router-link :to&#x3D;&quot;&#123; name:&#39;applename&#39;, params: &#123; color:&#39;red&#39; &#125;&#125;&quot;&gt; to apple&lt;&#x2F;router-link&gt;</span></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 字符串</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;router-link to=<span class="string">"apple"</span>&gt; to apple&lt;<span class="regexp">/router-link&gt;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="regexp">/</span><span class="regexp">/ 对象</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="regexp">&lt;router-link :to="&#123; path:'apple' &#125;"&gt; to apple&lt;/</span>router-link&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// 命名路由</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;router-link :to=<span class="string">"&#123; name:'applename' &#125;"</span>&gt; to apple&lt;<span class="regexp">/router-link&gt;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="regexp">/</span><span class="regexp">/ 直接路由带查询参数query，地址栏变成 /</span>apple?color=red</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;router-link :to=<span class="string">"&#123; path:'apple', query: &#123; color:'red' &#125;&#125;"</span>&gt; to apple&lt;<span class="regexp">/router-link&gt;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="regexp">/</span><span class="regexp">/ 命名路由带查询参数query，地址栏变成/</span>apple?color=red</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;router-link :to=<span class="string">"&#123; name:'applename', query: &#123; color:'red' &#125;&#125;"</span>&gt; to apple&lt;<span class="regexp">/router-link&gt;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="regexp">/</span><span class="regexp">/ 直接路由带路由参数params，params 不生效，如果提供了 path，params 会被忽略</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="regexp">&lt;router-link :to="&#123; path:'apple', params: &#123; color:'red' &#125;&#125;"&gt; to apple&lt;/</span>router-link&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// 命名路由带路由参数params，地址栏是/apple/red</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;router-link :to=<span class="string">"&#123; name:'applename', params: &#123; color:'red' &#125;&#125;"</span>&gt; to apple&lt;<span class="regexp">/router-link&gt;</span></span></pre></td></tr></table></figure>
 
 <h3 id="1-2-router-push-…-方法"><a href="#1-2-router-push-…-方法" class="headerlink" title="1.2 router.push(…)方法"></a>1.2 router.push(…)方法</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 字符串</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">router.push(<span class="string">'apple'</span>)</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// 对象</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">router.push(&#123; <span class="attr">path</span>:<span class="string">'apple'</span> &#125;)</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// 命名路由</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">router.push(&#123; <span class="attr">name</span>: <span class="string">'applename'</span> &#125;)</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// 直接路由带查询参数query，地址栏变成 /apple?color=red</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">router.push(&#123; <span class="attr">path</span>: <span class="string">'apple'</span>, <span class="attr">query</span>: &#123; <span class="attr">color</span>: <span class="string">'red'</span> &#125;&#125;)</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// 命名路由带查询参数query，地址栏变成/apple?color=red</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">router.push(&#123; <span class="attr">name</span>: <span class="string">'applename'</span>, <span class="attr">query</span>: &#123; <span class="attr">color</span>: <span class="string">'red'</span> &#125;&#125;)</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// 直接路由带路由参数params，params 不生效，如果提供了 path，params 会被忽略</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">router.push(&#123; <span class="attr">path</span>:<span class="string">'applename'</span>, <span class="attr">params</span>:&#123; <span class="attr">color</span>: <span class="string">'red'</span> &#125;&#125;)</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// 命名路由带路由参数params，地址栏是/apple/red</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">router.push(&#123; <span class="attr">name</span>:<span class="string">'applename'</span>, <span class="attr">params</span>:&#123; <span class="attr">color</span>: <span class="string">'red'</span> &#125;&#125;)</span></pre></td></tr></table></figure>
 
@@ -747,6 +674,451 @@ target 用于链接页面的打开方式
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2019/12/01/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>js获取对象属性值的2种方法</title>
+    <url>/2020/11/25/js%E8%8E%B7%E5%8F%96%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E5%80%BC%E7%9A%842%E7%A7%8D%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="第一种：通过-的方式获取"><a href="#第一种：通过-的方式获取" class="headerlink" title="第一种：通过 . 的方式获取"></a>第一种：通过 . 的方式获取</h1><br>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201125140648489.png" alt="image-20201125140648489"></p>
+<h1 id="第二种：通过-的方式获取"><a href="#第二种：通过-的方式获取" class="headerlink" title="第二种：通过 [ ] 的方式获取"></a>第二种：通过 [ ] 的方式获取</h1><br>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201125141041462.png" alt="image-20201125141041462"></p>
+<blockquote>
+<p>注意：用数组下标获取值的方式获取属性，记得要给属性加引号</p>
+</blockquote>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://www.cnblogs.com/tu-0718/p/13218006.html">js获取对象属性值的2种方法</a></p>
+]]></content>
+      <categories>
+        <category>日常学习</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>img和div之间有间隙的原因及解决方法</title>
+    <url>/2020/11/24/img%E5%92%8Cdiv%E4%B9%8B%E9%97%B4%E6%9C%89%E9%97%B4%E9%9A%99%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h1><br>
+
+<p>问题：display:inline-block布局的元素在chrome<strong>下会出现几像素的间隙</strong></p>
+<p>原因：div 中 存在 img标签，由于img标签的 <strong>display:inline-block</strong> 属性。</p>
+<blockquote>
+<p><strong>inline-block的“换行符/空格间隙问题”：</strong></p>
+<p>​    在编辑器里写代码的时候，同级别的标签不写在同一行，以保持代码的整齐可读性。即inline-block布局的元素在编辑器里不在同一行，即存在换行符，当inline-block元素间有空格或是换行则会产生间隙。</p>
+</blockquote>
+<h1 id="二、解决方法"><a href="#二、解决方法" class="headerlink" title="二、解决方法"></a>二、解决方法</h1><h2 id="1-把img标签的display属性改成block："><a href="#1-把img标签的display属性改成block：" class="headerlink" title="1. 把img标签的display属性改成block："></a>1. 把img标签的display属性改成block：</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">img</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">dispaly</span>:block;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h2 id="2-把div中的字体大小设为0"><a href="#2-把div中的字体大小设为0" class="headerlink" title="2. 把div中的字体大小设为0"></a>2. 把div中的字体大小设为0</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attribute">font-size</span>:<span class="number">0</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+
+
+<h2 id="3-修改img的vertical-align属性"><a href="#3-修改img的vertical-align属性" class="headerlink" title="3. 修改img的vertical-align属性"></a>3. 修改img的vertical-align属性</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">img</span> &#123; <span class="attribute">vertical-align</span>:buttom; &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="selector-tag">img</span> &#123; <span class="attribute">vertical-align</span>:middle; &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="selector-tag">img</span> &#123; <span class="attribute">vertical-align</span>:top; &#125;</span></pre></td></tr></table></figure>
+
+
+
+<h1 id="三、参考"><a href="#三、参考" class="headerlink" title="三、参考"></a>三、参考</h1><p><a href="https://www.cnblogs.com/vanstrict/p/4961300.html">div之间有间隙以及img和div之间有间隙的原因及解决方法</a></p>
+]]></content>
+      <categories>
+        <category>日常学习</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>简易Node后端搭建</title>
+    <url>/2021/04/28/%E7%AE%80%E6%98%93Node%E5%90%8E%E7%AB%AF%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<h1 id="简易Node后端搭建"><a href="#简易Node后端搭建" class="headerlink" title="简易Node后端搭建"></a>简易Node后端搭建</h1><h2 id="1-Express"><a href="#1-Express" class="headerlink" title="1. Express"></a>1. Express</h2><h3 id="1-1-安装"><a href="#1-1-安装" class="headerlink" title="1.1 安装"></a>1.1 安装</h3><h4 id="1-1-1-安装淘宝镜像"><a href="#1-1-1-安装淘宝镜像" class="headerlink" title="1.1.1 安装淘宝镜像"></a>1.1.1 安装淘宝镜像</h4><p>安装npm之前可先安装淘宝镜像，使用cnpm的来代替npm，使得下载速度提高很多。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span></pre></td></tr></table></figure>
+
+<h4 id="1-1-2-初始化项目"><a href="#1-1-2-初始化项目" class="headerlink" title="1.1.2 初始化项目"></a>1.1.2 初始化项目</h4><p>目录下运行命令来初始化项目，期间所有提示按enter键即可，这会生成<code>package.json</code>，用于描述项目文件的.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cnpm init</span></pre></td></tr></table></figure>
+
+<p>再输入命令，项目目录中又会多出一个叫<code>node_modules</code>文件夹，里面是node.js提供的模块</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cnpm install</span></pre></td></tr></table></figure>
+
+<h4 id="1-1-3-安装express"><a href="#1-1-3-安装express" class="headerlink" title="1.1.3 安装express"></a>1.1.3 安装express</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cnpm install express --save</span></pre></td></tr></table></figure>
+
+<p>创建结果：</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210309183046.png" alt="image-20210309183045551" style="zoom: 50%;">
+
+<h4 id="1-1-4-检验是否创建成功"><a href="#1-1-4-检验是否创建成功" class="headerlink" title="1.1.4 检验是否创建成功"></a>1.1.4 检验是否创建成功</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">express --version</span></pre></td></tr></table></figure>
+
+<p>若出现版本号，则为创建成功</p>
+<h3 id="1-2-Express脚手架的安装"><a href="#1-2-Express脚手架的安装" class="headerlink" title="1.2 Express脚手架的安装"></a>1.2 Express脚手架的安装</h3><h4 id="1-2-1-使用express-generator安装"><a href="#1-2-1-使用express-generator安装" class="headerlink" title="1.2.1 使用express-generator安装"></a>1.2.1 使用express-generator安装</h4><ol>
+<li><p>命令行进入项目目录，运行命令</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cnpm i express-generator</span></pre></td></tr></table></figure>
+</li>
+<li><p>创建了一个名为app的Express应用，并使用ejs模板引擎</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">express --view&#x3D;ejs app</span></pre></td></tr></table></figure>
+</li>
+<li><p>进入app，并安装依赖</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd app</span></pre></td></tr></table></figure>
+</li>
+<li><p>初始化项目</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install</span></pre></td></tr></table></figure>
+</li>
+<li><p>在Windows下，使用以下命令启Express应用</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">set DEBUG&#x3D;app:* &amp; npm start</span></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h4 id="1-2-2-使用express命令快速创建项目目录"><a href="#1-2-2-使用express命令快速创建项目目录" class="headerlink" title="1.2.2 使用express命令快速创建项目目录"></a>1.2.2 使用express命令快速创建项目目录</h4><p>用法：express项目文件夹的名字 -e</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">express app -e</span></pre></td></tr><tr><td class="code"><pre><span class="line">cd app</span></pre></td></tr><tr><td class="code"><pre><span class="line">cnpm install</span></pre></td></tr></table></figure>
+
+<p>app文件夹下的文件结构：</p>
+<ul>
+<li>bin: 启动目录，包含启动文件www，默认监听端口是 3000 ，直接node www执行即可。</li>
+<li>node_modules：依赖的模块包</li>
+<li>public：存放静态资源</li>
+<li>routes：路由操作</li>
+<li>views：存放ejs模板引擎</li>
+<li>app.js：主文件</li>
+<li>package.json：项目描述文件</li>
+</ul>
+<h3 id="1-3-参考资料"><a href="#1-3-参考资料" class="headerlink" title="1.3 参考资料"></a>1.3 参考资料</h3><p><a href="https://blog.csdn.net/no10086/article/details/88958282?spm=1001.2014.3001.5501">Express全系列教程之(一)：Express的安装 和第一个程序</a></p>
+<h2 id="2-sequelize"><a href="#2-sequelize" class="headerlink" title="2. sequelize"></a>2. sequelize</h2><h3 id="2-1-安装"><a href="#2-1-安装" class="headerlink" title="2.1 安装"></a>2.1 安装</h3><h4 id="2-1-1-安装sequelize"><a href="#2-1-1-安装sequelize" class="headerlink" title="2.1.1 安装sequelize"></a>2.1.1 安装sequelize</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cnpm install sequelize -S</span></pre></td></tr></table></figure>
+
+<h4 id="2-1-2-为MySQL数据库安装驱动程序"><a href="#2-1-2-为MySQL数据库安装驱动程序" class="headerlink" title="2.1.2 为MySQL数据库安装驱动程序"></a>2.1.2 为MySQL数据库安装驱动程序</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cnpm install mysql2 -S</span></pre></td></tr></table></figure>
+
+<h4 id="2-1-3-安装"><a href="#2-1-3-安装" class="headerlink" title="2.1.3 安装"></a>2.1.3 安装</h4><p>通过命令行创建sequelize目录</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cnpm install sequelize-cli -g</span></pre></td></tr></table></figure>
+
+<h4 id="1-1-4-初始化项目"><a href="#1-1-4-初始化项目" class="headerlink" title="1.1.4 初始化项目"></a>1.1.4 初始化项目</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sequelize init</span></pre></td></tr></table></figure>
+
+<p>文件目录：</p>
+<ul>
+<li>config – 数据库配置</li>
+<li>migrations – 迁移文件</li>
+<li>models – 模型文件</li>
+<li>seeders – 种子文件</li>
+</ul>
+<h3 id="2-2-配置数据库环境"><a href="#2-2-配置数据库环境" class="headerlink" title="2.2 配置数据库环境"></a>2.2 配置数据库环境</h3><h4 id="2-2-1-环境参数"><a href="#2-2-1-环境参数" class="headerlink" title="2.2.1 环境参数"></a>2.2.1 环境参数</h4><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210309185515.png" alt="image-20210309185514118" style="zoom: 33%;">
+
+<h4 id="2-2-2-配置参数"><a href="#2-2-2-配置参数" class="headerlink" title="2.2.2 配置参数"></a>2.2.2 配置参数</h4><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="string">"development"</span>: &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="string">"username"</span>: <span class="string">"root"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="string">"password"</span>: <span class="string">"root"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="string">"database"</span>: <span class="string">"document_development"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="string">"host"</span>: <span class="string">"127.0.0.1"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="string">"dialect"</span>: <span class="string">"mysql"</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;,</span></pre></td></tr></table></figure>
+
+<h3 id="2-3-创建数据库"><a href="#2-3-创建数据库" class="headerlink" title="2.3 创建数据库"></a>2.3 创建数据库</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sequelize db:create --charset &#39;utf8mb4&#39;</span></pre></td></tr></table></figure>
+
+<p>创建成功：</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210310102721.png" alt="image-20210310102720851" style="zoom: 67%;">
+
+<h3 id="2-4-sequelize操作数据库：模型、迁移与种子"><a href="#2-4-sequelize操作数据库：模型、迁移与种子" class="headerlink" title="2.4 sequelize操作数据库：模型、迁移与种子"></a>2.4 sequelize操作数据库：模型、迁移与种子</h3><h4 id="2-4-1-创建模型与迁移"><a href="#2-4-1-创建模型与迁移" class="headerlink" title="2.4.1 创建模型与迁移"></a>2.4.1 创建模型与迁移</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sequelize model:generate --name Article --attributes title:string,content:text</span></pre></td></tr></table></figure>
+
+<p>创建了名为Article的模型 ，表有两个字段：标题（string类型）；内容（text 类型）</p>
+<h4 id="2-4-2-模型文件"><a href="#2-4-2-模型文件" class="headerlink" title="2.4.2 模型文件"></a>2.4.2 模型文件</h4><p>使用 <code>Node.js</code> 操作数据库需要用到模型文件，无需改动。</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210423174110.png" alt="image-20210423174109300" style="zoom: 33%;">
+
+<h4 id="2-4-3-迁移文件"><a href="#2-4-3-迁移文件" class="headerlink" title="2.4.3 迁移文件"></a>2.4.3 迁移文件</h4><p>迁移文件：migrations/xxx-create-article.js，里面保存的是 Articles 的字段。</p>
+<p>（注意：sequelize 中默认规定，模型的名称是单数，而数据表是复数）</p>
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210423174423.png" alt="image-20210310103047714"></p>
+<p><strong><code>up</code>部分代码 – 建表：</strong></p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210423174954.png" alt="image-20210423174953113" style="zoom:50%;">
+
+<p><strong><code>down</code>部分代码 – 删除表：</strong></p>
+<p>代码的 <code>down</code> 部分，是 <code>up</code> 的反向操作。</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210423175139.png" alt="image-20210423175138106" style="zoom:50%;">
+
+<h4 id="2-4-4-运行迁移"><a href="#2-4-4-运行迁移" class="headerlink" title="2.4.4 运行迁移"></a>2.4.4 运行迁移</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sequelize db:migrate</span></pre></td></tr></table></figure>
+
+<p>运行命令，将字段迁移进数据库</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210423173708.png" alt="image-20210423173706555" style="zoom:50%;">
+
+<h4 id="2-4-5-种子文件"><a href="#2-4-5-种子文件" class="headerlink" title="2.4.5 种子文件"></a>2.4.5 种子文件</h4><p><strong>创建种子文件,填充测试数据：</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sequelize seed:generate --name article</span></pre></td></tr></table></figure>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210310103517.png" alt="image-20210310103516290" style="zoom: 50%;">
+
+<p><strong>修改种子文件数据</strong></p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210423180253.png" alt="image-20210423180252412" style="zoom: 50%;">
+
+<p><strong>运行种子文件</strong></p>
+<ul>
+<li>运行所有种子文件：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sequelize db:seed:all</span></pre></td></tr></table></figure>
+
+<ul>
+<li>运行指定的种子文件</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sequelize db:seed --seed xxx-article</span></pre></td></tr></table></figure>
+
+<h4 id="2-4-6-总结"><a href="#2-4-6-总结" class="headerlink" title="2.4.6 总结"></a>2.4.6 总结</h4><p>日常开发项目数据库操作的步骤：</p>
+<table>
+<thead>
+<tr>
+<th align="center">步骤</th>
+<th align="center">命令</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">第一步</td>
+<td align="center">sequelize model:generate –name Article –attributes …</td>
+<td align="center">建模型和迁移文件</td>
+</tr>
+<tr>
+<td align="center">第二步</td>
+<td align="center">人工处理</td>
+<td align="center">根据需求调整模型和迁移文件</td>
+</tr>
+<tr>
+<td align="center">第三步</td>
+<td align="center">sequelize db:migrate</td>
+<td align="center">运行迁移，生成数据表</td>
+</tr>
+<tr>
+<td align="center">第四步</td>
+<td align="center">sequelize seed:generate –name article</td>
+<td align="center">新建种子文件</td>
+</tr>
+<tr>
+<td align="center">第五步</td>
+<td align="center">人工处理</td>
+<td align="center">将种子文件修改为自己想填充的数据</td>
+</tr>
+<tr>
+<td align="center">第六步</td>
+<td align="center">sequelize db:seed:all</td>
+<td align="center">运行种子文件，将默认数据填充到数据表中</td>
+</tr>
+</tbody></table>
+<h3 id="2-5-查询数据库"><a href="#2-5-查询数据库" class="headerlink" title="2.5 查询数据库"></a>2.5 查询数据库</h3><h4 id="2-5-1-路由"><a href="#2-5-1-路由" class="headerlink" title="2.5.1 路由"></a>2.5.1 路由</h4><p>添加一个新的路由文件：在 routes 中，添加一个叫做 articles.js 的文件。基础的代码，和项目自带的其他路由文件一样，直接复制过来。</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210423181604.png" alt="image-20210423181603303" style="zoom:50%;">
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>);</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> router = express.Router();</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// ....</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = router;</span></pre></td></tr></table></figure>
+
+<h4 id="2-5-2-get-请求"><a href="#2-5-2-get-请求" class="headerlink" title="2.5.2 get 请求"></a>2.5.2 <code>get</code> 请求</h4><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">router.get(<span class="string">'/'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">req, res, next</span>) </span>&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    res.json(&#123;<span class="attr">hello</span>: <span class="string">"ITFun"</span>&#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<p><strong>代码解析：</strong></p>
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210310110023.png" alt="image-20210310110022651"></p>
+<h4 id="2-5-3-使用路由"><a href="#2-5-3-使用路由" class="headerlink" title="2.5.3 使用路由"></a>2.5.3 使用路由</h4><p><code>app.js</code> 中使用<code>articles.js</code> 路由，路由文件才会生效</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> articlesRouter = <span class="built_in">require</span>(<span class="string">'./routes/articles'</span>);</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// ...</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">app.use(<span class="string">'/articles'</span>, articlesRouter);</span></pre></td></tr></table></figure>
+
+<h4 id="2-5-4-读取数据库"><a href="#2-5-4-读取数据库" class="headerlink" title="2.5.4 读取数据库"></a>2.5.4 读取数据库</h4><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> models = <span class="built_in">require</span>(<span class="string">'../models'</span>);</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// .....</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">router.get(<span class="string">'/'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">req, res, next</span>) </span>&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    models.Article.findAll().then(<span class="function"><span class="params">articles</span> =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        res.json(&#123;<span class="attr">articles</span>: articles&#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;)</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<p>结果：</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210423182339.png" alt="express 读取接口" style="zoom:50%;">
+
+<h4 id="2-5-5-异步查询语法"><a href="#2-5-5-异步查询语法" class="headerlink" title="2.5.5 异步查询语法"></a>2.5.5 异步查询语法</h4><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">router.get(<span class="string">'/'</span>, <span class="keyword">async</span> <span class="function"><span class="keyword">function</span> (<span class="params">req, res, next</span>) </span>&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="keyword">var</span> articles = <span class="keyword">await</span> models.Article.findAll();</span></pre></td></tr><tr><td class="code"><pre><span class="line">    res.json(&#123;<span class="attr">articles</span>: articles&#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<ul>
+<li><code>async</code> 是 <code>异步</code> 的意思，<code>async function</code> 表明当前这个 <code>function</code> 是异步的。</li>
+<li><code>await</code>，表示等待一个异步方法执行完成。<code>await</code> 只能在 <code>async</code> 函数内部使用，用在普通函数里就会报错。</li>
+</ul>
+<h4 id="2-5-6-排序"><a href="#2-5-6-排序" class="headerlink" title="2.5.6 排序"></a>2.5.6 排序</h4><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> articles = <span class="keyword">await</span> models.Article.findAll(&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    order: [[<span class="string">'id'</span>, <span class="string">'DESC'</span>]],</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210424161706.png" alt="倒序" style="zoom: 50%;">
+
+<h3 id="2-6-添加数据"><a href="#2-6-添加数据" class="headerlink" title="2.6 添加数据"></a>2.6 添加数据</h3><h4 id="2-6-1-新增定义死的数据"><a href="#2-6-1-新增定义死的数据" class="headerlink" title="2.6.1 新增定义死的数据"></a>2.6.1 新增定义死的数据</h4><p>找到模型后，使用 <code>create</code> 方法，将数据插入进去</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">router.post(<span class="string">'/'</span>, <span class="keyword">async</span> <span class="function"><span class="keyword">function</span> (<span class="params">req, res, next</span>) </span>&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="keyword">var</span> article = <span class="keyword">await</span> models.Article.create(&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        title: <span class="string">"猫猫狗狗"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">        content: <span class="string">"小动物们的快乐"</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;)</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">    res.json(&#123;<span class="attr">article</span>: article&#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<h4 id="2-6-2-使用Promise-语法"><a href="#2-6-2-使用Promise-语法" class="headerlink" title="2.6.2 使用Promise 语法"></a>2.6.2 使用<code>Promise</code> 语法</h4><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">models.Article.create(&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    title: <span class="string">"asdf"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    content: <span class="string">"asdfsadfsdf"</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;).then(<span class="function"><span class="params">article</span> =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    res.json(&#123;<span class="attr">article</span>: article&#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;)</span></pre></td></tr></table></figure>
+
+<h4 id="2-6-3-使用Postman测试接口"><a href="#2-6-3-使用Postman测试接口" class="headerlink" title="2.6.3 使用Postman测试接口"></a>2.6.3 使用<code>Postman</code>测试接口</h4><p>请求方式改为 <code>POST</code>，地址栏填上接口的地址。最后点击 <code>Send</code></p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210424162310" alt="在这里插入图片描述" style="zoom: 80%;">
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210424162525.png" alt="image-20210424162524415" style="zoom:50%;">
+
+<h4 id="2-6-4-用户提交数据"><a href="#2-6-4-用户提交数据" class="headerlink" title="2.6.4 用户提交数据"></a>2.6.4 用户提交数据</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">router.post(&#39;&#x2F;&#39;, async function (req, res, next) &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    res.json(&#123;&#39;你发送的内容是&#39;: req.body&#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<p>注：<code>req.body</code>：用户使用 <code>post</code> 发送过来的内容</p>
+<p><strong>测试接口</strong></p>
+<p>打开 <code>Postman</code>，点击 <code>Body</code>，选择 <code>x-www-form-urlencoded</code>。<code>key</code> 要填对应数据库里的字段名称，<code>value</code> 里填插入数据库的数据。</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210424162648.png" alt="postman 测试 post提交数据" style="zoom: 50%;">
+
+<h4 id="2-6-5-将用户的数据插入数据库"><a href="#2-6-5-将用户的数据插入数据库" class="headerlink" title="2.6.5 将用户的数据插入数据库"></a>2.6.5 将用户的数据插入数据库</h4><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">router.post(<span class="string">'/'</span>, <span class="keyword">async</span> <span class="function"><span class="keyword">function</span> (<span class="params">req, res, next</span>) </span>&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="keyword">var</span> article = <span class="keyword">await</span> models.Article.create(req.body);</span></pre></td></tr><tr><td class="code"><pre><span class="line">    res.json(&#123;<span class="attr">article</span>: article&#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<h3 id="2-7-数据库的删改查"><a href="#2-7-数据库的删改查" class="headerlink" title="2.7 数据库的删改查"></a>2.7 数据库的删改查</h3><h4 id="2-7-1-id属性"><a href="#2-7-1-id属性" class="headerlink" title="2.7.1 id属性"></a>2.7.1 <code>id</code>属性</h4><p>将<code>id</code>作为查询依据：</p>
+<ul>
+<li>每个数据都有<code>id</code>属性</li>
+<li><code>id</code>属性自增，永远不会重复的</li>
+</ul>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210424163418.png" alt="image-20210424163417598" style="zoom:50%;">
+
+<p>定义的路由的时候，就在 <code>/</code> 后面加上一个 <code>:id</code>。这样定义后，表示这里可以接受一个 <code>文章id</code> 参数。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">router.get(<span class="string">'/:id'</span>, <span class="keyword">async</span> <span class="function"><span class="keyword">function</span> (<span class="params">req, res, next</span>) </span>&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    res.json(&#123;<span class="attr">id</span>: req.params.id&#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<p>使用 <code>req.params.id</code>方法，可以取到传入的id值</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210424163657.png" alt="获取id" style="zoom:50%;">
+
+<h4 id="2-7-2-查询"><a href="#2-7-2-查询" class="headerlink" title="2.7.2 查询"></a>2.7.2 查询</h4><p>接收到用户传递的<code>id</code>值后，在模型中调用<code>findByPk</code>。 就可以在<code>Articles</code>表中找到当前文章</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">router.get(<span class="string">'/:id'</span>, <span class="keyword">async</span> <span class="function"><span class="keyword">function</span> (<span class="params">req, res, next</span>) </span>&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="keyword">var</span> article = <span class="keyword">await</span> models.Article.findByPk(req.params.id);</span></pre></td></tr><tr><td class="code"><pre><span class="line">    res.json(&#123;<span class="attr">article</span>: article&#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注意：<code>findByPk</code>，这里的 <code>Pk</code> 是 <code>Primary Key</code> 也就是<code>主键</code>的缩写。一般每个表都有个<code>主键</code>，如果没有特殊命名，一般来说就是 <code>id</code> 字段</p>
+</blockquote>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210424164129.png" alt="查询接口" style="zoom:50%;">
+
+<h4 id="2-7-3-修改"><a href="#2-7-3-修改" class="headerlink" title="2.7.3 修改"></a>2.7.3 修改</h4><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">router.put(<span class="string">'/:id'</span>, <span class="keyword">async</span> <span class="function"><span class="keyword">function</span> (<span class="params">req, res, next</span>) </span>&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="keyword">var</span> article = <span class="keyword">await</span> models.Article.findByPk(req.params.id);</span></pre></td></tr><tr><td class="code"><pre><span class="line">    article.update(req.body);</span></pre></td></tr><tr><td class="code"><pre><span class="line">    res.json(&#123;<span class="attr">article</span>: article&#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210424164203.png" alt="修改接口" style="zoom: 50%;">
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210424164211.png" alt="修改接口" style="zoom:50%;">
+
+<h4 id="2-7-4-删除"><a href="#2-7-4-删除" class="headerlink" title="2.7.4 删除"></a>2.7.4 删除</h4><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">router.delete(<span class="string">'/:id'</span>, <span class="keyword">async</span> <span class="function"><span class="keyword">function</span> (<span class="params">req, res, next</span>) </span>&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="keyword">var</span> article = <span class="keyword">await</span> models.Article.findByPk(req.params.id);</span></pre></td></tr><tr><td class="code"><pre><span class="line">    article.destroy();</span></pre></td></tr><tr><td class="code"><pre><span class="line">    res.json(&#123;<span class="attr">msg</span>: <span class="string">'删除成功'</span>&#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<p>使用的请求方式是 <code>delete</code>。也是查询到当前文章后，直接调用 <code>destroy</code> 方法删掉它，返回 <code>msg: &#39;删除成功&#39;</code> 。</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210424164356.png" alt="删除接口" style="zoom: 50%;">
+
+<h4 id="2-7-5-总结"><a href="#2-7-5-总结" class="headerlink" title="2.7.5 总结"></a>2.7.5 总结</h4><table>
+<thead>
+<tr>
+<th>路由</th>
+<th>请求方式</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>/articles</td>
+<td>get</td>
+<td>查询所有文章</td>
+</tr>
+<tr>
+<td>/articles/:id</td>
+<td>get</td>
+<td>查询指定 id 的文章</td>
+</tr>
+<tr>
+<td>/articles</td>
+<td>post</td>
+<td>新增文章</td>
+</tr>
+<tr>
+<td>/articles/:id</td>
+<td>put</td>
+<td>编辑指定 id 的文章</td>
+</tr>
+<tr>
+<td>/articles/:id</td>
+<td>delete</td>
+<td>删除指定 id 的文章</td>
+</tr>
+</tbody></table>
+<h3 id="2-8-模糊搜索"><a href="#2-8-模糊搜索" class="headerlink" title="2.8 模糊搜索"></a>2.8 模糊搜索</h3><p>定义一个叫做 <code>where</code> 的空对象，里面保存需要查询的条件。</p>
+<p>接收<code>title</code>参数，<code>where</code> 里添加一个 <code>like</code>（<code>SQL</code> 语句语法）。前后各放了一个 <code>%</code>，前面有百分号，表示关键词，前面可以有其他文字。后面有百分号，就表示关键词后面，可以跟着其他文字。模型调用<code>findAll</code>方法。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">router.get(<span class="string">'/'</span>, <span class="keyword">async</span> <span class="function"><span class="keyword">function</span> (<span class="params">req, res, next</span>) </span>&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">   <span class="comment">// 搜索</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="keyword">var</span> where = &#123;&#125;;</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="comment">// 模糊查询标题</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="keyword">var</span> title = req.query.title;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="keyword">if</span> (title) &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        where.title = &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">            [Op.like]: <span class="string">'%'</span> + title + <span class="string">'%'</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">        &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="keyword">var</span> articles = <span class="keyword">await</span> models.Article.findAll(&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        order: [[<span class="string">'id'</span>, <span class="string">'DESC'</span>]],</span></pre></td></tr><tr><td class="code"><pre><span class="line">        where: where</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">    res.json(&#123;<span class="attr">articles</span>: articles&#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<h3 id="2-9-分页查询"><a href="#2-9-分页查询" class="headerlink" title="2.9 分页查询"></a>2.9 分页查询</h3><h4 id="2-9-1-分页原理"><a href="#2-9-1-分页原理" class="headerlink" title="2.9.1 分页原理"></a>2.9.1 分页原理</h4><table>
+<thead>
+<tr>
+<th align="center">当前页数（currentPage）</th>
+<th align="center">从哪里开始（offset）</th>
+<th align="center">每页显示多少条（pageSize）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">10</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">20</td>
+<td align="center">10</td>
+</tr>
+</tbody></table>
+<p>由表格可知：</p>
+<p> <code>pageSize</code> 参数是固定不动的，可以得出<code>offset</code>和<code>currentPage</code>的线性关系</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">offset &#x3D; (currentPage - 1) * pageSize</span></pre></td></tr><tr><td class="code"><pre><span class="line">offset &#x3D; (当前页数 - 1) * 每页条数</span></pre></td></tr></table></figure>
+
+<h4 id="2-9-2-分页实现"><a href="#2-9-2-分页实现" class="headerlink" title="2.9.2 分页实现"></a>2.9.2 分页实现</h4><p><strong>当前页数（currentPage）</strong></p>
+<p>如果用户传了这个参数，<code>currentPage</code>则为用户传递的值（注：用户传递的数据都是字符串，需要使用 <code>parseInt</code> 方法转换）；如果用户没传，则默认是 <code>第一页</code>。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> currentPage = <span class="built_in">parseInt</span>(req.query.currentPage) || <span class="number">1</span>;</span></pre></td></tr></table></figure>
+
+<p>或</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> currentPage = <span class="built_in">parseInt</span>(req.query.currentPage);</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> (!currentPage) &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    currentPage = <span class="number">1</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+<p><strong>每页显示多少条（pageSize）</strong></p>
+<p>如果用户传了这个参数，<code>pageSize</code>则为用户传递的值；如果用户不传递参数过来，随便给它一个默认值。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> pageSize = <span class="built_in">parseInt</span>(req.query.pageSize) || <span class="number">2</span>;</span></pre></td></tr></table></figure>
+
+<p><strong>findAndCountAll、offset 与 limit</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> result = <span class="keyword">await</span> models.Article.findAndCountAll(&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    order:[[<span class="string">'id'</span>, <span class="string">'DESC'</span>]],</span></pre></td></tr><tr><td class="code"><pre><span class="line">    where: where,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    offset: (currentPage - <span class="number">1</span>) * pageSize,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    limit: pageSize</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<ul>
+<li>将 <code>findAll</code> 改为 <code>findAndCountAll</code>，因为<code>findAndCountAll</code> 能返回总的记录数</li>
+<li>接收值的 <code>articles</code> 改为 <code>result</code>，因为不仅仅有<code>文章列表</code>，还有<code>记录总数</code></li>
+<li>添加上 <code>offset</code> 和 <code>limit</code> 参数，<code>offset</code> 对应的值为公式得出的结果，<code>limit</code>的值为<code>pageSize</code></li>
+</ul>
+<p><strong>响应出分页的 <code>json</code></strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">return</span> res.json(result);</span></pre></td></tr></table></figure>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210425171239.png" alt="模糊查询" style="zoom: 50%;">
+
+<ul>
+<li><code>count</code> 里，保存的就是记录总数了，咱们数据库一共就是只有 <code>4</code> 条记录</li>
+<li><code>rows</code> 里，存的才是文章列表。</li>
+</ul>
+<p><strong>返回分页数据</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">res.json(&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">       articles: result.rows,</span></pre></td></tr><tr><td class="code"><pre><span class="line">       pagination: &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">           currentPage: currentPage,</span></pre></td></tr><tr><td class="code"><pre><span class="line">           pageSize: pageSize,</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">           <span class="comment">// 一共有多少条记录</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">           total: result.count</span></pre></td></tr><tr><td class="code"><pre><span class="line">       &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">   &#125;);</span></pre></td></tr></table></figure>
+
+<h3 id="2-10-表的关联"><a href="#2-10-表的关联" class="headerlink" title="2.10 表的关联"></a>2.10 表的关联</h3><h4 id="2-10-1-评论模型"><a href="#2-10-1-评论模型" class="headerlink" title="2.10.1 评论模型"></a>2.10.1 评论模型</h4><p>给文章添加上评论模块，使用关联模型，在查询文章的时候，自动查询出对应的评论。</p>
+<p>添加评论模型代码：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sequelize model:generate --name Comment --attributes articleId:integer,content:text</span></pre></td></tr><tr><td class="code"><pre><span class="line">$ sequelize db:migrate</span></pre></td></tr></table></figure>
+
+<h4 id="2-10-2-种子文件"><a href="#2-10-2-种子文件" class="headerlink" title="2.10.2 种子文件"></a>2.10.2 种子文件</h4><p><strong>创建建种子文件</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sequelize seed:generate --name comment</span></pre></td></tr></table></figure>
+
+<p><strong>导入数据</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="meta">'use strict'</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    up: <span class="function">(<span class="params">queryInterface, Sequelize</span>) =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        <span class="keyword">return</span> queryInterface.bulkInsert(<span class="string">'Comments'</span>, [</span></pre></td></tr><tr><td class="code"><pre><span class="line">            &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">                articleId: <span class="number">1</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">                content: <span class="string">"这是文章1的评论"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">                createdAt: <span class="keyword">new</span> <span class="built_in">Date</span>(),</span></pre></td></tr><tr><td class="code"><pre><span class="line">                updatedAt: <span class="keyword">new</span> <span class="built_in">Date</span>()</span></pre></td></tr><tr><td class="code"><pre><span class="line">            &#125;,</span></pre></td></tr><tr><td class="code"><pre><span class="line">            &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">                articleId: <span class="number">1</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">                content: <span class="string">"这个还是文章1的评论啊"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">                createdAt: <span class="keyword">new</span> <span class="built_in">Date</span>(),</span></pre></td></tr><tr><td class="code"><pre><span class="line">                updatedAt: <span class="keyword">new</span> <span class="built_in">Date</span>()</span></pre></td></tr><tr><td class="code"><pre><span class="line">            &#125;,</span></pre></td></tr><tr><td class="code"><pre><span class="line">            &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">                articleId: <span class="number">2</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">                content: <span class="string">"这是文章2的评论"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">                createdAt: <span class="keyword">new</span> <span class="built_in">Date</span>(),</span></pre></td></tr><tr><td class="code"><pre><span class="line">                updatedAt: <span class="keyword">new</span> <span class="built_in">Date</span>()</span></pre></td></tr><tr><td class="code"><pre><span class="line">            &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        ], &#123;&#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;,</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">    down: <span class="function">(<span class="params">queryInterface, Sequelize</span>) =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        <span class="keyword">return</span> queryInterface.bulkDelete(<span class="string">'Comments'</span>, <span class="literal">null</span>, &#123;&#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr></table></figure>
+
+<p><strong>刷新数据库</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$  sequelize db:seed --seed xxxx-comment</span></pre></td></tr></table></figure>
+
+<h4 id="2-10-3-关联"><a href="#2-10-3-关联" class="headerlink" title="2.10.3 关联"></a>2.10.3 关联</h4><p><strong>打开 <code>models/article.js</code> 模型</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">Article.associate = <span class="function"><span class="keyword">function</span> (<span class="params">models</span>) </span>&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    models.Article.hasMany(models.Comment)</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr></table></figure>
+
+<blockquote>
+<p>一篇文章中<strong>有很多</strong>评论</p>
+</blockquote>
+<p><strong>打开 <code>models/comment.js</code> 模型</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">Comment.associate = <span class="function"><span class="keyword">function</span>(<span class="params">models</span>) </span>&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  models.Comment.belongsTo(models.Article);</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr></table></figure>
+
+<blockquote>
+<p>每条评论都是<strong>属于</strong>一篇文章的</p>
+</blockquote>
+<h4 id="2-10-4-查询"><a href="#2-10-4-查询" class="headerlink" title="2.10.4 查询"></a>2.10.4 查询</h4><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">router.get(<span class="string">'/:id'</span>, <span class="keyword">async</span> <span class="function"><span class="keyword">function</span> (<span class="params">req, res, next</span>) </span>&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="keyword">var</span> article = <span class="keyword">await</span> models.Article.findOne(&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        where: &#123;<span class="attr">id</span>: req.params.id&#125;,</span></pre></td></tr><tr><td class="code"><pre><span class="line">        include: [models.Comment],</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;)</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">    res.json(&#123;<span class="attr">article</span>: article&#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<p>加上<code>include</code>属性，会自动将当前文章对应的评论查出来</p>
+<h4 id="2-10-5-效果"><a href="#2-10-5-效果" class="headerlink" title="2.10.5 效果"></a>2.10.5 效果</h4><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210425172651.png" alt="关联查询" style="zoom:50%;">
+
+<h2 id="3-参考及项目地址"><a href="#3-参考及项目地址" class="headerlink" title="3. 参考及项目地址"></a>3. 参考及项目地址</h2><h3 id="3-1-参考地址"><a href="#3-1-参考地址" class="headerlink" title="3.1 参考地址"></a>3.1 参考地址</h3><p><a href="[https://blog.csdn.net/u010132177/article/details/109145320?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161934100516780261912162%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=161934100516780261912162&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-5-109145320.first_rank_v2_pc_rank_v29&utm_term=node%E7%94%A8express%E5%86%99%E5%90%8E%E7%AB%AFrestful%E6%8E%A5%E5%8F%A3%E5%AE%9E%E6%88%98&spm=1018.2226.3001.4187](https://blog.csdn.net/u010132177/article/details/109145320?ops_request_misc=%7B%22request%5Fid%22%3A%22161934100516780261912162%22%2C%22scm%22%3A%2220140713.130102334..%22%7D&request_id=161934100516780261912162&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-5-109145320.first_rank_v2_pc_rank_v29&utm_term=node用express写后端restful接口实战&spm=1018.2226.3001.4187)">node用express写后端restful接口实战</a></p>
+<h3 id="3-2-项目地址"><a href="#3-2-项目地址" class="headerlink" title="3.2 项目地址"></a>3.2 项目地址</h3>]]></content>
+      <categories>
+        <category>Node后端</category>
+      </categories>
+      <tags>
+        <tag>后端</tag>
+        <tag>Node</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>开启MySQL常见问题</title>
     <url>/2020/11/06/%E5%BC%80%E5%90%AFMySQL%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<h1 id="问题一"><a href="#问题一" class="headerlink" title="问题一"></a>问题一</h1><p><strong>问题描述：</strong></p>
@@ -811,6 +1183,72 @@ target 用于链接页面的打开方式
         <tag>后端</tag>
         <tag>数据库</tag>
         <tag>MySql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>积分商城（商家端）总结</title>
+    <url>/2020/11/07/%E7%A7%AF%E5%88%86%E5%95%86%E5%9F%8E%EF%BC%88%E5%95%86%E5%AE%B6%E7%AB%AF%EF%BC%89%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h1 id="一、组件的调用方式"><a href="#一、组件的调用方式" class="headerlink" title="一、组件的调用方式"></a>一、组件的调用方式</h1><br>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-51.png" alt="2020-11-10-0-51"></p>
+<h1 id="二、element-ui表单必填写法"><a href="#二、element-ui表单必填写法" class="headerlink" title="二、element-ui表单必填写法"></a>二、element-ui表单必填写法</h1><br>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-52.png" alt="2020-11-10-0-52"></p>
+<a id="more"></a>
+
+<h1 id="三、this-nextTick-函数的用法"><a href="#三、this-nextTick-函数的用法" class="headerlink" title="三、this.$nextTick()函数的用法"></a>三、this.$nextTick()函数的用法</h1><br>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-53.png" alt="2020-11-10-0-53"></p>
+<h1 id="四、element-ui输入框提示写法"><a href="#四、element-ui输入框提示写法" class="headerlink" title="四、element-ui输入框提示写法"></a>四、element-ui输入框提示写法</h1><br>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-54.png" style="zoom: 67%;">
+
+<h1 id="五、判断路由是否满足条件"><a href="#五、判断路由是否满足条件" class="headerlink" title="五、判断路由是否满足条件"></a>五、判断路由是否满足条件</h1><br>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-55.png" alt="2020-11-10-0-55" style="zoom: 67%;">
+
+<p><font size="4"> <strong>flist属性：</strong></font></p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-56.png" alt="2020-11-10 0-56" style="zoom:80%;">
+
+<h1 id="六、路由赋值"><a href="#六、路由赋值" class="headerlink" title="六、路由赋值"></a>六、路由赋值</h1><br>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-57.png">
+
+<h1 id="七、主页路由跳转出错改善方法"><a href="#七、主页路由跳转出错改善方法" class="headerlink" title="七、主页路由跳转出错改善方法"></a>七、主页路由跳转出错改善方法</h1><br>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">router.push(location, onComplete(), onAbort())</span></pre></td></tr></table></figure>
+
+<blockquote>
+<p>router.push( … ) =&gt;跳转到某个子页面，并在history中添加一条记录。</p>
+<p>onComplete和onAbort是在路由跳转完成和失败时分别执行的回调函数</p>
+</blockquote>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%201-00.png">
+
+<h1 id="八、修改测试接口"><a href="#八、修改测试接口" class="headerlink" title="八、修改测试接口"></a>八、修改测试接口</h1><br>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%201-02.png" style="zoom: 50%;">
+
+<h1 id="九、查看接口地址"><a href="#九、查看接口地址" class="headerlink" title="九、查看接口地址"></a>九、查看接口地址</h1><br>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-02_17-23-31.png" alt="Snipaste_2020-11-02_17-23-31"></p>
+<h1 id="十、设置参数默认值"><a href="#十、设置参数默认值" class="headerlink" title="十、设置参数默认值"></a>十、设置参数默认值</h1><br>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-03_15-11-11.png" alt="Snipaste_2020-11-03_15-11-11" style="zoom: 67%;">
+
+<h1 id="十一、element-ui对话框组件写法"><a href="#十一、element-ui对话框组件写法" class="headerlink" title="十一、element-ui对话框组件写法"></a>十一、element-ui对话框组件写法</h1><br>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-05_16-23-53.png" alt="Snipaste_2020-11-05_16-23-53"></p>
+<h1 id="十二、修改图片访问地址"><a href="#十二、修改图片访问地址" class="headerlink" title="十二、修改图片访问地址"></a>十二、修改图片访问地址</h1><br>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-02_17-33-32.png" alt="Snipaste_2020-11-02_17-33-32"></p>
+]]></content>
+      <categories>
+        <category>积分商城</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>VUE</tag>
+        <tag>积分商城</tag>
       </tags>
   </entry>
   <entry>
@@ -924,72 +1362,6 @@ target 用于链接页面的打开方式
 <p>与后端交接，让后端传的value为后面的值，而不是一整个地址</p>
 </blockquote>
 <img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201120105245550.png" alt="image-20201120105245550" style="zoom:80%;">]]></content>
-      <categories>
-        <category>积分商城</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>VUE</tag>
-        <tag>积分商城</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>积分商城（商家端）总结</title>
-    <url>/2020/11/07/%E7%A7%AF%E5%88%86%E5%95%86%E5%9F%8E%EF%BC%88%E5%95%86%E5%AE%B6%E7%AB%AF%EF%BC%89%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<h1 id="一、组件的调用方式"><a href="#一、组件的调用方式" class="headerlink" title="一、组件的调用方式"></a>一、组件的调用方式</h1><br>
-
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-51.png" alt="2020-11-10-0-51"></p>
-<h1 id="二、element-ui表单必填写法"><a href="#二、element-ui表单必填写法" class="headerlink" title="二、element-ui表单必填写法"></a>二、element-ui表单必填写法</h1><br>
-
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-52.png" alt="2020-11-10-0-52"></p>
-<a id="more"></a>
-
-<h1 id="三、this-nextTick-函数的用法"><a href="#三、this-nextTick-函数的用法" class="headerlink" title="三、this.$nextTick()函数的用法"></a>三、this.$nextTick()函数的用法</h1><br>
-
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-53.png" alt="2020-11-10-0-53"></p>
-<h1 id="四、element-ui输入框提示写法"><a href="#四、element-ui输入框提示写法" class="headerlink" title="四、element-ui输入框提示写法"></a>四、element-ui输入框提示写法</h1><br>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-54.png" style="zoom: 67%;">
-
-<h1 id="五、判断路由是否满足条件"><a href="#五、判断路由是否满足条件" class="headerlink" title="五、判断路由是否满足条件"></a>五、判断路由是否满足条件</h1><br>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-55.png" alt="2020-11-10-0-55" style="zoom: 67%;">
-
-<p><font size="4"> <strong>flist属性：</strong></font></p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-56.png" alt="2020-11-10 0-56" style="zoom:80%;">
-
-<h1 id="六、路由赋值"><a href="#六、路由赋值" class="headerlink" title="六、路由赋值"></a>六、路由赋值</h1><br>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-57.png">
-
-<h1 id="七、主页路由跳转出错改善方法"><a href="#七、主页路由跳转出错改善方法" class="headerlink" title="七、主页路由跳转出错改善方法"></a>七、主页路由跳转出错改善方法</h1><br>
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">router.push(location, onComplete(), onAbort())</span></pre></td></tr></table></figure>
-
-<blockquote>
-<p>router.push( … ) =&gt;跳转到某个子页面，并在history中添加一条记录。</p>
-<p>onComplete和onAbort是在路由跳转完成和失败时分别执行的回调函数</p>
-</blockquote>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%201-00.png">
-
-<h1 id="八、修改测试接口"><a href="#八、修改测试接口" class="headerlink" title="八、修改测试接口"></a>八、修改测试接口</h1><br>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%201-02.png" style="zoom: 50%;">
-
-<h1 id="九、查看接口地址"><a href="#九、查看接口地址" class="headerlink" title="九、查看接口地址"></a>九、查看接口地址</h1><br>
-
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-02_17-23-31.png" alt="Snipaste_2020-11-02_17-23-31"></p>
-<h1 id="十、设置参数默认值"><a href="#十、设置参数默认值" class="headerlink" title="十、设置参数默认值"></a>十、设置参数默认值</h1><br>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-03_15-11-11.png" alt="Snipaste_2020-11-03_15-11-11" style="zoom: 67%;">
-
-<h1 id="十一、element-ui对话框组件写法"><a href="#十一、element-ui对话框组件写法" class="headerlink" title="十一、element-ui对话框组件写法"></a>十一、element-ui对话框组件写法</h1><br>
-
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-05_16-23-53.png" alt="Snipaste_2020-11-05_16-23-53"></p>
-<h1 id="十二、修改图片访问地址"><a href="#十二、修改图片访问地址" class="headerlink" title="十二、修改图片访问地址"></a>十二、修改图片访问地址</h1><br>
-
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-02_17-33-32.png" alt="Snipaste_2020-11-02_17-33-32"></p>
-]]></content>
       <categories>
         <category>积分商城</category>
       </categories>
