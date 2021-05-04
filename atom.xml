@@ -6,7 +6,7 @@
   <link href="https://ming-clavin.github.io/atom.xml" rel="self"/>
   
   <link href="https://ming-clavin.github.io/"/>
-  <updated>2021-05-03T16:40:44.085Z</updated>
+  <updated>2021-05-04T14:20:27.823Z</updated>
   <id>https://ming-clavin.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MySQL让主键id重新排序</title>
+    <link href="https://ming-clavin.github.io/2021/05/04/MySQL%E8%AE%A9%E4%B8%BB%E9%94%AEid%E9%87%8D%E6%96%B0%E6%8E%92%E5%BA%8F/"/>
+    <id>https://ming-clavin.github.io/2021/05/04/MySQL%E8%AE%A9%E4%B8%BB%E9%94%AEid%E9%87%8D%E6%96%B0%E6%8E%92%E5%BA%8F/</id>
+    <published>2021-05-04T14:19:00.000Z</published>
+    <updated>2021-05-04T14:20:27.823Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="MySQL让主键id重新排序"><a href="#MySQL让主键id重新排序" class="headerlink" title="MySQL让主键id重新排序"></a>MySQL让主键id重新排序</h1><ol><li><p>备份表结构</p><p>create table table_bak like table_name;</p></li><li><p>备份表数据</p><p>insert into table_bak select * from table_name;</p></li><li><p>删除原来主键字段(如id)</p><p>alter table table_name drop id;</p></li><li><p>添加主键，自增，放在第一位</p><p>alter table table_name add id int(11) primary key auto_increment first;</p></li><li><p>检查没问题的话，删除备份的表</p><p>delete from table_bak;</p></li></ol><p><strong>参考：<a href="https://blog.csdn.net/u013091013/article/details/78194012">mysql让主键id重新排序</a></strong></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;MySQL让主键id重新排序&quot;&gt;&lt;a href=&quot;#MySQL让主键id重新排序&quot; class=&quot;headerlink&quot; title=&quot;MySQL让主键id重新排序&quot;&gt;&lt;/a&gt;MySQL让主键id重新排序&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;备份表结构&lt;/p&gt;
+&lt;p&gt;</summary>
+      
+    
+    
+    
+    <category term="MySQL" scheme="https://ming-clavin.github.io/categories/MySQL/"/>
+    
+    
+    <category term="后端" scheme="https://ming-clavin.github.io/tags/%E5%90%8E%E7%AB%AF/"/>
+    
+    <category term="MySQL" scheme="https://ming-clavin.github.io/tags/MySQL/"/>
+    
+  </entry>
   
   <entry>
     <title>误存文件夹到GitHub的解决方法</title>
@@ -322,7 +350,7 @@
     <link href="https://ming-clavin.github.io/2020/11/06/%E5%BC%80%E5%90%AFMySQL%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
     <id>https://ming-clavin.github.io/2020/11/06/%E5%BC%80%E5%90%AFMySQL%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</id>
     <published>2020-11-05T16:28:50.000Z</published>
-    <updated>2020-11-07T08:40:04.242Z</updated>
+    <updated>2021-05-04T14:20:36.446Z</updated>
     
     <content type="html"><![CDATA[<h1 id="问题一"><a href="#问题一" class="headerlink" title="问题一"></a>问题一</h1><p><strong>问题描述：</strong></p><blockquote><p>在命令行输入 mysql -u root -p 登录mysql，返回”Can’t connect to MySQL server on localhost (10061)”错误</p></blockquote><p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201105233916432.png" alt="image-20201105233916432"></p><p><strong>处理方式：</strong></p><p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201105234201467.png" alt="image-20201105234201467"></p><a id="more"></a><h1 id="问题二"><a href="#问题二" class="headerlink" title="问题二"></a>问题二</h1><p><strong>问题描述：</strong></p><blockquote><p>在windos 的cmd下安装mysql，在mysql的bin目录下面执行： mysqld –install。</p><p>报错：Install/Remove of the Service Denied</p></blockquote><p><strong>处理方式：</strong></p><p>打开cmd.exe程序的时候选择“用管理员身份打开”。</p><h1 id="问题三"><a href="#问题三" class="headerlink" title="问题三"></a>问题三</h1><p><strong>问题描述：</strong></p><blockquote><p>打开Navicat 软件，点击数据库，报错：1045 Access denied for user ‘root’@’localhost’ (using password: YES)</p></blockquote><p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/916611-20171108104341934-1669606114.png" alt="img"></p><p><strong>解决方式：</strong></p><p>右击”root“ - ”修改连接“，进行修改密码</p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201106002338078.png" alt="image-20201106002338078" style="zoom:50%;">]]></content>
     
@@ -340,13 +368,13 @@
     <category term="Vue_Shop项目" scheme="https://ming-clavin.github.io/categories/Vue-Shop%E9%A1%B9%E7%9B%AE/"/>
     
     
-    <category term="VUE" scheme="https://ming-clavin.github.io/tags/VUE/"/>
-    
     <category term="后端" scheme="https://ming-clavin.github.io/tags/%E5%90%8E%E7%AB%AF/"/>
     
-    <category term="数据库" scheme="https://ming-clavin.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <category term="MySQL" scheme="https://ming-clavin.github.io/tags/MySQL/"/>
     
-    <category term="MySql" scheme="https://ming-clavin.github.io/tags/MySql/"/>
+    <category term="VUE" scheme="https://ming-clavin.github.io/tags/VUE/"/>
+    
+    <category term="数据库" scheme="https://ming-clavin.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
@@ -355,7 +383,7 @@
     <link href="https://ming-clavin.github.io/2020/11/03/%E5%90%8E%E7%AB%AF%E6%8E%A5%E5%8F%A3%E9%85%8D%E7%BD%AE/"/>
     <id>https://ming-clavin.github.io/2020/11/03/%E5%90%8E%E7%AB%AF%E6%8E%A5%E5%8F%A3%E9%85%8D%E7%BD%AE/</id>
     <published>2020-11-03T15:05:48.000Z</published>
-    <updated>2020-11-09T17:24:27.391Z</updated>
+    <updated>2021-05-04T14:20:47.954Z</updated>
     
     <content type="html"><![CDATA[<h1 id="一、安装MySql"><a href="#一、安装MySql" class="headerlink" title="一、安装MySql"></a>一、安装MySql</h1><h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1.安装"></a>1.安装</h2><p>镜像安装（zip），配置初始化的my.ini文件的文件，按照命令操作（管理员打开），</p><p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-45.png" alt="2020-11-10 0-45"></p><a id="more"></a><h2 id="2-配置环境变量"><a href="#2-配置环境变量" class="headerlink" title="2.配置环境变量"></a>2.配置环境变量</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10 0-46.png" alt="2020-11-10 0-46" style="zoom:50%;"><h1 id="二、安装Navicat，导入数据库"><a href="#二、安装Navicat，导入数据库" class="headerlink" title="二、安装Navicat，导入数据库"></a>二、安装Navicat，导入数据库</h1><h2 id="1-新建MySQL连接"><a href="#1-新建MySQL连接" class="headerlink" title="1.新建MySQL连接"></a>1.新建MySQL连接</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10 0-47.png" alt="2020-11-10 0-47" style="zoom: 50%;"><h2 id="2-新建连接，导入sql文件"><a href="#2-新建连接，导入sql文件" class="headerlink" title="2.新建连接，导入sql文件"></a>2.新建连接，导入sql文件</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10 0-48.png" alt="2020-11-10 0-48" style="zoom:50%;"><h1 id="三、运行api"><a href="#三、运行api" class="headerlink" title="三、运行api"></a>三、运行api</h1><p>在目标接口打开Git Bash，输入npm install下载需要的组件，输入$ node app.js运行api接口</p><hr><blockquote><p><strong>遇到问题：</strong>登入失败</p><p><strong>解决方案：</strong>修改D:\Vue\2020.10\vue_shop_api\config\default.json 文件里面的账号密码</p></blockquote><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10 0-49.png" alt="2020-11-10 0-49" style="zoom:80%;"><h1 id="四、安装Postman检测接口"><a href="#四、安装Postman检测接口" class="headerlink" title="四、安装Postman检测接口"></a>四、安装Postman检测接口</h1><br><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10 0-50.png" alt="2020-11-10 0-50" style="zoom:80%;"><h1 id="五、参考资料"><a href="#五、参考资料" class="headerlink" title="五、参考资料"></a>五、参考资料</h1><p>1.<a href="https://www.cnblogs.com/winton-nfs/p/11524007.html">安装mysql教程</a></p>]]></content>
     
@@ -368,13 +396,13 @@
     <category term="Vue_Shop项目" scheme="https://ming-clavin.github.io/categories/Vue-Shop%E9%A1%B9%E7%9B%AE/"/>
     
     
-    <category term="VUE" scheme="https://ming-clavin.github.io/tags/VUE/"/>
-    
     <category term="后端" scheme="https://ming-clavin.github.io/tags/%E5%90%8E%E7%AB%AF/"/>
     
-    <category term="数据库" scheme="https://ming-clavin.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <category term="MySQL" scheme="https://ming-clavin.github.io/tags/MySQL/"/>
     
-    <category term="MySql" scheme="https://ming-clavin.github.io/tags/MySql/"/>
+    <category term="VUE" scheme="https://ming-clavin.github.io/tags/VUE/"/>
+    
+    <category term="数据库" scheme="https://ming-clavin.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   

@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="后端,MySQL," />
 
 
 
@@ -81,11 +81,15 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Ming-Calvin">
-<meta property="og:url" content="https:&#x2F;&#x2F;ming-clavin.github.io&#x2F;categories&#x2F;%E6%97%A5%E5%B8%B8%E5%AD%A6%E4%B9%A0&#x2F;index.html">
+<meta name="description" content="MySQL让主键id重新排序 备份表结构 create table table_bak like table_name;  备份表数据 insert into table_bak select * from table_name;  删除原来主键字段(如id) alter table table_name drop id;  添加主键，自增，放在第一位 alter table table_name">
+<meta name="keywords" content="后端,MySQL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL让主键id重新排序">
+<meta property="og:url" content="https:&#x2F;&#x2F;ming-clavin.github.io&#x2F;2021&#x2F;05&#x2F;04&#x2F;MySQL%E8%AE%A9%E4%B8%BB%E9%94%AEid%E9%87%8D%E6%96%B0%E6%8E%92%E5%BA%8F&#x2F;index.html">
 <meta property="og:site_name" content="Ming-Calvin">
+<meta property="og:description" content="MySQL让主键id重新排序 备份表结构 create table table_bak like table_name;  备份表数据 insert into table_bak select * from table_name;  删除原来主键字段(如id) alter table table_name drop id;  添加主键，自增，放在第一位 alter table table_name">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2021-05-04T14:20:27.823Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -116,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://ming-clavin.github.io/categories/日常学习/"/>
+  <link rel="canonical" href="https://ming-clavin.github.io/2021/05/04/MySQL让主键id重新排序/"/>
 
 
 
 
 
-  <title>分类: 日常学习 | Ming-Calvin</title>
+  <title>MySQL让主键id重新排序 | Ming-Calvin</title>
   
 
 
@@ -141,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 	<a href="https://github.com/Ming-Clavin" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 
@@ -260,111 +264,198 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block category">
-
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>日常学习<small>分类</small>
-        </h1>
-      </div>
-
-      
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ming-clavin.github.io/2021/05/04/MySQL%E8%AE%A9%E4%B8%BB%E9%94%AEid%E9%87%8D%E6%96%B0%E6%8E%92%E5%BA%8F/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Ming-Clavin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Ming-Calvin.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ming-Calvin">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2020/11/25/js%E8%8E%B7%E5%8F%96%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E5%80%BC%E7%9A%842%E7%A7%8D%E6%96%B9%E6%B3%95/" itemprop="url">
-              
-                <span itemprop="name">js获取对象属性值的2种方法</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">MySQL让主键id重新排序</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-11-25T23:00:58+08:00"
-              content="2020-11-25" >
-          11-25
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-05-04T22:19:00+08:00">
+                2021-05-04
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/MySQL/" itemprop="url" rel="index">
+                    <span itemprop="name">MySQL</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2020/11/24/img%E5%92%8Cdiv%E4%B9%8B%E9%97%B4%E6%9C%89%E9%97%B4%E9%9A%99%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" itemprop="url">
-              
-                <span itemprop="name">img和div之间有间隙的原因及解决方法</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-11-24T01:22:45+08:00"
-              content="2020-11-24" >
-          11-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+      
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2020/11/24/a%E6%A0%87%E7%AD%BE%E5%8E%BB%E9%99%A4%E9%BB%98%E8%AE%A4%E6%A0%B7%E5%BC%8F/" itemprop="url">
-              
-                <span itemprop="name">a标签去除默认样式</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-11-24T00:57:10+08:00"
-              content="2020-11-24" >
-          11-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+        <h1 id="MySQL让主键id重新排序"><a href="#MySQL让主键id重新排序" class="headerlink" title="MySQL让主键id重新排序"></a>MySQL让主键id重新排序</h1><ol>
+<li><p>备份表结构</p>
+<p>create table table_bak like table_name;</p>
+</li>
+<li><p>备份表数据</p>
+<p>insert into table_bak select * from table_name;</p>
+</li>
+<li><p>删除原来主键字段(如id)</p>
+<p>alter table table_name drop id;</p>
+</li>
+<li><p>添加主键，自增，放在第一位</p>
+<p>alter table table_name add id int(11) primary key auto_increment first;</p>
+</li>
+<li><p>检查没问题的话，删除备份的表</p>
+<p>delete from table_bak;</p>
+</li>
+</ol>
+<p><strong>参考：<a href="https://blog.csdn.net/u013091013/article/details/78194012">mysql让主键id重新排序</a></strong></p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+	
+	<div>
+		
+			<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+		
+	</div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E5%90%8E%E7%AB%AF/" rel="tag"><i class="fa fa-tag"></i>后端</a>
+          
+            <a href="/tags/MySQL/" rel="tag"><i class="fa fa-tag"></i>MySQL</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2021/05/04/%E8%AF%AF%E5%AD%98%E6%96%87%E4%BB%B6%E5%A4%B9%E5%88%B0GitHub%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" rel="next" title="误存文件夹到GitHub的解决方法">
+                <i class="fa fa-chevron-left"></i> 误存文件夹到GitHub的解决方法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -372,6 +463,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -392,8 +487,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -480,6 +584,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#MySQL让主键id重新排序"><span class="nav-text">MySQL让主键id重新排序</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -628,6 +748,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

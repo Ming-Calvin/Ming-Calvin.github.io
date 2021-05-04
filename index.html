@@ -275,6 +275,169 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ming-clavin.github.io/2021/05/04/MySQL%E8%AE%A9%E4%B8%BB%E9%94%AEid%E9%87%8D%E6%96%B0%E6%8E%92%E5%BA%8F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Ming-Clavin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Ming-Calvin.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ming-Calvin">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/05/04/MySQL%E8%AE%A9%E4%B8%BB%E9%94%AEid%E9%87%8D%E6%96%B0%E6%8E%92%E5%BA%8F/" itemprop="url">MySQL让主键id重新排序</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-05-04T22:19:00+08:00">
+                2021-05-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/MySQL/" itemprop="url" rel="index">
+                    <span itemprop="name">MySQL</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="MySQL让主键id重新排序"><a href="#MySQL让主键id重新排序" class="headerlink" title="MySQL让主键id重新排序"></a>MySQL让主键id重新排序</h1><ol>
+<li><p>备份表结构</p>
+<p>create table table_bak like table_name;</p>
+</li>
+<li><p>备份表数据</p>
+<p>insert into table_bak select * from table_name;</p>
+</li>
+<li><p>删除原来主键字段(如id)</p>
+<p>alter table table_name drop id;</p>
+</li>
+<li><p>添加主键，自增，放在第一位</p>
+<p>alter table table_name add id int(11) primary key auto_increment first;</p>
+</li>
+<li><p>检查没问题的话，删除备份的表</p>
+<p>delete from table_bak;</p>
+</li>
+</ol>
+<p><strong>参考：<a href="https://blog.csdn.net/u013091013/article/details/78194012">mysql让主键id重新排序</a></strong></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+	
+	<div>
+		
+	</div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://ming-clavin.github.io/2021/05/04/%E8%AF%AF%E5%AD%98%E6%96%87%E4%BB%B6%E5%A4%B9%E5%88%B0GitHub%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1643,164 +1806,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ming-clavin.github.io/2020/11/11/el-if%E3%80%81el-else-if%E3%80%81el-else/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Ming-Clavin">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/Ming-Calvin.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ming-Calvin">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/11/11/el-if%E3%80%81el-else-if%E3%80%81el-else/" itemprop="url">el-if、el-else-if、el-else</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-11-11T00:28:49+08:00">
-                2020-11-11
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/VUE%E6%95%B4%E7%90%86/" itemprop="url" rel="index">
-                    <span itemprop="name">VUE整理</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="一、v-if-与-v-else"><a href="#一、v-if-与-v-else" class="headerlink" title="一、v-if 与 v-else"></a>一、v-if 与 v-else</h1><p><strong>v-if为真时，显示v-if的内容，否则显示v-else的内容</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;h2 v-if&#x3D;&quot;true&quot;&gt;v-if&lt;&#x2F;h2&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&lt;h2 v-else&gt;v-else&lt;&#x2F;h2&gt;</span></pre></td></tr></table></figure>
-
-<blockquote>
-<p>v-else 元素必须紧跟在带 v-if 或者 v-else-if 的元素的后面，否则它将不会被识别。</p>
-</blockquote>
-<br>
-
-<h1 id="二、v-else-if"><a href="#二、v-else-if" class="headerlink" title="二、v-else-if"></a>二、v-else-if</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;div v-if&#x3D;&quot;type &#x3D;&#x3D;&#x3D; &#39;A&#39;&quot;&gt; A &lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&lt;div v-else-if&#x3D;&quot;type &#x3D;&#x3D;&#x3D; &#39;B&#39;&quot;&gt; B &lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&lt;div v-else-if&#x3D;&quot;type &#x3D;&#x3D;&#x3D; &#39;C&#39;&quot;&gt; C &lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&lt;div v-else&gt;</span></pre></td></tr></table></figure>
-
-<blockquote>
-<p>类似于 v-else，v-else-if 也必须紧跟在带 v-if 或者 v-else-if 的元素之后</p>
-</blockquote>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-	
-	<div>
-		
-	</div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1855,7 +1860,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">18</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1866,7 +1871,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
