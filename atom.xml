@@ -6,7 +6,7 @@
   <link href="https://ming-clavin.github.io/atom.xml" rel="self"/>
   
   <link href="https://ming-clavin.github.io/"/>
-  <updated>2021-05-04T14:20:27.823Z</updated>
+  <updated>2021-05-12T14:44:31.865Z</updated>
   <id>https://ming-clavin.github.io/</id>
   
   <author>
@@ -17,20 +17,102 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>MySQL让主键id重新排序</title>
-    <link href="https://ming-clavin.github.io/2021/05/04/MySQL%E8%AE%A9%E4%B8%BB%E9%94%AEid%E9%87%8D%E6%96%B0%E6%8E%92%E5%BA%8F/"/>
-    <id>https://ming-clavin.github.io/2021/05/04/MySQL%E8%AE%A9%E4%B8%BB%E9%94%AEid%E9%87%8D%E6%96%B0%E6%8E%92%E5%BA%8F/</id>
-    <published>2021-05-04T14:19:00.000Z</published>
-    <updated>2021-05-04T14:20:27.823Z</updated>
+    <title>HTML常用标签</title>
+    <link href="https://ming-clavin.github.io/2021/05/12/2021/2021.05/study_Html/3.HTML%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/"/>
+    <id>https://ming-clavin.github.io/2021/05/12/2021/2021.05/study_Html/3.HTML%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</id>
+    <published>2021-05-12T14:42:16.000Z</published>
+    <updated>2021-05-12T14:44:31.865Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="MySQL让主键id重新排序"><a href="#MySQL让主键id重新排序" class="headerlink" title="MySQL让主键id重新排序"></a>MySQL让主键id重新排序</h1><ol><li><p>备份表结构</p><p>create table table_bak like table_name;</p></li><li><p>备份表数据</p><p>insert into table_bak select * from table_name;</p></li><li><p>删除原来主键字段(如id)</p><p>alter table table_name drop id;</p></li><li><p>添加主键，自增，放在第一位</p><p>alter table table_name add id int(11) primary key auto_increment first;</p></li><li><p>检查没问题的话，删除备份的表</p><p>delete from table_bak;</p></li></ol><p><strong>参考：<a href="https://blog.csdn.net/u013091013/article/details/78194012">mysql让主键id重新排序</a></strong></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="HTML常用标签"><a href="#HTML常用标签" class="headerlink" title="HTML常用标签"></a>HTML常用标签</h1><h2 id="1-标题标签-lt-h1-gt-lt-h6-gt"><a href="#1-标题标签-lt-h1-gt-lt-h6-gt" class="headerlink" title="1. 标题标签  &lt;h1&gt; - &lt;h6&gt;"></a>1. 标题标签  <code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code></h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span> 我是一级标题 <span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></pre></td></tr></table></figure><p><strong>作用：</strong>作为标题使用，并且依据重要性递减</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>小明好帅！<span class="tag">&lt;/<span class="name">h1</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>小明好帅！<span class="tag">&lt;/<span class="name">h2</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h3</span>&gt;</span>小明好帅！<span class="tag">&lt;/<span class="name">h3</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h4</span>&gt;</span>小明好帅！<span class="tag">&lt;/<span class="name">h4</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h5</span>&gt;</span>小明好帅！<span class="tag">&lt;/<span class="name">h5</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h6</span>&gt;</span>小明好帅！<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span></pre></td></tr></table></figure><a id="more"></a><h2 id="2-段落标签"><a href="#2-段落标签" class="headerlink" title="2. 段落标签"></a>2. 段落标签</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span> 我是一个段落标签 <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></pre></td></tr></table></figure><p><strong>作用：</strong>把 HTML 文档分割为若干段落</p><p><strong>注意：</strong></p><ul><li>文本在一个段落中会根据浏览器窗口的大小自动换行</li><li>段落和段落之间保有空隙</li></ul><h2 id="3-换行标签"><a href="#3-换行标签" class="headerlink" title="3. 换行标签"></a>3. 换行标签</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span></pre></td></tr></table></figure><p><strong>作用：</strong>强制换行</p><p><strong>注意：</strong>标签只是开始新的一行，与段落不同，段落之间会插入一些垂直的间距。</p><h2 id="4-文本格式化标签"><a href="#4-文本格式化标签" class="headerlink" title="4. 文本格式化标签"></a>4. 文本格式化标签</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">我是<span class="tag">&lt;<span class="name">strong</span>&gt;</span>加粗<span class="tag">&lt;/<span class="name">strong</span>&gt;</span>文字  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">我是<span class="tag">&lt;<span class="name">b</span>&gt;</span>加粗<span class="tag">&lt;/<span class="name">b</span>&gt;</span>文字  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">我是<span class="tag">&lt;<span class="name">em</span>&gt;</span>倾斜<span class="tag">&lt;/<span class="name">em</span>&gt;</span>文字      </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">我是<span class="tag">&lt;<span class="name">i</span>&gt;</span>倾斜<span class="tag">&lt;/<span class="name">i</span>&gt;</span>文字      </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">我是<span class="tag">&lt;<span class="name">del</span>&gt;</span>删除线<span class="tag">&lt;/<span class="name">del</span>&gt;</span>     </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">我是<span class="tag">&lt;<span class="name">s</span>&gt;</span>删除线<span class="tag">&lt;/<span class="name">s</span>&gt;</span>    </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">我是<span class="tag">&lt;<span class="name">ins</span>&gt;</span>下划线<span class="tag">&lt;/<span class="name">ins</span>&gt;</span>    </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">我是<span class="tag">&lt;<span class="name">u</span>&gt;</span>下划线<span class="tag">&lt;/<span class="name">u</span>&gt;</span></span></pre></td></tr></table></figure><p>作用：给文字添加 <strong>粗体</strong> 、<em>斜体</em> 、下划线</p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512221124.jpg" alt="2" style="zoom: 67%;"><h2 id="5-lt-div-gt-和-lt-span-gt-标签"><a href="#5-lt-div-gt-和-lt-span-gt-标签" class="headerlink" title="5. &lt;div&gt;和&lt;span&gt;标签"></a>5. <code>&lt;div&gt;</code>和<code>&lt;span&gt;</code>标签</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span> div标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span>&gt;</span> span标签 <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></pre></td></tr></table></figure><p><strong>作用：</strong><div> 和 <span> 没有语义，它们是盒子用于装内容</span></div></p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512221220.png" alt="1" style="zoom: 25%;"><p><strong>注意：</strong></p><ul><li>一行只能放一个 <div> —— 大盒子</div></li><li>一行可以多个 <span> —— 小盒子</span></li></ul><h2 id="6-图像标签"><a href="#6-图像标签" class="headerlink" title="6. 图像标签"></a>6. 图像标签</h2><p>作用：定义 HTML 页面中的图像</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"图像URL"</span> /&gt;</span></span></pre></td></tr></table></figure><p>注意:src 是<img>标签的必须属性，它用于指定图像文件的路径和文件名</p><p><strong>其他属性：</strong></p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512221357.jpg" alt="2" style="zoom: 67%;"><p><strong>注意：</strong></p><ul><li>图像标签可以拥有多个属性，必须写在标签名的后面。</li><li>属性之间不分先后顺序，标签名与属性、属性与属性之间均以空格分开。</li><li>属性采取键值对的格式，即 key=“value” 的格式，属性 =“属性值”。</li></ul><h2 id="7-路径"><a href="#7-路径" class="headerlink" title="7. 路径"></a>7. 路径</h2><p>目录文件夹：普通文件夹，存放了做页面所需要的相关素材，比如 html 文件、图片等</p><p>根目录：最外一层文件夹</p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512221509.png" alt="1" style="zoom: 33%;"><h2 id="8-相对路径与绝对路径"><a href="#8-相对路径与绝对路径" class="headerlink" title="8. 相对路径与绝对路径"></a>8. 相对路径与绝对路径</h2><p><strong>相对路径：</strong>从代码所在的这个文件出发，去寻找目标文件</p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512221546.jpg" alt="2" style="zoom: 67%;"><p><strong>绝对路径（少用）：</strong></p><p>从盘符开始的路径，如：“D:\web\img\logo.gif”</p><p><strong>符号：</strong></p><ul><li>相对路径：<code>\</code></li><li>绝对路径：<code>/</code></li></ul><h2 id="9-超链接标签"><a href="#9-超链接标签" class="headerlink" title="9. 超链接标签"></a>9. 超链接标签</h2><p>用于定义超链接，作用是从一个页面链接到另一个页面</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"跳转目标"</span> <span class="attr">target</span>=<span class="string">"目标窗口的弹出方式"</span>&gt;</span> 文本或图像 <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></pre></td></tr></table></figure><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512221653.jpg" alt="2" style="zoom: 67%;"><h2 id="10-超链接标签分类："><a href="#10-超链接标签分类：" class="headerlink" title="10. 超链接标签分类："></a>10. 超链接标签分类：</h2><p>1)  外部链接：以”http:// + 网址 “ 开头 </p><p>2)  内部链接：网站内部页面之间的相互链接，直接链接内部页面 </p><p>3)  空链接：<code>&lt;a herf=&quot;#&quot;&gt; 空链接 &lt;/a&gt;</code></p><p>4)  下载链接：<code>&lt;a herf=&quot;xxx.zip/zip/rar(等压缩包形式)&gt; &lt;/a&gt;</code></p><p>5)  网页元素链接：网页中的各种网页元素，如文本、图像等都可以添加超链接</p><p>6)  锚点链接（重点）：点击链接到页面的某个位置 </p><ul><li>在 herf 属性中，设置属性值为 #名字（如：<code>&lt;a herf=&quot;#two&quot;&gt; 第二集 &lt;/a&gt;</code> ） </li><li>找到目标位置标签，添加id=名字 （如： <code>&lt;h3 id=&quot;two&quot;&gt; 第二季介绍 &lt;h3&gt;</code> )</li></ul><h2 id="11-注释"><a href="#11-注释" class="headerlink" title="11. 注释"></a>11. 注释</h2><p>注释以<code>“&lt;!--”</code>开头，以<code>“ --&gt;”</code>结束</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 注释语句 --&gt;</span>快捷键: ctrl +/</span></pre></td></tr></table></figure><h2 id="12-特殊字符"><a href="#12-特殊字符" class="headerlink" title="12. 特殊字符"></a>12. 特殊字符</h2><p>一些特殊的符号不方便直接使用，可以使用下面的字符来替代</p><ul><li><code>空格: &amp;nbsp;</code></li><li><code>“&lt;”: &amp;lt;</code></li><li><code>“&gt;”: &amp;gt;</code></li></ul><h2 id="13-表格标签"><a href="#13-表格标签" class="headerlink" title="13. 表格标签"></a>13. 表格标签</h2><p>用于显示、展示数据，可以让数据更加规整地显示规整。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">tr</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="name">td</span>&gt;</span>单元格内的文字<span class="tag">&lt;/<span class="name">td</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    ...  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;/<span class="name">tr</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">  ...  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span></pre></td></tr></table></figure><p><strong>注意：</strong></p><ul><li><code>&lt;table&gt; &lt;/table&gt;</code>是用于定义表格的标签</li><li><code>&lt;tr&gt; &lt;/tr&gt;</code>标签用于定义表格中的行，必须嵌套在<code>&lt;table&gt; &lt;/table&gt;</code>标签</li><li><code>&lt;td&gt; &lt;/td&gt;</code>用于定义表格中的单元格，必须嵌套在<code>&lt;tr&gt;&lt;/tr&gt;</code>标签中</li><li>字母 td 指表格数据（table data），即数据单元格的内容</li></ul><h2 id="14-表头单元格标签"><a href="#14-表头单元格标签" class="headerlink" title="14. 表头单元格标签"></a>14. 表头单元格标签</h2><p>表头单元格位于表格的第一行或第一列，里面的文本内容加粗居中显示</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">tr</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="name">th</span>&gt;</span>姓名<span class="tag">&lt;/<span class="name">th</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    ...  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;/<span class="name">tr</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">  ...  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span></pre></td></tr></table></figure><h2 id="15-表格属性"><a href="#15-表格属性" class="headerlink" title="15. 表格属性"></a>15. 表格属性</h2><p>不常用，一般在CSS中设置，属性写到表格标签table 里面去</p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512222150.png" alt="1" style="zoom:67%;"><h2 id="16-表格结构标签"><a href="#16-表格结构标签" class="headerlink" title="16. 表格结构标签"></a>16. 表格结构标签</h2><ul><li>头部标签：<code>&lt;/thead&gt;</code>（内部必须拥有<code>&lt;tr&gt;</code> 标签）</li><li>主题区域：<code>&lt;/tbody&gt;</code></li></ul><p><strong>注意：</strong>都是放在 <code>&lt;table&gt;&lt;/table&gt;</code> 标签中</p><h2 id="17-合并单元格"><a href="#17-合并单元格" class="headerlink" title="17. 合并单元格"></a>17. 合并单元格</h2><ul><li>跨行合并：rowspan=”合并单元格的个数”</li><li>跨列合并：colspan=”合并单元格的个数”</li></ul><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512222252.png" alt="image-20210512222251831" style="zoom: 33%;"><p><strong>目标单元格：</strong></p><ul><li>跨行：最上侧单元格为目标单元格, 写合并代码</li><li>跨列：最左侧单元格为目标单元格, 写合并代码</li></ul><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512222615.png" alt="image-20210512222614069" style="zoom: 33%;"><h2 id="18-列表标签"><a href="#18-列表标签" class="headerlink" title="18. 列表标签"></a>18. 列表标签</h2><p>用于布局页面，分为：无序列表、有序列表和自定义列表</p><h2 id="19-无序列表"><a href="#19-无序列表" class="headerlink" title="19. 无序列表"></a>19. 无序列表</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项1<span class="tag">&lt;/<span class="name">li</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项2<span class="tag">&lt;/<span class="name">li</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项3<span class="tag">&lt;/<span class="name">li</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  ...  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span></pre></td></tr></table></figure><p><strong>注意：</strong></p><ul><li>无序列表的各个列表项之间没有顺序级别之分，是并列的</li><li><code>&lt;ul&gt;&lt;/ul&gt;</code> 中只能嵌套 <code>&lt;li&gt;&lt;/li&gt;</code>，不能直接在<code>&lt;ul&gt;&lt;/ul&gt;</code>标签中输入其他标签</li><li><code>&lt;li&gt;</code>与 <code>&lt;/li&gt;</code> 之间相当于一个容器，可以容纳所有元素</li><li>无序列表带有样式属性，通常使用CSS取消</li></ul><h2 id="20-有序列表"><a href="#20-有序列表" class="headerlink" title="20. 有序列表"></a>20. 有序列表</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项1<span class="tag">&lt;/<span class="name">li</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项2<span class="tag">&lt;/<span class="name">li</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项3<span class="tag">&lt;/<span class="name">li</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  ...  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span></pre></td></tr></table></figure><p>注意：</p><ul><li><code>&lt;ol&gt;&lt;/ol&gt;</code>中只能嵌套 <code>&lt;li&gt;&lt;/li&gt;</code>，不能直接在 <ol></ol> 标签中输入其他标签</li><li><code>&lt;li&gt;</code>与 <code>&lt;/li&gt;</code>之间相当于一个容器，可以容纳所有元素</li><li>无序列表带有样式属性，通常使用CSS取消</li></ul><h2 id="21-自定义列表"><a href="#21-自定义列表" class="headerlink" title="21. 自定义列表"></a>21. 自定义列表</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">dt</span>&gt;</span> 大哥 <span class="tag">&lt;/<span class="name">dt</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">dt</span>&gt;</span> 小弟 <span class="tag">&lt;/<span class="name">dt</span>&gt;</span> -----&gt; 小弟用于解释大哥  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">dt</span>&gt;</span> 小弟 <span class="tag">&lt;/<span class="name">dt</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span></pre></td></tr></table></figure><p><strong>注意：</strong></p><ul><li><code>&lt;dl&gt;&lt;/dl&gt;</code> 里面只能包含<code>&lt;dt&gt;</code> 和 <code>&lt;dd&gt;</code></li><li><code>&lt;dt&gt;</code>和<code>&lt;dd&gt;</code>个数没有限制，经常是一个<code>&lt;dt&gt;</code> 对应多个<code>&lt;dd&gt;</code></li></ul><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512222938.png" alt="1" style="zoom: 67%;"><h2 id="22-列表总结"><a href="#22-列表总结" class="headerlink" title="22. 列表总结"></a>22. 列表总结</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512223018.jpg" alt="2" style="zoom: 67%;"><p><strong>使用场景：</strong></p><ul><li><p>使用无序列表</p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512223101.png" alt="1" style="zoom:50%;"></li><li><p>使用自定义列表</p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512223119.png" alt="1" style="zoom:50%;"></li></ul><h2 id="23-表单标签"><a href="#23-表单标签" class="headerlink" title="23. 表单标签"></a>23. 表单标签</h2><p>用于收集用户信息</p><p>组成：表单域、表单控件（也称为表单元素）和 提示信息</p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512223144.png" alt="1" style="zoom:50%;"><h2 id="24-表单域"><a href="#24-表单域" class="headerlink" title="24. 表单域"></a>24. 表单域</h2><p>表单域是一个包含表单元素的区域，用于定义表单域，以实现用户信息的收集和传递。<code>&lt;form&gt;</code> 会把它范围内的表单元素信息提交给服务器。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">“url地址”</span> <span class="attr">method</span>=<span class="string">“提交方式”</span> <span class="attr">name</span>=<span class="string">“表单域名称</span>"&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">各种表单元素控件</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span></pre></td></tr></table></figure><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512223230.jpg" alt="2" style="zoom:50%;"><h2 id="25-lt-input-gt-表单元素"><a href="#25-lt-input-gt-表单元素" class="headerlink" title="25. &lt;input&gt; 表单元素"></a>25. <code>&lt;input&gt;</code> 表单元素</h2><p>用于收集用户信息</p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512223257.jpg" alt="2" style="zoom: 67%;"><p><strong>注意：</strong></p><ul><li><code>&lt;input/&gt;</code> 标签为单标签</li><li>type 属性设置不同的属性值用来指定不同的控件类型</li></ul><h2 id="26-lt-input-gt-元素属性"><a href="#26-lt-input-gt-元素属性" class="headerlink" title="26. &lt;input&gt; 元素属性"></a>26. <code>&lt;input&gt;</code> 元素属性</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512223400.jpg" alt="2" style="zoom: 67%;"><p><strong>注意：</strong></p><ul><li>多个单选按钮拥有相同名字时，可以实现单选一</li><li>单选框和复选框，选项的name的值要相同</li><li>value只能在text中显示，只能后台人员使用</li><li>checked打开时默认选中：checked=”checked”（在单选框和复选框中设置）</li></ul><h2 id="27-lt-label-gt-标签"><a href="#27-lt-label-gt-标签" class="headerlink" title="27. &lt;label&gt;标签"></a>27. <code>&lt;label&gt;</code>标签</h2><p><code>&lt;label&gt;</code>标签用于绑定一个表单元素, 当点击<code>&lt;label&gt;</code>标签内的文本时，浏览器就会自动将焦点(光标)转到或者选择对应的表单元素上</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"sex"</span>&gt;</span>男<span class="tag">&lt;/<span class="name">label</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span> <span class="attr">name</span>=<span class="string">"sex"</span>   <span class="attr">id</span>=<span class="string">"sex"</span> /&gt;</span></span></pre></td></tr></table></figure><h2 id="28-lt-select-gt-表单元素"><a href="#28-lt-select-gt-表单元素" class="headerlink" title="28. &lt;select&gt; 表单元素"></a>28. <code>&lt;select&gt;</code> 表单元素</h2><p>用于定义下拉列表，在多个选项中让用户进行选择</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">option</span>&gt;</span>选项1<span class="tag">&lt;/<span class="name">option</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">option</span>&gt;</span>选项2<span class="tag">&lt;/<span class="name">option</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">option</span>&gt;</span>选项3<span class="tag">&lt;/<span class="name">option</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  ...  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span></pre></td></tr></table></figure><p><strong>注意：</strong></p><ul><li><code>&lt;select&gt;</code>中至少包含一对<code>&lt;option&gt;</code>。</li><li>在<code>&lt;option&gt;</code> 中定义 selected =“ selected “ 时，当前项即为默认选中项。</li></ul><h2 id="29-lt-textarea-gt-表单元素"><a href="#29-lt-textarea-gt-表单元素" class="headerlink" title="29. &lt;textarea&gt;表单元素"></a>29. <code>&lt;textarea&gt;</code>表单元素</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">textarea</span> <span class="attr">rows</span>=<span class="string">"3"</span> <span class="attr">cols</span>=<span class="string">"20"</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  文本内容  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">textarea</span>&gt;</span></span></pre></td></tr></table></figure><p><strong>注意：</strong></p><ul><li>通过 <code>&lt;textarea&gt;</code> 标签可以轻松地创建多行文本输入框。</li><li>cols=“每行中的字符数” ，rows=“显示的行数”（实际开发使用CSS来控制）</li></ul>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;HTML常用标签&quot;&gt;&lt;a href=&quot;#HTML常用标签&quot; class=&quot;headerlink&quot; title=&quot;HTML常用标签&quot;&gt;&lt;/a&gt;HTML常用标签&lt;/h1&gt;&lt;h2 id=&quot;1-标题标签-lt-h1-gt-lt-h6-gt&quot;&gt;&lt;a href=&quot;#1-标题标签-lt-h1-gt-lt-h6-gt&quot; class=&quot;headerlink&quot; title=&quot;1. 标题标签  &amp;lt;h1&amp;gt; - &amp;lt;h6&amp;gt;&quot;&gt;&lt;/a&gt;1. 标题标签  &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; - &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt;&lt;/h2&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt; 我是一级标题 &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;作用：&lt;/strong&gt;作为标题使用，并且依据重要性递减&lt;/p&gt;
+&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;小明好帅！&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;  &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;h2&lt;/span&gt;&amp;gt;&lt;/span&gt;小明好帅！&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;h2&lt;/span&gt;&amp;gt;&lt;/span&gt;  &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;h3&lt;/span&gt;&amp;gt;&lt;/span&gt;小明好帅！&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;h3&lt;/span&gt;&amp;gt;&lt;/span&gt;  &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;h4&lt;/span&gt;&amp;gt;&lt;/span&gt;小明好帅！&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;h4&lt;/span&gt;&amp;gt;&lt;/span&gt;  &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;h5&lt;/span&gt;&amp;gt;&lt;/span&gt;小明好帅！&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;h5&lt;/span&gt;&amp;gt;&lt;/span&gt;  &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;h6&lt;/span&gt;&amp;gt;&lt;/span&gt;小明好帅！&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;h6&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="前端学习之HTML" scheme="https://ming-clavin.github.io/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E4%B9%8BHTML/"/>
+    
+    
+    <category term="前端" scheme="https://ming-clavin.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="Html" scheme="https://ming-clavin.github.io/tags/Html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML基本结构标签</title>
+    <link href="https://ming-clavin.github.io/2021/05/12/2021/2021.05/study_Html/2.HTML%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84%E6%A0%87%E7%AD%BE/"/>
+    <id>https://ming-clavin.github.io/2021/05/12/2021/2021.05/study_Html/2.HTML%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84%E6%A0%87%E7%AD%BE/</id>
+    <published>2021-05-12T14:41:16.000Z</published>
+    <updated>2021-05-12T14:43:52.638Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="HTML基本结构标签"><a href="#HTML基本结构标签" class="headerlink" title="HTML基本结构标签"></a>HTML基本结构标签</h1><h2 id="1-单标签和双标签"><a href="#1-单标签和双标签" class="headerlink" title="1. 单标签和双标签"></a>1. 单标签和双标签</h2><ul><li><p>单标签        <code>&lt;br/&gt;</code>  </p></li><li><p>双标签        <code>&lt;html&gt;   &lt;/html&gt;</code></p></li></ul><p>注：HTML 标签通常是成对出现的，标签对中的第一个标签是开始标签，第二个标签是结束标签。</p><h2 id="2-标签关系"><a href="#2-标签关系" class="headerlink" title="2. 标签关系"></a>2. 标签关系</h2><h3 id="2-1-包含关系"><a href="#2-1-包含关系" class="headerlink" title="2.1 包含关系"></a>2.1 包含关系</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span> <span class="tag">&lt;/<span class="name">title</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span></pre></td></tr></table></figure><a id="more"></a><h3 id="2-2-并列关系"><a href="#2-2-并列关系" class="headerlink" title="2.2 并列关系"></a>2.2 并列关系</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span> <span class="tag">&lt;/<span class="name">head</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span> <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></pre></td></tr></table></figure><h3 id="2-3-基本的结构标签（骨架标签）"><a href="#2-3-基本的结构标签（骨架标签）" class="headerlink" title="2.3 基本的结构标签（骨架标签）"></a>2.3 基本的结构标签（骨架标签）</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>第一个页面<span class="tag">&lt;/<span class="name">title</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">    hello world  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span>  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span></pre></td></tr></table></figure><p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512220415.jpg" alt="2"></p><h2 id="4-骨架标签新增代码-lt-DOCTYPE-gt"><a href="#4-骨架标签新增代码-lt-DOCTYPE-gt" class="headerlink" title="4. 骨架标签新增代码 &lt;!DOCTYPE&gt;"></a>4. 骨架标签新增代码 &lt;!DOCTYPE&gt;</h2><p><code>&lt;!DOCTYPE&gt;</code>文档类型声明，作用就是告诉浏览器使用哪种HTML版本来显示网页。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span>      当前页面采取的是 HTML5 版本来显示网页</span></pre></td></tr></table></figure><p><strong>注意：</strong></p><p><code>&lt;!DOCTYPE&gt;</code>声明位于文档中的最前面的位置，处于 <html> 标签之前。</html></p><p><code>&lt;!DOCTYPE&gt;</code> 标签是文档类型声明标签，不是Html标签。</p><h2 id="5-lang语言种类"><a href="#5-lang语言种类" class="headerlink" title="5. lang语言种类"></a>5. lang语言种类</h2><p><strong>作用：</strong>定义当前文档显示的语言</p><p><strong>注意：</strong></p><ul><li>en ：英文   zh-CN : 中文</li><li>定义成en的文档也可以显示中文，定义成zh-CN的文档也可以显示英文</li></ul><h2 id="6-字符集"><a href="#6-字符集" class="headerlink" title="6. 字符集"></a>6. 字符集</h2><p>字符集是多个字符的集合。<meta>标签的charset属性规定HTML文档使用字符编码的类型</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">" UTF-8"</span> /&gt;</span></span></pre></td></tr></table></figure><p>注意：一般使用“UTF-8”编码（万国码）</p>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;HTML基本结构标签&quot;&gt;&lt;a href=&quot;#HTML基本结构标签&quot; class=&quot;headerlink&quot; title=&quot;HTML基本结构标签&quot;&gt;&lt;/a&gt;HTML基本结构标签&lt;/h1&gt;&lt;h2 id=&quot;1-单标签和双标签&quot;&gt;&lt;a href=&quot;#1-单标签和双标签&quot; class=&quot;headerlink&quot; title=&quot;1. 单标签和双标签&quot;&gt;&lt;/a&gt;1. 单标签和双标签&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;单标签        &lt;code&gt;&amp;lt;br/&amp;gt;&lt;/code&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;双标签        &lt;code&gt;&amp;lt;html&amp;gt;   &amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;注：HTML 标签通常是成对出现的，标签对中的第一个标签是开始标签，第二个标签是结束标签。&lt;/p&gt;
+&lt;h2 id=&quot;2-标签关系&quot;&gt;&lt;a href=&quot;#2-标签关系&quot; class=&quot;headerlink&quot; title=&quot;2. 标签关系&quot;&gt;&lt;/a&gt;2. 标签关系&lt;/h2&gt;&lt;h3 id=&quot;2-1-包含关系&quot;&gt;&lt;a href=&quot;#2-1-包含关系&quot; class=&quot;headerlink&quot; title=&quot;2.1 包含关系&quot;&gt;&lt;/a&gt;2.1 包含关系&lt;/h3&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;  &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;  &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="前端学习之HTML" scheme="https://ming-clavin.github.io/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E4%B9%8BHTML/"/>
+    
+    
+    <category term="前端" scheme="https://ming-clavin.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="Html" scheme="https://ming-clavin.github.io/tags/Html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Html简介</title>
+    <link href="https://ming-clavin.github.io/2021/05/12/2021/2021.05/study_Html/1.HTML%E7%AE%80%E4%BB%8B/"/>
+    <id>https://ming-clavin.github.io/2021/05/12/2021/2021.05/study_Html/1.HTML%E7%AE%80%E4%BB%8B/</id>
+    <published>2021-05-12T14:40:16.000Z</published>
+    <updated>2021-05-12T14:40:07.580Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Html简介"><a href="#Html简介" class="headerlink" title="Html简介"></a>Html简介</h1><h2 id="1．概述"><a href="#1．概述" class="headerlink" title="1．概述"></a>1．概述</h2><p>HTML指的是<strong>超文本标记语言</strong>，它是用来描述网页的一种语言。HTML 不是一种编程语言，而是一种<strong>标记语言</strong>。</p><h2 id="2-浏览器内核"><a href="#2-浏览器内核" class="headerlink" title="2. 浏览器内核"></a>2. 浏览器内核</h2><p>浏览器内核（渲染引擎）： 负责读取网页内容，整理讯息，计算网页的显示方式并显示页面。</p><p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512215811.jpg" alt="1"></p><h2 id="3-Web-标准"><a href="#3-Web-标准" class="headerlink" title="3. Web 标准"></a>3. Web 标准</h2><p>主要包括结构、表现和行为三个方面。</p><p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512215835.jpg" alt="2"></p><blockquote><p>总结：</p><ul><li>结构写到 HTML文件中</li><li>表现写到 CSS文件中</li><li>行为写到 JavaScript文件中</li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Html简介&quot;&gt;&lt;a href=&quot;#Html简介&quot; class=&quot;headerlink&quot; title=&quot;Html简介&quot;&gt;&lt;/a&gt;Html简介&lt;/h1&gt;&lt;h2 id=&quot;1．概述&quot;&gt;&lt;a href=&quot;#1．概述&quot; class=&quot;headerlink&quot; title=&quot;1</summary>
+      
+    
+    
+    
+    <category term="前端学习之HTML" scheme="https://ming-clavin.github.io/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E4%B9%8BHTML/"/>
+    
+    
+    <category term="前端" scheme="https://ming-clavin.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="Html" scheme="https://ming-clavin.github.io/tags/Html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL让主键id重新排序</title>
+    <link href="https://ming-clavin.github.io/2021/05/04/2020/MySQL%E8%AE%A9%E4%B8%BB%E9%94%AEid%E9%87%8D%E6%96%B0%E6%8E%92%E5%BA%8F/"/>
+    <id>https://ming-clavin.github.io/2021/05/04/2020/MySQL%E8%AE%A9%E4%B8%BB%E9%94%AEid%E9%87%8D%E6%96%B0%E6%8E%92%E5%BA%8F/</id>
+    <published>2021-05-04T14:19:00.000Z</published>
+    <updated>2021-05-04T14:24:03.100Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="MySQL让主键id重新排序"><a href="#MySQL让主键id重新排序" class="headerlink" title="MySQL让主键id重新排序"></a>MySQL让主键id重新排序</h1><ol><li><p>备份表结构</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">create table table_bak like table_name;</span></pre></td></tr></table></figure></li><li><p>备份表数据</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">insert into table_bak select * from table_name;</span></pre></td></tr></table></figure></li><li><p>删除原来主键字段(如id)</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">alter table table_name drop id;</span></pre></td></tr></table></figure></li><li><p>添加主键，自增，放在第一位</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">alter table table_name add id int(11) primary key auto_increment first;</span></pre></td></tr></table></figure></li><li><p>检查没问题的话，删除备份的表</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">delete from table_bak;</span></pre></td></tr></table></figure><blockquote><p>注：table_name 为 表名</p></blockquote></li></ol><p><strong>参考：<a href="https://blog.csdn.net/u013091013/article/details/78194012">mysql让主键id重新排序</a></strong></p>]]></content>
     
     
       
       
     <summary type="html">&lt;h1 id=&quot;MySQL让主键id重新排序&quot;&gt;&lt;a href=&quot;#MySQL让主键id重新排序&quot; class=&quot;headerlink&quot; title=&quot;MySQL让主键id重新排序&quot;&gt;&lt;/a&gt;MySQL让主键id重新排序&lt;/h1&gt;&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;备份表结构&lt;/p&gt;
-&lt;p&gt;</summary>
+&lt;fi</summary>
       
     
     
@@ -46,8 +128,8 @@
   
   <entry>
     <title>误存文件夹到GitHub的解决方法</title>
-    <link href="https://ming-clavin.github.io/2021/05/04/%E8%AF%AF%E5%AD%98%E6%96%87%E4%BB%B6%E5%A4%B9%E5%88%B0GitHub%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
-    <id>https://ming-clavin.github.io/2021/05/04/%E8%AF%AF%E5%AD%98%E6%96%87%E4%BB%B6%E5%A4%B9%E5%88%B0GitHub%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</id>
+    <link href="https://ming-clavin.github.io/2021/05/04/2020/%E8%AF%AF%E5%AD%98%E6%96%87%E4%BB%B6%E5%A4%B9%E5%88%B0GitHub%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+    <id>https://ming-clavin.github.io/2021/05/04/2020/%E8%AF%AF%E5%AD%98%E6%96%87%E4%BB%B6%E5%A4%B9%E5%88%B0GitHub%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</id>
     <published>2021-05-03T16:44:00.000Z</published>
     <updated>2021-05-03T16:40:44.085Z</updated>
     
@@ -72,8 +154,8 @@
   
   <entry>
     <title>GitHub Desktop 上传本地库</title>
-    <link href="https://ming-clavin.github.io/2021/04/28/GitHub%20Desktop%20%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E5%BA%93/"/>
-    <id>https://ming-clavin.github.io/2021/04/28/GitHub%20Desktop%20%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E5%BA%93/</id>
+    <link href="https://ming-clavin.github.io/2021/04/28/2020/GitHub%20Desktop%20%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E5%BA%93/"/>
+    <id>https://ming-clavin.github.io/2021/04/28/2020/GitHub%20Desktop%20%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E5%BA%93/</id>
     <published>2021-04-28T08:00:00.000Z</published>
     <updated>2021-04-28T08:01:58.170Z</updated>
     
@@ -99,8 +181,8 @@
   
   <entry>
     <title>简易Node后端搭建</title>
-    <link href="https://ming-clavin.github.io/2021/04/28/%E7%AE%80%E6%98%93Node%E5%90%8E%E7%AB%AF%E6%90%AD%E5%BB%BA/"/>
-    <id>https://ming-clavin.github.io/2021/04/28/%E7%AE%80%E6%98%93Node%E5%90%8E%E7%AB%AF%E6%90%AD%E5%BB%BA/</id>
+    <link href="https://ming-clavin.github.io/2021/04/28/2020/%E7%AE%80%E6%98%93Node%E5%90%8E%E7%AB%AF%E6%90%AD%E5%BB%BA/"/>
+    <id>https://ming-clavin.github.io/2021/04/28/2020/%E7%AE%80%E6%98%93Node%E5%90%8E%E7%AB%AF%E6%90%AD%E5%BB%BA/</id>
     <published>2021-04-28T07:55:00.000Z</published>
     <updated>2021-04-28T07:58:50.641Z</updated>
     
@@ -126,8 +208,8 @@
   
   <entry>
     <title>Typora上传图片时,文件以时间戳命名</title>
-    <link href="https://ming-clavin.github.io/2020/12/14/Typora%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E6%97%B6-%E6%96%87%E4%BB%B6%E4%BB%A5%E6%97%B6%E9%97%B4%E6%88%B3%E5%91%BD%E5%90%8D/"/>
-    <id>https://ming-clavin.github.io/2020/12/14/Typora%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E6%97%B6-%E6%96%87%E4%BB%B6%E4%BB%A5%E6%97%B6%E9%97%B4%E6%88%B3%E5%91%BD%E5%90%8D/</id>
+    <link href="https://ming-clavin.github.io/2020/12/14/2020/Typora%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E6%97%B6-%E6%96%87%E4%BB%B6%E4%BB%A5%E6%97%B6%E9%97%B4%E6%88%B3%E5%91%BD%E5%90%8D/"/>
+    <id>https://ming-clavin.github.io/2020/12/14/2020/Typora%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E6%97%B6-%E6%96%87%E4%BB%B6%E4%BB%A5%E6%97%B6%E9%97%B4%E6%88%B3%E5%91%BD%E5%90%8D/</id>
     <published>2020-12-14T14:03:38.000Z</published>
     <updated>2020-12-14T14:13:29.915Z</updated>
     
@@ -149,8 +231,8 @@
   
   <entry>
     <title>js获取对象属性值的2种方法</title>
-    <link href="https://ming-clavin.github.io/2020/11/25/js%E8%8E%B7%E5%8F%96%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E5%80%BC%E7%9A%842%E7%A7%8D%E6%96%B9%E6%B3%95/"/>
-    <id>https://ming-clavin.github.io/2020/11/25/js%E8%8E%B7%E5%8F%96%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E5%80%BC%E7%9A%842%E7%A7%8D%E6%96%B9%E6%B3%95/</id>
+    <link href="https://ming-clavin.github.io/2020/11/25/2020/js%E8%8E%B7%E5%8F%96%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E5%80%BC%E7%9A%842%E7%A7%8D%E6%96%B9%E6%B3%95/"/>
+    <id>https://ming-clavin.github.io/2020/11/25/2020/js%E8%8E%B7%E5%8F%96%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E5%80%BC%E7%9A%842%E7%A7%8D%E6%96%B9%E6%B3%95/</id>
     <published>2020-11-25T15:00:58.000Z</published>
     <updated>2020-11-25T15:03:01.636Z</updated>
     
@@ -177,8 +259,8 @@
   
   <entry>
     <title>vue-router模块</title>
-    <link href="https://ming-clavin.github.io/2020/11/24/vue-router%E6%A8%A1%E5%9D%97/"/>
-    <id>https://ming-clavin.github.io/2020/11/24/vue-router%E6%A8%A1%E5%9D%97/</id>
+    <link href="https://ming-clavin.github.io/2020/11/24/2020/vue-router%E6%A8%A1%E5%9D%97/"/>
+    <id>https://ming-clavin.github.io/2020/11/24/2020/vue-router%E6%A8%A1%E5%9D%97/</id>
     <published>2020-11-24T13:01:00.000Z</published>
     <updated>2021-04-28T07:53:03.182Z</updated>
     
@@ -205,8 +287,8 @@
   
   <entry>
     <title>img和div之间有间隙的原因及解决方法</title>
-    <link href="https://ming-clavin.github.io/2020/11/24/img%E5%92%8Cdiv%E4%B9%8B%E9%97%B4%E6%9C%89%E9%97%B4%E9%9A%99%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
-    <id>https://ming-clavin.github.io/2020/11/24/img%E5%92%8Cdiv%E4%B9%8B%E9%97%B4%E6%9C%89%E9%97%B4%E9%9A%99%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</id>
+    <link href="https://ming-clavin.github.io/2020/11/24/2020/img%E5%92%8Cdiv%E4%B9%8B%E9%97%B4%E6%9C%89%E9%97%B4%E9%9A%99%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+    <id>https://ming-clavin.github.io/2020/11/24/2020/img%E5%92%8Cdiv%E4%B9%8B%E9%97%B4%E6%9C%89%E9%97%B4%E9%9A%99%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</id>
     <published>2020-11-23T17:22:45.000Z</published>
     <updated>2020-11-23T17:26:27.579Z</updated>
     
@@ -236,8 +318,8 @@
   
   <entry>
     <title>a标签去除默认样式</title>
-    <link href="https://ming-clavin.github.io/2020/11/24/a%E6%A0%87%E7%AD%BE%E5%8E%BB%E9%99%A4%E9%BB%98%E8%AE%A4%E6%A0%B7%E5%BC%8F/"/>
-    <id>https://ming-clavin.github.io/2020/11/24/a%E6%A0%87%E7%AD%BE%E5%8E%BB%E9%99%A4%E9%BB%98%E8%AE%A4%E6%A0%B7%E5%BC%8F/</id>
+    <link href="https://ming-clavin.github.io/2020/11/24/2020/a%E6%A0%87%E7%AD%BE%E5%8E%BB%E9%99%A4%E9%BB%98%E8%AE%A4%E6%A0%B7%E5%BC%8F/"/>
+    <id>https://ming-clavin.github.io/2020/11/24/2020/a%E6%A0%87%E7%AD%BE%E5%8E%BB%E9%99%A4%E9%BB%98%E8%AE%A4%E6%A0%B7%E5%BC%8F/</id>
     <published>2020-11-23T16:57:10.000Z</published>
     <updated>2020-11-23T17:30:00.358Z</updated>
     
@@ -263,8 +345,8 @@
   
   <entry>
     <title>积分商城（平台端）总结</title>
-    <link href="https://ming-clavin.github.io/2020/11/24/%E7%A7%AF%E5%88%86%E5%95%86%E5%9F%8E%EF%BC%88%E5%B9%B3%E5%8F%B0%E7%AB%AF%EF%BC%89%E6%80%BB%E7%BB%93/"/>
-    <id>https://ming-clavin.github.io/2020/11/24/%E7%A7%AF%E5%88%86%E5%95%86%E5%9F%8E%EF%BC%88%E5%B9%B3%E5%8F%B0%E7%AB%AF%EF%BC%89%E6%80%BB%E7%BB%93/</id>
+    <link href="https://ming-clavin.github.io/2020/11/24/2020/%E7%A7%AF%E5%88%86%E5%95%86%E5%9F%8E%EF%BC%88%E5%B9%B3%E5%8F%B0%E7%AB%AF%EF%BC%89%E6%80%BB%E7%BB%93/"/>
+    <id>https://ming-clavin.github.io/2020/11/24/2020/%E7%A7%AF%E5%88%86%E5%95%86%E5%9F%8E%EF%BC%88%E5%B9%B3%E5%8F%B0%E7%AB%AF%EF%BC%89%E6%80%BB%E7%BB%93/</id>
     <published>2020-11-23T16:42:47.000Z</published>
     <updated>2020-11-23T16:49:31.115Z</updated>
     
@@ -291,8 +373,8 @@
   
   <entry>
     <title>el-if、el-else-if、el-else</title>
-    <link href="https://ming-clavin.github.io/2020/11/11/el-if%E3%80%81el-else-if%E3%80%81el-else/"/>
-    <id>https://ming-clavin.github.io/2020/11/11/el-if%E3%80%81el-else-if%E3%80%81el-else/</id>
+    <link href="https://ming-clavin.github.io/2020/11/11/2020/el-if%E3%80%81el-else-if%E3%80%81el-else/"/>
+    <id>https://ming-clavin.github.io/2020/11/11/2020/el-if%E3%80%81el-else-if%E3%80%81el-else/</id>
     <published>2020-11-10T16:28:49.000Z</published>
     <updated>2020-11-24T14:08:24.222Z</updated>
     
@@ -317,8 +399,8 @@
   
   <entry>
     <title>积分商城（商家端）总结</title>
-    <link href="https://ming-clavin.github.io/2020/11/07/%E7%A7%AF%E5%88%86%E5%95%86%E5%9F%8E%EF%BC%88%E5%95%86%E5%AE%B6%E7%AB%AF%EF%BC%89%E6%80%BB%E7%BB%93/"/>
-    <id>https://ming-clavin.github.io/2020/11/07/%E7%A7%AF%E5%88%86%E5%95%86%E5%9F%8E%EF%BC%88%E5%95%86%E5%AE%B6%E7%AB%AF%EF%BC%89%E6%80%BB%E7%BB%93/</id>
+    <link href="https://ming-clavin.github.io/2020/11/07/2020/%E7%A7%AF%E5%88%86%E5%95%86%E5%9F%8E%EF%BC%88%E5%95%86%E5%AE%B6%E7%AB%AF%EF%BC%89%E6%80%BB%E7%BB%93/"/>
+    <id>https://ming-clavin.github.io/2020/11/07/2020/%E7%A7%AF%E5%88%86%E5%95%86%E5%9F%8E%EF%BC%88%E5%95%86%E5%AE%B6%E7%AB%AF%EF%BC%89%E6%80%BB%E7%BB%93/</id>
     <published>2020-11-07T08:28:47.000Z</published>
     <updated>2020-11-09T17:20:57.825Z</updated>
     
@@ -347,8 +429,8 @@
   
   <entry>
     <title>开启MySQL常见问题</title>
-    <link href="https://ming-clavin.github.io/2020/11/06/%E5%BC%80%E5%90%AFMySQL%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
-    <id>https://ming-clavin.github.io/2020/11/06/%E5%BC%80%E5%90%AFMySQL%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</id>
+    <link href="https://ming-clavin.github.io/2020/11/06/2020/%E5%BC%80%E5%90%AFMySQL%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
+    <id>https://ming-clavin.github.io/2020/11/06/2020/%E5%BC%80%E5%90%AFMySQL%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</id>
     <published>2020-11-05T16:28:50.000Z</published>
     <updated>2021-05-04T14:20:36.446Z</updated>
     
@@ -380,8 +462,8 @@
   
   <entry>
     <title>后端接口配置</title>
-    <link href="https://ming-clavin.github.io/2020/11/03/%E5%90%8E%E7%AB%AF%E6%8E%A5%E5%8F%A3%E9%85%8D%E7%BD%AE/"/>
-    <id>https://ming-clavin.github.io/2020/11/03/%E5%90%8E%E7%AB%AF%E6%8E%A5%E5%8F%A3%E9%85%8D%E7%BD%AE/</id>
+    <link href="https://ming-clavin.github.io/2020/11/03/2020/%E5%90%8E%E7%AB%AF%E6%8E%A5%E5%8F%A3%E9%85%8D%E7%BD%AE/"/>
+    <id>https://ming-clavin.github.io/2020/11/03/2020/%E5%90%8E%E7%AB%AF%E6%8E%A5%E5%8F%A3%E9%85%8D%E7%BD%AE/</id>
     <published>2020-11-03T15:05:48.000Z</published>
     <updated>2021-05-04T14:20:47.954Z</updated>
     
@@ -408,8 +490,8 @@
   
   <entry>
     <title>Typora图床教程--阿里云</title>
-    <link href="https://ming-clavin.github.io/2020/10/31/Typora%E5%9B%BE%E5%BA%8A%E6%95%99%E7%A8%8B-%E9%98%BF%E9%87%8C%E4%BA%91/"/>
-    <id>https://ming-clavin.github.io/2020/10/31/Typora%E5%9B%BE%E5%BA%8A%E6%95%99%E7%A8%8B-%E9%98%BF%E9%87%8C%E4%BA%91/</id>
+    <link href="https://ming-clavin.github.io/2020/10/31/2020/Typora%E5%9B%BE%E5%BA%8A%E6%95%99%E7%A8%8B-%E9%98%BF%E9%87%8C%E4%BA%91/"/>
+    <id>https://ming-clavin.github.io/2020/10/31/2020/Typora%E5%9B%BE%E5%BA%8A%E6%95%99%E7%A8%8B-%E9%98%BF%E9%87%8C%E4%BA%91/</id>
     <published>2020-10-31T11:01:32.000Z</published>
     <updated>2020-11-07T08:40:34.730Z</updated>
     
@@ -430,8 +512,8 @@
   
   <entry>
     <title>Mrkdown使用指南</title>
-    <link href="https://ming-clavin.github.io/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/"/>
-    <id>https://ming-clavin.github.io/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</id>
+    <link href="https://ming-clavin.github.io/2019/12/02/2020/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/"/>
+    <id>https://ming-clavin.github.io/2019/12/02/2020/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</id>
     <published>2019-12-02T14:37:06.000Z</published>
     <updated>2020-12-14T14:07:26.079Z</updated>
     
@@ -455,8 +537,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://ming-clavin.github.io/2019/12/01/hello-world/"/>
-    <id>https://ming-clavin.github.io/2019/12/01/hello-world/</id>
+    <link href="https://ming-clavin.github.io/2019/12/01/2020/hello-world/"/>
+    <id>https://ming-clavin.github.io/2019/12/01/2020/hello-world/</id>
     <published>2019-12-01T14:09:29.967Z</published>
     <updated>2019-12-01T14:09:29.967Z</updated>
     
@@ -470,69 +552,6 @@
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>a</title>
-    <link href="https://ming-clavin.github.io/2018/10/05/Html%E5%AD%A6%E4%B9%A0/"/>
-    <id>https://ming-clavin.github.io/2018/10/05/Html%E5%AD%A6%E4%B9%A0/</id>
-    <published>2018-10-05T13:08:16.000Z</published>
-    <updated>2020-10-06T03:06:39.893Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h3 id="Html概述"><a href="#Html概述" class="headerlink" title="Html概述"></a>Html概述</h3><p>&nbsp;&nbsp;Html是一种<strong>标记语言</strong>，它使用<strong>标记标签</strong>来描述页面</p><h3 id="Html标签"><a href="#Html标签" class="headerlink" title="Html标签"></a>Html标签</h3><p>1.html分位单标签和双标签</p><pre><code>单标签    &lt;br&gt;双标签    &lt;html&gt; &lt;/html&gt;</code></pre><p>2.html标签的关系</p><pre><code>1.包含：    &lt;head&gt;        &lt;title&gt; &lt;/title&gt;    &lt;/head&gt;2.并列：    &lt;head&gt; &lt;/head&gt;    &lt;body&gt; &lt;/body&gt;</code></pre><p>3.骨架标签</p><table><thead><tr><th align="center">标签</th><th align="center">含义</th><th align="center">小猪佩奇</th></tr></thead><tbody><tr><td align="center">&lt; html &gt;</td><td align="center">根标签</td><td align="center">全身</td></tr><tr><td align="center">&lt; head &gt;</td><td align="center">头部</td><td align="center">头</td></tr><tr><td align="center">&lt; title &gt;</td><td align="center">标题</td><td align="center">眼睛</td></tr><tr><td align="center">&lt; body &gt;</td><td align="center">内容</td><td align="center">躯干</td></tr></tbody></table><hr><a id="more"></a><h2 id="编译器-VS-code"><a href="#编译器-VS-code" class="headerlink" title="编译器 VS code"></a>编译器 VS code</h2><h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><table><thead><tr><th align="center">快捷键</th><th align="center">作用</th></tr></thead><tbody><tr><td align="center">Ctrl + N</td><td align="center">新建</td></tr><tr><td align="center">Ctrl + S</td><td align="center">保存</td></tr><tr><td align="center">Ctrl + &nbsp; “+” &nbsp; / &nbsp; “-“ &nbsp;</td><td align="center">字体增大/缩小</td></tr><tr><td align="center">“ &nbsp; !  “</td><td align="center">创建骨架</td></tr><tr><td align="center">Alt + B</td><td align="center">在默认的浏览器编译</td></tr></tbody></table><h3 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h3><pre><code>1. Chinese 翻译中文2. Open in Browser 在浏览器中打开3. Auto Rename Tag 改“前面的标签”时更改“后面的标签”</code></pre><hr><h2 id="lt-DOCTYPE-gt-和lang以及字符集的作用"><a href="#lt-DOCTYPE-gt-和lang以及字符集的作用" class="headerlink" title="&lt;!DOCTYPE&gt;和lang以及字符集的作用"></a>&lt;!DOCTYPE&gt;和lang以及字符集的作用</h2><h3 id="lt-DOCTYPE-gt"><a href="#lt-DOCTYPE-gt" class="headerlink" title="&lt;!DOCTYPE&gt;"></a>&lt;!DOCTYPE&gt;</h3><p><img src="https://pic.images.ac.cn/image/5e968519ef882" alt></p><p>&nbsp;&nbsp;<strong>告诉浏览器使用哪种Html显示网页</strong></p><pre><code>注意：1.要在&lt; html &gt;标签前面2.不属于&lt; html &gt;标签它是文档声明标签</code></pre><h3 id="lang"><a href="#lang" class="headerlink" title="lang"></a>lang</h3><p><img src="https://pic.images.ac.cn/image/5e96851a5c5e5" alt></p><p><strong>当前文档显示语言</strong>（告诉人们是什么语言的网站）</p><pre><code>注意:1.en ：英文      zh-CN ： 中文2.英文中可以有中文，中文中可以有英文</code></pre><h3 id="lt-Charset-gt-字符集"><a href="#lt-Charset-gt-字符集" class="headerlink" title="&lt; Charset &gt;字符集"></a>&lt; Charset &gt;字符集</h3><p><img src="https://pic.images.ac.cn/image/5e96851abc6df" alt></p><pre><code>utf-8 万国码  （不会写乱码）</code></pre><h2 id="标题标签-head缩写-lt-h1-gt-lt-h6-gt"><a href="#标题标签-head缩写-lt-h1-gt-lt-h6-gt" class="headerlink" title="标题标签 (head缩写) &lt; h1 &gt;-&lt; h6 &gt;"></a>标题标签 (head缩写) &lt; h1 &gt;-&lt; h6 &gt;</h2><pre><code>&lt;h1&gt;我是一级标题&lt;/h1&gt;特点：1.文字变大变粗2.一个标题独占一行</code></pre><h2 id="段落标签-Paragraph缩写-lt-p-gt"><a href="#段落标签-Paragraph缩写-lt-p-gt" class="headerlink" title="段落标签 (Paragraph缩写) &lt; p &gt;"></a>段落标签 (Paragraph缩写) &lt; p &gt;</h2><pre><code>&lt;p&gt;我是第一段落&lt;/p&gt;</code></pre><h2 id="换行标签-break缩写-lt-br-gt"><a href="#换行标签-break缩写-lt-br-gt" class="headerlink" title="换行标签 (break缩写) &lt; br/ &gt;"></a>换行标签 (break缩写) &lt; br/ &gt;</h2><pre><code>注意：1.单标签2.之间的空隙比段落间小</code></pre><h2 id="文本格式化标签-用前面的"><a href="#文本格式化标签-用前面的" class="headerlink" title="文本格式化标签 (用前面的)"></a>文本格式化标签 (用前面的)</h2><pre><code>1.粗体  &lt;strong&gt; &lt;/strong&gt; 或 &lt;b&gt; &lt;/b&gt;2.斜体  &lt;em&gt; &lt;/em&gt; 或 &lt;i&gt; &lt;/i&gt;3.删除线  &lt;del&gt; &lt;/del&gt; 或 &lt;s&gt; &lt;/s&gt;4.下划线  &lt;ins&gt; &lt;/ins&gt; 或 &lt;u&gt; &lt;/u&gt;</code></pre><h2 id="lt-div-gt-和-lt-span-gt-标签-没有语意"><a href="#lt-div-gt-和-lt-span-gt-标签-没有语意" class="headerlink" title="&lt; div &gt;和&lt; span &gt;标签 (没有语意)"></a>&lt; div &gt;和&lt; span &gt;标签 (没有语意)</h2><h3 id="lt-div-gt-lt-div-gt-division缩写"><a href="#lt-div-gt-lt-div-gt-division缩写" class="headerlink" title="&lt; div &gt; &lt; /div &gt; (division缩写)"></a>&lt; div &gt; &lt; /div &gt; (division缩写)</h3><pre><code>一个人独占一行（是个大盒子）</code></pre><h3 id="lt-span-gt-标签-（span缩写）"><a href="#lt-span-gt-标签-（span缩写）" class="headerlink" title="&lt; span &gt; 标签 （span缩写）"></a>&lt; span &gt; 标签 （span缩写）</h3><pre><code>一行可以放多个span（是个小盒子）</code></pre><h3 id="图示"><a href="#图示" class="headerlink" title="图示"></a>图示</h3><p><img src="https://ae01.alicdn.com/kf/H14d4c7c77288461fac861dd52e872f081.png" alt></p><h2 id="图像标签-image缩写-lt-img-gt"><a href="#图像标签-image缩写-lt-img-gt" class="headerlink" title="图像标签 (image缩写) &lt; img &gt;"></a>图像标签 (image缩写) &lt; img &gt;</h2><pre><code>&lt;img src=&quot;图像url&quot; /&gt;</code></pre><p>  <strong>属性：</strong></p><pre><code>1. src 是&lt;img&gt;的必须属性指向文件的路径和文件名2. alt 替代文本 当文字不能显示时，用文字替换3. title 提示文本 鼠标放在图像时，显示的文字4. width 图片的宽5. heigh 图片的高  （一般宽/高只改一个）6. border 边框粗细</code></pre><h2 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h2><pre><code>目录文件夹：普通文件夹，有Html、图像等根目录：最外的一层文件夹</code></pre><p><img src="https://ae01.alicdn.com/kf/Hff5981abb86843a2ab2c5c7697af405c5.png" alt></p><pre><code>1. 相对路径：图片相对Html页面的位置    1. 同一级: 直接写文件名    2. 下一级: 图像目录/文件名    3. 上一级: ../文件名2. 绝对路径 (少用)    1. 电脑中    2. 网络中3. 符号    1.绝对路径：\    2.相对路径：/</code></pre><h2 id="超链接标签-anchor缩写-lt-a-gt"><a href="#超链接标签-anchor缩写-lt-a-gt" class="headerlink" title="超链接标签 (anchor缩写) &lt; a &gt;"></a>超链接标签 (anchor缩写) &lt; a &gt;</h2><pre><code>&lt;a herf=&quot;跳转目标&quot; target=&quot;目标窗口的弹出方式&quot;&gt; 文本或图像 &lt;/a&gt;</code></pre><p><strong>属性：</strong></p><pre><code>herf 用于链接目标的url地址target 用于链接页面的打开方式        1. _self为默认值        2. _blank为在新窗口打开</code></pre><h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><pre><code>1. 外部链接：以&quot;http:// + 网址 &quot; 开头2. 内部链接：直接链接内部页面3. 空链接：&lt;a herf=&quot;#&quot;&gt; 空链接 &lt;/a&gt;4. 下载链接：&lt;a herf=&quot;xxx.zip/zip/rar(等压缩包形式)&gt; &lt;/a&gt;5. 网页元素链接：&quot;元素&quot;代替&quot;文字&quot;6. 锚点链接（重点）：点击链接到页面的某个位置    1. 在 herf 属性中，设置属性值为#名字     （如： &lt;a herf=&quot;#two&quot;&gt; 第二集 &lt;/a&gt; ）    2. 找到目标位置标签，添加id=名字    （如： &lt;h3 id=&quot;two&quot;&gt; 第二季介绍 &lt;h3&gt; )    </code></pre><h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><pre><code>1. &quot;&lt;!--&quot;开头         &quot;--&gt;&quot;结束2. 快捷键：Ctrl + &quot;/&quot;</code></pre><h2 id="特殊字符"><a href="#特殊字符" class="headerlink" title="特殊字符"></a>特殊字符</h2><pre><code>空格: &amp;nbsp;&quot;&lt;&quot;: &amp;lt;&quot;&lt;&quot;: &amp;gt;</code></pre><h2 id="表格标签"><a href="#表格标签" class="headerlink" title="表格标签"></a>表格标签</h2><pre><code>&lt;table&gt;    -------&gt;  定义单元格的标签    &lt;tr&gt; -------&gt;  行        &lt;td&gt; 单元格内的文字 &lt;/td&gt; -------&gt;  单元格        ......            &lt;/tr&gt;            ......&lt;/table&gt;</code></pre><p><img src="https://ae01.alicdn.com/kf/H5b06504643f6480583333bbbd845d5948.png" alt></p><h3 id="表头单元格"><a href="#表头单元格" class="headerlink" title="表头单元格"></a>表头单元格</h3><pre><code>&lt;table&gt;        &lt;tr&gt;         &lt;th&gt; 表头 &lt;/th&gt;  （加粗+居中）        &lt;td&gt; 表格内容 &lt;/td&gt;        &lt;td&gt; 表格内容 &lt;/td&gt;         &lt;td&gt; 表格内容 &lt;/td&gt;               &lt;/tr&gt;            ......&lt;/table&gt;</code></pre><h3 id="表格属性-（不常用，之后用css，写在table中）"><a href="#表格属性-（不常用，之后用css，写在table中）" class="headerlink" title="表格属性 （不常用，之后用css，写在table中）"></a>表格属性 （不常用，之后用css，写在table中）</h3><pre><code>1. align--对齐        left     center     right                       左       中心        右2. border--边框      1    或    0                    有       无（默认）3. cellpadding--内容和边框的距离4. cellspacing--单元格和单元格的距离5. width--设置宽度6. height--设置高度</code></pre><h3 id="表格结构标签"><a href="#表格结构标签" class="headerlink" title="表格结构标签"></a>表格结构标签</h3><pre><code>1.头部区域 &lt;thead&gt; (一定要有&lt;tr&gt;标签)2.主体区域 &lt;tbody&gt;注：都在&lt;table&gt;标签中</code></pre><h3 id="合并单元格"><a href="#合并单元格" class="headerlink" title="合并单元格"></a>合并单元格</h3><p>方式：</p><pre><code>1. 跨行 rowspan = &quot;合并单元格的个数&quot;2. 跨列 colspan = &quot;合并单元格的个数&quot;</code></pre><p><img src="https://ae01.alicdn.com/kf/Hf57ba1f2f8114f8aa0baa5f668ed15a2d.png" alt></p><p>目标单元格：</p><pre><code>跨行：最上侧跨列：最左侧    </code></pre><p><img src="https://ae01.alicdn.com/kf/Hf673019f0584407fbe952da89efa9c40B.png" alt></p><p>步骤：</p><pre><code>1. 先确定 跨行 或 跨列 2. 找到目标单元格，写合并方式（如： &lt;td colspan =&quot;2&quot;&gt; &lt;/td&gt;）3. 删除多的单元格</code></pre><h2 id="列表标签-（用于布局页面）"><a href="#列表标签-（用于布局页面）" class="headerlink" title="列表标签 （用于布局页面）"></a>列表标签 （用于布局页面）</h2><h3 id="无序列表-（重点）"><a href="#无序列表-（重点）" class="headerlink" title="无序列表 （重点）"></a>无序列表 （重点）</h3><pre><code>1. &lt;ul&gt; 中只放 &lt;li&gt;2. &lt;li&gt; 中可以放任何元素&lt;ul&gt;    &lt;li&gt;.....&lt;/li&gt;    &lt;li&gt;.....&lt;/li&gt;    &lt;li&gt;.....&lt;/li&gt;&lt;/ul&gt;注：拥有自己的样式属性，之后用css改</code></pre><h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><pre><code>1. &lt;or&gt; 中只放 &lt;li&gt;2. &lt;li&gt; 中可以放任何元素 &lt;or&gt;    &lt;li&gt; 列表项1 &lt;/li&gt;    &lt;li&gt; 列表项2 &lt;/li&gt;    &lt;li&gt; 列表项3 &lt;/li&gt;&lt;/or&gt;注：拥有自己的样式属性，之后用css改</code></pre><h3 id="自定义列表-（重点）"><a href="#自定义列表-（重点）" class="headerlink" title="自定义列表 （重点）"></a>自定义列表 （重点）</h3><pre><code>&lt;dl&gt;    &lt;dt&gt; 大哥 &lt;/dt&gt;    &lt;dt&gt; 小弟 &lt;/dt&gt; -----&gt; 小弟用于解释大哥    &lt;dt&gt; 小弟 &lt;/dt&gt;&lt;/dl&gt;注：1. 一个 &lt;dt&gt; 可以对应多个 &lt;dd&gt;2. &lt;dt&gt; 与 &lt;dd&gt; 的个数都无限制</code></pre><p><img src="https://ae01.alicdn.com/kf/H5dfbff0aa4634ef5b027bdf9a6c330bf2.png" alt></p><h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><ol><li><p>何时用自定义列表，何时用无序列表</p><p> a. 使用自定义列表<br><img src="https://ae01.alicdn.com/kf/Haa524fcf7cea40c398fa281c1effa6f9E.png" alt><br> b. 使用无序列表</p></li></ol><p><img src="https://ae01.alicdn.com/kf/H78900ce09eed423186fe0cf524980bb3y.png" alt></p><p>2.格式</p><p>无序列表：</p><pre><code>&lt;ul&gt;    &lt;li&gt;.....&lt;/li&gt;    &lt;li&gt;.....&lt;/li&gt;    &lt;li&gt;.....&lt;/li&gt;&lt;/ul&gt;</code></pre><p>自定义列表：</p><pre><code>&lt;dl&gt;    &lt;dt&gt;.....&lt;/dt&gt;    &lt;dt&gt;.....&lt;/dt&gt;    &lt;dt&gt;..... &lt;/dt&gt;&lt;/dl&gt;</code></pre><h2 id="表单标签"><a href="#表单标签" class="headerlink" title="表单标签"></a>表单标签</h2><p><img src="https://ae01.alicdn.com/kf/Hd2f2b4bdafea4c3dbc92a73df3ceba2b6.png" alt></p><h3 id="表单域-lt-form-gt"><a href="#表单域-lt-form-gt" class="headerlink" title="表单域  &lt; form &gt;"></a>表单域  &lt; form &gt;</h3><p>把区域中的表单元素送给服务器</p><pre><code>&lt;form action=&quot;url地址&quot; methon=&quot;提交方式&quot; name=&quot;表单名称&quot;&gt;                       [ get / post ]   [指定表单的名称]    各种表单控件&lt;/from&gt;</code></pre><h3 id="表单元素"><a href="#表单元素" class="headerlink" title="表单元素"></a>表单元素</h3><h4 id="lt-input-gt-输入"><a href="#lt-input-gt-输入" class="headerlink" title="&lt; input &gt; 输入"></a>&lt; input &gt; 输入</h4><pre><code>&lt;input type=&quot;属性值&quot; /&gt;注：1.单标签  2.不同属性值对应不同的控件</code></pre><p>属性值：</p><pre><code>1. text-文本框      用户可以在里面输入任何文字2. password-密码框     用户看不见输入的密码3. radio-单选按钮     可以实现多选一4. checkbox-复选框     可以实现多选5. submi-提交按钮     把表单form里面的表单元素里面的值提交给后台服务器6. reset-重置按钮     可以还原表单元素初始的默认状态7. botton-普通按钮     后期可以结合js搭配使用8. file-文件域     选择文件按钮，上传文件时使用</code></pre><p><strong>注意：</strong></p><pre><code>1. name-表单元素名字，多个单选按钮拥有相同名字时，可以实现单选一   （单选框和复选框，选项的name的值要相同）2. value-表单元素的值   （只能在text中显示，只能后台人员使用）3. checked-打开时默认选中：checked=&quot;checked&quot;   （单选框和复选框中设置）4. maxlength-输出字符字数最大值</code></pre><h4 id="lt-label-gt-标签-（为-lt-input-gt-元素定义标签）"><a href="#lt-label-gt-标签-（为-lt-input-gt-元素定义标签）" class="headerlink" title="&lt; label &gt;标签  （为&lt; input &gt;元素定义标签）"></a>&lt; label &gt;标签  （为&lt; input &gt;元素定义标签）</h4><p>自动将光标撞到或者选择到对应的元素上</p><pre><code>&lt;label for=&quot;sex&quot; &gt; 男 &lt;/label&gt;&lt;input type=&quot;radio&quot; name=&quot;sex&quot; id=&quot;sex&quot;&gt;</code></pre><h4 id="lt-select-gt-下拉表单元素"><a href="#lt-select-gt-下拉表单元素" class="headerlink" title="&lt; select &gt; 下拉表单元素"></a>&lt; select &gt; 下拉表单元素</h4><pre><code>&lt;select&gt;     &lt;option&gt;   &lt;/option&gt;    &lt;option&gt;   &lt;/option&gt;&lt;/select&gt;</code></pre><p>注意：</p><ol><li>&lt; select &gt; 中至少包含一对 &lt; option &gt;</li><li>在 &lt; option &gt; 中定义 checked=”checked” 时，当前项则为默认选择项</li></ol><h4 id="lt-textarea-gt-文本域"><a href="#lt-textarea-gt-文本域" class="headerlink" title="&lt; textarea &gt; 文本域"></a>&lt; textarea &gt; 文本域</h4><p>定义多行文本输入</p><pre><code>&lt;textarea  rows=&quot;可以显示的行数&quot;  role=&quot;可以显示的行数&quot;&gt;</code></pre><hr><p>本文参考：<br><a href="https://www.bilibili.com/video/BV14J4114768?p=1">2019年黑马程序员前端入门视频教程 HTML5+CSS3</a></p>]]></content>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;h3 id=&quot;Html概述&quot;&gt;&lt;a href=&quot;#Html概述&quot; class=&quot;headerlink&quot; title=&quot;Html概述&quot;&gt;&lt;/a&gt;Html概述&lt;/h3&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;Html是一种&lt;strong&gt;标记语言&lt;/strong&gt;，它使用&lt;strong&gt;标记标签&lt;/strong&gt;来描述页面&lt;/p&gt;
-&lt;h3 id=&quot;Html标签&quot;&gt;&lt;a href=&quot;#Html标签&quot; class=&quot;headerlink&quot; title=&quot;Html标签&quot;&gt;&lt;/a&gt;Html标签&lt;/h3&gt;&lt;p&gt;1.html分位单标签和双标签&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;单标签    &amp;lt;br&amp;gt;
-双标签    &amp;lt;html&amp;gt; &amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2.html标签的关系&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;1.包含：
-    &amp;lt;head&amp;gt;
-        &amp;lt;title&amp;gt; &amp;lt;/title&amp;gt;
-    &amp;lt;/head&amp;gt;
-2.并列：
-    &amp;lt;head&amp;gt; &amp;lt;/head&amp;gt;
-    &amp;lt;body&amp;gt; &amp;lt;/body&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3.骨架标签&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&quot;center&quot;&gt;标签&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;含义&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;小猪佩奇&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&amp;lt; html &amp;gt;&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;根标签&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;全身&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&amp;lt; head &amp;gt;&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;头部&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;头&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&amp;lt; title &amp;gt;&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;标题&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;眼睛&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&amp;lt; body &amp;gt;&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;内容&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;躯干&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;hr&gt;</summary>
-    
-    
-    
-    <category term="前端" scheme="https://ming-clavin.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-    <category term="前端" scheme="https://ming-clavin.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="Html" scheme="https://ming-clavin.github.io/tags/Html/"/>
     
   </entry>
   

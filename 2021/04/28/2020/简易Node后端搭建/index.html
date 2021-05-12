@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/code32.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/code16.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="后端,Node," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Ming-Calvin" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="简易Node后端搭建1. Express1.1 安装1.1.1 安装淘宝镜像安装npm之前可先安装淘宝镜像，使用cnpm的来代替npm，使得下载速度提高很多。 1npm install -g cnpm --registry&amp;#x3D;https:&amp;#x2F;&amp;#x2F;registry.npm.taobao.org  1.1.2 初始化项目目录下运行命令来初始化项目，期间所有提示按enter键即可">
+<meta name="keywords" content="后端,Node">
+<meta property="og:type" content="article">
+<meta property="og:title" content="简易Node后端搭建">
+<meta property="og:url" content="https:&#x2F;&#x2F;ming-clavin.github.io&#x2F;2021&#x2F;04&#x2F;28&#x2F;2020&#x2F;%E7%AE%80%E6%98%93Node%E5%90%8E%E7%AB%AF%E6%90%AD%E5%BB%BA&#x2F;index.html">
+<meta property="og:site_name" content="Ming-Calvin">
+<meta property="og:description" content="简易Node后端搭建1. Express1.1 安装1.1.1 安装淘宝镜像安装npm之前可先安装淘宝镜像，使用cnpm的来代替npm，使得下载速度提高很多。 1npm install -g cnpm --registry&amp;#x3D;https:&amp;#x2F;&amp;#x2F;registry.npm.taobao.org  1.1.2 初始化项目目录下运行命令来初始化项目，期间所有提示按enter键即可">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https:&#x2F;&#x2F;calvin-typora-image.oss-cn-hangzhou.aliyuncs.com&#x2F;img&#x2F;20210309183046.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;calvin-typora-image.oss-cn-hangzhou.aliyuncs.com&#x2F;img&#x2F;20210309185515.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;calvin-typora-image.oss-cn-hangzhou.aliyuncs.com&#x2F;img&#x2F;20210310102721.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;calvin-typora-image.oss-cn-hangzhou.aliyuncs.com&#x2F;img&#x2F;20210423174110.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;calvin-typora-image.oss-cn-hangzhou.aliyuncs.com&#x2F;img&#x2F;20210423174423.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;calvin-typora-image.oss-cn-hangzhou.aliyuncs.com&#x2F;img&#x2F;20210423174954.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;calvin-typora-image.oss-cn-hangzhou.aliyuncs.com&#x2F;img&#x2F;20210423175139.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;calvin-typora-image.oss-cn-hangzhou.aliyuncs.com&#x2F;img&#x2F;20210423173708.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;calvin-typora-image.oss-cn-hangzhou.aliyuncs.com&#x2F;img&#x2F;20210310103517.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;calvin-typora-image.oss-cn-hangzhou.aliyuncs.com&#x2F;img&#x2F;20210423180253.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;calvin-typora-image.oss-cn-hangzhou.aliyuncs.com&#x2F;img&#x2F;20210423181604.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;calvin-typora-image.oss-cn-hangzhou.aliyuncs.com&#x2F;img&#x2F;20210310110023.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;calvin-typora-image.oss-cn-hangzhou.aliyuncs.com&#x2F;img&#x2F;20210423182339.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;calvin-typora-image.oss-cn-hangzhou.aliyuncs.com&#x2F;img&#x2F;20210424161706.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;calvin-typora-image.oss-cn-hangzhou.aliyuncs.com&#x2F;img&#x2F;20210424162310">
+<meta property="og:image" content="https:&#x2F;&#x2F;calvin-typora-image.oss-cn-hangzhou.aliyuncs.com&#x2F;img&#x2F;20210424162525.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;calvin-typora-image.oss-cn-hangzhou.aliyuncs.com&#x2F;img&#x2F;20210424162648.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;calvin-typora-image.oss-cn-hangzhou.aliyuncs.com&#x2F;img&#x2F;20210424163418.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;calvin-typora-image.oss-cn-hangzhou.aliyuncs.com&#x2F;img&#x2F;20210424163657.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;calvin-typora-image.oss-cn-hangzhou.aliyuncs.com&#x2F;img&#x2F;20210424164129.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;calvin-typora-image.oss-cn-hangzhou.aliyuncs.com&#x2F;img&#x2F;20210424164203.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;calvin-typora-image.oss-cn-hangzhou.aliyuncs.com&#x2F;img&#x2F;20210424164211.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;calvin-typora-image.oss-cn-hangzhou.aliyuncs.com&#x2F;img&#x2F;20210424164356.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;calvin-typora-image.oss-cn-hangzhou.aliyuncs.com&#x2F;img&#x2F;20210425171239.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;calvin-typora-image.oss-cn-hangzhou.aliyuncs.com&#x2F;img&#x2F;20210425172651.png">
+<meta property="og:updated_time" content="2021-04-28T07:58:50.641Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;calvin-typora-image.oss-cn-hangzhou.aliyuncs.com&#x2F;img&#x2F;20210309183046.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","offset":20,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://ming-clavin.github.io/2021/04/28/2020/简易Node后端搭建/"/>
+
+
+
+
+
+  <title>简易Node后端搭建 | Ming-Calvin</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+	<a href="https://github.com/Ming-Clavin" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Ming-Calvin</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">一个前端程序员的博客</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ming-clavin.github.io/2021/04/28/2020/%E7%AE%80%E6%98%93Node%E5%90%8E%E7%AB%AF%E6%90%AD%E5%BB%BA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Ming-Clavin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Ming-Calvin.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ming-Calvin">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">简易Node后端搭建</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-04-28T15:55:00+08:00">
+                2021-04-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Node%E5%90%8E%E7%AB%AF/" itemprop="url" rel="index">
+                    <span itemprop="name">Node后端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="简易Node后端搭建"><a href="#简易Node后端搭建" class="headerlink" title="简易Node后端搭建"></a>简易Node后端搭建</h1><h2 id="1-Express"><a href="#1-Express" class="headerlink" title="1. Express"></a>1. Express</h2><h3 id="1-1-安装"><a href="#1-1-安装" class="headerlink" title="1.1 安装"></a>1.1 安装</h3><h4 id="1-1-1-安装淘宝镜像"><a href="#1-1-1-安装淘宝镜像" class="headerlink" title="1.1.1 安装淘宝镜像"></a>1.1.1 安装淘宝镜像</h4><p>安装npm之前可先安装淘宝镜像，使用cnpm的来代替npm，使得下载速度提高很多。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span></pre></td></tr></table></figure>
+
+<h4 id="1-1-2-初始化项目"><a href="#1-1-2-初始化项目" class="headerlink" title="1.1.2 初始化项目"></a>1.1.2 初始化项目</h4><p>目录下运行命令来初始化项目，期间所有提示按enter键即可，这会生成<code>package.json</code>，用于描述项目文件的.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">cnpm init</span></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+
+
+<p>再输入命令，项目目录中又会多出一个叫<code>node_modules</code>文件夹，里面是node.js提供的模块</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">cnpm install</span></pre></td></tr></table></figure>
+
+<h4 id="1-1-3-安装express"><a href="#1-1-3-安装express" class="headerlink" title="1.1.3 安装express"></a>1.1.3 安装express</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">cnpm install express --save</span></pre></td></tr></table></figure>
+
+<p>创建结果：</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210309183046.png" alt="image-20210309183045551" style="zoom: 50%;">
+
+<h4 id="1-1-4-检验是否创建成功"><a href="#1-1-4-检验是否创建成功" class="headerlink" title="1.1.4 检验是否创建成功"></a>1.1.4 检验是否创建成功</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">express --version</span></pre></td></tr></table></figure>
+
+<p>若出现版本号，则为创建成功</p>
+<h3 id="1-2-Express脚手架的安装"><a href="#1-2-Express脚手架的安装" class="headerlink" title="1.2 Express脚手架的安装"></a>1.2 Express脚手架的安装</h3><h4 id="1-2-1-使用express-generator安装"><a href="#1-2-1-使用express-generator安装" class="headerlink" title="1.2.1 使用express-generator安装"></a>1.2.1 使用express-generator安装</h4><ol>
+<li><p>命令行进入项目目录，运行命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">cnpm i express-generator</span></pre></td></tr></table></figure>
+</li>
+<li><p>创建了一个名为app的Express应用，并使用ejs模板引擎</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">express --view&#x3D;ejs app</span></pre></td></tr></table></figure>
+</li>
+<li><p>进入app，并安装依赖</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">cd app</span></pre></td></tr></table></figure>
+</li>
+<li><p>初始化项目</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">npm install</span></pre></td></tr></table></figure>
+</li>
+<li><p>在Windows下，使用以下命令启Express应用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">set DEBUG&#x3D;app:* &amp; npm start</span></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h4 id="1-2-2-使用express命令快速创建项目目录"><a href="#1-2-2-使用express命令快速创建项目目录" class="headerlink" title="1.2.2 使用express命令快速创建项目目录"></a>1.2.2 使用express命令快速创建项目目录</h4><p>用法：express项目文件夹的名字 -e</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">express app -e</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">cd app</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">cnpm install</span></pre></td></tr></table></figure>
+
+<p>app文件夹下的文件结构：</p>
+<ul>
+<li>bin: 启动目录，包含启动文件www，默认监听端口是 3000 ，直接node www执行即可。</li>
+<li>node_modules：依赖的模块包</li>
+<li>public：存放静态资源</li>
+<li>routes：路由操作</li>
+<li>views：存放ejs模板引擎</li>
+<li>app.js：主文件</li>
+<li>package.json：项目描述文件</li>
+</ul>
+<h3 id="1-3-参考资料"><a href="#1-3-参考资料" class="headerlink" title="1.3 参考资料"></a>1.3 参考资料</h3><p><a href="https://blog.csdn.net/no10086/article/details/88958282?spm=1001.2014.3001.5501">Express全系列教程之(一)：Express的安装 和第一个程序</a></p>
+<h2 id="2-sequelize"><a href="#2-sequelize" class="headerlink" title="2. sequelize"></a>2. sequelize</h2><h3 id="2-1-安装"><a href="#2-1-安装" class="headerlink" title="2.1 安装"></a>2.1 安装</h3><h4 id="2-1-1-安装sequelize"><a href="#2-1-1-安装sequelize" class="headerlink" title="2.1.1 安装sequelize"></a>2.1.1 安装sequelize</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">cnpm install sequelize -S</span></pre></td></tr></table></figure>
+
+<h4 id="2-1-2-为MySQL数据库安装驱动程序"><a href="#2-1-2-为MySQL数据库安装驱动程序" class="headerlink" title="2.1.2 为MySQL数据库安装驱动程序"></a>2.1.2 为MySQL数据库安装驱动程序</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">cnpm install mysql2 -S</span></pre></td></tr></table></figure>
+
+<h4 id="2-1-3-安装"><a href="#2-1-3-安装" class="headerlink" title="2.1.3 安装"></a>2.1.3 安装</h4><p>通过命令行创建sequelize目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">cnpm install sequelize-cli -g</span></pre></td></tr></table></figure>
+
+<h4 id="1-1-4-初始化项目"><a href="#1-1-4-初始化项目" class="headerlink" title="1.1.4 初始化项目"></a>1.1.4 初始化项目</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">sequelize init</span></pre></td></tr></table></figure>
+
+<p>文件目录：</p>
+<ul>
+<li>config – 数据库配置</li>
+<li>migrations – 迁移文件</li>
+<li>models – 模型文件</li>
+<li>seeders – 种子文件</li>
+</ul>
+<h3 id="2-2-配置数据库环境"><a href="#2-2-配置数据库环境" class="headerlink" title="2.2 配置数据库环境"></a>2.2 配置数据库环境</h3><h4 id="2-2-1-环境参数"><a href="#2-2-1-环境参数" class="headerlink" title="2.2.1 环境参数"></a>2.2.1 环境参数</h4><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210309185515.png" alt="image-20210309185514118" style="zoom: 33%;">
+
+<h4 id="2-2-2-配置参数"><a href="#2-2-2-配置参数" class="headerlink" title="2.2.2 配置参数"></a>2.2.2 配置参数</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="string">"development"</span>: &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="string">"username"</span>: <span class="string">"root"</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  <span class="string">"password"</span>: <span class="string">"root"</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  <span class="string">"database"</span>: <span class="string">"document_development"</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  <span class="string">"host"</span>: <span class="string">"127.0.0.1"</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">  <span class="string">"dialect"</span>: <span class="string">"mysql"</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#125;,</span></pre></td></tr></table></figure>
+
+<h3 id="2-3-创建数据库"><a href="#2-3-创建数据库" class="headerlink" title="2.3 创建数据库"></a>2.3 创建数据库</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">sequelize db:create --charset &#39;utf8mb4&#39;</span></pre></td></tr></table></figure>
+
+<p>创建成功：</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210310102721.png" alt="image-20210310102720851" style="zoom: 67%;">
+
+<h3 id="2-4-sequelize操作数据库：模型、迁移与种子"><a href="#2-4-sequelize操作数据库：模型、迁移与种子" class="headerlink" title="2.4 sequelize操作数据库：模型、迁移与种子"></a>2.4 sequelize操作数据库：模型、迁移与种子</h3><h4 id="2-4-1-创建模型与迁移"><a href="#2-4-1-创建模型与迁移" class="headerlink" title="2.4.1 创建模型与迁移"></a>2.4.1 创建模型与迁移</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">sequelize model:generate --name Article --attributes title:string,content:text</span></pre></td></tr></table></figure>
+
+<p>创建了名为Article的模型 ，表有两个字段：标题（string类型）；内容（text 类型）</p>
+<h4 id="2-4-2-模型文件"><a href="#2-4-2-模型文件" class="headerlink" title="2.4.2 模型文件"></a>2.4.2 模型文件</h4><p>使用 <code>Node.js</code> 操作数据库需要用到模型文件，无需改动。</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210423174110.png" alt="image-20210423174109300" style="zoom: 33%;">
+
+<h4 id="2-4-3-迁移文件"><a href="#2-4-3-迁移文件" class="headerlink" title="2.4.3 迁移文件"></a>2.4.3 迁移文件</h4><p>迁移文件：migrations/xxx-create-article.js，里面保存的是 Articles 的字段。</p>
+<p>（注意：sequelize 中默认规定，模型的名称是单数，而数据表是复数）</p>
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210423174423.png" alt="image-20210310103047714"></p>
+<p><strong><code>up</code>部分代码 – 建表：</strong></p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210423174954.png" alt="image-20210423174953113" style="zoom:50%;">
+
+<p><strong><code>down</code>部分代码 – 删除表：</strong></p>
+<p>代码的 <code>down</code> 部分，是 <code>up</code> 的反向操作。</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210423175139.png" alt="image-20210423175138106" style="zoom:50%;">
+
+<h4 id="2-4-4-运行迁移"><a href="#2-4-4-运行迁移" class="headerlink" title="2.4.4 运行迁移"></a>2.4.4 运行迁移</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ sequelize db:migrate</span></pre></td></tr></table></figure>
+
+<p>运行命令，将字段迁移进数据库</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210423173708.png" alt="image-20210423173706555" style="zoom:50%;">
+
+<h4 id="2-4-5-种子文件"><a href="#2-4-5-种子文件" class="headerlink" title="2.4.5 种子文件"></a>2.4.5 种子文件</h4><p><strong>创建种子文件,填充测试数据：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ sequelize seed:generate --name article</span></pre></td></tr></table></figure>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210310103517.png" alt="image-20210310103516290" style="zoom: 50%;">
+
+<p><strong>修改种子文件数据</strong></p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210423180253.png" alt="image-20210423180252412" style="zoom: 50%;">
+
+<p><strong>运行种子文件</strong></p>
+<ul>
+<li>运行所有种子文件：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ sequelize db:seed:all</span></pre></td></tr></table></figure>
+
+<ul>
+<li>运行指定的种子文件</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">sequelize db:seed --seed xxx-article</span></pre></td></tr></table></figure>
+
+<h4 id="2-4-6-总结"><a href="#2-4-6-总结" class="headerlink" title="2.4.6 总结"></a>2.4.6 总结</h4><p>日常开发项目数据库操作的步骤：</p>
+<table>
+<thead>
+<tr>
+<th align="center">步骤</th>
+<th align="center">命令</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">第一步</td>
+<td align="center">sequelize model:generate –name Article –attributes …</td>
+<td align="center">建模型和迁移文件</td>
+</tr>
+<tr>
+<td align="center">第二步</td>
+<td align="center">人工处理</td>
+<td align="center">根据需求调整模型和迁移文件</td>
+</tr>
+<tr>
+<td align="center">第三步</td>
+<td align="center">sequelize db:migrate</td>
+<td align="center">运行迁移，生成数据表</td>
+</tr>
+<tr>
+<td align="center">第四步</td>
+<td align="center">sequelize seed:generate –name article</td>
+<td align="center">新建种子文件</td>
+</tr>
+<tr>
+<td align="center">第五步</td>
+<td align="center">人工处理</td>
+<td align="center">将种子文件修改为自己想填充的数据</td>
+</tr>
+<tr>
+<td align="center">第六步</td>
+<td align="center">sequelize db:seed:all</td>
+<td align="center">运行种子文件，将默认数据填充到数据表中</td>
+</tr>
+</tbody></table>
+<h3 id="2-5-查询数据库"><a href="#2-5-查询数据库" class="headerlink" title="2.5 查询数据库"></a>2.5 查询数据库</h3><h4 id="2-5-1-路由"><a href="#2-5-1-路由" class="headerlink" title="2.5.1 路由"></a>2.5.1 路由</h4><p>添加一个新的路由文件：在 routes 中，添加一个叫做 articles.js 的文件。基础的代码，和项目自带的其他路由文件一样，直接复制过来。</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210423181604.png" alt="image-20210423181603303" style="zoom:50%;">
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> router = express.Router();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// ....</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = router;</span></pre></td></tr></table></figure>
+
+<h4 id="2-5-2-get-请求"><a href="#2-5-2-get-请求" class="headerlink" title="2.5.2 get 请求"></a>2.5.2 <code>get</code> 请求</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">router.get(<span class="string">'/'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">req, res, next</span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    res.json(&#123;<span class="attr">hello</span>: <span class="string">"ITFun"</span>&#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<p><strong>代码解析：</strong></p>
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210310110023.png" alt="image-20210310110022651"></p>
+<h4 id="2-5-3-使用路由"><a href="#2-5-3-使用路由" class="headerlink" title="2.5.3 使用路由"></a>2.5.3 使用路由</h4><p><code>app.js</code> 中使用<code>articles.js</code> 路由，路由文件才会生效</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> articlesRouter = <span class="built_in">require</span>(<span class="string">'./routes/articles'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// ...</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">app.use(<span class="string">'/articles'</span>, articlesRouter);</span></pre></td></tr></table></figure>
+
+<h4 id="2-5-4-读取数据库"><a href="#2-5-4-读取数据库" class="headerlink" title="2.5.4 读取数据库"></a>2.5.4 读取数据库</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> models = <span class="built_in">require</span>(<span class="string">'../models'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// .....</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">router.get(<span class="string">'/'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">req, res, next</span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    models.Article.findAll().then(<span class="function"><span class="params">articles</span> =&gt;</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">        res.json(&#123;<span class="attr">articles</span>: articles&#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">    &#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<p>结果：</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210423182339.png" alt="express 读取接口" style="zoom:50%;">
+
+<h4 id="2-5-5-异步查询语法"><a href="#2-5-5-异步查询语法" class="headerlink" title="2.5.5 异步查询语法"></a>2.5.5 异步查询语法</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">router.get(<span class="string">'/'</span>, <span class="keyword">async</span> <span class="function"><span class="keyword">function</span> (<span class="params">req, res, next</span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">var</span> articles = <span class="keyword">await</span> models.Article.findAll();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    res.json(&#123;<span class="attr">articles</span>: articles&#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<ul>
+<li><code>async</code> 是 <code>异步</code> 的意思，<code>async function</code> 表明当前这个 <code>function</code> 是异步的。</li>
+<li><code>await</code>，表示等待一个异步方法执行完成。<code>await</code> 只能在 <code>async</code> 函数内部使用，用在普通函数里就会报错。</li>
+</ul>
+<h4 id="2-5-6-排序"><a href="#2-5-6-排序" class="headerlink" title="2.5.6 排序"></a>2.5.6 排序</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> articles = <span class="keyword">await</span> models.Article.findAll(&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    order: [[<span class="string">'id'</span>, <span class="string">'DESC'</span>]],</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210424161706.png" alt="倒序" style="zoom: 50%;">
+
+<h3 id="2-6-添加数据"><a href="#2-6-添加数据" class="headerlink" title="2.6 添加数据"></a>2.6 添加数据</h3><h4 id="2-6-1-新增定义死的数据"><a href="#2-6-1-新增定义死的数据" class="headerlink" title="2.6.1 新增定义死的数据"></a>2.6.1 新增定义死的数据</h4><p>找到模型后，使用 <code>create</code> 方法，将数据插入进去</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">router.post(<span class="string">'/'</span>, <span class="keyword">async</span> <span class="function"><span class="keyword">function</span> (<span class="params">req, res, next</span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">var</span> article = <span class="keyword">await</span> models.Article.create(&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">        title: <span class="string">"猫猫狗狗"</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">        content: <span class="string">"小动物们的快乐"</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">    &#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">    res.json(&#123;<span class="attr">article</span>: article&#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<h4 id="2-6-2-使用Promise-语法"><a href="#2-6-2-使用Promise-语法" class="headerlink" title="2.6.2 使用Promise 语法"></a>2.6.2 使用<code>Promise</code> 语法</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">models.Article.create(&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    title: <span class="string">"asdf"</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    content: <span class="string">"asdfsadfsdf"</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#125;).then(<span class="function"><span class="params">article</span> =&gt;</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">    res.json(&#123;<span class="attr">article</span>: article&#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">&#125;)</span></pre></td></tr></table></figure>
+
+<h4 id="2-6-3-使用Postman测试接口"><a href="#2-6-3-使用Postman测试接口" class="headerlink" title="2.6.3 使用Postman测试接口"></a>2.6.3 使用<code>Postman</code>测试接口</h4><p>请求方式改为 <code>POST</code>，地址栏填上接口的地址。最后点击 <code>Send</code></p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210424162310" alt="在这里插入图片描述" style="zoom: 80%;">
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210424162525.png" alt="image-20210424162524415" style="zoom:50%;">
+
+<h4 id="2-6-4-用户提交数据"><a href="#2-6-4-用户提交数据" class="headerlink" title="2.6.4 用户提交数据"></a>2.6.4 用户提交数据</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">router.post(&#39;&#x2F;&#39;, async function (req, res, next) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    res.json(&#123;&#39;你发送的内容是&#39;: req.body&#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<p>注：<code>req.body</code>：用户使用 <code>post</code> 发送过来的内容</p>
+<p><strong>测试接口</strong></p>
+<p>打开 <code>Postman</code>，点击 <code>Body</code>，选择 <code>x-www-form-urlencoded</code>。<code>key</code> 要填对应数据库里的字段名称，<code>value</code> 里填插入数据库的数据。</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210424162648.png" alt="postman 测试 post提交数据" style="zoom: 50%;">
+
+<h4 id="2-6-5-将用户的数据插入数据库"><a href="#2-6-5-将用户的数据插入数据库" class="headerlink" title="2.6.5 将用户的数据插入数据库"></a>2.6.5 将用户的数据插入数据库</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">router.post(<span class="string">'/'</span>, <span class="keyword">async</span> <span class="function"><span class="keyword">function</span> (<span class="params">req, res, next</span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">var</span> article = <span class="keyword">await</span> models.Article.create(req.body);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    res.json(&#123;<span class="attr">article</span>: article&#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<h3 id="2-7-数据库的删改查"><a href="#2-7-数据库的删改查" class="headerlink" title="2.7 数据库的删改查"></a>2.7 数据库的删改查</h3><h4 id="2-7-1-id属性"><a href="#2-7-1-id属性" class="headerlink" title="2.7.1 id属性"></a>2.7.1 <code>id</code>属性</h4><p>将<code>id</code>作为查询依据：</p>
+<ul>
+<li>每个数据都有<code>id</code>属性</li>
+<li><code>id</code>属性自增，永远不会重复的</li>
+</ul>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210424163418.png" alt="image-20210424163417598" style="zoom:50%;">
+
+<p>定义的路由的时候，就在 <code>/</code> 后面加上一个 <code>:id</code>。这样定义后，表示这里可以接受一个 <code>文章id</code> 参数。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">router.get(<span class="string">'/:id'</span>, <span class="keyword">async</span> <span class="function"><span class="keyword">function</span> (<span class="params">req, res, next</span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    res.json(&#123;<span class="attr">id</span>: req.params.id&#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<p>使用 <code>req.params.id</code>方法，可以取到传入的id值</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210424163657.png" alt="获取id" style="zoom:50%;">
+
+<h4 id="2-7-2-查询"><a href="#2-7-2-查询" class="headerlink" title="2.7.2 查询"></a>2.7.2 查询</h4><p>接收到用户传递的<code>id</code>值后，在模型中调用<code>findByPk</code>。 就可以在<code>Articles</code>表中找到当前文章</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">router.get(<span class="string">'/:id'</span>, <span class="keyword">async</span> <span class="function"><span class="keyword">function</span> (<span class="params">req, res, next</span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">var</span> article = <span class="keyword">await</span> models.Article.findByPk(req.params.id);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    res.json(&#123;<span class="attr">article</span>: article&#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注意：<code>findByPk</code>，这里的 <code>Pk</code> 是 <code>Primary Key</code> 也就是<code>主键</code>的缩写。一般每个表都有个<code>主键</code>，如果没有特殊命名，一般来说就是 <code>id</code> 字段</p>
+</blockquote>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210424164129.png" alt="查询接口" style="zoom:50%;">
+
+<h4 id="2-7-3-修改"><a href="#2-7-3-修改" class="headerlink" title="2.7.3 修改"></a>2.7.3 修改</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">router.put(<span class="string">'/:id'</span>, <span class="keyword">async</span> <span class="function"><span class="keyword">function</span> (<span class="params">req, res, next</span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">var</span> article = <span class="keyword">await</span> models.Article.findByPk(req.params.id);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    article.update(req.body);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    res.json(&#123;<span class="attr">article</span>: article&#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210424164203.png" alt="修改接口" style="zoom: 50%;">
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210424164211.png" alt="修改接口" style="zoom:50%;">
+
+<h4 id="2-7-4-删除"><a href="#2-7-4-删除" class="headerlink" title="2.7.4 删除"></a>2.7.4 删除</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">router.delete(<span class="string">'/:id'</span>, <span class="keyword">async</span> <span class="function"><span class="keyword">function</span> (<span class="params">req, res, next</span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">var</span> article = <span class="keyword">await</span> models.Article.findByPk(req.params.id);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    article.destroy();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    res.json(&#123;<span class="attr">msg</span>: <span class="string">'删除成功'</span>&#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<p>使用的请求方式是 <code>delete</code>。也是查询到当前文章后，直接调用 <code>destroy</code> 方法删掉它，返回 <code>msg: &#39;删除成功&#39;</code> 。</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210424164356.png" alt="删除接口" style="zoom: 50%;">
+
+<h4 id="2-7-5-总结"><a href="#2-7-5-总结" class="headerlink" title="2.7.5 总结"></a>2.7.5 总结</h4><table>
+<thead>
+<tr>
+<th>路由</th>
+<th>请求方式</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>/articles</td>
+<td>get</td>
+<td>查询所有文章</td>
+</tr>
+<tr>
+<td>/articles/:id</td>
+<td>get</td>
+<td>查询指定 id 的文章</td>
+</tr>
+<tr>
+<td>/articles</td>
+<td>post</td>
+<td>新增文章</td>
+</tr>
+<tr>
+<td>/articles/:id</td>
+<td>put</td>
+<td>编辑指定 id 的文章</td>
+</tr>
+<tr>
+<td>/articles/:id</td>
+<td>delete</td>
+<td>删除指定 id 的文章</td>
+</tr>
+</tbody></table>
+<h3 id="2-8-模糊搜索"><a href="#2-8-模糊搜索" class="headerlink" title="2.8 模糊搜索"></a>2.8 模糊搜索</h3><p>定义一个叫做 <code>where</code> 的空对象，里面保存需要查询的条件。</p>
+<p>接收<code>title</code>参数，<code>where</code> 里添加一个 <code>like</code>（<code>SQL</code> 语句语法）。前后各放了一个 <code>%</code>，前面有百分号，表示关键词，前面可以有其他文字。后面有百分号，就表示关键词后面，可以跟着其他文字。模型调用<code>findAll</code>方法。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">router.get(<span class="string">'/'</span>, <span class="keyword">async</span> <span class="function"><span class="keyword">function</span> (<span class="params">req, res, next</span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">   <span class="comment">// 搜索</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">var</span> where = &#123;&#125;;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">    <span class="comment">// 模糊查询标题</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">var</span> title = req.query.title;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">if</span> (title) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">        where.title = &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">            [Op.like]: <span class="string">'%'</span> + title + <span class="string">'%'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">        &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">var</span> articles = <span class="keyword">await</span> models.Article.findAll(&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">        order: [[<span class="string">'id'</span>, <span class="string">'DESC'</span>]],</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">        where: where</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">    &#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">    res.json(&#123;<span class="attr">articles</span>: articles&#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<h3 id="2-9-分页查询"><a href="#2-9-分页查询" class="headerlink" title="2.9 分页查询"></a>2.9 分页查询</h3><h4 id="2-9-1-分页原理"><a href="#2-9-1-分页原理" class="headerlink" title="2.9.1 分页原理"></a>2.9.1 分页原理</h4><table>
+<thead>
+<tr>
+<th align="center">当前页数（currentPage）</th>
+<th align="center">从哪里开始（offset）</th>
+<th align="center">每页显示多少条（pageSize）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">10</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">20</td>
+<td align="center">10</td>
+</tr>
+</tbody></table>
+<p>由表格可知：</p>
+<p> <code>pageSize</code> 参数是固定不动的，可以得出<code>offset</code>和<code>currentPage</code>的线性关系</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">offset &#x3D; (currentPage - 1) * pageSize</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">offset &#x3D; (当前页数 - 1) * 每页条数</span></pre></td></tr></table></figure>
+
+<h4 id="2-9-2-分页实现"><a href="#2-9-2-分页实现" class="headerlink" title="2.9.2 分页实现"></a>2.9.2 分页实现</h4><p><strong>当前页数（currentPage）</strong></p>
+<p>如果用户传了这个参数，<code>currentPage</code>则为用户传递的值（注：用户传递的数据都是字符串，需要使用 <code>parseInt</code> 方法转换）；如果用户没传，则默认是 <code>第一页</code>。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> currentPage = <span class="built_in">parseInt</span>(req.query.currentPage) || <span class="number">1</span>;</span></pre></td></tr></table></figure>
+
+<p>或</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> currentPage = <span class="built_in">parseInt</span>(req.query.currentPage);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (!currentPage) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    currentPage = <span class="number">1</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+<p><strong>每页显示多少条（pageSize）</strong></p>
+<p>如果用户传了这个参数，<code>pageSize</code>则为用户传递的值；如果用户不传递参数过来，随便给它一个默认值。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> pageSize = <span class="built_in">parseInt</span>(req.query.pageSize) || <span class="number">2</span>;</span></pre></td></tr></table></figure>
+
+<p><strong>findAndCountAll、offset 与 limit</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> result = <span class="keyword">await</span> models.Article.findAndCountAll(&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    order:[[<span class="string">'id'</span>, <span class="string">'DESC'</span>]],</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    where: where,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    offset: (currentPage - <span class="number">1</span>) * pageSize,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">    limit: pageSize</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<ul>
+<li>将 <code>findAll</code> 改为 <code>findAndCountAll</code>，因为<code>findAndCountAll</code> 能返回总的记录数</li>
+<li>接收值的 <code>articles</code> 改为 <code>result</code>，因为不仅仅有<code>文章列表</code>，还有<code>记录总数</code></li>
+<li>添加上 <code>offset</code> 和 <code>limit</code> 参数，<code>offset</code> 对应的值为公式得出的结果，<code>limit</code>的值为<code>pageSize</code></li>
+</ul>
+<p><strong>响应出分页的 <code>json</code></strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span> res.json(result);</span></pre></td></tr></table></figure>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210425171239.png" alt="模糊查询" style="zoom: 50%;">
+
+<ul>
+<li><code>count</code> 里，保存的就是记录总数了，咱们数据库一共就是只有 <code>4</code> 条记录</li>
+<li><code>rows</code> 里，存的才是文章列表。</li>
+</ul>
+<p><strong>返回分页数据</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">res.json(&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">       articles: result.rows,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">       pagination: &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">           currentPage: currentPage,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">           pageSize: pageSize,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">           <span class="comment">// 一共有多少条记录</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">           total: result.count</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">       &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">   &#125;);</span></pre></td></tr></table></figure>
+
+<h3 id="2-10-表的关联"><a href="#2-10-表的关联" class="headerlink" title="2.10 表的关联"></a>2.10 表的关联</h3><h4 id="2-10-1-评论模型"><a href="#2-10-1-评论模型" class="headerlink" title="2.10.1 评论模型"></a>2.10.1 评论模型</h4><p>给文章添加上评论模块，使用关联模型，在查询文章的时候，自动查询出对应的评论。</p>
+<p>添加评论模型代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ sequelize model:generate --name Comment --attributes articleId:integer,content:text</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">$ sequelize db:migrate</span></pre></td></tr></table></figure>
+
+<h4 id="2-10-2-种子文件"><a href="#2-10-2-种子文件" class="headerlink" title="2.10.2 种子文件"></a>2.10.2 种子文件</h4><p><strong>创建建种子文件</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ sequelize seed:generate --name comment</span></pre></td></tr></table></figure>
+
+<p><strong>导入数据</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="meta">'use strict'</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    up: <span class="function">(<span class="params">queryInterface, Sequelize</span>) =&gt;</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">        <span class="keyword">return</span> queryInterface.bulkInsert(<span class="string">'Comments'</span>, [</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">            &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">                articleId: <span class="number">1</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">                content: <span class="string">"这是文章1的评论"</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">                createdAt: <span class="keyword">new</span> <span class="built_in">Date</span>(),</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">                updatedAt: <span class="keyword">new</span> <span class="built_in">Date</span>()</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">            &#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">            &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">                articleId: <span class="number">1</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">                content: <span class="string">"这个还是文章1的评论啊"</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">                createdAt: <span class="keyword">new</span> <span class="built_in">Date</span>(),</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">                updatedAt: <span class="keyword">new</span> <span class="built_in">Date</span>()</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">            &#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">            &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">                articleId: <span class="number">2</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">                content: <span class="string">"这是文章2的评论"</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">                createdAt: <span class="keyword">new</span> <span class="built_in">Date</span>(),</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">                updatedAt: <span class="keyword">new</span> <span class="built_in">Date</span>()</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">            &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">        ], &#123;&#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">    &#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line">    down: <span class="function">(<span class="params">queryInterface, Sequelize</span>) =&gt;</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line">        <span class="keyword">return</span> queryInterface.bulkDelete(<span class="string">'Comments'</span>, <span class="literal">null</span>, &#123;&#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">29</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">30</span></pre></td><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr></table></figure>
+
+<p><strong>刷新数据库</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$  sequelize db:seed --seed xxxx-comment</span></pre></td></tr></table></figure>
+
+<h4 id="2-10-3-关联"><a href="#2-10-3-关联" class="headerlink" title="2.10.3 关联"></a>2.10.3 关联</h4><p><strong>打开 <code>models/article.js</code> 模型</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">Article.associate = <span class="function"><span class="keyword">function</span> (<span class="params">models</span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    models.Article.hasMany(models.Comment)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr></table></figure>
+
+<blockquote>
+<p>一篇文章中<strong>有很多</strong>评论</p>
+</blockquote>
+<p><strong>打开 <code>models/comment.js</code> 模型</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">Comment.associate = <span class="function"><span class="keyword">function</span>(<span class="params">models</span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  models.Comment.belongsTo(models.Article);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr></table></figure>
+
+<blockquote>
+<p>每条评论都是<strong>属于</strong>一篇文章的</p>
+</blockquote>
+<h4 id="2-10-4-查询"><a href="#2-10-4-查询" class="headerlink" title="2.10.4 查询"></a>2.10.4 查询</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">router.get(<span class="string">'/:id'</span>, <span class="keyword">async</span> <span class="function"><span class="keyword">function</span> (<span class="params">req, res, next</span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">var</span> article = <span class="keyword">await</span> models.Article.findOne(&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">        where: &#123;<span class="attr">id</span>: req.params.id&#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">        include: [models.Comment],</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">    &#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">    res.json(&#123;<span class="attr">article</span>: article&#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<p>加上<code>include</code>属性，会自动将当前文章对应的评论查出来</p>
+<h4 id="2-10-5-效果"><a href="#2-10-5-效果" class="headerlink" title="2.10.5 效果"></a>2.10.5 效果</h4><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210425172651.png" alt="关联查询" style="zoom:50%;">
+
+<h2 id="3-参考及项目地址"><a href="#3-参考及项目地址" class="headerlink" title="3. 参考及项目地址"></a>3. 参考及项目地址</h2><h3 id="3-1-参考地址"><a href="#3-1-参考地址" class="headerlink" title="3.1 参考地址"></a>3.1 参考地址</h3><p><a href="[https://blog.csdn.net/u010132177/article/details/109145320?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161934100516780261912162%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=161934100516780261912162&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-5-109145320.first_rank_v2_pc_rank_v29&utm_term=node%E7%94%A8express%E5%86%99%E5%90%8E%E7%AB%AFrestful%E6%8E%A5%E5%8F%A3%E5%AE%9E%E6%88%98&spm=1018.2226.3001.4187](https://blog.csdn.net/u010132177/article/details/109145320?ops_request_misc=%7B%22request%5Fid%22%3A%22161934100516780261912162%22%2C%22scm%22%3A%2220140713.130102334..%22%7D&request_id=161934100516780261912162&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-5-109145320.first_rank_v2_pc_rank_v29&utm_term=node用express写后端restful接口实战&spm=1018.2226.3001.4187)">node用express写后端restful接口实战</a></p>
+<h3 id="3-2-项目地址"><a href="#3-2-项目地址" class="headerlink" title="3.2 项目地址"></a>3.2 项目地址</h3>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+	
+	<div>
+		
+			<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+		
+	</div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E5%90%8E%E7%AB%AF/" rel="tag"><i class="fa fa-tag"></i>后端</a>
+          
+            <a href="/tags/Node/" rel="tag"><i class="fa fa-tag"></i>Node</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/12/14/2020/Typora%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E6%97%B6-%E6%96%87%E4%BB%B6%E4%BB%A5%E6%97%B6%E9%97%B4%E6%88%B3%E5%91%BD%E5%90%8D/" rel="next" title="Typora上传图片时,文件以时间戳命名">
+                <i class="fa fa-chevron-left"></i> Typora上传图片时,文件以时间戳命名
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2021/04/28/2020/GitHub%20Desktop%20%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E5%BA%93/" rel="prev" title="GitHub Desktop 上传本地库">
+                GitHub Desktop 上传本地库 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/Ming-Calvin.jpg"
+                alt="Ming-Clavin" />
+            
+              <p class="site-author-name" itemprop="name">Ming-Clavin</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/Ming-Calvin" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/u/2860321044" target="_blank" title="新浪微博">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>新浪微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#简易Node后端搭建"><span class="nav-text">简易Node后端搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Express"><span class="nav-text">1. Express</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-安装"><span class="nav-text">1.1 安装</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-1-安装淘宝镜像"><span class="nav-text">1.1.1 安装淘宝镜像</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-2-初始化项目"><span class="nav-text">1.1.2 初始化项目</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-3-安装express"><span class="nav-text">1.1.3 安装express</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-4-检验是否创建成功"><span class="nav-text">1.1.4 检验是否创建成功</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-Express脚手架的安装"><span class="nav-text">1.2 Express脚手架的安装</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-1-使用express-generator安装"><span class="nav-text">1.2.1 使用express-generator安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-2-使用express命令快速创建项目目录"><span class="nav-text">1.2.2 使用express命令快速创建项目目录</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-参考资料"><span class="nav-text">1.3 参考资料</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-sequelize"><span class="nav-text">2. sequelize</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-安装"><span class="nav-text">2.1 安装</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-1-安装sequelize"><span class="nav-text">2.1.1 安装sequelize</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-2-为MySQL数据库安装驱动程序"><span class="nav-text">2.1.2 为MySQL数据库安装驱动程序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-3-安装"><span class="nav-text">2.1.3 安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-4-初始化项目"><span class="nav-text">1.1.4 初始化项目</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-配置数据库环境"><span class="nav-text">2.2 配置数据库环境</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-1-环境参数"><span class="nav-text">2.2.1 环境参数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-2-配置参数"><span class="nav-text">2.2.2 配置参数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-创建数据库"><span class="nav-text">2.3 创建数据库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-sequelize操作数据库：模型、迁移与种子"><span class="nav-text">2.4 sequelize操作数据库：模型、迁移与种子</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-4-1-创建模型与迁移"><span class="nav-text">2.4.1 创建模型与迁移</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-4-2-模型文件"><span class="nav-text">2.4.2 模型文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-4-3-迁移文件"><span class="nav-text">2.4.3 迁移文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-4-4-运行迁移"><span class="nav-text">2.4.4 运行迁移</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-4-5-种子文件"><span class="nav-text">2.4.5 种子文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-4-6-总结"><span class="nav-text">2.4.6 总结</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-查询数据库"><span class="nav-text">2.5 查询数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-5-1-路由"><span class="nav-text">2.5.1 路由</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-5-2-get-请求"><span class="nav-text">2.5.2 get 请求</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-5-3-使用路由"><span class="nav-text">2.5.3 使用路由</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-5-4-读取数据库"><span class="nav-text">2.5.4 读取数据库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-5-5-异步查询语法"><span class="nav-text">2.5.5 异步查询语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-5-6-排序"><span class="nav-text">2.5.6 排序</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-6-添加数据"><span class="nav-text">2.6 添加数据</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-6-1-新增定义死的数据"><span class="nav-text">2.6.1 新增定义死的数据</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-6-2-使用Promise-语法"><span class="nav-text">2.6.2 使用Promise 语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-6-3-使用Postman测试接口"><span class="nav-text">2.6.3 使用Postman测试接口</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-6-4-用户提交数据"><span class="nav-text">2.6.4 用户提交数据</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-6-5-将用户的数据插入数据库"><span class="nav-text">2.6.5 将用户的数据插入数据库</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-7-数据库的删改查"><span class="nav-text">2.7 数据库的删改查</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-7-1-id属性"><span class="nav-text">2.7.1 id属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-7-2-查询"><span class="nav-text">2.7.2 查询</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-7-3-修改"><span class="nav-text">2.7.3 修改</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-7-4-删除"><span class="nav-text">2.7.4 删除</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-7-5-总结"><span class="nav-text">2.7.5 总结</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-8-模糊搜索"><span class="nav-text">2.8 模糊搜索</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-9-分页查询"><span class="nav-text">2.9 分页查询</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-9-1-分页原理"><span class="nav-text">2.9.1 分页原理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-9-2-分页实现"><span class="nav-text">2.9.2 分页实现</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-10-表的关联"><span class="nav-text">2.10 表的关联</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-10-1-评论模型"><span class="nav-text">2.10.1 评论模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-10-2-种子文件"><span class="nav-text">2.10.2 种子文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-10-3-关联"><span class="nav-text">2.10.3 关联</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-10-4-查询"><span class="nav-text">2.10.4 查询</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-10-5-效果"><span class="nav-text">2.10.5 效果</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-参考及项目地址"><span class="nav-text">3. 参考及项目地址</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-参考地址"><span class="nav-text">3.1 参考地址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-项目地址"><span class="nav-text">3.2 项目地址</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Ming-Clavin</span>
+
+  
+</div>
+
+<!--
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+-->
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.8},"log":false});</script></body>
+</html>
+
+
+

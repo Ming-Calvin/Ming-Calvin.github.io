@@ -1,226 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>MySQL让主键id重新排序</title>
-    <url>/2021/05/04/MySQL%E8%AE%A9%E4%B8%BB%E9%94%AEid%E9%87%8D%E6%96%B0%E6%8E%92%E5%BA%8F/</url>
-    <content><![CDATA[<h1 id="MySQL让主键id重新排序"><a href="#MySQL让主键id重新排序" class="headerlink" title="MySQL让主键id重新排序"></a>MySQL让主键id重新排序</h1><ol>
-<li><p>备份表结构</p>
-<p>create table table_bak like table_name;</p>
-</li>
-<li><p>备份表数据</p>
-<p>insert into table_bak select * from table_name;</p>
-</li>
-<li><p>删除原来主键字段(如id)</p>
-<p>alter table table_name drop id;</p>
-</li>
-<li><p>添加主键，自增，放在第一位</p>
-<p>alter table table_name add id int(11) primary key auto_increment first;</p>
-</li>
-<li><p>检查没问题的话，删除备份的表</p>
-<p>delete from table_bak;</p>
-</li>
-</ol>
-<p><strong>参考：<a href="https://blog.csdn.net/u013091013/article/details/78194012">mysql让主键id重新排序</a></strong></p>
-]]></content>
-      <categories>
-        <category>MySQL</category>
-      </categories>
-      <tags>
-        <tag>后端</tag>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Mrkdown使用指南</title>
-    <url>/2019/12/02/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</url>
-    <content><![CDATA[<h1 id="一、Makedown-标题"><a href="#一、Makedown-标题" class="headerlink" title="一、Makedown 标题"></a>一、Makedown 标题</h1><h2 id="1-使用-和-标记一级和二级标题"><a href="#1-使用-和-标记一级和二级标题" class="headerlink" title="1. 使用 = 和 - 标记一级和二级标题"></a>1. 使用 = 和 - 标记一级和二级标题</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220358.jpg" alt="(1)" style="zoom:80%;">
-
-<h2 id="2-使用-号标记"><a href="#2-使用-号标记" class="headerlink" title="2. 使用 # 号标记"></a>2. 使用 # 号标记</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220409.jpg" alt="(2)" style="zoom:80%;">
-
-<a id="more"></a>
-
-
-
-<h1 id="二、Markdown-段落格式"><a href="#二、Markdown-段落格式" class="headerlink" title="二、Markdown 段落格式"></a>二、Markdown 段落格式</h1><h2 id="1-Markdown-段落"><a href="#1-Markdown-段落" class="headerlink" title="1.Markdown 段落"></a>1.Markdown 段落</h2><p>Markdown<br>段落没有特殊的格式，可以编写文字。段落的换行使用两个以上空格加上回车,也可以在段落后面使用一个空行来表示重新开始一个段落。</p>
-<h2 id="2-字体"><a href="#2-字体" class="headerlink" title="2.字体"></a>2.字体</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220418.jpg" alt="(3)" style="zoom:80%;">
-
-<h2 id="3-分隔线"><a href="#3-分隔线" class="headerlink" title="3.分隔线"></a>3.分隔线</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220421.jpg" alt="(4)" style="zoom:80%;">
-
-<h2 id="4-删除线"><a href="#4-删除线" class="headerlink" title="4.删除线"></a>4.删除线</h2><p>在文字的两端加上两个波浪线 ~~ 即可</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220426.jpg" alt="(5)" style="zoom:80%;">
-
-<h2 id="5-下划线"><a href="#5-下划线" class="headerlink" title="5.下划线"></a>5.下划线</h2><p>通过 HTML 的 &lt;u&gt; 标签来实现：</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220430.jpg" alt="(6)" style="zoom:80%;">
-
-<h2 id="6-脚注"><a href="#6-脚注" class="headerlink" title="6.脚注"></a>6.脚注</h2><p>脚注是对文本的补充说明，格式：</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220437.jpg" alt="(7)" style="zoom:80%;">
-
-
-
-<h1 id="三、Markdown-列表"><a href="#三、Markdown-列表" class="headerlink" title="三、Markdown 列表"></a>三、Markdown 列表</h1><h2 id="1-无序列表"><a href="#1-无序列表" class="headerlink" title="1.无序列表"></a>1.无序列表</h2><p>无序列表使用星号(*)、加号(+)或是减号(-)作为列表标记：</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220442.jpg" alt="(8)" style="zoom: 67%;">
-
-<h2 id="2-有序列表"><a href="#2-有序列表" class="headerlink" title="2.有序列表"></a>2.有序列表</h2><p>有序列表使用数字并加上 . 号来表示，如：</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220448.jpg" alt="(9)" style="zoom:80%;">
-
-<h2 id="3-嵌套结构"><a href="#3-嵌套结构" class="headerlink" title="3.嵌套结构"></a>3.嵌套结构</h2><p>列表嵌套只需在子列表中的选项添加四个空格即可：</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220453.jpg" alt="(10)" style="zoom:80%;">
-
-
-
-<h1 id="四、Markdown-区块"><a href="#四、Markdown-区块" class="headerlink" title="四、Markdown 区块"></a>四、Markdown 区块</h1><p>Markdown 区块引用是在段落开头使用 &gt; 符号 ，然后后面紧跟一个空格符号：</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220501.jpg" alt="(11)" style="zoom:80%;">
-
-<p>嵌套用法：</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220505.jpg" alt="(12)" style="zoom:80%;">
-
-<h2 id="1-区块中使用列表"><a href="#1-区块中使用列表" class="headerlink" title="1.区块中使用列表"></a>1.区块中使用列表</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220510.jpg" alt="(13)" style="zoom: 80%;">
-
-<h2 id="2-列表中使用区块"><a href="#2-列表中使用区块" class="headerlink" title="2.列表中使用区块"></a>2.列表中使用区块</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220516.jpg" alt="(14)" style="zoom:80%;">
-
-
-
-<h1 id="五、Markdown代码"><a href="#五、Markdown代码" class="headerlink" title="五、Markdown代码"></a>五、Markdown代码</h1><h2 id="1-代码"><a href="#1-代码" class="headerlink" title="1.代码"></a>1.代码</h2><p>代码段落上的一个函数或片段的代码可以用反引号把它包起来（`）</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220521.jpg" alt="(15)" style="zoom:80%;">
-
-<h2 id="2-代码区块"><a href="#2-代码区块" class="headerlink" title="2.代码区块"></a>2.代码区块</h2><p>代码区块使用 4 个空格或者一个制表符（Tab 键）, 也可以用 ```<br>包裹一段代码，并指定一种语言：</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220527.jpg" alt="(16)" style="zoom:80%;">
-
-
-
-<h1 id="六、Markdown-图片"><a href="#六、Markdown-图片" class="headerlink" title="六、Markdown 图片"></a>六、Markdown 图片</h1><h2 id="1-本地图片"><a href="#1-本地图片" class="headerlink" title="1.本地图片"></a>1.本地图片</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220532.jpg" alt="(17)" style="zoom:80%;">
-
-<p>开头一个感叹号 !</p>
-<p>接着一个方括号，里面放上图片的替代文字</p>
-<p>接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 ‘title’<br>属性的文字。</p>
-<h2 id="2-网络图片"><a href="#2-网络图片" class="headerlink" title="2.网络图片"></a>2.网络图片</h2><p>这个链接用 1 作为网址变量 [RUNOOB][1].</p>
-<p>然后在文档的结尾位变量赋值（网址）</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220538.jpg" alt="(18)" style="zoom:80%;">
-
-
-
-<h1 id="七、Markdown-表格"><a href="#七、Markdown-表格" class="headerlink" title="七、Markdown 表格"></a>七、Markdown 表格</h1><p>Markdown 制作表格使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。</p>
-<h2 id="1-语法格式"><a href="#1-语法格式" class="headerlink" title="1.语法格式"></a>1.语法格式</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220542.jpg" alt="(19)" style="zoom: 67%;">
-
-<h2 id="2-对齐方式"><a href="#2-对齐方式" class="headerlink" title="2.对齐方式"></a>2.对齐方式</h2><p>-: 设置内容和标题栏居右对齐。</p>
-<p>:- 设置内容和标题栏居左对齐。</p>
-<p>:-: 设置内容和标题栏居中对齐。</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220548.jpg" alt="(20)" style="zoom:67%;">
-
-<h2 id="3-注意事项"><a href="#3-注意事项" class="headerlink" title="3.注意事项"></a>3.注意事项</h2><p>1.“ — ” 前面要有一个空格</p>
-<p>2.“ # ” 后面要有空格，才可以表示标题</p>
-<h1 id="八、参考页面"><a href="#八、参考页面" class="headerlink" title="八、参考页面"></a>八、参考页面</h1><p><a href="https://www.runoob.com/markdown/md-tutorial.html">Markdown 教程</a></p>
-]]></content>
-      <categories>
-        <category>Markdown</category>
-      </categories>
-      <tags>
-        <tag>Markdown</tag>
-        <tag>Github_page</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>GitHub Desktop 上传本地库</title>
-    <url>/2021/04/28/GitHub%20Desktop%20%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E5%BA%93/</url>
-    <content><![CDATA[<h1 id="GitHub-Desktop-上传本地库"><a href="#GitHub-Desktop-上传本地库" class="headerlink" title="GitHub Desktop 上传本地库"></a>GitHub Desktop 上传本地库</h1><h2 id="1-创建新仓库"><a href="#1-创建新仓库" class="headerlink" title="1. 创建新仓库"></a>1. 创建新仓库</h2><p>单击 <strong>Create a New Repository on your Hard Drive…（在硬盘上创建新仓库…）</strong></p>
-<img src="https://docs.github.com/assets/images/help/desktop/getting-started-guide/creating-a-repository.png" alt="创建新仓库" style="zoom:50%;">
-
-<p>填写字段并选择您的首选项</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428140721.png" alt="Snipaste_2021-04-28_05-15-13" style="zoom:50%;">
-
-<a id="more"></a>
-
-<ul>
-<li><p>“Name（名称）”定义仓库在本地以及 GitHub 上的名称</p>
-</li>
-<li><p>“Description（说明）”是一个可选字段，可用于提供有关仓库目的的更多信息。</p>
-</li>
-<li><p>“Local path（本地路径）”设置仓库在计算机上的位置。</p>
-<blockquote>
-<p>默认情况下，GitHub Desktop 会在 <em>Documents</em> 文件夹内创建 <em>GitHub</em> 文件夹，用于存储仓库，但您也可以选择计算机上的任何位置。 您的新仓库将是所选位置内的文件夹。</p>
-</blockquote>
-</li>
-<li><p><strong>Initialize this repository with a README（使用自述文件初始化此仓库）</strong></p>
-<blockquote>
-<p>创建包含 <em>README.md</em> 文件的初始提交</p>
-</blockquote>
-</li>
-<li><p><strong>Git ignore（Git 忽略）</strong>下拉菜单可让您添加自定义文件，以忽略本地仓库中您不想存储在版本控制中的特定文件</p>
-</li>
-<li><p><strong>License（许可证）</strong>下拉菜单可让您将开源许可证添加到仓库中的 <em>LICENSE</em> 文件。</p>
-</li>
-</ul>
-<h2 id="2-探索-GitHub-Desktop"><a href="#2-探索-GitHub-Desktop" class="headerlink" title="2. 探索 GitHub Desktop"></a>2. 探索 GitHub Desktop</h2><h3 id="2-1-GitHub-Desktop-菜单栏"><a href="#2-1-GitHub-Desktop-菜单栏" class="headerlink" title="2.1 GitHub Desktop 菜单栏"></a>2.1 GitHub Desktop 菜单栏</h3><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428150854.png" alt="image-20210428150426467" style="zoom:50%;">
-
-<ul>
-<li><strong>Current repository（当前仓库）</strong>显示您处理的仓库的名称。 您可以单击 <strong>Current repository（当前仓库）</strong>切换到 GitHub Desktop 中的不同仓库。</li>
-<li><strong>Current branch（当前分支）</strong>显示您处理的分支的名称。 您可以单击 <strong>Current branch（当前分支）</strong>来查看仓库中的所有分支、切换到不同的分支或者创建新分支。 在仓库中创建拉取请求后，也可单击 <strong>Current branch（当前分支）</strong>查看它们。</li>
-<li><strong>Publish repository（发布仓库）</strong>会出现，因为尚未将仓库发布到 GitHub。 工具栏的这部分将根据您当前分支和仓库的状态而改变。 不同的上下文相关操作将可以使用，允许您在本地仓库与远程仓库之间交换数据。</li>
-</ul>
-<h3 id="2-2-更改历史记录"><a href="#2-2-更改历史记录" class="headerlink" title="2.2 更改历史记录"></a>2.2 更改历史记录</h3><p>在左侧边栏中，会看到 <strong>Changes（更改）</strong>和 <strong>History（历史记录）</strong>视图。</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428151250.png" alt="image-20210428151248941" style="zoom:50%;">
-
-<ul>
-<li><p><strong>Changes（更改）</strong>视图显示对当前分支中的文件已经做出但尚未提交到本地仓库的更改。在底部有“Summary（摘要）”和“Description（说明）”文本框，以及 <strong>Commit to BRANCH（提交到 [分支]）</strong>按钮。 这是提交新更改的位置。 <strong>Commit to BRANCH（提交到 [分支]）</strong>按钮是动态的，将显示提交更改到哪个分支</p>
-</li>
-<li><p><strong>History（历史记录）</strong>视图显示仓库当前分支上以前的提交。会看到在创建仓库时 GitHub Desktop 所创建的“初始提交”。 在提交的右侧，根据您在创建仓库时选择的选项，可能会看到 <em>.gitattributes*、</em>.gitignore<em>、</em>LICENSE* 或 <em>README</em> 文件。 您可以单击每个文件以查看该文件的差异，也就是提交中对该文件的更改。 差异只显示文件已更改的部分，而不显示文件的全部内容。</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428151507.png" alt="image-20210428151506659" style="zoom:50%;">
-
-</li>
-</ul>
-<h2 id="3-将仓库推送到-GitHub"><a href="#3-将仓库推送到-GitHub" class="headerlink" title="3. 将仓库推送到 GitHub"></a>3. 将仓库推送到 GitHub</h2><p><strong>步骤一：</strong>单击菜单栏中的 <strong>Publish repository（发布仓库）</strong></p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428151759.png" alt="image-20210428151757880" style="zoom:50%;">
-
-<ul>
-<li>GitHub Desktop 自动使用创建仓库时输入的信息填充<strong>Name（名称）</strong>和<strong>Description（说明）</strong>字段。</li>
-<li><strong>Keep this code private（保持此代码为私有）</strong>可控制谁可以查看项目。 如果不选中此选项，GitHub 上的其他用户将能够查看代码。 如果选中此选项，代码将不会公开。</li>
-<li><strong>Organization（组织）</strong>下拉菜单（如果有）可让您将仓库发布到 GitHub 上您所属的特定组织。</li>
-</ul>
-<p><strong>步骤二：</strong>单击 <strong>Publish Repository（发布仓库）</strong>按钮</p>
-<p><strong>步骤三：</strong>从 GitHub Desktop 访问 GitHub.com 上的仓库。 在文件菜单中，单击 <strong>Repository（仓库）</strong>，然后单击 <strong>View on GitHub（在 GitHub 上查看）</strong>。 这会直接在默认浏览器中打开仓库。</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428152751.png" alt="image-20210428152750345" style="zoom: 25%;">
-
-<h2 id="4-进行更改、提交更改和推送更改"><a href="#4-进行更改、提交更改和推送更改" class="headerlink" title="4. 进行更改、提交更改和推送更改"></a>4. 进行更改、提交更改和推送更改</h2><p><strong>步骤一：</strong>要从 GitHub Desktop 启动外部编辑器，请单击 Repository（仓库），然后单击 Open in VScode（在 [VScode] 中打开）。</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428153006.png" alt="image-20210428153005460" style="zoom: 50%;">
-
-<p><strong>步骤二：</strong>对以前创建的 <em>README.md</em> 文件做一些更改</p>
-<p><strong>步骤三：</strong>在 GitHub Desktop 中，导航到 <strong>Changes（更改）</strong>视图。 在文件列表中，会看到 <em>README.md*。 *README.md</em> 文件左边的勾选标记表示对文件的更改将成为提交的一部分。</p>
-<blockquote>
-<p> 以后可能会更改多个文件，但只想提交对其中部分文件所做的更改。 如果单击文件旁边的复选标记，则该文件不会包含在提交中。</p>
-</blockquote>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428153333.png" alt="image-20210428153332669" style="zoom: 50%;">
-
-<p><strong>步骤四：</strong>在 <strong>Changes（更改）</strong>列表底部，输入提交消息。 在头像右侧，键入提交的简短描述。</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428153549.png" alt="image-20210428153548125" style="zoom:50%;">
-
-<blockquote>
-<p>在摘要下方，您会看到“Description（说明）”文本字段，在其中可以键入较长的提交更改描述，这有助于回顾项目的历史记录和了解更改的原因。 </p>
-</blockquote>
-<p><strong>步骤五：</strong>单击 <strong>Commit to BRANCH NAME（提交到 [分支名称]）</strong>。 提交按钮显示当前分支，因此可以确保提交到所需的分支。</p>
-<p><strong>步骤六：</strong>要将更改推送到 GitHub 上的远程仓库，单击 <strong>Push origin（推送源）</strong></p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428153709.png" alt="image-20210428153708638" style="zoom: 50%;">
-
-<ul>
-<li><p><strong>Push origin（推送源）</strong>按钮就是单击以发布仓库到 GitHub 的按钮。 此按钮根据 Git 工作流程中的上下文而变。 现在改为 <code>Push origin（推送源）</code>了，其旁边的 <code>1</code> 表示有一个提交尚未推送到 GitHub。</p>
-</li>
-<li><p><strong>Push origin（推送源）</strong>中的“源”表示我们将更改推送到名为 <code>origin</code> 的远程，在本例中是 GitHub.com 上的项目仓库。 </p>
-<blockquote>
-<p> 在推送任何新提交到 GitHub 之前，计算机上的项目仓库与 GitHub.com 上的项目仓库之间存在差异。 这可在程序员在本地工作，并且仅在准备好后才将更改推送到 GitHub.com。</p>
-</blockquote>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Github_desktop</category>
-      </categories>
-      <tags>
-        <tag>Github</tag>
-        <tag>Github_desktop</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>a</title>
-    <url>/2018/10/05/Html%E5%AD%A6%E4%B9%A0/</url>
+    <title>前端学习（旧）</title>
+    <url>/2018/10/05/2020/Html%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h3 id="Html概述"><a href="#Html概述" class="headerlink" title="Html概述"></a>Html概述</h3><p>&nbsp;&nbsp;Html是一种<strong>标记语言</strong>，它使用<strong>标记标签</strong>来描述页面</p>
 <h3 id="Html标签"><a href="#Html标签" class="headerlink" title="Html标签"></a>Html标签</h3><p>1.html分位单标签和双标签</p>
 <pre><code>单标签    &lt;br&gt;
@@ -415,7 +197,7 @@ target 用于链接页面的打开方式
 2. &lt;dt&gt; 与 &lt;dd&gt; 的个数都无限制</code></pre><p><img src="https://ae01.alicdn.com/kf/H5dfbff0aa4634ef5b027bdf9a6c330bf2.png" alt></p>
 <h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><ol>
 <li><p>何时用自定义列表，何时用无序列表</p>
-<p> a. 使用自定义列表<br><img src="https://ae01.alicdn.com/kf/Haa524fcf7cea40c398fa281c1effa6f9E.png" alt><br> b. 使用无序列表</p>
+<p> a. 使用自定义列表<br> <img src="https://ae01.alicdn.com/kf/Haa524fcf7cea40c398fa281c1effa6f9E.png" alt><br> b. 使用无序列表</p>
 </li>
 </ol>
 <p><img src="https://ae01.alicdn.com/kf/H78900ce09eed423186fe0cf524980bb3y.png" alt></p>
@@ -467,6 +249,7 @@ target 用于链接页面的打开方式
 <h4 id="lt-textarea-gt-文本域"><a href="#lt-textarea-gt-文本域" class="headerlink" title="&lt; textarea &gt; 文本域"></a>&lt; textarea &gt; 文本域</h4><p>定义多行文本输入</p>
 <pre><code>&lt;textarea  rows=&quot;可以显示的行数&quot;  role=&quot;可以显示的行数&quot;&gt;</code></pre><hr>
 <p>本文参考：<br><a href="https://www.bilibili.com/video/BV14J4114768?p=1">2019年黑马程序员前端入门视频教程 HTML5+CSS3</a></p>
+<p>​<br>​<br>​<br>​<br>​<br>​                 </p>
 ]]></content>
       <categories>
         <category>前端</category>
@@ -477,8 +260,230 @@ target 用于链接页面的打开方式
       </tags>
   </entry>
   <entry>
+    <title>Mrkdown使用指南</title>
+    <url>/2019/12/02/2020/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</url>
+    <content><![CDATA[<h1 id="一、Makedown-标题"><a href="#一、Makedown-标题" class="headerlink" title="一、Makedown 标题"></a>一、Makedown 标题</h1><h2 id="1-使用-和-标记一级和二级标题"><a href="#1-使用-和-标记一级和二级标题" class="headerlink" title="1. 使用 = 和 - 标记一级和二级标题"></a>1. 使用 = 和 - 标记一级和二级标题</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220358.jpg" alt="(1)" style="zoom:80%;">
+
+<h2 id="2-使用-号标记"><a href="#2-使用-号标记" class="headerlink" title="2. 使用 # 号标记"></a>2. 使用 # 号标记</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220409.jpg" alt="(2)" style="zoom:80%;">
+
+<a id="more"></a>
+
+
+
+<h1 id="二、Markdown-段落格式"><a href="#二、Markdown-段落格式" class="headerlink" title="二、Markdown 段落格式"></a>二、Markdown 段落格式</h1><h2 id="1-Markdown-段落"><a href="#1-Markdown-段落" class="headerlink" title="1.Markdown 段落"></a>1.Markdown 段落</h2><p>Markdown<br>段落没有特殊的格式，可以编写文字。段落的换行使用两个以上空格加上回车,也可以在段落后面使用一个空行来表示重新开始一个段落。</p>
+<h2 id="2-字体"><a href="#2-字体" class="headerlink" title="2.字体"></a>2.字体</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220418.jpg" alt="(3)" style="zoom:80%;">
+
+<h2 id="3-分隔线"><a href="#3-分隔线" class="headerlink" title="3.分隔线"></a>3.分隔线</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220421.jpg" alt="(4)" style="zoom:80%;">
+
+<h2 id="4-删除线"><a href="#4-删除线" class="headerlink" title="4.删除线"></a>4.删除线</h2><p>在文字的两端加上两个波浪线 ~~ 即可</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220426.jpg" alt="(5)" style="zoom:80%;">
+
+<h2 id="5-下划线"><a href="#5-下划线" class="headerlink" title="5.下划线"></a>5.下划线</h2><p>通过 HTML 的 &lt;u&gt; 标签来实现：</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220430.jpg" alt="(6)" style="zoom:80%;">
+
+<h2 id="6-脚注"><a href="#6-脚注" class="headerlink" title="6.脚注"></a>6.脚注</h2><p>脚注是对文本的补充说明，格式：</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220437.jpg" alt="(7)" style="zoom:80%;">
+
+
+
+<h1 id="三、Markdown-列表"><a href="#三、Markdown-列表" class="headerlink" title="三、Markdown 列表"></a>三、Markdown 列表</h1><h2 id="1-无序列表"><a href="#1-无序列表" class="headerlink" title="1.无序列表"></a>1.无序列表</h2><p>无序列表使用星号(*)、加号(+)或是减号(-)作为列表标记：</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220442.jpg" alt="(8)" style="zoom: 67%;">
+
+<h2 id="2-有序列表"><a href="#2-有序列表" class="headerlink" title="2.有序列表"></a>2.有序列表</h2><p>有序列表使用数字并加上 . 号来表示，如：</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220448.jpg" alt="(9)" style="zoom:80%;">
+
+<h2 id="3-嵌套结构"><a href="#3-嵌套结构" class="headerlink" title="3.嵌套结构"></a>3.嵌套结构</h2><p>列表嵌套只需在子列表中的选项添加四个空格即可：</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220453.jpg" alt="(10)" style="zoom:80%;">
+
+
+
+<h1 id="四、Markdown-区块"><a href="#四、Markdown-区块" class="headerlink" title="四、Markdown 区块"></a>四、Markdown 区块</h1><p>Markdown 区块引用是在段落开头使用 &gt; 符号 ，然后后面紧跟一个空格符号：</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220501.jpg" alt="(11)" style="zoom:80%;">
+
+<p>嵌套用法：</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220505.jpg" alt="(12)" style="zoom:80%;">
+
+<h2 id="1-区块中使用列表"><a href="#1-区块中使用列表" class="headerlink" title="1.区块中使用列表"></a>1.区块中使用列表</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220510.jpg" alt="(13)" style="zoom: 80%;">
+
+<h2 id="2-列表中使用区块"><a href="#2-列表中使用区块" class="headerlink" title="2.列表中使用区块"></a>2.列表中使用区块</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220516.jpg" alt="(14)" style="zoom:80%;">
+
+
+
+<h1 id="五、Markdown代码"><a href="#五、Markdown代码" class="headerlink" title="五、Markdown代码"></a>五、Markdown代码</h1><h2 id="1-代码"><a href="#1-代码" class="headerlink" title="1.代码"></a>1.代码</h2><p>代码段落上的一个函数或片段的代码可以用反引号把它包起来（`）</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220521.jpg" alt="(15)" style="zoom:80%;">
+
+<h2 id="2-代码区块"><a href="#2-代码区块" class="headerlink" title="2.代码区块"></a>2.代码区块</h2><p>代码区块使用 4 个空格或者一个制表符（Tab 键）, 也可以用 ```<br>包裹一段代码，并指定一种语言：</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220527.jpg" alt="(16)" style="zoom:80%;">
+
+
+
+<h1 id="六、Markdown-图片"><a href="#六、Markdown-图片" class="headerlink" title="六、Markdown 图片"></a>六、Markdown 图片</h1><h2 id="1-本地图片"><a href="#1-本地图片" class="headerlink" title="1.本地图片"></a>1.本地图片</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220532.jpg" alt="(17)" style="zoom:80%;">
+
+<p>开头一个感叹号 !</p>
+<p>接着一个方括号，里面放上图片的替代文字</p>
+<p>接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 ‘title’<br>属性的文字。</p>
+<h2 id="2-网络图片"><a href="#2-网络图片" class="headerlink" title="2.网络图片"></a>2.网络图片</h2><p>这个链接用 1 作为网址变量 [RUNOOB][1].</p>
+<p>然后在文档的结尾位变量赋值（网址）</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220538.jpg" alt="(18)" style="zoom:80%;">
+
+
+
+<h1 id="七、Markdown-表格"><a href="#七、Markdown-表格" class="headerlink" title="七、Markdown 表格"></a>七、Markdown 表格</h1><p>Markdown 制作表格使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。</p>
+<h2 id="1-语法格式"><a href="#1-语法格式" class="headerlink" title="1.语法格式"></a>1.语法格式</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220542.jpg" alt="(19)" style="zoom: 67%;">
+
+<h2 id="2-对齐方式"><a href="#2-对齐方式" class="headerlink" title="2.对齐方式"></a>2.对齐方式</h2><p>-: 设置内容和标题栏居右对齐。</p>
+<p>:- 设置内容和标题栏居左对齐。</p>
+<p>:-: 设置内容和标题栏居中对齐。</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220548.jpg" alt="(20)" style="zoom:67%;">
+
+<h2 id="3-注意事项"><a href="#3-注意事项" class="headerlink" title="3.注意事项"></a>3.注意事项</h2><p>1.“ — ” 前面要有一个空格</p>
+<p>2.“ # ” 后面要有空格，才可以表示标题</p>
+<h1 id="八、参考页面"><a href="#八、参考页面" class="headerlink" title="八、参考页面"></a>八、参考页面</h1><p><a href="https://www.runoob.com/markdown/md-tutorial.html">Markdown 教程</a></p>
+]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+        <tag>Github_page</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MySQL让主键id重新排序</title>
+    <url>/2021/05/04/2020/MySQL%E8%AE%A9%E4%B8%BB%E9%94%AEid%E9%87%8D%E6%96%B0%E6%8E%92%E5%BA%8F/</url>
+    <content><![CDATA[<h1 id="MySQL让主键id重新排序"><a href="#MySQL让主键id重新排序" class="headerlink" title="MySQL让主键id重新排序"></a>MySQL让主键id重新排序</h1><ol>
+<li><p>备份表结构</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">create table table_bak like table_name;</span></pre></td></tr></table></figure>
+</li>
+<li><p>备份表数据</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">insert into table_bak select * from table_name;</span></pre></td></tr></table></figure>
+</li>
+<li><p>删除原来主键字段(如id)</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">alter table table_name drop id;</span></pre></td></tr></table></figure>
+</li>
+<li><p>添加主键，自增，放在第一位</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">alter table table_name add id int(11) primary key auto_increment first;</span></pre></td></tr></table></figure>
+</li>
+<li><p>检查没问题的话，删除备份的表</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">delete from table_bak;</span></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注：table_name 为 表名</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>参考：<a href="https://blog.csdn.net/u013091013/article/details/78194012">mysql让主键id重新排序</a></strong></p>
+]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>后端</tag>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>GitHub Desktop 上传本地库</title>
+    <url>/2021/04/28/2020/GitHub%20Desktop%20%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E5%BA%93/</url>
+    <content><![CDATA[<h1 id="GitHub-Desktop-上传本地库"><a href="#GitHub-Desktop-上传本地库" class="headerlink" title="GitHub Desktop 上传本地库"></a>GitHub Desktop 上传本地库</h1><h2 id="1-创建新仓库"><a href="#1-创建新仓库" class="headerlink" title="1. 创建新仓库"></a>1. 创建新仓库</h2><p>单击 <strong>Create a New Repository on your Hard Drive…（在硬盘上创建新仓库…）</strong></p>
+<img src="https://docs.github.com/assets/images/help/desktop/getting-started-guide/creating-a-repository.png" alt="创建新仓库" style="zoom:50%;">
+
+<p>填写字段并选择您的首选项</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428140721.png" alt="Snipaste_2021-04-28_05-15-13" style="zoom:50%;">
+
+<a id="more"></a>
+
+<ul>
+<li><p>“Name（名称）”定义仓库在本地以及 GitHub 上的名称</p>
+</li>
+<li><p>“Description（说明）”是一个可选字段，可用于提供有关仓库目的的更多信息。</p>
+</li>
+<li><p>“Local path（本地路径）”设置仓库在计算机上的位置。</p>
+<blockquote>
+<p>默认情况下，GitHub Desktop 会在 <em>Documents</em> 文件夹内创建 <em>GitHub</em> 文件夹，用于存储仓库，但您也可以选择计算机上的任何位置。 您的新仓库将是所选位置内的文件夹。</p>
+</blockquote>
+</li>
+<li><p><strong>Initialize this repository with a README（使用自述文件初始化此仓库）</strong></p>
+<blockquote>
+<p>创建包含 <em>README.md</em> 文件的初始提交</p>
+</blockquote>
+</li>
+<li><p><strong>Git ignore（Git 忽略）</strong>下拉菜单可让您添加自定义文件，以忽略本地仓库中您不想存储在版本控制中的特定文件</p>
+</li>
+<li><p><strong>License（许可证）</strong>下拉菜单可让您将开源许可证添加到仓库中的 <em>LICENSE</em> 文件。</p>
+</li>
+</ul>
+<h2 id="2-探索-GitHub-Desktop"><a href="#2-探索-GitHub-Desktop" class="headerlink" title="2. 探索 GitHub Desktop"></a>2. 探索 GitHub Desktop</h2><h3 id="2-1-GitHub-Desktop-菜单栏"><a href="#2-1-GitHub-Desktop-菜单栏" class="headerlink" title="2.1 GitHub Desktop 菜单栏"></a>2.1 GitHub Desktop 菜单栏</h3><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428150854.png" alt="image-20210428150426467" style="zoom:50%;">
+
+<ul>
+<li><strong>Current repository（当前仓库）</strong>显示您处理的仓库的名称。 您可以单击 <strong>Current repository（当前仓库）</strong>切换到 GitHub Desktop 中的不同仓库。</li>
+<li><strong>Current branch（当前分支）</strong>显示您处理的分支的名称。 您可以单击 <strong>Current branch（当前分支）</strong>来查看仓库中的所有分支、切换到不同的分支或者创建新分支。 在仓库中创建拉取请求后，也可单击 <strong>Current branch（当前分支）</strong>查看它们。</li>
+<li><strong>Publish repository（发布仓库）</strong>会出现，因为尚未将仓库发布到 GitHub。 工具栏的这部分将根据您当前分支和仓库的状态而改变。 不同的上下文相关操作将可以使用，允许您在本地仓库与远程仓库之间交换数据。</li>
+</ul>
+<h3 id="2-2-更改历史记录"><a href="#2-2-更改历史记录" class="headerlink" title="2.2 更改历史记录"></a>2.2 更改历史记录</h3><p>在左侧边栏中，会看到 <strong>Changes（更改）</strong>和 <strong>History（历史记录）</strong>视图。</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428151250.png" alt="image-20210428151248941" style="zoom:50%;">
+
+<ul>
+<li><p><strong>Changes（更改）</strong>视图显示对当前分支中的文件已经做出但尚未提交到本地仓库的更改。在底部有“Summary（摘要）”和“Description（说明）”文本框，以及 <strong>Commit to BRANCH（提交到 [分支]）</strong>按钮。 这是提交新更改的位置。 <strong>Commit to BRANCH（提交到 [分支]）</strong>按钮是动态的，将显示提交更改到哪个分支</p>
+</li>
+<li><p><strong>History（历史记录）</strong>视图显示仓库当前分支上以前的提交。会看到在创建仓库时 GitHub Desktop 所创建的“初始提交”。 在提交的右侧，根据您在创建仓库时选择的选项，可能会看到 <em>.gitattributes*、</em>.gitignore<em>、</em>LICENSE* 或 <em>README</em> 文件。 您可以单击每个文件以查看该文件的差异，也就是提交中对该文件的更改。 差异只显示文件已更改的部分，而不显示文件的全部内容。</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428151507.png" alt="image-20210428151506659" style="zoom:50%;">
+
+</li>
+</ul>
+<h2 id="3-将仓库推送到-GitHub"><a href="#3-将仓库推送到-GitHub" class="headerlink" title="3. 将仓库推送到 GitHub"></a>3. 将仓库推送到 GitHub</h2><p><strong>步骤一：</strong>单击菜单栏中的 <strong>Publish repository（发布仓库）</strong></p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428151759.png" alt="image-20210428151757880" style="zoom:50%;">
+
+<ul>
+<li>GitHub Desktop 自动使用创建仓库时输入的信息填充<strong>Name（名称）</strong>和<strong>Description（说明）</strong>字段。</li>
+<li><strong>Keep this code private（保持此代码为私有）</strong>可控制谁可以查看项目。 如果不选中此选项，GitHub 上的其他用户将能够查看代码。 如果选中此选项，代码将不会公开。</li>
+<li><strong>Organization（组织）</strong>下拉菜单（如果有）可让您将仓库发布到 GitHub 上您所属的特定组织。</li>
+</ul>
+<p><strong>步骤二：</strong>单击 <strong>Publish Repository（发布仓库）</strong>按钮</p>
+<p><strong>步骤三：</strong>从 GitHub Desktop 访问 GitHub.com 上的仓库。 在文件菜单中，单击 <strong>Repository（仓库）</strong>，然后单击 <strong>View on GitHub（在 GitHub 上查看）</strong>。 这会直接在默认浏览器中打开仓库。</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428152751.png" alt="image-20210428152750345" style="zoom: 25%;">
+
+<h2 id="4-进行更改、提交更改和推送更改"><a href="#4-进行更改、提交更改和推送更改" class="headerlink" title="4. 进行更改、提交更改和推送更改"></a>4. 进行更改、提交更改和推送更改</h2><p><strong>步骤一：</strong>要从 GitHub Desktop 启动外部编辑器，请单击 Repository（仓库），然后单击 Open in VScode（在 [VScode] 中打开）。</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428153006.png" alt="image-20210428153005460" style="zoom: 50%;">
+
+<p><strong>步骤二：</strong>对以前创建的 <em>README.md</em> 文件做一些更改</p>
+<p><strong>步骤三：</strong>在 GitHub Desktop 中，导航到 <strong>Changes（更改）</strong>视图。 在文件列表中，会看到 <em>README.md*。 *README.md</em> 文件左边的勾选标记表示对文件的更改将成为提交的一部分。</p>
+<blockquote>
+<p> 以后可能会更改多个文件，但只想提交对其中部分文件所做的更改。 如果单击文件旁边的复选标记，则该文件不会包含在提交中。</p>
+</blockquote>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428153333.png" alt="image-20210428153332669" style="zoom: 50%;">
+
+<p><strong>步骤四：</strong>在 <strong>Changes（更改）</strong>列表底部，输入提交消息。 在头像右侧，键入提交的简短描述。</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428153549.png" alt="image-20210428153548125" style="zoom:50%;">
+
+<blockquote>
+<p>在摘要下方，您会看到“Description（说明）”文本字段，在其中可以键入较长的提交更改描述，这有助于回顾项目的历史记录和了解更改的原因。 </p>
+</blockquote>
+<p><strong>步骤五：</strong>单击 <strong>Commit to BRANCH NAME（提交到 [分支名称]）</strong>。 提交按钮显示当前分支，因此可以确保提交到所需的分支。</p>
+<p><strong>步骤六：</strong>要将更改推送到 GitHub 上的远程仓库，单击 <strong>Push origin（推送源）</strong></p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428153709.png" alt="image-20210428153708638" style="zoom: 50%;">
+
+<ul>
+<li><p><strong>Push origin（推送源）</strong>按钮就是单击以发布仓库到 GitHub 的按钮。 此按钮根据 Git 工作流程中的上下文而变。 现在改为 <code>Push origin（推送源）</code>了，其旁边的 <code>1</code> 表示有一个提交尚未推送到 GitHub。</p>
+</li>
+<li><p><strong>Push origin（推送源）</strong>中的“源”表示我们将更改推送到名为 <code>origin</code> 的远程，在本例中是 GitHub.com 上的项目仓库。 </p>
+<blockquote>
+<p> 在推送任何新提交到 GitHub 之前，计算机上的项目仓库与 GitHub.com 上的项目仓库之间存在差异。 这可在程序员在本地工作，并且仅在准备好后才将更改推送到 GitHub.com。</p>
+</blockquote>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Github_desktop</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+        <tag>Github_desktop</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Typora上传图片时,文件以时间戳命名</title>
-    <url>/2020/12/14/Typora%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E6%97%B6-%E6%96%87%E4%BB%B6%E4%BB%A5%E6%97%B6%E9%97%B4%E6%88%B3%E5%91%BD%E5%90%8D/</url>
+    <url>/2020/12/14/2020/Typora%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E6%97%B6-%E6%96%87%E4%BB%B6%E4%BB%A5%E6%97%B6%E9%97%B4%E6%88%B3%E5%91%BD%E5%90%8D/</url>
     <content><![CDATA[<h1 id="一、查询之前安装的PicGo执行路径"><a href="#一、查询之前安装的PicGo执行路径" class="headerlink" title="一、查询之前安装的PicGo执行路径"></a>一、查询之前安装的PicGo执行路径</h1><br>
 
 <img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214170157.png" alt="image-20201214170155882" style="zoom: 67%;">
@@ -510,8 +515,33 @@ target 用于链接页面的打开方式
       </tags>
   </entry>
   <entry>
+    <title>el-if、el-else-if、el-else</title>
+    <url>/2020/11/11/2020/el-if%E3%80%81el-else-if%E3%80%81el-else/</url>
+    <content><![CDATA[<h1 id="一、v-if-与-v-else"><a href="#一、v-if-与-v-else" class="headerlink" title="一、v-if 与 v-else"></a>一、v-if 与 v-else</h1><p><strong>v-if为真时，显示v-if的内容，否则显示v-else的内容</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;h2 v-if&#x3D;&quot;true&quot;&gt;v-if&lt;&#x2F;h2&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;h2 v-else&gt;v-else&lt;&#x2F;h2&gt;</span></pre></td></tr></table></figure>
+
+<blockquote>
+<p>v-else 元素必须紧跟在带 v-if 或者 v-else-if 的元素的后面，否则它将不会被识别。</p>
+</blockquote>
+<br>
+
+<h1 id="二、v-else-if"><a href="#二、v-else-if" class="headerlink" title="二、v-else-if"></a>二、v-else-if</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div v-if&#x3D;&quot;type &#x3D;&#x3D;&#x3D; &#39;A&#39;&quot;&gt; A &lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;div v-else-if&#x3D;&quot;type &#x3D;&#x3D;&#x3D; &#39;B&#39;&quot;&gt; B &lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;div v-else-if&#x3D;&quot;type &#x3D;&#x3D;&#x3D; &#39;C&#39;&quot;&gt; C &lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;div v-else&gt;</span></pre></td></tr></table></figure>
+
+<blockquote>
+<p>类似于 v-else，v-else-if 也必须紧跟在带 v-if 或者 v-else-if 的元素之后</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>VUE整理</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>VUE</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>a标签去除默认样式</title>
-    <url>/2020/11/24/a%E6%A0%87%E7%AD%BE%E5%8E%BB%E9%99%A4%E9%BB%98%E8%AE%A4%E6%A0%B7%E5%BC%8F/</url>
+    <url>/2020/11/24/2020/a%E6%A0%87%E7%AD%BE%E5%8E%BB%E9%99%A4%E9%BB%98%E8%AE%A4%E6%A0%B7%E5%BC%8F/</url>
     <content><![CDATA[<h1 id="一、初始的链接"><a href="#一、初始的链接" class="headerlink" title="一、初始的链接"></a>一、初始的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
 
 <h1 id="二、正常的未被访问过的链接"><a href="#二、正常的未被访问过的链接" class="headerlink" title="二、正常的未被访问过的链接"></a>二、正常的未被访问过的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:link</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
@@ -536,7 +566,7 @@ target 用于链接页面的打开方式
   </entry>
   <entry>
     <title>Typora图床教程--阿里云</title>
-    <url>/2020/10/31/Typora%E5%9B%BE%E5%BA%8A%E6%95%99%E7%A8%8B-%E9%98%BF%E9%87%8C%E4%BA%91/</url>
+    <url>/2020/10/31/2020/Typora%E5%9B%BE%E5%BA%8A%E6%95%99%E7%A8%8B-%E9%98%BF%E9%87%8C%E4%BA%91/</url>
     <content><![CDATA[<h1 id="一、下载Typora并安装插件"><a href="#一、下载Typora并安装插件" class="headerlink" title="一、下载Typora并安装插件"></a>一、下载Typora并安装插件</h1><h2 id="1-下载软件"><a href="#1-下载软件" class="headerlink" title="1.下载软件"></a>1.下载软件</h2><p>到官网下载对应版本软件（<a href="[https://typora.io](https://typora.io/)">Typora下载连接</a>）</p>
 <p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201031143535666.png" alt="image-20201031143535666"></p>
 <a id="more"></a>
@@ -656,33 +686,8 @@ target 用于链接页面的打开方式
       </tags>
   </entry>
   <entry>
-    <title>el-if、el-else-if、el-else</title>
-    <url>/2020/11/11/el-if%E3%80%81el-else-if%E3%80%81el-else/</url>
-    <content><![CDATA[<h1 id="一、v-if-与-v-else"><a href="#一、v-if-与-v-else" class="headerlink" title="一、v-if 与 v-else"></a>一、v-if 与 v-else</h1><p><strong>v-if为真时，显示v-if的内容，否则显示v-else的内容</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;h2 v-if&#x3D;&quot;true&quot;&gt;v-if&lt;&#x2F;h2&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;h2 v-else&gt;v-else&lt;&#x2F;h2&gt;</span></pre></td></tr></table></figure>
-
-<blockquote>
-<p>v-else 元素必须紧跟在带 v-if 或者 v-else-if 的元素的后面，否则它将不会被识别。</p>
-</blockquote>
-<br>
-
-<h1 id="二、v-else-if"><a href="#二、v-else-if" class="headerlink" title="二、v-else-if"></a>二、v-else-if</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div v-if&#x3D;&quot;type &#x3D;&#x3D;&#x3D; &#39;A&#39;&quot;&gt; A &lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;div v-else-if&#x3D;&quot;type &#x3D;&#x3D;&#x3D; &#39;B&#39;&quot;&gt; B &lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;div v-else-if&#x3D;&quot;type &#x3D;&#x3D;&#x3D; &#39;C&#39;&quot;&gt; C &lt;&#x2F;div&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;div v-else&gt;</span></pre></td></tr></table></figure>
-
-<blockquote>
-<p>类似于 v-else，v-else-if 也必须紧跟在带 v-if 或者 v-else-if 的元素之后</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>VUE整理</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>VUE</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
-    <url>/2019/12/01/hello-world/</url>
+    <url>/2019/12/01/2020/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span></pre></td></tr></table></figure>
 
@@ -699,112 +704,8 @@ target 用于链接页面的打开方式
 ]]></content>
   </entry>
   <entry>
-    <title>后端接口配置</title>
-    <url>/2020/11/03/%E5%90%8E%E7%AB%AF%E6%8E%A5%E5%8F%A3%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="一、安装MySql"><a href="#一、安装MySql" class="headerlink" title="一、安装MySql"></a>一、安装MySql</h1><h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1.安装"></a>1.安装</h2><p>镜像安装（zip），配置初始化的my.ini文件的文件，按照命令操作（管理员打开），</p>
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-45.png" alt="2020-11-10 0-45"></p>
-<a id="more"></a>
-
-<h2 id="2-配置环境变量"><a href="#2-配置环境变量" class="headerlink" title="2.配置环境变量"></a>2.配置环境变量</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10 0-46.png" alt="2020-11-10 0-46" style="zoom:50%;">
-
-<h1 id="二、安装Navicat，导入数据库"><a href="#二、安装Navicat，导入数据库" class="headerlink" title="二、安装Navicat，导入数据库"></a>二、安装Navicat，导入数据库</h1><h2 id="1-新建MySQL连接"><a href="#1-新建MySQL连接" class="headerlink" title="1.新建MySQL连接"></a>1.新建MySQL连接</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10 0-47.png" alt="2020-11-10 0-47" style="zoom: 50%;">
-
-<h2 id="2-新建连接，导入sql文件"><a href="#2-新建连接，导入sql文件" class="headerlink" title="2.新建连接，导入sql文件"></a>2.新建连接，导入sql文件</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10 0-48.png" alt="2020-11-10 0-48" style="zoom:50%;">
-
-<h1 id="三、运行api"><a href="#三、运行api" class="headerlink" title="三、运行api"></a>三、运行api</h1><p>在目标接口打开Git Bash，输入npm install下载需要的组件，输入$ node app.js运行api接口</p>
-<hr>
-<blockquote>
-<p><strong>遇到问题：</strong>登入失败</p>
-<p><strong>解决方案：</strong>修改D:\Vue\2020.10\vue_shop_api\config\default.json 文件里面的账号密码</p>
-</blockquote>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10 0-49.png" alt="2020-11-10 0-49" style="zoom:80%;">
-
-<h1 id="四、安装Postman检测接口"><a href="#四、安装Postman检测接口" class="headerlink" title="四、安装Postman检测接口"></a>四、安装Postman检测接口</h1><br>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10 0-50.png" alt="2020-11-10 0-50" style="zoom:80%;">
-
-<h1 id="五、参考资料"><a href="#五、参考资料" class="headerlink" title="五、参考资料"></a>五、参考资料</h1><p>1.<a href="https://www.cnblogs.com/winton-nfs/p/11524007.html">安装mysql教程</a></p>
-]]></content>
-      <categories>
-        <category>Vue_Shop项目</category>
-      </categories>
-      <tags>
-        <tag>后端</tag>
-        <tag>MySQL</tag>
-        <tag>VUE</tag>
-        <tag>数据库</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>开启MySQL常见问题</title>
-    <url>/2020/11/06/%E5%BC%80%E5%90%AFMySQL%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h1 id="问题一"><a href="#问题一" class="headerlink" title="问题一"></a>问题一</h1><p><strong>问题描述：</strong></p>
-<blockquote>
-<p>在命令行输入 mysql -u root -p 登录mysql，返回”Can’t connect to MySQL server on localhost (10061)”错误</p>
-</blockquote>
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201105233916432.png" alt="image-20201105233916432"></p>
-<p><strong>处理方式：</strong></p>
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201105234201467.png" alt="image-20201105234201467"></p>
-<a id="more"></a>
-
-<h1 id="问题二"><a href="#问题二" class="headerlink" title="问题二"></a>问题二</h1><p><strong>问题描述：</strong></p>
-<blockquote>
-<p>在windos 的cmd下安装mysql，在mysql的bin目录下面执行： mysqld –install。</p>
-<p>报错：Install/Remove of the Service Denied</p>
-</blockquote>
-<p><strong>处理方式：</strong></p>
-<p>打开cmd.exe程序的时候选择“用管理员身份打开”。</p>
-<h1 id="问题三"><a href="#问题三" class="headerlink" title="问题三"></a>问题三</h1><p><strong>问题描述：</strong></p>
-<blockquote>
-<p>打开Navicat 软件，点击数据库，报错：1045 Access denied for user ‘root’@’localhost’ (using password: YES)</p>
-</blockquote>
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/916611-20171108104341934-1669606114.png" alt="img"></p>
-<p><strong>解决方式：</strong></p>
-<p>右击”root“ - ”修改连接“，进行修改密码</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201106002338078.png" alt="image-20201106002338078" style="zoom:50%;">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-]]></content>
-      <categories>
-        <category>Vue_Shop项目</category>
-      </categories>
-      <tags>
-        <tag>后端</tag>
-        <tag>MySQL</tag>
-        <tag>VUE</tag>
-        <tag>数据库</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>img和div之间有间隙的原因及解决方法</title>
-    <url>/2020/11/24/img%E5%92%8Cdiv%E4%B9%8B%E9%97%B4%E6%9C%89%E9%97%B4%E9%9A%99%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
+    <url>/2020/11/24/2020/img%E5%92%8Cdiv%E4%B9%8B%E9%97%B4%E6%9C%89%E9%97%B4%E9%9A%99%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<h1 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h1><br>
 
 <p>问题：display:inline-block布局的元素在chrome<strong>下会出现几像素的间隙</strong></p>
@@ -837,7 +738,7 @@ target 用于链接页面的打开方式
   </entry>
   <entry>
     <title>js获取对象属性值的2种方法</title>
-    <url>/2020/11/25/js%E8%8E%B7%E5%8F%96%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E5%80%BC%E7%9A%842%E7%A7%8D%E6%96%B9%E6%B3%95/</url>
+    <url>/2020/11/25/2020/js%E8%8E%B7%E5%8F%96%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E5%80%BC%E7%9A%842%E7%A7%8D%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<h1 id="第一种：通过-的方式获取"><a href="#第一种：通过-的方式获取" class="headerlink" title="第一种：通过 . 的方式获取"></a>第一种：通过 . 的方式获取</h1><br>
 
 <p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201125140648489.png" alt="image-20201125140648489"></p>
@@ -858,87 +759,8 @@ target 用于链接页面的打开方式
       </tags>
   </entry>
   <entry>
-    <title>积分商城（商家端）总结</title>
-    <url>/2020/11/07/%E7%A7%AF%E5%88%86%E5%95%86%E5%9F%8E%EF%BC%88%E5%95%86%E5%AE%B6%E7%AB%AF%EF%BC%89%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<h1 id="一、组件的调用方式"><a href="#一、组件的调用方式" class="headerlink" title="一、组件的调用方式"></a>一、组件的调用方式</h1><br>
-
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-51.png" alt="2020-11-10-0-51"></p>
-<h1 id="二、element-ui表单必填写法"><a href="#二、element-ui表单必填写法" class="headerlink" title="二、element-ui表单必填写法"></a>二、element-ui表单必填写法</h1><br>
-
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-52.png" alt="2020-11-10-0-52"></p>
-<a id="more"></a>
-
-<h1 id="三、this-nextTick-函数的用法"><a href="#三、this-nextTick-函数的用法" class="headerlink" title="三、this.$nextTick()函数的用法"></a>三、this.$nextTick()函数的用法</h1><br>
-
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-53.png" alt="2020-11-10-0-53"></p>
-<h1 id="四、element-ui输入框提示写法"><a href="#四、element-ui输入框提示写法" class="headerlink" title="四、element-ui输入框提示写法"></a>四、element-ui输入框提示写法</h1><br>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-54.png" style="zoom: 67%;">
-
-<h1 id="五、判断路由是否满足条件"><a href="#五、判断路由是否满足条件" class="headerlink" title="五、判断路由是否满足条件"></a>五、判断路由是否满足条件</h1><br>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-55.png" alt="2020-11-10-0-55" style="zoom: 67%;">
-
-<p><font size="4"> <strong>flist属性：</strong></font></p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-56.png" alt="2020-11-10 0-56" style="zoom:80%;">
-
-<h1 id="六、路由赋值"><a href="#六、路由赋值" class="headerlink" title="六、路由赋值"></a>六、路由赋值</h1><br>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-57.png">
-
-<h1 id="七、主页路由跳转出错改善方法"><a href="#七、主页路由跳转出错改善方法" class="headerlink" title="七、主页路由跳转出错改善方法"></a>七、主页路由跳转出错改善方法</h1><br>
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">router.push(location, onComplete(), onAbort())</span></pre></td></tr></table></figure>
-
-<blockquote>
-<p>router.push( … ) =&gt;跳转到某个子页面，并在history中添加一条记录。</p>
-<p>onComplete和onAbort是在路由跳转完成和失败时分别执行的回调函数</p>
-</blockquote>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%201-00.png">
-
-<h1 id="八、修改测试接口"><a href="#八、修改测试接口" class="headerlink" title="八、修改测试接口"></a>八、修改测试接口</h1><br>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%201-02.png" style="zoom: 50%;">
-
-<h1 id="九、查看接口地址"><a href="#九、查看接口地址" class="headerlink" title="九、查看接口地址"></a>九、查看接口地址</h1><br>
-
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-02_17-23-31.png" alt="Snipaste_2020-11-02_17-23-31"></p>
-<h1 id="十、设置参数默认值"><a href="#十、设置参数默认值" class="headerlink" title="十、设置参数默认值"></a>十、设置参数默认值</h1><br>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-03_15-11-11.png" alt="Snipaste_2020-11-03_15-11-11" style="zoom: 67%;">
-
-<h1 id="十一、element-ui对话框组件写法"><a href="#十一、element-ui对话框组件写法" class="headerlink" title="十一、element-ui对话框组件写法"></a>十一、element-ui对话框组件写法</h1><br>
-
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-05_16-23-53.png" alt="Snipaste_2020-11-05_16-23-53"></p>
-<h1 id="十二、修改图片访问地址"><a href="#十二、修改图片访问地址" class="headerlink" title="十二、修改图片访问地址"></a>十二、修改图片访问地址</h1><br>
-
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-02_17-33-32.png" alt="Snipaste_2020-11-02_17-33-32"></p>
-]]></content>
-      <categories>
-        <category>积分商城</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>VUE</tag>
-        <tag>积分商城</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>误存文件夹到GitHub的解决方法</title>
-    <url>/2021/05/04/%E8%AF%AF%E5%AD%98%E6%96%87%E4%BB%B6%E5%A4%B9%E5%88%B0GitHub%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="误存文件夹到GitHub的解决方法"><a href="#误存文件夹到GitHub的解决方法" class="headerlink" title="误存文件夹到GitHub的解决方法"></a>误存文件夹到GitHub的解决方法</h1><p><strong>将node_modules文件存放到了GitHub的解决方法</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">touch .gitignore</span></pre></td></tr><tr><td class="code"><pre><span class="line">echo &#x2F;node_modules&#x2F; &gt;&gt; .gitignore</span></pre></td></tr><tr><td class="code"><pre><span class="line">git rm -r --cached node_modules</span></pre></td></tr><tr><td class="code"><pre><span class="line">git add . -A</span></pre></td></tr><tr><td class="code"><pre><span class="line">git commit -m &quot;remove node_modules&quot;</span></pre></td></tr><tr><td class="code"><pre><span class="line">git push</span></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Github_desktop</category>
-      </categories>
-      <tags>
-        <tag>Github</tag>
-        <tag>Github_desktop</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>vue-router模块</title>
-    <url>/2020/11/24/vue-router%E6%A8%A1%E5%9D%97/</url>
+    <url>/2020/11/24/2020/vue-router%E6%A8%A1%E5%9D%97/</url>
     <content><![CDATA[<h1 id="一、Vue路由传参query和params的区别"><a href="#一、Vue路由传参query和params的区别" class="headerlink" title="一、Vue路由传参query和params的区别"></a>一、Vue路由传参query和params的区别</h1><h2 id="1-区别"><a href="#1-区别" class="headerlink" title="1. 区别"></a>1. 区别</h2><ol>
 <li>query使用path和name传参跳转都可以，而params只能使用name传参跳转</li>
 <li>传参跳转页面时，query和params不需要在路由上配参数就能在新的页面获取到参数</li>
@@ -1022,8 +844,311 @@ target 用于链接页面的打开方式
       </tags>
   </entry>
   <entry>
+    <title>后端接口配置</title>
+    <url>/2020/11/03/2020/%E5%90%8E%E7%AB%AF%E6%8E%A5%E5%8F%A3%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="一、安装MySql"><a href="#一、安装MySql" class="headerlink" title="一、安装MySql"></a>一、安装MySql</h1><h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1.安装"></a>1.安装</h2><p>镜像安装（zip），配置初始化的my.ini文件的文件，按照命令操作（管理员打开），</p>
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-45.png" alt="2020-11-10 0-45"></p>
+<a id="more"></a>
+
+<h2 id="2-配置环境变量"><a href="#2-配置环境变量" class="headerlink" title="2.配置环境变量"></a>2.配置环境变量</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10 0-46.png" alt="2020-11-10 0-46" style="zoom:50%;">
+
+<h1 id="二、安装Navicat，导入数据库"><a href="#二、安装Navicat，导入数据库" class="headerlink" title="二、安装Navicat，导入数据库"></a>二、安装Navicat，导入数据库</h1><h2 id="1-新建MySQL连接"><a href="#1-新建MySQL连接" class="headerlink" title="1.新建MySQL连接"></a>1.新建MySQL连接</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10 0-47.png" alt="2020-11-10 0-47" style="zoom: 50%;">
+
+<h2 id="2-新建连接，导入sql文件"><a href="#2-新建连接，导入sql文件" class="headerlink" title="2.新建连接，导入sql文件"></a>2.新建连接，导入sql文件</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10 0-48.png" alt="2020-11-10 0-48" style="zoom:50%;">
+
+<h1 id="三、运行api"><a href="#三、运行api" class="headerlink" title="三、运行api"></a>三、运行api</h1><p>在目标接口打开Git Bash，输入npm install下载需要的组件，输入$ node app.js运行api接口</p>
+<hr>
+<blockquote>
+<p><strong>遇到问题：</strong>登入失败</p>
+<p><strong>解决方案：</strong>修改D:\Vue\2020.10\vue_shop_api\config\default.json 文件里面的账号密码</p>
+</blockquote>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10 0-49.png" alt="2020-11-10 0-49" style="zoom:80%;">
+
+<h1 id="四、安装Postman检测接口"><a href="#四、安装Postman检测接口" class="headerlink" title="四、安装Postman检测接口"></a>四、安装Postman检测接口</h1><br>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10 0-50.png" alt="2020-11-10 0-50" style="zoom:80%;">
+
+<h1 id="五、参考资料"><a href="#五、参考资料" class="headerlink" title="五、参考资料"></a>五、参考资料</h1><p>1.<a href="https://www.cnblogs.com/winton-nfs/p/11524007.html">安装mysql教程</a></p>
+]]></content>
+      <categories>
+        <category>Vue_Shop项目</category>
+      </categories>
+      <tags>
+        <tag>后端</tag>
+        <tag>MySQL</tag>
+        <tag>VUE</tag>
+        <tag>数据库</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>开启MySQL常见问题</title>
+    <url>/2020/11/06/2020/%E5%BC%80%E5%90%AFMySQL%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="问题一"><a href="#问题一" class="headerlink" title="问题一"></a>问题一</h1><p><strong>问题描述：</strong></p>
+<blockquote>
+<p>在命令行输入 mysql -u root -p 登录mysql，返回”Can’t connect to MySQL server on localhost (10061)”错误</p>
+</blockquote>
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201105233916432.png" alt="image-20201105233916432"></p>
+<p><strong>处理方式：</strong></p>
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201105234201467.png" alt="image-20201105234201467"></p>
+<a id="more"></a>
+
+<h1 id="问题二"><a href="#问题二" class="headerlink" title="问题二"></a>问题二</h1><p><strong>问题描述：</strong></p>
+<blockquote>
+<p>在windos 的cmd下安装mysql，在mysql的bin目录下面执行： mysqld –install。</p>
+<p>报错：Install/Remove of the Service Denied</p>
+</blockquote>
+<p><strong>处理方式：</strong></p>
+<p>打开cmd.exe程序的时候选择“用管理员身份打开”。</p>
+<h1 id="问题三"><a href="#问题三" class="headerlink" title="问题三"></a>问题三</h1><p><strong>问题描述：</strong></p>
+<blockquote>
+<p>打开Navicat 软件，点击数据库，报错：1045 Access denied for user ‘root’@’localhost’ (using password: YES)</p>
+</blockquote>
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/916611-20171108104341934-1669606114.png" alt="img"></p>
+<p><strong>解决方式：</strong></p>
+<p>右击”root“ - ”修改连接“，进行修改密码</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201106002338078.png" alt="image-20201106002338078" style="zoom:50%;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>Vue_Shop项目</category>
+      </categories>
+      <tags>
+        <tag>后端</tag>
+        <tag>MySQL</tag>
+        <tag>VUE</tag>
+        <tag>数据库</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>积分商城（商家端）总结</title>
+    <url>/2020/11/07/2020/%E7%A7%AF%E5%88%86%E5%95%86%E5%9F%8E%EF%BC%88%E5%95%86%E5%AE%B6%E7%AB%AF%EF%BC%89%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h1 id="一、组件的调用方式"><a href="#一、组件的调用方式" class="headerlink" title="一、组件的调用方式"></a>一、组件的调用方式</h1><br>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-51.png" alt="2020-11-10-0-51"></p>
+<h1 id="二、element-ui表单必填写法"><a href="#二、element-ui表单必填写法" class="headerlink" title="二、element-ui表单必填写法"></a>二、element-ui表单必填写法</h1><br>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-52.png" alt="2020-11-10-0-52"></p>
+<a id="more"></a>
+
+<h1 id="三、this-nextTick-函数的用法"><a href="#三、this-nextTick-函数的用法" class="headerlink" title="三、this.$nextTick()函数的用法"></a>三、this.$nextTick()函数的用法</h1><br>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-53.png" alt="2020-11-10-0-53"></p>
+<h1 id="四、element-ui输入框提示写法"><a href="#四、element-ui输入框提示写法" class="headerlink" title="四、element-ui输入框提示写法"></a>四、element-ui输入框提示写法</h1><br>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-54.png" style="zoom: 67%;">
+
+<h1 id="五、判断路由是否满足条件"><a href="#五、判断路由是否满足条件" class="headerlink" title="五、判断路由是否满足条件"></a>五、判断路由是否满足条件</h1><br>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-55.png" alt="2020-11-10-0-55" style="zoom: 67%;">
+
+<p><font size="4"> <strong>flist属性：</strong></font></p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-56.png" alt="2020-11-10 0-56" style="zoom:80%;">
+
+<h1 id="六、路由赋值"><a href="#六、路由赋值" class="headerlink" title="六、路由赋值"></a>六、路由赋值</h1><br>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-57.png">
+
+<h1 id="七、主页路由跳转出错改善方法"><a href="#七、主页路由跳转出错改善方法" class="headerlink" title="七、主页路由跳转出错改善方法"></a>七、主页路由跳转出错改善方法</h1><br>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">router.push(location, onComplete(), onAbort())</span></pre></td></tr></table></figure>
+
+<blockquote>
+<p>router.push( … ) =&gt;跳转到某个子页面，并在history中添加一条记录。</p>
+<p>onComplete和onAbort是在路由跳转完成和失败时分别执行的回调函数</p>
+</blockquote>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%201-00.png">
+
+<h1 id="八、修改测试接口"><a href="#八、修改测试接口" class="headerlink" title="八、修改测试接口"></a>八、修改测试接口</h1><br>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%201-02.png" style="zoom: 50%;">
+
+<h1 id="九、查看接口地址"><a href="#九、查看接口地址" class="headerlink" title="九、查看接口地址"></a>九、查看接口地址</h1><br>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-02_17-23-31.png" alt="Snipaste_2020-11-02_17-23-31"></p>
+<h1 id="十、设置参数默认值"><a href="#十、设置参数默认值" class="headerlink" title="十、设置参数默认值"></a>十、设置参数默认值</h1><br>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-03_15-11-11.png" alt="Snipaste_2020-11-03_15-11-11" style="zoom: 67%;">
+
+<h1 id="十一、element-ui对话框组件写法"><a href="#十一、element-ui对话框组件写法" class="headerlink" title="十一、element-ui对话框组件写法"></a>十一、element-ui对话框组件写法</h1><br>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-05_16-23-53.png" alt="Snipaste_2020-11-05_16-23-53"></p>
+<h1 id="十二、修改图片访问地址"><a href="#十二、修改图片访问地址" class="headerlink" title="十二、修改图片访问地址"></a>十二、修改图片访问地址</h1><br>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-02_17-33-32.png" alt="Snipaste_2020-11-02_17-33-32"></p>
+]]></content>
+      <categories>
+        <category>积分商城</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>VUE</tag>
+        <tag>积分商城</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>误存文件夹到GitHub的解决方法</title>
+    <url>/2021/05/04/2020/%E8%AF%AF%E5%AD%98%E6%96%87%E4%BB%B6%E5%A4%B9%E5%88%B0GitHub%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="误存文件夹到GitHub的解决方法"><a href="#误存文件夹到GitHub的解决方法" class="headerlink" title="误存文件夹到GitHub的解决方法"></a>误存文件夹到GitHub的解决方法</h1><p><strong>将node_modules文件存放到了GitHub的解决方法</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">touch .gitignore</span></pre></td></tr><tr><td class="code"><pre><span class="line">echo &#x2F;node_modules&#x2F; &gt;&gt; .gitignore</span></pre></td></tr><tr><td class="code"><pre><span class="line">git rm -r --cached node_modules</span></pre></td></tr><tr><td class="code"><pre><span class="line">git add . -A</span></pre></td></tr><tr><td class="code"><pre><span class="line">git commit -m &quot;remove node_modules&quot;</span></pre></td></tr><tr><td class="code"><pre><span class="line">git push</span></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Github_desktop</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+        <tag>Github_desktop</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>积分商城（平台端）总结</title>
+    <url>/2020/11/24/2020/%E7%A7%AF%E5%88%86%E5%95%86%E5%9F%8E%EF%BC%88%E5%B9%B3%E5%8F%B0%E7%AB%AF%EF%BC%89%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h1 id="一、将积分基础设置改入到后台设置"><a href="#一、将积分基础设置改入到后台设置" class="headerlink" title="一、将积分基础设置改入到后台设置"></a>一、将积分基础设置改入到后台设置</h1><br>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201116093153205.png" alt="image-20201116093153205"></p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201116102416954.png" alt="image-20201116102416954" style="zoom: 67%;">
+
+
+
+<a id="more"></a>
+
+
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201116101951541.png" alt="image-20201116101951541"></p>
+<h1 id="二、展开运算符"><a href="#二、展开运算符" class="headerlink" title="二、展开运算符"></a>二、展开运算符</h1><br>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-09_17-54-23.png" alt="Snipaste_2020-11-09_17-54-23"></p>
+<h1 id="三、ref-和-ref"><a href="#三、ref-和-ref" class="headerlink" title="三、ref 和 $ref"></a>三、ref 和 $ref</h1><br>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201116101631105.png" alt="image-20201116101631105" style="zoom: 67%;">
+
+
+
+<p>1、<strong>ref 需要在dom渲染完成后才会有</strong>，在使用的时候确保dom已经渲染完成。比如在生命周期 <strong>mounted(){} 钩子中调用</strong>，或者<strong>在 this.$nextTick(()=&gt;{}) 中调用</strong>。</p>
+<p>2、如果ref 是循环出来的，<strong>有多个重名，那么ref的值会是一个数组</strong> ，此时要拿到单个的ref 只需要循环就可以了。</p>
+<h2 id="例子"><a href="#例子" class="headerlink" title="例子 :"></a>例子 :</h2><h3 id="1-添加ref属性"><a href="#1-添加ref属性" class="headerlink" title="1.添加ref属性"></a>1.添加ref属性</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;app&quot;&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &lt;h1 ref&#x3D;&quot;h1Ele&quot;&gt;这是H1&lt;&#x2F;h1&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &lt;hello ref&#x3D;&quot;ho&quot;&gt;&lt;&#x2F;hello&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line"> </span></pre></td></tr><tr><td class="code"><pre><span class="line">    &lt;button @click&#x3D;&quot;getref&quot;&gt;获取H1元素&lt;&#x2F;button&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;&#x2F;div&gt;</span></pre></td></tr></table></figure>
+
+
+
+<h3 id="2-获取注册过-ref-的所有组件或元素"><a href="#2-获取注册过-ref-的所有组件或元素" class="headerlink" title="2.获取注册过 ref 的所有组件或元素"></a>2.获取注册过 ref 的所有组件或元素</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">methods: &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        getref() &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">          &#x2F;&#x2F; 表示从 $refs对象 中, 获取 ref 属性值为: h1ele DOM元素或组件</span></pre></td></tr><tr><td class="code"><pre><span class="line">           console.log(this.$refs.h1Ele.innerText);</span></pre></td></tr><tr><td class="code"><pre><span class="line">           this.$refs.h1ele.style.color &#x3D; &#39;red&#39;;&#x2F;&#x2F; 修改html样式</span></pre></td></tr><tr><td class="code"><pre><span class="line"> </span></pre></td></tr><tr><td class="code"><pre><span class="line">          console.log(this.$refs.ho.msg);&#x2F;&#x2F; 获取组件数据</span></pre></td></tr><tr><td class="code"><pre><span class="line">          console.log(this.$refs.ho.test);&#x2F;&#x2F; 获取组件的方法</span></pre></td></tr><tr><td class="code"><pre><span class="line">        &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      &#125;</span></pre></td></tr></table></figure>
+
+
+
+<h1 id="四、表单验证函数"><a href="#四、表单验证函数" class="headerlink" title="四、表单验证函数"></a>四、表单验证函数</h1><br>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201116103351424.png" alt="image-20201116103351424" style="zoom:67%;">
+
+
+
+<h1 id="五、表单重置函数"><a href="#五、表单重置函数" class="headerlink" title="五、表单重置函数"></a>五、表单重置函数</h1><br>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201116103926570.png" alt="image-20201116103926570" style="zoom: 80%;">
+
+
+
+<h1 id="六、服务器连接报错"><a href="#六、服务器连接报错" class="headerlink" title="六、服务器连接报错"></a>六、服务器连接报错</h1><br>
+
+<blockquote>
+<p>原因：连接的不是同一个内网</p>
+</blockquote>
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20201116141314.png" alt="微信图片_20201116141314"></p>
+<h1 id="七、常用-的意义"><a href="#七、常用-的意义" class="headerlink" title="七、常用 $ 的意义"></a>七、常用 $ 的意义</h1><br>
+
+<ul>
+<li>this.$data :  vm上的数据</li>
+<li>this.$watch :  监控</li>
+<li>this.$el :  当前el元素</li>
+<li>this.$set :  后加的属性实现响应式变化</li>
+<li>this.$nextTick :  异步方法，等待渲染dom完成后来获取vm</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">let vm &#x3D; new Vue(&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        el:&#39;#app&#39;,</span></pre></td></tr><tr><td class="code"><pre><span class="line">        data:&#123;msg:&#39;hello&#39;,arr:[1,2,3]&#125;,</span></pre></td></tr><tr><td class="code"><pre><span class="line">        mounted()&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">            this.$nextTick(()&#x3D;&gt;&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">                console.log(vm);</span></pre></td></tr><tr><td class="code"><pre><span class="line">            &#125;)</span></pre></td></tr><tr><td class="code"><pre><span class="line">        &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;)</span></pre></td></tr></table></figure>
+
+
+
+<h1 id="八、-emit的用法"><a href="#八、-emit的用法" class="headerlink" title="八、$emit的用法"></a>八、$emit的用法</h1><br>
+
+<blockquote>
+<p>父组件使用 <strong>props</strong> 把数据传给子组件。<br>子组件使用 <strong>$emit</strong> 触发父组件的自定义事件。</p>
+</blockquote>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201117174623572.png" alt="image-20201117174623572" style="zoom:80%;">
+
+
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201117174838597.png" alt="image-20201117174838597" style="zoom:80%;">
+
+
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201117174940658.png" alt="image-20201117174940658" style="zoom:80%;">
+
+
+
+<h1 id="九、修改测试Bug的环境"><a href="#九、修改测试Bug的环境" class="headerlink" title="九、修改测试Bug的环境"></a>九、修改测试Bug的环境</h1><br>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201120093830136.png" alt="image-20201120093830136" style="zoom: 80%;">
+
+
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201120093943514.png" alt="image-20201120093943514" style="zoom:67%;">
+
+
+
+<h1 id="十、权限控制函数"><a href="#十、权限控制函数" class="headerlink" title="十、权限控制函数"></a>十、权限控制函数</h1><br>
+
+<h2 id="1-isAuth-–-是否拥有指定权限"><a href="#1-isAuth-–-是否拥有指定权限" class="headerlink" title="1. isAuth – 是否拥有指定权限"></a>1. isAuth – 是否拥有指定权限</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201120112615869.png" alt="image-20201120112615869" style="zoom:80%;">
+
+<h2 id="2-权限分配页面"><a href="#2-权限分配页面" class="headerlink" title="2. 权限分配页面"></a>2. 权限分配页面</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201120113144503.png" alt="image-20201120113144503" style="zoom:80%;">
+
+<h2 id="3-修改权限页面"><a href="#3-修改权限页面" class="headerlink" title="3. 修改权限页面"></a>3. 修改权限页面</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201120113354198.png" alt="image-20201120113354198" style="zoom: 50%;">
+
+
+
+<h1 id="十一、图片访问地址出错-–-字符串拼接导致"><a href="#十一、图片访问地址出错-–-字符串拼接导致" class="headerlink" title="十一、图片访问地址出错 – 字符串拼接导致"></a>十一、图片访问地址出错 – 字符串拼接导致</h1><h2 id="1-通过F12找到出错原因-–-字符串拼接错误"><a href="#1-通过F12找到出错原因-–-字符串拼接错误" class="headerlink" title="1. 通过F12找到出错原因 – 字符串拼接错误"></a>1. 通过F12找到出错原因 – 字符串拼接错误</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201120140937640.png" alt="image-20201120140937640" style="zoom:80%;">
+
+<h2 id="2-找到路径文件的“src”，查找原因"><a href="#2-找到路径文件的“src”，查找原因" class="headerlink" title="2. 找到路径文件的“src”，查找原因"></a>2. 找到路径文件的“src”，查找原因</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201120141222061.png" alt="image-20201120141222061" style="zoom:80%;">
+
+<blockquote>
+<p><strong>解决方法：</strong></p>
+<p>与后端交接，让后端传的value为后面的值，而不是一整个地址</p>
+</blockquote>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201120105245550.png" alt="image-20201120105245550" style="zoom:80%;">]]></content>
+      <categories>
+        <category>积分商城</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>VUE</tag>
+        <tag>积分商城</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>简易Node后端搭建</title>
-    <url>/2021/04/28/%E7%AE%80%E6%98%93Node%E5%90%8E%E7%AB%AF%E6%90%AD%E5%BB%BA/</url>
+    <url>/2021/04/28/2020/%E7%AE%80%E6%98%93Node%E5%90%8E%E7%AB%AF%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<h1 id="简易Node后端搭建"><a href="#简易Node后端搭建" class="headerlink" title="简易Node后端搭建"></a>简易Node后端搭建</h1><h2 id="1-Express"><a href="#1-Express" class="headerlink" title="1. Express"></a>1. Express</h2><h3 id="1-1-安装"><a href="#1-1-安装" class="headerlink" title="1.1 安装"></a>1.1 安装</h3><h4 id="1-1-1-安装淘宝镜像"><a href="#1-1-1-安装淘宝镜像" class="headerlink" title="1.1.1 安装淘宝镜像"></a>1.1.1 安装淘宝镜像</h4><p>安装npm之前可先安装淘宝镜像，使用cnpm的来代替npm，使得下载速度提高很多。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span></pre></td></tr></table></figure>
 
@@ -1398,123 +1523,286 @@ target 用于链接页面的打开方式
       </tags>
   </entry>
   <entry>
-    <title>积分商城（平台端）总结</title>
-    <url>/2020/11/24/%E7%A7%AF%E5%88%86%E5%95%86%E5%9F%8E%EF%BC%88%E5%B9%B3%E5%8F%B0%E7%AB%AF%EF%BC%89%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<h1 id="一、将积分基础设置改入到后台设置"><a href="#一、将积分基础设置改入到后台设置" class="headerlink" title="一、将积分基础设置改入到后台设置"></a>一、将积分基础设置改入到后台设置</h1><br>
-
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201116093153205.png" alt="image-20201116093153205"></p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201116102416954.png" alt="image-20201116102416954" style="zoom: 67%;">
-
-
-
-<a id="more"></a>
-
-
-
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201116101951541.png" alt="image-20201116101951541"></p>
-<h1 id="二、展开运算符"><a href="#二、展开运算符" class="headerlink" title="二、展开运算符"></a>二、展开运算符</h1><br>
-
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/Snipaste_2020-11-09_17-54-23.png" alt="Snipaste_2020-11-09_17-54-23"></p>
-<h1 id="三、ref-和-ref"><a href="#三、ref-和-ref" class="headerlink" title="三、ref 和 $ref"></a>三、ref 和 $ref</h1><br>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201116101631105.png" alt="image-20201116101631105" style="zoom: 67%;">
-
-
-
-<p>1、<strong>ref 需要在dom渲染完成后才会有</strong>，在使用的时候确保dom已经渲染完成。比如在生命周期 <strong>mounted(){} 钩子中调用</strong>，或者<strong>在 this.$nextTick(()=&gt;{}) 中调用</strong>。</p>
-<p>2、如果ref 是循环出来的，<strong>有多个重名，那么ref的值会是一个数组</strong> ，此时要拿到单个的ref 只需要循环就可以了。</p>
-<h2 id="例子"><a href="#例子" class="headerlink" title="例子 :"></a>例子 :</h2><h3 id="1-添加ref属性"><a href="#1-添加ref属性" class="headerlink" title="1.添加ref属性"></a>1.添加ref属性</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;app&quot;&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &lt;h1 ref&#x3D;&quot;h1Ele&quot;&gt;这是H1&lt;&#x2F;h1&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &lt;hello ref&#x3D;&quot;ho&quot;&gt;&lt;&#x2F;hello&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line"> </span></pre></td></tr><tr><td class="code"><pre><span class="line">    &lt;button @click&#x3D;&quot;getref&quot;&gt;获取H1元素&lt;&#x2F;button&gt;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&lt;&#x2F;div&gt;</span></pre></td></tr></table></figure>
-
-
-
-<h3 id="2-获取注册过-ref-的所有组件或元素"><a href="#2-获取注册过-ref-的所有组件或元素" class="headerlink" title="2.获取注册过 ref 的所有组件或元素"></a>2.获取注册过 ref 的所有组件或元素</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">methods: &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        getref() &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">          &#x2F;&#x2F; 表示从 $refs对象 中, 获取 ref 属性值为: h1ele DOM元素或组件</span></pre></td></tr><tr><td class="code"><pre><span class="line">           console.log(this.$refs.h1Ele.innerText);</span></pre></td></tr><tr><td class="code"><pre><span class="line">           this.$refs.h1ele.style.color &#x3D; &#39;red&#39;;&#x2F;&#x2F; 修改html样式</span></pre></td></tr><tr><td class="code"><pre><span class="line"> </span></pre></td></tr><tr><td class="code"><pre><span class="line">          console.log(this.$refs.ho.msg);&#x2F;&#x2F; 获取组件数据</span></pre></td></tr><tr><td class="code"><pre><span class="line">          console.log(this.$refs.ho.test);&#x2F;&#x2F; 获取组件的方法</span></pre></td></tr><tr><td class="code"><pre><span class="line">        &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      &#125;</span></pre></td></tr></table></figure>
-
-
-
-<h1 id="四、表单验证函数"><a href="#四、表单验证函数" class="headerlink" title="四、表单验证函数"></a>四、表单验证函数</h1><br>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201116103351424.png" alt="image-20201116103351424" style="zoom:67%;">
-
-
-
-<h1 id="五、表单重置函数"><a href="#五、表单重置函数" class="headerlink" title="五、表单重置函数"></a>五、表单重置函数</h1><br>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201116103926570.png" alt="image-20201116103926570" style="zoom: 80%;">
-
-
-
-<h1 id="六、服务器连接报错"><a href="#六、服务器连接报错" class="headerlink" title="六、服务器连接报错"></a>六、服务器连接报错</h1><br>
-
+    <title>Html简介</title>
+    <url>/2021/05/12/2021/2021.05/study_Html/1.HTML%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<h1 id="Html简介"><a href="#Html简介" class="headerlink" title="Html简介"></a>Html简介</h1><h2 id="1．概述"><a href="#1．概述" class="headerlink" title="1．概述"></a>1．概述</h2><p>HTML指的是<strong>超文本标记语言</strong>，它是用来描述网页的一种语言。HTML 不是一种编程语言，而是一种<strong>标记语言</strong>。</p>
+<h2 id="2-浏览器内核"><a href="#2-浏览器内核" class="headerlink" title="2. 浏览器内核"></a>2. 浏览器内核</h2><p>浏览器内核（渲染引擎）： 负责读取网页内容，整理讯息，计算网页的显示方式并显示页面。</p>
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512215811.jpg" alt="1"></p>
+<h2 id="3-Web-标准"><a href="#3-Web-标准" class="headerlink" title="3. Web 标准"></a>3. Web 标准</h2><p>主要包括结构、表现和行为三个方面。</p>
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512215835.jpg" alt="2"></p>
 <blockquote>
-<p>原因：连接的不是同一个内网</p>
-</blockquote>
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20201116141314.png" alt="微信图片_20201116141314"></p>
-<h1 id="七、常用-的意义"><a href="#七、常用-的意义" class="headerlink" title="七、常用 $ 的意义"></a>七、常用 $ 的意义</h1><br>
-
+<p>总结：</p>
 <ul>
-<li>this.$data :  vm上的数据</li>
-<li>this.$watch :  监控</li>
-<li>this.$el :  当前el元素</li>
-<li>this.$set :  后加的属性实现响应式变化</li>
-<li>this.$nextTick :  异步方法，等待渲染dom完成后来获取vm</li>
+<li>结构写到 HTML文件中</li>
+<li>表现写到 CSS文件中</li>
+<li>行为写到 JavaScript文件中</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">let vm &#x3D; new Vue(&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        el:&#39;#app&#39;,</span></pre></td></tr><tr><td class="code"><pre><span class="line">        data:&#123;msg:&#39;hello&#39;,arr:[1,2,3]&#125;,</span></pre></td></tr><tr><td class="code"><pre><span class="line">        mounted()&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">            this.$nextTick(()&#x3D;&gt;&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">                console.log(vm);</span></pre></td></tr><tr><td class="code"><pre><span class="line">            &#125;)</span></pre></td></tr><tr><td class="code"><pre><span class="line">        &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;)</span></pre></td></tr></table></figure>
-
-
-
-<h1 id="八、-emit的用法"><a href="#八、-emit的用法" class="headerlink" title="八、$emit的用法"></a>八、$emit的用法</h1><br>
-
-<blockquote>
-<p>父组件使用 <strong>props</strong> 把数据传给子组件。<br>子组件使用 <strong>$emit</strong> 触发父组件的自定义事件。</p>
 </blockquote>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201117174623572.png" alt="image-20201117174623572" style="zoom:80%;">
-
-
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201117174838597.png" alt="image-20201117174838597" style="zoom:80%;">
-
-
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201117174940658.png" alt="image-20201117174940658" style="zoom:80%;">
-
-
-
-<h1 id="九、修改测试Bug的环境"><a href="#九、修改测试Bug的环境" class="headerlink" title="九、修改测试Bug的环境"></a>九、修改测试Bug的环境</h1><br>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201120093830136.png" alt="image-20201120093830136" style="zoom: 80%;">
-
-
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201120093943514.png" alt="image-20201120093943514" style="zoom:67%;">
-
-
-
-<h1 id="十、权限控制函数"><a href="#十、权限控制函数" class="headerlink" title="十、权限控制函数"></a>十、权限控制函数</h1><br>
-
-<h2 id="1-isAuth-–-是否拥有指定权限"><a href="#1-isAuth-–-是否拥有指定权限" class="headerlink" title="1. isAuth – 是否拥有指定权限"></a>1. isAuth – 是否拥有指定权限</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201120112615869.png" alt="image-20201120112615869" style="zoom:80%;">
-
-<h2 id="2-权限分配页面"><a href="#2-权限分配页面" class="headerlink" title="2. 权限分配页面"></a>2. 权限分配页面</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201120113144503.png" alt="image-20201120113144503" style="zoom:80%;">
-
-<h2 id="3-修改权限页面"><a href="#3-修改权限页面" class="headerlink" title="3. 修改权限页面"></a>3. 修改权限页面</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201120113354198.png" alt="image-20201120113354198" style="zoom: 50%;">
-
-
-
-<h1 id="十一、图片访问地址出错-–-字符串拼接导致"><a href="#十一、图片访问地址出错-–-字符串拼接导致" class="headerlink" title="十一、图片访问地址出错 – 字符串拼接导致"></a>十一、图片访问地址出错 – 字符串拼接导致</h1><h2 id="1-通过F12找到出错原因-–-字符串拼接错误"><a href="#1-通过F12找到出错原因-–-字符串拼接错误" class="headerlink" title="1. 通过F12找到出错原因 – 字符串拼接错误"></a>1. 通过F12找到出错原因 – 字符串拼接错误</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201120140937640.png" alt="image-20201120140937640" style="zoom:80%;">
-
-<h2 id="2-找到路径文件的“src”，查找原因"><a href="#2-找到路径文件的“src”，查找原因" class="headerlink" title="2. 找到路径文件的“src”，查找原因"></a>2. 找到路径文件的“src”，查找原因</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201120141222061.png" alt="image-20201120141222061" style="zoom:80%;">
-
-<blockquote>
-<p><strong>解决方法：</strong></p>
-<p>与后端交接，让后端传的value为后面的值，而不是一整个地址</p>
-</blockquote>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201120105245550.png" alt="image-20201120105245550" style="zoom:80%;">]]></content>
+]]></content>
       <categories>
-        <category>积分商城</category>
+        <category>前端学习之HTML</category>
       </categories>
       <tags>
         <tag>前端</tag>
-        <tag>VUE</tag>
-        <tag>积分商城</tag>
+        <tag>Html</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML常用标签</title>
+    <url>/2021/05/12/2021/2021.05/study_Html/3.HTML%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</url>
+    <content><![CDATA[<h1 id="HTML常用标签"><a href="#HTML常用标签" class="headerlink" title="HTML常用标签"></a>HTML常用标签</h1><h2 id="1-标题标签-lt-h1-gt-lt-h6-gt"><a href="#1-标题标签-lt-h1-gt-lt-h6-gt" class="headerlink" title="1. 标题标签  &lt;h1&gt; - &lt;h6&gt;"></a>1. 标题标签  <code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code></h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span> 我是一级标题 <span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></pre></td></tr></table></figure>
+
+<p><strong>作用：</strong>作为标题使用，并且依据重要性递减</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>小明好帅！<span class="tag">&lt;/<span class="name">h1</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>小明好帅！<span class="tag">&lt;/<span class="name">h2</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h3</span>&gt;</span>小明好帅！<span class="tag">&lt;/<span class="name">h3</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h4</span>&gt;</span>小明好帅！<span class="tag">&lt;/<span class="name">h4</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h5</span>&gt;</span>小明好帅！<span class="tag">&lt;/<span class="name">h5</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h6</span>&gt;</span>小明好帅！<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h2 id="2-段落标签"><a href="#2-段落标签" class="headerlink" title="2. 段落标签"></a>2. 段落标签</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span> 我是一个段落标签 <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></pre></td></tr></table></figure>
+
+<p><strong>作用：</strong>把 HTML 文档分割为若干段落</p>
+<p><strong>注意：</strong></p>
+<ul>
+<li>文本在一个段落中会根据浏览器窗口的大小自动换行</li>
+<li>段落和段落之间保有空隙</li>
+</ul>
+<h2 id="3-换行标签"><a href="#3-换行标签" class="headerlink" title="3. 换行标签"></a>3. 换行标签</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span></pre></td></tr></table></figure>
+
+<p><strong>作用：</strong>强制换行</p>
+<p><strong>注意：</strong>标签只是开始新的一行，与段落不同，段落之间会插入一些垂直的间距。</p>
+<h2 id="4-文本格式化标签"><a href="#4-文本格式化标签" class="headerlink" title="4. 文本格式化标签"></a>4. 文本格式化标签</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line">我是<span class="tag">&lt;<span class="name">strong</span>&gt;</span>加粗<span class="tag">&lt;/<span class="name">strong</span>&gt;</span>文字  </span></pre></td></tr><tr><td class="code"><pre><span class="line">我是<span class="tag">&lt;<span class="name">b</span>&gt;</span>加粗<span class="tag">&lt;/<span class="name">b</span>&gt;</span>文字  </span></pre></td></tr><tr><td class="code"><pre><span class="line">我是<span class="tag">&lt;<span class="name">em</span>&gt;</span>倾斜<span class="tag">&lt;/<span class="name">em</span>&gt;</span>文字      </span></pre></td></tr><tr><td class="code"><pre><span class="line">我是<span class="tag">&lt;<span class="name">i</span>&gt;</span>倾斜<span class="tag">&lt;/<span class="name">i</span>&gt;</span>文字      </span></pre></td></tr><tr><td class="code"><pre><span class="line">我是<span class="tag">&lt;<span class="name">del</span>&gt;</span>删除线<span class="tag">&lt;/<span class="name">del</span>&gt;</span>     </span></pre></td></tr><tr><td class="code"><pre><span class="line">我是<span class="tag">&lt;<span class="name">s</span>&gt;</span>删除线<span class="tag">&lt;/<span class="name">s</span>&gt;</span>    </span></pre></td></tr><tr><td class="code"><pre><span class="line">我是<span class="tag">&lt;<span class="name">ins</span>&gt;</span>下划线<span class="tag">&lt;/<span class="name">ins</span>&gt;</span>    </span></pre></td></tr><tr><td class="code"><pre><span class="line">我是<span class="tag">&lt;<span class="name">u</span>&gt;</span>下划线<span class="tag">&lt;/<span class="name">u</span>&gt;</span></span></pre></td></tr></table></figure>
+
+<p>作用：给文字添加 <strong>粗体</strong> 、<em>斜体</em> 、下划线</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512221124.jpg" alt="2" style="zoom: 67%;">
+
+<h2 id="5-lt-div-gt-和-lt-span-gt-标签"><a href="#5-lt-div-gt-和-lt-span-gt-标签" class="headerlink" title="5. &lt;div&gt;和&lt;span&gt;标签"></a>5. <code>&lt;div&gt;</code>和<code>&lt;span&gt;</code>标签</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span> div标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span>&gt;</span> span标签 <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></pre></td></tr></table></figure>
+
+<p><strong>作用：</strong><div> 和 <span> 没有语义，它们是盒子用于装内容</span></div></p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512221220.png" alt="1" style="zoom: 25%;">
+
+<p><strong>注意：</strong></p>
+<ul>
+<li>一行只能放一个 <div> —— 大盒子</div></li>
+<li>一行可以多个 <span> —— 小盒子</span></li>
+</ul>
+<h2 id="6-图像标签"><a href="#6-图像标签" class="headerlink" title="6. 图像标签"></a>6. 图像标签</h2><p>作用：定义 HTML 页面中的图像</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"图像URL"</span> /&gt;</span></span></pre></td></tr></table></figure>
+
+<p>注意:src 是<img>标签的必须属性，它用于指定图像文件的路径和文件名</p>
+<p><strong>其他属性：</strong></p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512221357.jpg" alt="2" style="zoom: 67%;">
+
+<p><strong>注意：</strong></p>
+<ul>
+<li>图像标签可以拥有多个属性，必须写在标签名的后面。</li>
+<li>属性之间不分先后顺序，标签名与属性、属性与属性之间均以空格分开。</li>
+<li>属性采取键值对的格式，即 key=“value” 的格式，属性 =“属性值”。</li>
+</ul>
+<h2 id="7-路径"><a href="#7-路径" class="headerlink" title="7. 路径"></a>7. 路径</h2><p>目录文件夹：普通文件夹，存放了做页面所需要的相关素材，比如 html 文件、图片等</p>
+<p>根目录：最外一层文件夹</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512221509.png" alt="1" style="zoom: 33%;">
+
+<h2 id="8-相对路径与绝对路径"><a href="#8-相对路径与绝对路径" class="headerlink" title="8. 相对路径与绝对路径"></a>8. 相对路径与绝对路径</h2><p><strong>相对路径：</strong>从代码所在的这个文件出发，去寻找目标文件</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512221546.jpg" alt="2" style="zoom: 67%;">
+
+<p><strong>绝对路径（少用）：</strong></p>
+<p>从盘符开始的路径，如：“D:\web\img\logo.gif”</p>
+<p><strong>符号：</strong></p>
+<ul>
+<li>相对路径：<code>\</code></li>
+<li>绝对路径：<code>/</code></li>
+</ul>
+<h2 id="9-超链接标签"><a href="#9-超链接标签" class="headerlink" title="9. 超链接标签"></a>9. 超链接标签</h2><p>用于定义超链接，作用是从一个页面链接到另一个页面</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"跳转目标"</span> <span class="attr">target</span>=<span class="string">"目标窗口的弹出方式"</span>&gt;</span> 文本或图像 <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></pre></td></tr></table></figure>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512221653.jpg" alt="2" style="zoom: 67%;">
+
+<h2 id="10-超链接标签分类："><a href="#10-超链接标签分类：" class="headerlink" title="10. 超链接标签分类："></a>10. 超链接标签分类：</h2><p>1)  外部链接：以”http:// + 网址 “ 开头 </p>
+<p>2)  内部链接：网站内部页面之间的相互链接，直接链接内部页面 </p>
+<p>3)  空链接：<code>&lt;a herf=&quot;#&quot;&gt; 空链接 &lt;/a&gt;</code></p>
+<p>4)  下载链接：<code>&lt;a herf=&quot;xxx.zip/zip/rar(等压缩包形式)&gt; &lt;/a&gt;</code></p>
+<p>5)  网页元素链接：网页中的各种网页元素，如文本、图像等都可以添加超链接</p>
+<p>6)  锚点链接（重点）：点击链接到页面的某个位置 </p>
+<ul>
+<li>在 herf 属性中，设置属性值为 #名字（如：<code>&lt;a herf=&quot;#two&quot;&gt; 第二集 &lt;/a&gt;</code> ） </li>
+<li>找到目标位置标签，添加id=名字 （如： <code>&lt;h3 id=&quot;two&quot;&gt; 第二季介绍 &lt;h3&gt;</code> )</li>
+</ul>
+<h2 id="11-注释"><a href="#11-注释" class="headerlink" title="11. 注释"></a>11. 注释</h2><p>注释以<code>“&lt;!--”</code>开头，以<code>“ --&gt;”</code>结束</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 注释语句 --&gt;</span>	快捷键: ctrl +	/</span></pre></td></tr></table></figure>
+
+<h2 id="12-特殊字符"><a href="#12-特殊字符" class="headerlink" title="12. 特殊字符"></a>12. 特殊字符</h2><p>一些特殊的符号不方便直接使用，可以使用下面的字符来替代</p>
+<ul>
+<li><code>空格: &amp;nbsp;</code></li>
+<li><code>“&lt;”: &amp;lt;</code></li>
+<li><code>“&gt;”: &amp;gt;</code></li>
+</ul>
+<h2 id="13-表格标签"><a href="#13-表格标签" class="headerlink" title="13. 表格标签"></a>13. 表格标签</h2><p>用于显示、展示数据，可以让数据更加规整地显示规整。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">tr</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="name">td</span>&gt;</span>单元格内的文字<span class="tag">&lt;/<span class="name">td</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">    ...  </span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="tag">&lt;/<span class="name">tr</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">  ...  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span></pre></td></tr></table></figure>
+
+<p><strong>注意：</strong></p>
+<ul>
+<li><code>&lt;table&gt; &lt;/table&gt;</code>是用于定义表格的标签</li>
+<li><code>&lt;tr&gt; &lt;/tr&gt;</code>标签用于定义表格中的行，必须嵌套在<code>&lt;table&gt; &lt;/table&gt;</code>标签</li>
+<li><code>&lt;td&gt; &lt;/td&gt;</code>用于定义表格中的单元格，必须嵌套在<code>&lt;tr&gt;&lt;/tr&gt;</code>标签中</li>
+<li>字母 td 指表格数据（table data），即数据单元格的内容</li>
+</ul>
+<h2 id="14-表头单元格标签"><a href="#14-表头单元格标签" class="headerlink" title="14. 表头单元格标签"></a>14. 表头单元格标签</h2><p>表头单元格位于表格的第一行或第一列，里面的文本内容加粗居中显示</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">tr</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="name">th</span>&gt;</span>姓名<span class="tag">&lt;/<span class="name">th</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">    ...  </span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="tag">&lt;/<span class="name">tr</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">  ...  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span></pre></td></tr></table></figure>
+
+<h2 id="15-表格属性"><a href="#15-表格属性" class="headerlink" title="15. 表格属性"></a>15. 表格属性</h2><p>不常用，一般在CSS中设置，属性写到表格标签table 里面去</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512222150.png" alt="1" style="zoom:67%;">
+
+<h2 id="16-表格结构标签"><a href="#16-表格结构标签" class="headerlink" title="16. 表格结构标签"></a>16. 表格结构标签</h2><ul>
+<li>头部标签：<code>&lt;/thead&gt;</code>（内部必须拥有<code>&lt;tr&gt;</code> 标签）</li>
+<li>主题区域：<code>&lt;/tbody&gt;</code></li>
+</ul>
+<p><strong>注意：</strong>都是放在 <code>&lt;table&gt;&lt;/table&gt;</code> 标签中</p>
+<h2 id="17-合并单元格"><a href="#17-合并单元格" class="headerlink" title="17. 合并单元格"></a>17. 合并单元格</h2><ul>
+<li>跨行合并：rowspan=”合并单元格的个数”</li>
+<li>跨列合并：colspan=”合并单元格的个数”</li>
+</ul>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512222252.png" alt="image-20210512222251831" style="zoom: 33%;">
+
+<p><strong>目标单元格：</strong></p>
+<ul>
+<li>跨行：最上侧单元格为目标单元格, 写合并代码</li>
+<li>跨列：最左侧单元格为目标单元格, 写合并代码</li>
+</ul>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512222615.png" alt="image-20210512222614069" style="zoom: 33%;">
+
+<h2 id="18-列表标签"><a href="#18-列表标签" class="headerlink" title="18. 列表标签"></a>18. 列表标签</h2><p>用于布局页面，分为：无序列表、有序列表和自定义列表</p>
+<h2 id="19-无序列表"><a href="#19-无序列表" class="headerlink" title="19. 无序列表"></a>19. 无序列表</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项1<span class="tag">&lt;/<span class="name">li</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项2<span class="tag">&lt;/<span class="name">li</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项3<span class="tag">&lt;/<span class="name">li</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">  ...  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span></pre></td></tr></table></figure>
+
+<p><strong>注意：</strong></p>
+<ul>
+<li>无序列表的各个列表项之间没有顺序级别之分，是并列的</li>
+<li><code>&lt;ul&gt;&lt;/ul&gt;</code> 中只能嵌套 <code>&lt;li&gt;&lt;/li&gt;</code>，不能直接在<code>&lt;ul&gt;&lt;/ul&gt;</code>标签中输入其他标签</li>
+<li><code>&lt;li&gt;</code>与 <code>&lt;/li&gt;</code> 之间相当于一个容器，可以容纳所有元素</li>
+<li>无序列表带有样式属性，通常使用CSS取消</li>
+</ul>
+<h2 id="20-有序列表"><a href="#20-有序列表" class="headerlink" title="20. 有序列表"></a>20. 有序列表</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项1<span class="tag">&lt;/<span class="name">li</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项2<span class="tag">&lt;/<span class="name">li</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项3<span class="tag">&lt;/<span class="name">li</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">  ...  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span></pre></td></tr></table></figure>
+
+<p>注意：</p>
+<ul>
+<li><code>&lt;ol&gt;&lt;/ol&gt;</code>中只能嵌套 <code>&lt;li&gt;&lt;/li&gt;</code>，不能直接在 <ol></ol> 标签中输入其他标签</li>
+<li><code>&lt;li&gt;</code>与 <code>&lt;/li&gt;</code>之间相当于一个容器，可以容纳所有元素</li>
+<li>无序列表带有样式属性，通常使用CSS取消</li>
+</ul>
+<h2 id="21-自定义列表"><a href="#21-自定义列表" class="headerlink" title="21. 自定义列表"></a>21. 自定义列表</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">dt</span>&gt;</span> 大哥 <span class="tag">&lt;/<span class="name">dt</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">dt</span>&gt;</span> 小弟 <span class="tag">&lt;/<span class="name">dt</span>&gt;</span> -----&gt; 小弟用于解释大哥  </span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">dt</span>&gt;</span> 小弟 <span class="tag">&lt;/<span class="name">dt</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span></pre></td></tr></table></figure>
+
+<p><strong>注意：</strong></p>
+<ul>
+<li><code>&lt;dl&gt;&lt;/dl&gt;</code> 里面只能包含<code>&lt;dt&gt;</code> 和 <code>&lt;dd&gt;</code></li>
+<li><code>&lt;dt&gt;</code>和<code>&lt;dd&gt;</code>个数没有限制，经常是一个<code>&lt;dt&gt;</code> 对应多个<code>&lt;dd&gt;</code></li>
+</ul>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512222938.png" alt="1" style="zoom: 67%;">
+
+<h2 id="22-列表总结"><a href="#22-列表总结" class="headerlink" title="22. 列表总结"></a>22. 列表总结</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512223018.jpg" alt="2" style="zoom: 67%;">
+
+<p><strong>使用场景：</strong></p>
+<ul>
+<li><p>使用无序列表</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512223101.png" alt="1" style="zoom:50%;">
+</li>
+<li><p>使用自定义列表</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512223119.png" alt="1" style="zoom:50%;">
+
+</li>
+</ul>
+<h2 id="23-表单标签"><a href="#23-表单标签" class="headerlink" title="23. 表单标签"></a>23. 表单标签</h2><p>用于收集用户信息</p>
+<p>组成：表单域、表单控件（也称为表单元素）和 提示信息</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512223144.png" alt="1" style="zoom:50%;">
+
+<h2 id="24-表单域"><a href="#24-表单域" class="headerlink" title="24. 表单域"></a>24. 表单域</h2><p>表单域是一个包含表单元素的区域，用于定义表单域，以实现用户信息的收集和传递。<code>&lt;form&gt;</code> 会把它范围内的表单元素信息提交给服务器。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">“url地址”</span> <span class="attr">method</span>=<span class="string">“提交方式”</span> <span class="attr">name</span>=<span class="string">“表单域名称</span>"&gt;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">各种表单元素控件</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span></pre></td></tr></table></figure>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512223230.jpg" alt="2" style="zoom:50%;">
+
+<h2 id="25-lt-input-gt-表单元素"><a href="#25-lt-input-gt-表单元素" class="headerlink" title="25. &lt;input&gt; 表单元素"></a>25. <code>&lt;input&gt;</code> 表单元素</h2><p>用于收集用户信息</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512223257.jpg" alt="2" style="zoom: 67%;">
+
+<p><strong>注意：</strong></p>
+<ul>
+<li><code>&lt;input/&gt;</code> 标签为单标签</li>
+<li>type 属性设置不同的属性值用来指定不同的控件类型</li>
+</ul>
+<h2 id="26-lt-input-gt-元素属性"><a href="#26-lt-input-gt-元素属性" class="headerlink" title="26. &lt;input&gt; 元素属性"></a>26. <code>&lt;input&gt;</code> 元素属性</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512223400.jpg" alt="2" style="zoom: 67%;">
+
+<p><strong>注意：</strong></p>
+<ul>
+<li>多个单选按钮拥有相同名字时，可以实现单选一</li>
+<li>单选框和复选框，选项的name的值要相同</li>
+<li>value只能在text中显示，只能后台人员使用</li>
+<li>checked打开时默认选中：checked=”checked”（在单选框和复选框中设置）</li>
+</ul>
+<h2 id="27-lt-label-gt-标签"><a href="#27-lt-label-gt-标签" class="headerlink" title="27. &lt;label&gt;标签"></a>27. <code>&lt;label&gt;</code>标签</h2><p><code>&lt;label&gt;</code>标签用于绑定一个表单元素, 当点击<code>&lt;label&gt;</code>标签内的文本时，浏览器就会自动将焦点(光标)转到或者选择对应的表单元素上</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"sex"</span>&gt;</span>男<span class="tag">&lt;/<span class="name">label</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span> <span class="attr">name</span>=<span class="string">"sex"</span>   <span class="attr">id</span>=<span class="string">"sex"</span> /&gt;</span></span></pre></td></tr></table></figure>
+
+<h2 id="28-lt-select-gt-表单元素"><a href="#28-lt-select-gt-表单元素" class="headerlink" title="28. &lt;select&gt; 表单元素"></a>28. <code>&lt;select&gt;</code> 表单元素</h2><p>用于定义下拉列表，在多个选项中让用户进行选择</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">option</span>&gt;</span>选项1<span class="tag">&lt;/<span class="name">option</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">option</span>&gt;</span>选项2<span class="tag">&lt;/<span class="name">option</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">option</span>&gt;</span>选项3<span class="tag">&lt;/<span class="name">option</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">  ...  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span></pre></td></tr></table></figure>
+
+<p><strong>注意：</strong></p>
+<ul>
+<li><code>&lt;select&gt;</code>中至少包含一对<code>&lt;option&gt;</code>。</li>
+<li>在<code>&lt;option&gt;</code> 中定义 selected =“ selected “ 时，当前项即为默认选中项。</li>
+</ul>
+<h2 id="29-lt-textarea-gt-表单元素"><a href="#29-lt-textarea-gt-表单元素" class="headerlink" title="29. &lt;textarea&gt;表单元素"></a>29. <code>&lt;textarea&gt;</code>表单元素</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">textarea</span> <span class="attr">rows</span>=<span class="string">"3"</span> <span class="attr">cols</span>=<span class="string">"20"</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">  文本内容  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">textarea</span>&gt;</span></span></pre></td></tr></table></figure>
+
+<p><strong>注意：</strong></p>
+<ul>
+<li>通过 <code>&lt;textarea&gt;</code> 标签可以轻松地创建多行文本输入框。</li>
+<li>cols=“每行中的字符数” ，rows=“显示的行数”（实际开发使用CSS来控制）</li>
+</ul>
+]]></content>
+      <categories>
+        <category>前端学习之HTML</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>Html</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML基本结构标签</title>
+    <url>/2021/05/12/2021/2021.05/study_Html/2.HTML%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84%E6%A0%87%E7%AD%BE/</url>
+    <content><![CDATA[<h1 id="HTML基本结构标签"><a href="#HTML基本结构标签" class="headerlink" title="HTML基本结构标签"></a>HTML基本结构标签</h1><h2 id="1-单标签和双标签"><a href="#1-单标签和双标签" class="headerlink" title="1. 单标签和双标签"></a>1. 单标签和双标签</h2><ul>
+<li><p>单标签        <code>&lt;br/&gt;</code>  </p>
+</li>
+<li><p>双标签        <code>&lt;html&gt;   &lt;/html&gt;</code></p>
+</li>
+</ul>
+<p>注：HTML 标签通常是成对出现的，标签对中的第一个标签是开始标签，第二个标签是结束标签。</p>
+<h2 id="2-标签关系"><a href="#2-标签关系" class="headerlink" title="2. 标签关系"></a>2. 标签关系</h2><h3 id="2-1-包含关系"><a href="#2-1-包含关系" class="headerlink" title="2.1 包含关系"></a>2.1 包含关系</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span> <span class="tag">&lt;/<span class="name">title</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h3 id="2-2-并列关系"><a href="#2-2-并列关系" class="headerlink" title="2.2 并列关系"></a>2.2 并列关系</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span> <span class="tag">&lt;/<span class="name">head</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span> <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></pre></td></tr></table></figure>
+
+<h3 id="2-3-基本的结构标签（骨架标签）"><a href="#2-3-基本的结构标签（骨架标签）" class="headerlink" title="2.3 基本的结构标签（骨架标签）"></a>2.3 基本的结构标签（骨架标签）</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>第一个页面<span class="tag">&lt;/<span class="name">title</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">    hello world  </span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span></pre></td></tr></table></figure>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512220415.jpg" alt="2"></p>
+<h2 id="4-骨架标签新增代码-lt-DOCTYPE-gt"><a href="#4-骨架标签新增代码-lt-DOCTYPE-gt" class="headerlink" title="4. 骨架标签新增代码 &lt;!DOCTYPE&gt;"></a>4. 骨架标签新增代码 &lt;!DOCTYPE&gt;</h2><p><code>&lt;!DOCTYPE&gt;</code>文档类型声明，作用就是告诉浏览器使用哪种HTML版本来显示网页。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span>	      当前页面采取的是 HTML5 版本来显示网页</span></pre></td></tr></table></figure>
+
+<p><strong>注意：</strong></p>
+<p><code>&lt;!DOCTYPE&gt;</code>声明位于文档中的最前面的位置，处于 <html> 标签之前。</html></p>
+<p><code>&lt;!DOCTYPE&gt;</code> 标签是文档类型声明标签，不是Html标签。</p>
+<h2 id="5-lang语言种类"><a href="#5-lang语言种类" class="headerlink" title="5. lang语言种类"></a>5. lang语言种类</h2><p><strong>作用：</strong>定义当前文档显示的语言</p>
+<p><strong>注意：</strong></p>
+<ul>
+<li>en ：英文   zh-CN : 中文</li>
+<li>定义成en的文档也可以显示中文，定义成zh-CN的文档也可以显示英文</li>
+</ul>
+<h2 id="6-字符集"><a href="#6-字符集" class="headerlink" title="6. 字符集"></a>6. 字符集</h2><p>字符集是多个字符的集合。<meta>标签的charset属性规定HTML文档使用字符编码的类型</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">" UTF-8"</span> /&gt;</span></span></pre></td></tr></table></figure>
+
+<p>注意：一般使用“UTF-8”编码（万国码）</p>
+]]></content>
+      <categories>
+        <category>前端学习之HTML</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>Html</tag>
       </tags>
   </entry>
 </search>

@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/code32.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/code16.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="前端,Html," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Ming-Calvin" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="前言Html概述&amp;nbsp;&amp;nbsp;Html是一种标记语言，它使用标记标签来描述页面 Html标签1.html分位单标签和双标签 单标签    &amp;lt;br&amp;gt; 双标签    &amp;lt;html&amp;gt; &amp;lt;&#x2F;html&amp;gt;2.html标签的关系 1.包含：     &amp;lt;head&amp;gt;         &amp;lt;title&amp;gt; &amp;lt;&#x2F;title&amp;gt;     &amp;lt;&#x2F;h">
+<meta name="keywords" content="前端,Html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端学习（旧）">
+<meta property="og:url" content="https:&#x2F;&#x2F;ming-clavin.github.io&#x2F;2018&#x2F;10&#x2F;05&#x2F;2020&#x2F;Html%E5%AD%A6%E4%B9%A0&#x2F;index.html">
+<meta property="og:site_name" content="Ming-Calvin">
+<meta property="og:description" content="前言Html概述&amp;nbsp;&amp;nbsp;Html是一种标记语言，它使用标记标签来描述页面 Html标签1.html分位单标签和双标签 单标签    &amp;lt;br&amp;gt; 双标签    &amp;lt;html&amp;gt; &amp;lt;&#x2F;html&amp;gt;2.html标签的关系 1.包含：     &amp;lt;head&amp;gt;         &amp;lt;title&amp;gt; &amp;lt;&#x2F;title&amp;gt;     &amp;lt;&#x2F;h">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https:&#x2F;&#x2F;pic.images.ac.cn&#x2F;image&#x2F;5e968519ef882">
+<meta property="og:image" content="https:&#x2F;&#x2F;pic.images.ac.cn&#x2F;image&#x2F;5e96851a5c5e5">
+<meta property="og:image" content="https:&#x2F;&#x2F;pic.images.ac.cn&#x2F;image&#x2F;5e96851abc6df">
+<meta property="og:image" content="https:&#x2F;&#x2F;ae01.alicdn.com&#x2F;kf&#x2F;H14d4c7c77288461fac861dd52e872f081.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;ae01.alicdn.com&#x2F;kf&#x2F;Hff5981abb86843a2ab2c5c7697af405c5.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;ae01.alicdn.com&#x2F;kf&#x2F;H5b06504643f6480583333bbbd845d5948.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;ae01.alicdn.com&#x2F;kf&#x2F;Hf57ba1f2f8114f8aa0baa5f668ed15a2d.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;ae01.alicdn.com&#x2F;kf&#x2F;Hf673019f0584407fbe952da89efa9c40B.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;ae01.alicdn.com&#x2F;kf&#x2F;H5dfbff0aa4634ef5b027bdf9a6c330bf2.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;ae01.alicdn.com&#x2F;kf&#x2F;Haa524fcf7cea40c398fa281c1effa6f9E.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;ae01.alicdn.com&#x2F;kf&#x2F;H78900ce09eed423186fe0cf524980bb3y.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;ae01.alicdn.com&#x2F;kf&#x2F;Hd2f2b4bdafea4c3dbc92a73df3ceba2b6.png">
+<meta property="og:updated_time" content="2021-05-12T14:38:54.346Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;pic.images.ac.cn&#x2F;image&#x2F;5e968519ef882">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","offset":20,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://ming-clavin.github.io/2018/10/05/2020/Html学习/"/>
+
+
+
+
+
+  <title>前端学习（旧） | Ming-Calvin</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+	<a href="https://github.com/Ming-Clavin" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Ming-Calvin</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">一个前端程序员的博客</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ming-clavin.github.io/2018/10/05/2020/Html%E5%AD%A6%E4%B9%A0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Ming-Clavin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Ming-Calvin.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ming-Calvin">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">前端学习（旧）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-05T21:08:16+08:00">
+                2018-10-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h3 id="Html概述"><a href="#Html概述" class="headerlink" title="Html概述"></a>Html概述</h3><p>&nbsp;&nbsp;Html是一种<strong>标记语言</strong>，它使用<strong>标记标签</strong>来描述页面</p>
+<h3 id="Html标签"><a href="#Html标签" class="headerlink" title="Html标签"></a>Html标签</h3><p>1.html分位单标签和双标签</p>
+<pre><code>单标签    &lt;br&gt;
+双标签    &lt;html&gt; &lt;/html&gt;</code></pre><p>2.html标签的关系</p>
+<pre><code>1.包含：
+    &lt;head&gt;
+        &lt;title&gt; &lt;/title&gt;
+    &lt;/head&gt;
+2.并列：
+    &lt;head&gt; &lt;/head&gt;
+    &lt;body&gt; &lt;/body&gt;</code></pre><p>3.骨架标签</p>
+<table>
+<thead>
+<tr>
+<th align="center">标签</th>
+<th align="center">含义</th>
+<th align="center">小猪佩奇</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">&lt; html &gt;</td>
+<td align="center">根标签</td>
+<td align="center">全身</td>
+</tr>
+<tr>
+<td align="center">&lt; head &gt;</td>
+<td align="center">头部</td>
+<td align="center">头</td>
+</tr>
+<tr>
+<td align="center">&lt; title &gt;</td>
+<td align="center">标题</td>
+<td align="center">眼睛</td>
+</tr>
+<tr>
+<td align="center">&lt; body &gt;</td>
+<td align="center">内容</td>
+<td align="center">躯干</td>
+</tr>
+</tbody></table>
+<hr>
+<a id="more"></a>
+
+<h2 id="编译器-VS-code"><a href="#编译器-VS-code" class="headerlink" title="编译器 VS code"></a>编译器 VS code</h2><h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><table>
+<thead>
+<tr>
+<th align="center">快捷键</th>
+<th align="center">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Ctrl + N</td>
+<td align="center">新建</td>
+</tr>
+<tr>
+<td align="center">Ctrl + S</td>
+<td align="center">保存</td>
+</tr>
+<tr>
+<td align="center">Ctrl + &nbsp; “+” &nbsp; / &nbsp; “-“ &nbsp;</td>
+<td align="center">字体增大/缩小</td>
+</tr>
+<tr>
+<td align="center">“ &nbsp; !  “</td>
+<td align="center">创建骨架</td>
+</tr>
+<tr>
+<td align="center">Alt + B</td>
+<td align="center">在默认的浏览器编译</td>
+</tr>
+</tbody></table>
+<h3 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h3><pre><code>1. Chinese 翻译中文
+2. Open in Browser 在浏览器中打开
+3. Auto Rename Tag 改“前面的标签”时更改“后面的标签”</code></pre><hr>
+<h2 id="lt-DOCTYPE-gt-和lang以及字符集的作用"><a href="#lt-DOCTYPE-gt-和lang以及字符集的作用" class="headerlink" title="&lt;!DOCTYPE&gt;和lang以及字符集的作用"></a>&lt;!DOCTYPE&gt;和lang以及字符集的作用</h2><h3 id="lt-DOCTYPE-gt"><a href="#lt-DOCTYPE-gt" class="headerlink" title="&lt;!DOCTYPE&gt;"></a>&lt;!DOCTYPE&gt;</h3><p><img src="https://pic.images.ac.cn/image/5e968519ef882" alt></p>
+<p>&nbsp;&nbsp;<strong>告诉浏览器使用哪种Html显示网页</strong></p>
+<pre><code>注意：
+1.要在&lt; html &gt;标签前面
+2.不属于&lt; html &gt;标签它是文档声明标签</code></pre><h3 id="lang"><a href="#lang" class="headerlink" title="lang"></a>lang</h3><p><img src="https://pic.images.ac.cn/image/5e96851a5c5e5" alt></p>
+<p><strong>当前文档显示语言</strong>（告诉人们是什么语言的网站）</p>
+<pre><code>注意:
+1.en ：英文      zh-CN ： 中文
+2.英文中可以有中文，中文中可以有英文</code></pre><h3 id="lt-Charset-gt-字符集"><a href="#lt-Charset-gt-字符集" class="headerlink" title="&lt; Charset &gt;字符集"></a>&lt; Charset &gt;字符集</h3><p><img src="https://pic.images.ac.cn/image/5e96851abc6df" alt></p>
+<pre><code>utf-8 万国码  （不会写乱码）</code></pre><h2 id="标题标签-head缩写-lt-h1-gt-lt-h6-gt"><a href="#标题标签-head缩写-lt-h1-gt-lt-h6-gt" class="headerlink" title="标题标签 (head缩写) &lt; h1 &gt;-&lt; h6 &gt;"></a>标题标签 (head缩写) &lt; h1 &gt;-&lt; h6 &gt;</h2><pre><code>&lt;h1&gt;我是一级标题&lt;/h1&gt;
+特点：
+1.文字变大变粗
+2.一个标题独占一行</code></pre><h2 id="段落标签-Paragraph缩写-lt-p-gt"><a href="#段落标签-Paragraph缩写-lt-p-gt" class="headerlink" title="段落标签 (Paragraph缩写) &lt; p &gt;"></a>段落标签 (Paragraph缩写) &lt; p &gt;</h2><pre><code>&lt;p&gt;我是第一段落&lt;/p&gt;</code></pre><h2 id="换行标签-break缩写-lt-br-gt"><a href="#换行标签-break缩写-lt-br-gt" class="headerlink" title="换行标签 (break缩写) &lt; br/ &gt;"></a>换行标签 (break缩写) &lt; br/ &gt;</h2><pre><code>注意：
+1.单标签
+2.之间的空隙比段落间小</code></pre><h2 id="文本格式化标签-用前面的"><a href="#文本格式化标签-用前面的" class="headerlink" title="文本格式化标签 (用前面的)"></a>文本格式化标签 (用前面的)</h2><pre><code>1.粗体  &lt;strong&gt; &lt;/strong&gt; 或 &lt;b&gt; &lt;/b&gt;
+2.斜体  &lt;em&gt; &lt;/em&gt; 或 &lt;i&gt; &lt;/i&gt;
+3.删除线  &lt;del&gt; &lt;/del&gt; 或 &lt;s&gt; &lt;/s&gt;
+4.下划线  &lt;ins&gt; &lt;/ins&gt; 或 &lt;u&gt; &lt;/u&gt;</code></pre><h2 id="lt-div-gt-和-lt-span-gt-标签-没有语意"><a href="#lt-div-gt-和-lt-span-gt-标签-没有语意" class="headerlink" title="&lt; div &gt;和&lt; span &gt;标签 (没有语意)"></a>&lt; div &gt;和&lt; span &gt;标签 (没有语意)</h2><h3 id="lt-div-gt-lt-div-gt-division缩写"><a href="#lt-div-gt-lt-div-gt-division缩写" class="headerlink" title="&lt; div &gt; &lt; /div &gt; (division缩写)"></a>&lt; div &gt; &lt; /div &gt; (division缩写)</h3><pre><code>一个人独占一行（是个大盒子）</code></pre><h3 id="lt-span-gt-标签-（span缩写）"><a href="#lt-span-gt-标签-（span缩写）" class="headerlink" title="&lt; span &gt; 标签 （span缩写）"></a>&lt; span &gt; 标签 （span缩写）</h3><pre><code>一行可以放多个span（是个小盒子）</code></pre><h3 id="图示"><a href="#图示" class="headerlink" title="图示"></a>图示</h3><p><img src="https://ae01.alicdn.com/kf/H14d4c7c77288461fac861dd52e872f081.png" alt></p>
+<h2 id="图像标签-image缩写-lt-img-gt"><a href="#图像标签-image缩写-lt-img-gt" class="headerlink" title="图像标签 (image缩写) &lt; img &gt;"></a>图像标签 (image缩写) &lt; img &gt;</h2><pre><code>&lt;img src=&quot;图像url&quot; /&gt;</code></pre><p>  <strong>属性：</strong></p>
+<pre><code>1. src 是&lt;img&gt;的必须属性指向文件的路径和文件名
+2. alt 替代文本 当文字不能显示时，用文字替换
+3. title 提示文本 鼠标放在图像时，显示的文字
+4. width 图片的宽
+5. heigh 图片的高
+  （一般宽/高只改一个）
+6. border 边框粗细</code></pre><h2 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h2><pre><code>目录文件夹：普通文件夹，有Html、图像等
+根目录：最外的一层文件夹</code></pre><p><img src="https://ae01.alicdn.com/kf/Hff5981abb86843a2ab2c5c7697af405c5.png" alt></p>
+<pre><code>1. 相对路径：图片相对Html页面的位置
+    1. 同一级: 直接写文件名
+    2. 下一级: 图像目录/文件名
+    3. 上一级: ../文件名
+
+2. 绝对路径 (少用)
+    1. 电脑中
+    2. 网络中
+
+3. 符号
+    1.绝对路径：\
+    2.相对路径：/</code></pre><h2 id="超链接标签-anchor缩写-lt-a-gt"><a href="#超链接标签-anchor缩写-lt-a-gt" class="headerlink" title="超链接标签 (anchor缩写) &lt; a &gt;"></a>超链接标签 (anchor缩写) &lt; a &gt;</h2><pre><code>&lt;a herf=&quot;跳转目标&quot; target=&quot;目标窗口的弹出方式&quot;&gt; 文本或图像 &lt;/a&gt;</code></pre><p><strong>属性：</strong></p>
+<pre><code>herf 用于链接目标的url地址
+target 用于链接页面的打开方式 
+       1. _self为默认值 
+       2. _blank为在新窗口打开</code></pre><h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><pre><code>1. 外部链接：以&quot;http:// + 网址 &quot; 开头
+2. 内部链接：直接链接内部页面
+3. 空链接：&lt;a herf=&quot;#&quot;&gt; 空链接 &lt;/a&gt;
+4. 下载链接：&lt;a herf=&quot;xxx.zip/zip/rar(等压缩包形式)&gt; &lt;/a&gt;
+5. 网页元素链接：&quot;元素&quot;代替&quot;文字&quot;
+6. 锚点链接（重点）：点击链接到页面的某个位置
+    1. 在 herf 属性中，设置属性值为#名字 
+    （如： &lt;a herf=&quot;#two&quot;&gt; 第二集 &lt;/a&gt; ）
+    2. 找到目标位置标签，添加id=名字
+    （如： &lt;h3 id=&quot;two&quot;&gt; 第二季介绍 &lt;h3&gt; )    </code></pre><h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><pre><code>1. &quot;&lt;!--&quot;开头      
+   &quot;--&gt;&quot;结束
+2. 快捷键：Ctrl + &quot;/&quot;</code></pre><h2 id="特殊字符"><a href="#特殊字符" class="headerlink" title="特殊字符"></a>特殊字符</h2><pre><code>空格: &amp;nbsp;
+&quot;&lt;&quot;: &amp;lt;
+&quot;&lt;&quot;: &amp;gt;</code></pre><h2 id="表格标签"><a href="#表格标签" class="headerlink" title="表格标签"></a>表格标签</h2><pre><code>&lt;table&gt;    -------&gt;  定义单元格的标签
+    &lt;tr&gt; -------&gt;  行
+        &lt;td&gt; 单元格内的文字 &lt;/td&gt; -------&gt;  单元格
+        ......        
+    &lt;/tr&gt;        
+    ......
+&lt;/table&gt;</code></pre><p><img src="https://ae01.alicdn.com/kf/H5b06504643f6480583333bbbd845d5948.png" alt></p>
+<h3 id="表头单元格"><a href="#表头单元格" class="headerlink" title="表头单元格"></a>表头单元格</h3><pre><code>&lt;table&gt;    
+    &lt;tr&gt; 
+        &lt;th&gt; 表头 &lt;/th&gt;  （加粗+居中）
+        &lt;td&gt; 表格内容 &lt;/td&gt;
+        &lt;td&gt; 表格内容 &lt;/td&gt; 
+        &lt;td&gt; 表格内容 &lt;/td&gt;           
+    &lt;/tr&gt;        
+    ......
+&lt;/table&gt;</code></pre><h3 id="表格属性-（不常用，之后用css，写在table中）"><a href="#表格属性-（不常用，之后用css，写在table中）" class="headerlink" title="表格属性 （不常用，之后用css，写在table中）"></a>表格属性 （不常用，之后用css，写在table中）</h3><pre><code>1. align--对齐        left     center     right
+                       左       中心        右
+
+2. border--边框      1    或    0
+                    有       无（默认）
+
+3. cellpadding--内容和边框的距离
+4. cellspacing--单元格和单元格的距离
+5. width--设置宽度
+6. height--设置高度</code></pre><h3 id="表格结构标签"><a href="#表格结构标签" class="headerlink" title="表格结构标签"></a>表格结构标签</h3><pre><code>1.头部区域 &lt;thead&gt; (一定要有&lt;tr&gt;标签)
+2.主体区域 &lt;tbody&gt;
+注：都在&lt;table&gt;标签中</code></pre><h3 id="合并单元格"><a href="#合并单元格" class="headerlink" title="合并单元格"></a>合并单元格</h3><p>方式：</p>
+<pre><code>1. 跨行 rowspan = &quot;合并单元格的个数&quot;
+2. 跨列 colspan = &quot;合并单元格的个数&quot;</code></pre><p><img src="https://ae01.alicdn.com/kf/Hf57ba1f2f8114f8aa0baa5f668ed15a2d.png" alt></p>
+<p>目标单元格：</p>
+<pre><code>跨行：最上侧
+跨列：最左侧    </code></pre><p><img src="https://ae01.alicdn.com/kf/Hf673019f0584407fbe952da89efa9c40B.png" alt></p>
+<p>步骤：</p>
+<pre><code>1. 先确定 跨行 或 跨列 
+2. 找到目标单元格，写合并方式
+（如： &lt;td colspan =&quot;2&quot;&gt; &lt;/td&gt;）
+3. 删除多的单元格</code></pre><h2 id="列表标签-（用于布局页面）"><a href="#列表标签-（用于布局页面）" class="headerlink" title="列表标签 （用于布局页面）"></a>列表标签 （用于布局页面）</h2><h3 id="无序列表-（重点）"><a href="#无序列表-（重点）" class="headerlink" title="无序列表 （重点）"></a>无序列表 （重点）</h3><pre><code>1. &lt;ul&gt; 中只放 &lt;li&gt;
+2. &lt;li&gt; 中可以放任何元素
+
+&lt;ul&gt;
+    &lt;li&gt;.....&lt;/li&gt;
+    &lt;li&gt;.....&lt;/li&gt;
+    &lt;li&gt;.....&lt;/li&gt;
+&lt;/ul&gt;
+
+注：拥有自己的样式属性，之后用css改</code></pre><h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><pre><code>1. &lt;or&gt; 中只放 &lt;li&gt;
+2. &lt;li&gt; 中可以放任何元素 
+
+&lt;or&gt;
+    &lt;li&gt; 列表项1 &lt;/li&gt;
+    &lt;li&gt; 列表项2 &lt;/li&gt;
+    &lt;li&gt; 列表项3 &lt;/li&gt;
+&lt;/or&gt;
+
+注：拥有自己的样式属性，之后用css改</code></pre><h3 id="自定义列表-（重点）"><a href="#自定义列表-（重点）" class="headerlink" title="自定义列表 （重点）"></a>自定义列表 （重点）</h3><pre><code>&lt;dl&gt;
+    &lt;dt&gt; 大哥 &lt;/dt&gt;
+    &lt;dt&gt; 小弟 &lt;/dt&gt; -----&gt; 小弟用于解释大哥
+    &lt;dt&gt; 小弟 &lt;/dt&gt;
+&lt;/dl&gt;
+
+注：
+1. 一个 &lt;dt&gt; 可以对应多个 &lt;dd&gt;
+2. &lt;dt&gt; 与 &lt;dd&gt; 的个数都无限制</code></pre><p><img src="https://ae01.alicdn.com/kf/H5dfbff0aa4634ef5b027bdf9a6c330bf2.png" alt></p>
+<h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><ol>
+<li><p>何时用自定义列表，何时用无序列表</p>
+<p> a. 使用自定义列表<br> <img src="https://ae01.alicdn.com/kf/Haa524fcf7cea40c398fa281c1effa6f9E.png" alt><br> b. 使用无序列表</p>
+</li>
+</ol>
+<p><img src="https://ae01.alicdn.com/kf/H78900ce09eed423186fe0cf524980bb3y.png" alt></p>
+<p>2.格式</p>
+<p>无序列表：</p>
+<pre><code>&lt;ul&gt;
+    &lt;li&gt;.....&lt;/li&gt;
+    &lt;li&gt;.....&lt;/li&gt;
+    &lt;li&gt;.....&lt;/li&gt;
+&lt;/ul&gt;</code></pre><p>自定义列表：</p>
+<pre><code>&lt;dl&gt;
+    &lt;dt&gt;.....&lt;/dt&gt;
+    &lt;dt&gt;.....&lt;/dt&gt;
+    &lt;dt&gt;..... &lt;/dt&gt;
+&lt;/dl&gt;</code></pre><h2 id="表单标签"><a href="#表单标签" class="headerlink" title="表单标签"></a>表单标签</h2><p><img src="https://ae01.alicdn.com/kf/Hd2f2b4bdafea4c3dbc92a73df3ceba2b6.png" alt></p>
+<h3 id="表单域-lt-form-gt"><a href="#表单域-lt-form-gt" class="headerlink" title="表单域  &lt; form &gt;"></a>表单域  &lt; form &gt;</h3><p>把区域中的表单元素送给服务器</p>
+<pre><code>&lt;form action=&quot;url地址&quot; methon=&quot;提交方式&quot; name=&quot;表单名称&quot;&gt;
+                       [ get / post ]   [指定表单的名称]
+    各种表单控件
+
+&lt;/from&gt;</code></pre><h3 id="表单元素"><a href="#表单元素" class="headerlink" title="表单元素"></a>表单元素</h3><h4 id="lt-input-gt-输入"><a href="#lt-input-gt-输入" class="headerlink" title="&lt; input &gt; 输入"></a>&lt; input &gt; 输入</h4><pre><code>&lt;input type=&quot;属性值&quot; /&gt;
+
+注：1.单标签  2.不同属性值对应不同的控件</code></pre><p>属性值：</p>
+<pre><code>1. text-文本框      用户可以在里面输入任何文字
+2. password-密码框     用户看不见输入的密码
+3. radio-单选按钮     可以实现多选一
+4. checkbox-复选框     可以实现多选
+5. submi-提交按钮     把表单form里面的表单元素里面的值提交给后台服务器
+6. reset-重置按钮     可以还原表单元素初始的默认状态
+7. botton-普通按钮     后期可以结合js搭配使用
+8. file-文件域     选择文件按钮，上传文件时使用</code></pre><p><strong>注意：</strong></p>
+<pre><code>1. name-表单元素名字，多个单选按钮拥有相同名字时，可以实现单选一
+   （单选框和复选框，选项的name的值要相同）
+2. value-表单元素的值
+   （只能在text中显示，只能后台人员使用）
+3. checked-打开时默认选中：checked=&quot;checked&quot;
+   （单选框和复选框中设置）
+4. maxlength-输出字符字数最大值</code></pre><h4 id="lt-label-gt-标签-（为-lt-input-gt-元素定义标签）"><a href="#lt-label-gt-标签-（为-lt-input-gt-元素定义标签）" class="headerlink" title="&lt; label &gt;标签  （为&lt; input &gt;元素定义标签）"></a>&lt; label &gt;标签  （为&lt; input &gt;元素定义标签）</h4><p>自动将光标撞到或者选择到对应的元素上</p>
+<pre><code>&lt;label for=&quot;sex&quot; &gt; 男 &lt;/label&gt;
+
+&lt;input type=&quot;radio&quot; name=&quot;sex&quot; id=&quot;sex&quot;&gt;</code></pre><h4 id="lt-select-gt-下拉表单元素"><a href="#lt-select-gt-下拉表单元素" class="headerlink" title="&lt; select &gt; 下拉表单元素"></a>&lt; select &gt; 下拉表单元素</h4><pre><code>&lt;select&gt; 
+    &lt;option&gt;   &lt;/option&gt;
+    &lt;option&gt;   &lt;/option&gt;
+&lt;/select&gt;</code></pre><p>注意：</p>
+<ol>
+<li>&lt; select &gt; 中至少包含一对 &lt; option &gt;</li>
+<li>在 &lt; option &gt; 中定义 checked=”checked” 时，当前项则为默认选择项</li>
+</ol>
+<h4 id="lt-textarea-gt-文本域"><a href="#lt-textarea-gt-文本域" class="headerlink" title="&lt; textarea &gt; 文本域"></a>&lt; textarea &gt; 文本域</h4><p>定义多行文本输入</p>
+<pre><code>&lt;textarea  rows=&quot;可以显示的行数&quot;  role=&quot;可以显示的行数&quot;&gt;</code></pre><hr>
+<p>本文参考：<br><a href="https://www.bilibili.com/video/BV14J4114768?p=1">2019年黑马程序员前端入门视频教程 HTML5+CSS3</a></p>
+<p>​<br>​<br>​<br>​<br>​<br>​                 </p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+	
+	<div>
+		
+			<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+		
+	</div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag"><i class="fa fa-tag"></i>前端</a>
+          
+            <a href="/tags/Html/" rel="tag"><i class="fa fa-tag"></i>Html</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/12/01/2020/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/Ming-Calvin.jpg"
+                alt="Ming-Clavin" />
+            
+              <p class="site-author-name" itemprop="name">Ming-Clavin</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/Ming-Calvin" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/u/2860321044" target="_blank" title="新浪微博">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>新浪微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Html概述"><span class="nav-text">Html概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Html标签"><span class="nav-text">Html标签</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编译器-VS-code"><span class="nav-text">编译器 VS code</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#快捷键"><span class="nav-text">快捷键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插件"><span class="nav-text">插件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#lt-DOCTYPE-gt-和lang以及字符集的作用"><span class="nav-text">&lt;!DOCTYPE&gt;和lang以及字符集的作用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#lt-DOCTYPE-gt"><span class="nav-text">&lt;!DOCTYPE&gt;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#lang"><span class="nav-text">lang</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#lt-Charset-gt-字符集"><span class="nav-text">&lt; Charset &gt;字符集</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标题标签-head缩写-lt-h1-gt-lt-h6-gt"><span class="nav-text">标题标签 (head缩写) &lt; h1 &gt;-&lt; h6 &gt;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#段落标签-Paragraph缩写-lt-p-gt"><span class="nav-text">段落标签 (Paragraph缩写) &lt; p &gt;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#换行标签-break缩写-lt-br-gt"><span class="nav-text">换行标签 (break缩写) &lt; br/ &gt;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文本格式化标签-用前面的"><span class="nav-text">文本格式化标签 (用前面的)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#lt-div-gt-和-lt-span-gt-标签-没有语意"><span class="nav-text">&lt; div &gt;和&lt; span &gt;标签 (没有语意)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#lt-div-gt-lt-div-gt-division缩写"><span class="nav-text">&lt; div &gt; &lt; /div &gt; (division缩写)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#lt-span-gt-标签-（span缩写）"><span class="nav-text">&lt; span &gt; 标签 （span缩写）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图示"><span class="nav-text">图示</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图像标签-image缩写-lt-img-gt"><span class="nav-text">图像标签 (image缩写) &lt; img &gt;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#路径"><span class="nav-text">路径</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#超链接标签-anchor缩写-lt-a-gt"><span class="nav-text">超链接标签 (anchor缩写) &lt; a &gt;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#分类"><span class="nav-text">分类</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注释"><span class="nav-text">注释</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特殊字符"><span class="nav-text">特殊字符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#表格标签"><span class="nav-text">表格标签</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#表头单元格"><span class="nav-text">表头单元格</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表格属性-（不常用，之后用css，写在table中）"><span class="nav-text">表格属性 （不常用，之后用css，写在table中）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表格结构标签"><span class="nav-text">表格结构标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#合并单元格"><span class="nav-text">合并单元格</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表标签-（用于布局页面）"><span class="nav-text">列表标签 （用于布局页面）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#无序列表-（重点）"><span class="nav-text">无序列表 （重点）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#有序列表"><span class="nav-text">有序列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义列表-（重点）"><span class="nav-text">自定义列表 （重点）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注意："><span class="nav-text">注意：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#表单标签"><span class="nav-text">表单标签</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#表单域-lt-form-gt"><span class="nav-text">表单域  &lt; form &gt;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表单元素"><span class="nav-text">表单元素</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#lt-input-gt-输入"><span class="nav-text">&lt; input &gt; 输入</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#lt-label-gt-标签-（为-lt-input-gt-元素定义标签）"><span class="nav-text">&lt; label &gt;标签  （为&lt; input &gt;元素定义标签）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#lt-select-gt-下拉表单元素"><span class="nav-text">&lt; select &gt; 下拉表单元素</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#lt-textarea-gt-文本域"><span class="nav-text">&lt; textarea &gt; 文本域</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Ming-Clavin</span>
+
+  
+</div>
+
+<!--
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+-->
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.8},"log":false});</script></body>
+</html>
+
+
+
