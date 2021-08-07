@@ -1,6 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>GitHub Desktop 上传本地库</title>
+    <url>/2021/04/28/2020/GitHub%20Desktop%20%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E5%BA%93/</url>
+    <content><![CDATA[<h1 id="GitHub-Desktop-上传本地库"><a href="#GitHub-Desktop-上传本地库" class="headerlink" title="GitHub Desktop 上传本地库"></a>GitHub Desktop 上传本地库</h1><h2 id="1-创建新仓库"><a href="#1-创建新仓库" class="headerlink" title="1. 创建新仓库"></a>1. 创建新仓库</h2><p>单击 <strong>Create a New Repository on your Hard Drive…（在硬盘上创建新仓库…）</strong></p>
+<img src="https://docs.github.com/assets/images/help/desktop/getting-started-guide/creating-a-repository.png" alt="创建新仓库" style="zoom:50%;">
+
+<p>填写字段并选择您的首选项</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428140721.png" alt="Snipaste_2021-04-28_05-15-13" style="zoom:50%;">
+
+<a id="more"></a>
+
+<ul>
+<li><p>“Name（名称）”定义仓库在本地以及 GitHub 上的名称</p>
+</li>
+<li><p>“Description（说明）”是一个可选字段，可用于提供有关仓库目的的更多信息。</p>
+</li>
+<li><p>“Local path（本地路径）”设置仓库在计算机上的位置。</p>
+<blockquote>
+<p>默认情况下，GitHub Desktop 会在 <em>Documents</em> 文件夹内创建 <em>GitHub</em> 文件夹，用于存储仓库，但您也可以选择计算机上的任何位置。 您的新仓库将是所选位置内的文件夹。</p>
+</blockquote>
+</li>
+<li><p><strong>Initialize this repository with a README（使用自述文件初始化此仓库）</strong></p>
+<blockquote>
+<p>创建包含 <em>README.md</em> 文件的初始提交</p>
+</blockquote>
+</li>
+<li><p><strong>Git ignore（Git 忽略）</strong>下拉菜单可让您添加自定义文件，以忽略本地仓库中您不想存储在版本控制中的特定文件</p>
+</li>
+<li><p><strong>License（许可证）</strong>下拉菜单可让您将开源许可证添加到仓库中的 <em>LICENSE</em> 文件。</p>
+</li>
+</ul>
+<h2 id="2-探索-GitHub-Desktop"><a href="#2-探索-GitHub-Desktop" class="headerlink" title="2. 探索 GitHub Desktop"></a>2. 探索 GitHub Desktop</h2><h3 id="2-1-GitHub-Desktop-菜单栏"><a href="#2-1-GitHub-Desktop-菜单栏" class="headerlink" title="2.1 GitHub Desktop 菜单栏"></a>2.1 GitHub Desktop 菜单栏</h3><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428150854.png" alt="image-20210428150426467" style="zoom:50%;">
+
+<ul>
+<li><strong>Current repository（当前仓库）</strong>显示您处理的仓库的名称。 您可以单击 <strong>Current repository（当前仓库）</strong>切换到 GitHub Desktop 中的不同仓库。</li>
+<li><strong>Current branch（当前分支）</strong>显示您处理的分支的名称。 您可以单击 <strong>Current branch（当前分支）</strong>来查看仓库中的所有分支、切换到不同的分支或者创建新分支。 在仓库中创建拉取请求后，也可单击 <strong>Current branch（当前分支）</strong>查看它们。</li>
+<li><strong>Publish repository（发布仓库）</strong>会出现，因为尚未将仓库发布到 GitHub。 工具栏的这部分将根据您当前分支和仓库的状态而改变。 不同的上下文相关操作将可以使用，允许您在本地仓库与远程仓库之间交换数据。</li>
+</ul>
+<h3 id="2-2-更改历史记录"><a href="#2-2-更改历史记录" class="headerlink" title="2.2 更改历史记录"></a>2.2 更改历史记录</h3><p>在左侧边栏中，会看到 <strong>Changes（更改）</strong>和 <strong>History（历史记录）</strong>视图。</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428151250.png" alt="image-20210428151248941" style="zoom:50%;">
+
+<ul>
+<li><p><strong>Changes（更改）</strong>视图显示对当前分支中的文件已经做出但尚未提交到本地仓库的更改。在底部有“Summary（摘要）”和“Description（说明）”文本框，以及 <strong>Commit to BRANCH（提交到 [分支]）</strong>按钮。 这是提交新更改的位置。 <strong>Commit to BRANCH（提交到 [分支]）</strong>按钮是动态的，将显示提交更改到哪个分支</p>
+</li>
+<li><p><strong>History（历史记录）</strong>视图显示仓库当前分支上以前的提交。会看到在创建仓库时 GitHub Desktop 所创建的“初始提交”。 在提交的右侧，根据您在创建仓库时选择的选项，可能会看到 <em>.gitattributes*、</em>.gitignore<em>、</em>LICENSE* 或 <em>README</em> 文件。 您可以单击每个文件以查看该文件的差异，也就是提交中对该文件的更改。 差异只显示文件已更改的部分，而不显示文件的全部内容。</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428151507.png" alt="image-20210428151506659" style="zoom:50%;">
+
+</li>
+</ul>
+<h2 id="3-将仓库推送到-GitHub"><a href="#3-将仓库推送到-GitHub" class="headerlink" title="3. 将仓库推送到 GitHub"></a>3. 将仓库推送到 GitHub</h2><p><strong>步骤一：</strong>单击菜单栏中的 <strong>Publish repository（发布仓库）</strong></p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428151759.png" alt="image-20210428151757880" style="zoom:50%;">
+
+<ul>
+<li>GitHub Desktop 自动使用创建仓库时输入的信息填充<strong>Name（名称）</strong>和<strong>Description（说明）</strong>字段。</li>
+<li><strong>Keep this code private（保持此代码为私有）</strong>可控制谁可以查看项目。 如果不选中此选项，GitHub 上的其他用户将能够查看代码。 如果选中此选项，代码将不会公开。</li>
+<li><strong>Organization（组织）</strong>下拉菜单（如果有）可让您将仓库发布到 GitHub 上您所属的特定组织。</li>
+</ul>
+<p><strong>步骤二：</strong>单击 <strong>Publish Repository（发布仓库）</strong>按钮</p>
+<p><strong>步骤三：</strong>从 GitHub Desktop 访问 GitHub.com 上的仓库。 在文件菜单中，单击 <strong>Repository（仓库）</strong>，然后单击 <strong>View on GitHub（在 GitHub 上查看）</strong>。 这会直接在默认浏览器中打开仓库。</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428152751.png" alt="image-20210428152750345" style="zoom: 25%;">
+
+<h2 id="4-进行更改、提交更改和推送更改"><a href="#4-进行更改、提交更改和推送更改" class="headerlink" title="4. 进行更改、提交更改和推送更改"></a>4. 进行更改、提交更改和推送更改</h2><p><strong>步骤一：</strong>要从 GitHub Desktop 启动外部编辑器，请单击 Repository（仓库），然后单击 Open in VScode（在 [VScode] 中打开）。</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428153006.png" alt="image-20210428153005460" style="zoom: 50%;">
+
+<p><strong>步骤二：</strong>对以前创建的 <em>README.md</em> 文件做一些更改</p>
+<p><strong>步骤三：</strong>在 GitHub Desktop 中，导航到 <strong>Changes（更改）</strong>视图。 在文件列表中，会看到 <em>README.md*。 *README.md</em> 文件左边的勾选标记表示对文件的更改将成为提交的一部分。</p>
+<blockquote>
+<p> 以后可能会更改多个文件，但只想提交对其中部分文件所做的更改。 如果单击文件旁边的复选标记，则该文件不会包含在提交中。</p>
+</blockquote>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428153333.png" alt="image-20210428153332669" style="zoom: 50%;">
+
+<p><strong>步骤四：</strong>在 <strong>Changes（更改）</strong>列表底部，输入提交消息。 在头像右侧，键入提交的简短描述。</p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428153549.png" alt="image-20210428153548125" style="zoom:50%;">
+
+<blockquote>
+<p>在摘要下方，您会看到“Description（说明）”文本字段，在其中可以键入较长的提交更改描述，这有助于回顾项目的历史记录和了解更改的原因。 </p>
+</blockquote>
+<p><strong>步骤五：</strong>单击 <strong>Commit to BRANCH NAME（提交到 [分支名称]）</strong>。 提交按钮显示当前分支，因此可以确保提交到所需的分支。</p>
+<p><strong>步骤六：</strong>要将更改推送到 GitHub 上的远程仓库，单击 <strong>Push origin（推送源）</strong></p>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428153709.png" alt="image-20210428153708638" style="zoom: 50%;">
+
+<ul>
+<li><p><strong>Push origin（推送源）</strong>按钮就是单击以发布仓库到 GitHub 的按钮。 此按钮根据 Git 工作流程中的上下文而变。 现在改为 <code>Push origin（推送源）</code>了，其旁边的 <code>1</code> 表示有一个提交尚未推送到 GitHub。</p>
+</li>
+<li><p><strong>Push origin（推送源）</strong>中的“源”表示我们将更改推送到名为 <code>origin</code> 的远程，在本例中是 GitHub.com 上的项目仓库。 </p>
+<blockquote>
+<p> 在推送任何新提交到 GitHub 之前，计算机上的项目仓库与 GitHub.com 上的项目仓库之间存在差异。 这可在程序员在本地工作，并且仅在准备好后才将更改推送到 GitHub.com。</p>
+</blockquote>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Github_desktop</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+        <tag>Github_desktop</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>前端学习（旧）</title>
     <url>/2018/10/05/2020/Html%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h3 id="Html概述"><a href="#Html概述" class="headerlink" title="Html概述"></a>Html概述</h3><p>&nbsp;&nbsp;Html是一种<strong>标记语言</strong>，它使用<strong>标记标签</strong>来描述页面</p>
@@ -260,6 +359,39 @@ target 用于链接页面的打开方式
       </tags>
   </entry>
   <entry>
+    <title>Typora上传图片时,文件以时间戳命名</title>
+    <url>/2020/12/14/2020/Typora%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E6%97%B6-%E6%96%87%E4%BB%B6%E4%BB%A5%E6%97%B6%E9%97%B4%E6%88%B3%E5%91%BD%E5%90%8D/</url>
+    <content><![CDATA[<h1 id="一、查询之前安装的PicGo执行路径"><a href="#一、查询之前安装的PicGo执行路径" class="headerlink" title="一、查询之前安装的PicGo执行路径"></a>一、查询之前安装的PicGo执行路径</h1><br>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214170157.png" alt="image-20201214170155882" style="zoom: 67%;">
+
+<a id="more"></a>
+
+<h1 id="二、安装插件"><a href="#二、安装插件" class="headerlink" title="二、安装插件"></a>二、安装插件</h1><p>进入cmd输入代码安装插件（super-prefix插件 —— 用于上传图片时能自动使用时间戳重命名）</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd C:\Users\Administrator\AppData\Roaming\Typora\picgo\win64</span></pre></td></tr><tr><td class="code"><pre><span class="line">.\picgo.exe install super-prefix</span></pre></td></tr></table></figure>
+
+
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214170742.png" alt="image-20201214170740861">
+
+
+
+<h1 id="三、修改配置文件"><a href="#三、修改配置文件" class="headerlink" title="三、修改配置文件"></a>三、修改配置文件</h1><figure class="highlight"><table><tr><td class="code"><pre><span class="line">"picgoPlugins": &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    "picgo-plugin-super-prefix": true</span></pre></td></tr><tr><td class="code"><pre><span class="line">  &#125;, // 为插件预留</span></pre></td></tr><tr><td class="code"><pre><span class="line">  "picgo-plugin-super-prefix": &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    "fileFormat": "YYYYMMDDHHmmss"</span></pre></td></tr><tr><td class="code"><pre><span class="line">  &#125; //super-prefix插件配置</span></pre></td></tr></table></figure>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214171510.png" alt="image-20201214171508681" style="zoom:80%;">
+
+
+
+<h1 id="四、参考"><a href="#四、参考" class="headerlink" title="四、参考"></a>四、参考</h1><p><a href="https://blog.csdn.net/in_the_road/article/details/105733292">Typora自动上传图片配置，集成PicGo-Core，文件以时间戳命名</a></p>
+]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Mrkdown使用指南</title>
     <url>/2019/12/02/2020/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</url>
     <content><![CDATA[<h1 id="一、Makedown-标题"><a href="#一、Makedown-标题" class="headerlink" title="一、Makedown 标题"></a>一、Makedown 标题</h1><h2 id="1-使用-和-标记一级和二级标题"><a href="#1-使用-和-标记一级和二级标题" class="headerlink" title="1. 使用 = 和 - 标记一级和二级标题"></a>1. 使用 = 和 - 标记一级和二级标题</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220358.jpg" alt="(1)" style="zoom:80%;">
@@ -349,172 +481,6 @@ target 用于链接页面的打开方式
       </tags>
   </entry>
   <entry>
-    <title>MySQL让主键id重新排序</title>
-    <url>/2021/05/04/2020/MySQL%E8%AE%A9%E4%B8%BB%E9%94%AEid%E9%87%8D%E6%96%B0%E6%8E%92%E5%BA%8F/</url>
-    <content><![CDATA[<h1 id="MySQL让主键id重新排序"><a href="#MySQL让主键id重新排序" class="headerlink" title="MySQL让主键id重新排序"></a>MySQL让主键id重新排序</h1><ol>
-<li><p>备份表结构</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">create table table_bak like table_name;</span></pre></td></tr></table></figure>
-</li>
-<li><p>备份表数据</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">insert into table_bak select * from table_name;</span></pre></td></tr></table></figure>
-</li>
-<li><p>删除原来主键字段(如id)</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">alter table table_name drop id;</span></pre></td></tr></table></figure>
-</li>
-<li><p>添加主键，自增，放在第一位</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">alter table table_name add id int(11) primary key auto_increment first;</span></pre></td></tr></table></figure>
-</li>
-<li><p>检查没问题的话，删除备份的表</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">delete from table_bak;</span></pre></td></tr></table></figure>
-
-<blockquote>
-<p>注：table_name 为 表名</p>
-</blockquote>
-</li>
-</ol>
-<p><strong>参考：<a href="https://blog.csdn.net/u013091013/article/details/78194012">mysql让主键id重新排序</a></strong></p>
-]]></content>
-      <categories>
-        <category>MySQL</category>
-      </categories>
-      <tags>
-        <tag>后端</tag>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>GitHub Desktop 上传本地库</title>
-    <url>/2021/04/28/2020/GitHub%20Desktop%20%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E5%BA%93/</url>
-    <content><![CDATA[<h1 id="GitHub-Desktop-上传本地库"><a href="#GitHub-Desktop-上传本地库" class="headerlink" title="GitHub Desktop 上传本地库"></a>GitHub Desktop 上传本地库</h1><h2 id="1-创建新仓库"><a href="#1-创建新仓库" class="headerlink" title="1. 创建新仓库"></a>1. 创建新仓库</h2><p>单击 <strong>Create a New Repository on your Hard Drive…（在硬盘上创建新仓库…）</strong></p>
-<img src="https://docs.github.com/assets/images/help/desktop/getting-started-guide/creating-a-repository.png" alt="创建新仓库" style="zoom:50%;">
-
-<p>填写字段并选择您的首选项</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428140721.png" alt="Snipaste_2021-04-28_05-15-13" style="zoom:50%;">
-
-<a id="more"></a>
-
-<ul>
-<li><p>“Name（名称）”定义仓库在本地以及 GitHub 上的名称</p>
-</li>
-<li><p>“Description（说明）”是一个可选字段，可用于提供有关仓库目的的更多信息。</p>
-</li>
-<li><p>“Local path（本地路径）”设置仓库在计算机上的位置。</p>
-<blockquote>
-<p>默认情况下，GitHub Desktop 会在 <em>Documents</em> 文件夹内创建 <em>GitHub</em> 文件夹，用于存储仓库，但您也可以选择计算机上的任何位置。 您的新仓库将是所选位置内的文件夹。</p>
-</blockquote>
-</li>
-<li><p><strong>Initialize this repository with a README（使用自述文件初始化此仓库）</strong></p>
-<blockquote>
-<p>创建包含 <em>README.md</em> 文件的初始提交</p>
-</blockquote>
-</li>
-<li><p><strong>Git ignore（Git 忽略）</strong>下拉菜单可让您添加自定义文件，以忽略本地仓库中您不想存储在版本控制中的特定文件</p>
-</li>
-<li><p><strong>License（许可证）</strong>下拉菜单可让您将开源许可证添加到仓库中的 <em>LICENSE</em> 文件。</p>
-</li>
-</ul>
-<h2 id="2-探索-GitHub-Desktop"><a href="#2-探索-GitHub-Desktop" class="headerlink" title="2. 探索 GitHub Desktop"></a>2. 探索 GitHub Desktop</h2><h3 id="2-1-GitHub-Desktop-菜单栏"><a href="#2-1-GitHub-Desktop-菜单栏" class="headerlink" title="2.1 GitHub Desktop 菜单栏"></a>2.1 GitHub Desktop 菜单栏</h3><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428150854.png" alt="image-20210428150426467" style="zoom:50%;">
-
-<ul>
-<li><strong>Current repository（当前仓库）</strong>显示您处理的仓库的名称。 您可以单击 <strong>Current repository（当前仓库）</strong>切换到 GitHub Desktop 中的不同仓库。</li>
-<li><strong>Current branch（当前分支）</strong>显示您处理的分支的名称。 您可以单击 <strong>Current branch（当前分支）</strong>来查看仓库中的所有分支、切换到不同的分支或者创建新分支。 在仓库中创建拉取请求后，也可单击 <strong>Current branch（当前分支）</strong>查看它们。</li>
-<li><strong>Publish repository（发布仓库）</strong>会出现，因为尚未将仓库发布到 GitHub。 工具栏的这部分将根据您当前分支和仓库的状态而改变。 不同的上下文相关操作将可以使用，允许您在本地仓库与远程仓库之间交换数据。</li>
-</ul>
-<h3 id="2-2-更改历史记录"><a href="#2-2-更改历史记录" class="headerlink" title="2.2 更改历史记录"></a>2.2 更改历史记录</h3><p>在左侧边栏中，会看到 <strong>Changes（更改）</strong>和 <strong>History（历史记录）</strong>视图。</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428151250.png" alt="image-20210428151248941" style="zoom:50%;">
-
-<ul>
-<li><p><strong>Changes（更改）</strong>视图显示对当前分支中的文件已经做出但尚未提交到本地仓库的更改。在底部有“Summary（摘要）”和“Description（说明）”文本框，以及 <strong>Commit to BRANCH（提交到 [分支]）</strong>按钮。 这是提交新更改的位置。 <strong>Commit to BRANCH（提交到 [分支]）</strong>按钮是动态的，将显示提交更改到哪个分支</p>
-</li>
-<li><p><strong>History（历史记录）</strong>视图显示仓库当前分支上以前的提交。会看到在创建仓库时 GitHub Desktop 所创建的“初始提交”。 在提交的右侧，根据您在创建仓库时选择的选项，可能会看到 <em>.gitattributes*、</em>.gitignore<em>、</em>LICENSE* 或 <em>README</em> 文件。 您可以单击每个文件以查看该文件的差异，也就是提交中对该文件的更改。 差异只显示文件已更改的部分，而不显示文件的全部内容。</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428151507.png" alt="image-20210428151506659" style="zoom:50%;">
-
-</li>
-</ul>
-<h2 id="3-将仓库推送到-GitHub"><a href="#3-将仓库推送到-GitHub" class="headerlink" title="3. 将仓库推送到 GitHub"></a>3. 将仓库推送到 GitHub</h2><p><strong>步骤一：</strong>单击菜单栏中的 <strong>Publish repository（发布仓库）</strong></p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428151759.png" alt="image-20210428151757880" style="zoom:50%;">
-
-<ul>
-<li>GitHub Desktop 自动使用创建仓库时输入的信息填充<strong>Name（名称）</strong>和<strong>Description（说明）</strong>字段。</li>
-<li><strong>Keep this code private（保持此代码为私有）</strong>可控制谁可以查看项目。 如果不选中此选项，GitHub 上的其他用户将能够查看代码。 如果选中此选项，代码将不会公开。</li>
-<li><strong>Organization（组织）</strong>下拉菜单（如果有）可让您将仓库发布到 GitHub 上您所属的特定组织。</li>
-</ul>
-<p><strong>步骤二：</strong>单击 <strong>Publish Repository（发布仓库）</strong>按钮</p>
-<p><strong>步骤三：</strong>从 GitHub Desktop 访问 GitHub.com 上的仓库。 在文件菜单中，单击 <strong>Repository（仓库）</strong>，然后单击 <strong>View on GitHub（在 GitHub 上查看）</strong>。 这会直接在默认浏览器中打开仓库。</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428152751.png" alt="image-20210428152750345" style="zoom: 25%;">
-
-<h2 id="4-进行更改、提交更改和推送更改"><a href="#4-进行更改、提交更改和推送更改" class="headerlink" title="4. 进行更改、提交更改和推送更改"></a>4. 进行更改、提交更改和推送更改</h2><p><strong>步骤一：</strong>要从 GitHub Desktop 启动外部编辑器，请单击 Repository（仓库），然后单击 Open in VScode（在 [VScode] 中打开）。</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428153006.png" alt="image-20210428153005460" style="zoom: 50%;">
-
-<p><strong>步骤二：</strong>对以前创建的 <em>README.md</em> 文件做一些更改</p>
-<p><strong>步骤三：</strong>在 GitHub Desktop 中，导航到 <strong>Changes（更改）</strong>视图。 在文件列表中，会看到 <em>README.md*。 *README.md</em> 文件左边的勾选标记表示对文件的更改将成为提交的一部分。</p>
-<blockquote>
-<p> 以后可能会更改多个文件，但只想提交对其中部分文件所做的更改。 如果单击文件旁边的复选标记，则该文件不会包含在提交中。</p>
-</blockquote>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428153333.png" alt="image-20210428153332669" style="zoom: 50%;">
-
-<p><strong>步骤四：</strong>在 <strong>Changes（更改）</strong>列表底部，输入提交消息。 在头像右侧，键入提交的简短描述。</p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428153549.png" alt="image-20210428153548125" style="zoom:50%;">
-
-<blockquote>
-<p>在摘要下方，您会看到“Description（说明）”文本字段，在其中可以键入较长的提交更改描述，这有助于回顾项目的历史记录和了解更改的原因。 </p>
-</blockquote>
-<p><strong>步骤五：</strong>单击 <strong>Commit to BRANCH NAME（提交到 [分支名称]）</strong>。 提交按钮显示当前分支，因此可以确保提交到所需的分支。</p>
-<p><strong>步骤六：</strong>要将更改推送到 GitHub 上的远程仓库，单击 <strong>Push origin（推送源）</strong></p>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210428153709.png" alt="image-20210428153708638" style="zoom: 50%;">
-
-<ul>
-<li><p><strong>Push origin（推送源）</strong>按钮就是单击以发布仓库到 GitHub 的按钮。 此按钮根据 Git 工作流程中的上下文而变。 现在改为 <code>Push origin（推送源）</code>了，其旁边的 <code>1</code> 表示有一个提交尚未推送到 GitHub。</p>
-</li>
-<li><p><strong>Push origin（推送源）</strong>中的“源”表示我们将更改推送到名为 <code>origin</code> 的远程，在本例中是 GitHub.com 上的项目仓库。 </p>
-<blockquote>
-<p> 在推送任何新提交到 GitHub 之前，计算机上的项目仓库与 GitHub.com 上的项目仓库之间存在差异。 这可在程序员在本地工作，并且仅在准备好后才将更改推送到 GitHub.com。</p>
-</blockquote>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Github_desktop</category>
-      </categories>
-      <tags>
-        <tag>Github</tag>
-        <tag>Github_desktop</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Typora上传图片时,文件以时间戳命名</title>
-    <url>/2020/12/14/2020/Typora%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E6%97%B6-%E6%96%87%E4%BB%B6%E4%BB%A5%E6%97%B6%E9%97%B4%E6%88%B3%E5%91%BD%E5%90%8D/</url>
-    <content><![CDATA[<h1 id="一、查询之前安装的PicGo执行路径"><a href="#一、查询之前安装的PicGo执行路径" class="headerlink" title="一、查询之前安装的PicGo执行路径"></a>一、查询之前安装的PicGo执行路径</h1><br>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214170157.png" alt="image-20201214170155882" style="zoom: 67%;">
-
-<a id="more"></a>
-
-<h1 id="二、安装插件"><a href="#二、安装插件" class="headerlink" title="二、安装插件"></a>二、安装插件</h1><p>进入cmd输入代码安装插件（super-prefix插件 —— 用于上传图片时能自动使用时间戳重命名）</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd C:\Users\Administrator\AppData\Roaming\Typora\picgo\win64</span></pre></td></tr><tr><td class="code"><pre><span class="line">.\picgo.exe install super-prefix</span></pre></td></tr></table></figure>
-
-
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214170742.png" alt="image-20201214170740861">
-
-
-
-<h1 id="三、修改配置文件"><a href="#三、修改配置文件" class="headerlink" title="三、修改配置文件"></a>三、修改配置文件</h1><figure class="highlight"><table><tr><td class="code"><pre><span class="line">"picgoPlugins": &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    "picgo-plugin-super-prefix": true</span></pre></td></tr><tr><td class="code"><pre><span class="line">  &#125;, // 为插件预留</span></pre></td></tr><tr><td class="code"><pre><span class="line">  "picgo-plugin-super-prefix": &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    "fileFormat": "YYYYMMDDHHmmss"</span></pre></td></tr><tr><td class="code"><pre><span class="line">  &#125; //super-prefix插件配置</span></pre></td></tr></table></figure>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214171510.png" alt="image-20201214171508681" style="zoom:80%;">
-
-
-
-<h1 id="四、参考"><a href="#四、参考" class="headerlink" title="四、参考"></a>四、参考</h1><p><a href="https://blog.csdn.net/in_the_road/article/details/105733292">Typora自动上传图片配置，集成PicGo-Core，文件以时间戳命名</a></p>
-]]></content>
-      <categories>
-        <category>Markdown</category>
-      </categories>
-      <tags>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>el-if、el-else-if、el-else</title>
     <url>/2020/11/11/2020/el-if%E3%80%81el-else-if%E3%80%81el-else/</url>
     <content><![CDATA[<h1 id="一、v-if-与-v-else"><a href="#一、v-if-与-v-else" class="headerlink" title="一、v-if 与 v-else"></a>一、v-if 与 v-else</h1><p><strong>v-if为真时，显示v-if的内容，否则显示v-else的内容</strong></p>
@@ -537,31 +503,6 @@ target 用于链接页面的打开方式
       <tags>
         <tag>前端</tag>
         <tag>VUE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>a标签去除默认样式</title>
-    <url>/2020/11/24/2020/a%E6%A0%87%E7%AD%BE%E5%8E%BB%E9%99%A4%E9%BB%98%E8%AE%A4%E6%A0%B7%E5%BC%8F/</url>
-    <content><![CDATA[<h1 id="一、初始的链接"><a href="#一、初始的链接" class="headerlink" title="一、初始的链接"></a>一、初始的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
-
-<h1 id="二、正常的未被访问过的链接"><a href="#二、正常的未被访问过的链接" class="headerlink" title="二、正常的未被访问过的链接"></a>二、正常的未被访问过的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:link</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
-
-<h1 id="三、已经访问过的链接"><a href="#三、已经访问过的链接" class="headerlink" title="三、已经访问过的链接"></a>三、已经访问过的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:visited</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<h1 id="四、-鼠标划过-停留-的链接"><a href="#四、-鼠标划过-停留-的链接" class="headerlink" title="四、 鼠标划过(停留)的链接"></a>四、 鼠标划过(停留)的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
-
-<h1 id="五、-正在点击的链接"><a href="#五、-正在点击的链接" class="headerlink" title="五、 正在点击的链接"></a>五、 正在点击的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:active</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
-
-<h1 id="六、-参考"><a href="#六、-参考" class="headerlink" title="六、 参考"></a>六、 参考</h1><p><a href="https://www.cnblogs.com/PHP0222wangdong/p/11360624.html"><code>&lt;a&gt;</code> 标签去除默认样式</a></p>
-]]></content>
-      <categories>
-        <category>日常学习</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>CSS</tag>
       </tags>
   </entry>
   <entry>
@@ -686,6 +627,65 @@ target 用于链接页面的打开方式
       </tags>
   </entry>
   <entry>
+    <title>MySQL让主键id重新排序</title>
+    <url>/2021/05/04/2020/MySQL%E8%AE%A9%E4%B8%BB%E9%94%AEid%E9%87%8D%E6%96%B0%E6%8E%92%E5%BA%8F/</url>
+    <content><![CDATA[<h1 id="MySQL让主键id重新排序"><a href="#MySQL让主键id重新排序" class="headerlink" title="MySQL让主键id重新排序"></a>MySQL让主键id重新排序</h1><ol>
+<li><p>备份表结构</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">create table table_bak like table_name;</span></pre></td></tr></table></figure>
+</li>
+<li><p>备份表数据</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">insert into table_bak select * from table_name;</span></pre></td></tr></table></figure>
+</li>
+<li><p>删除原来主键字段(如id)</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">alter table table_name drop id;</span></pre></td></tr></table></figure>
+</li>
+<li><p>添加主键，自增，放在第一位</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">alter table table_name add id int(11) primary key auto_increment first;</span></pre></td></tr></table></figure>
+</li>
+<li><p>检查没问题的话，删除备份的表</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">delete from table_bak;</span></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注：table_name 为 表名</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>参考：<a href="https://blog.csdn.net/u013091013/article/details/78194012">mysql让主键id重新排序</a></strong></p>
+]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>后端</tag>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>a标签去除默认样式</title>
+    <url>/2020/11/24/2020/a%E6%A0%87%E7%AD%BE%E5%8E%BB%E9%99%A4%E9%BB%98%E8%AE%A4%E6%A0%B7%E5%BC%8F/</url>
+    <content><![CDATA[<h1 id="一、初始的链接"><a href="#一、初始的链接" class="headerlink" title="一、初始的链接"></a>一、初始的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+<h1 id="二、正常的未被访问过的链接"><a href="#二、正常的未被访问过的链接" class="headerlink" title="二、正常的未被访问过的链接"></a>二、正常的未被访问过的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:link</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+<h1 id="三、已经访问过的链接"><a href="#三、已经访问过的链接" class="headerlink" title="三、已经访问过的链接"></a>三、已经访问过的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:visited</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h1 id="四、-鼠标划过-停留-的链接"><a href="#四、-鼠标划过-停留-的链接" class="headerlink" title="四、 鼠标划过(停留)的链接"></a>四、 鼠标划过(停留)的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+<h1 id="五、-正在点击的链接"><a href="#五、-正在点击的链接" class="headerlink" title="五、 正在点击的链接"></a>五、 正在点击的链接</h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:active</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attribute">text-decoration</span>: none;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+<h1 id="六、-参考"><a href="#六、-参考" class="headerlink" title="六、 参考"></a>六、 参考</h1><p><a href="https://www.cnblogs.com/PHP0222wangdong/p/11360624.html"><code>&lt;a&gt;</code> 标签去除默认样式</a></p>
+]]></content>
+      <categories>
+        <category>日常学习</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2019/12/01/2020/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -756,6 +756,43 @@ target 用于链接页面的打开方式
       <tags>
         <tag>前端</tag>
         <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>后端接口配置</title>
+    <url>/2020/11/03/2020/%E5%90%8E%E7%AB%AF%E6%8E%A5%E5%8F%A3%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="一、安装MySql"><a href="#一、安装MySql" class="headerlink" title="一、安装MySql"></a>一、安装MySql</h1><h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1.安装"></a>1.安装</h2><p>镜像安装（zip），配置初始化的my.ini文件的文件，按照命令操作（管理员打开），</p>
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-45.png" alt="2020-11-10 0-45"></p>
+<a id="more"></a>
+
+<h2 id="2-配置环境变量"><a href="#2-配置环境变量" class="headerlink" title="2.配置环境变量"></a>2.配置环境变量</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10 0-46.png" alt="2020-11-10 0-46" style="zoom:50%;">
+
+<h1 id="二、安装Navicat，导入数据库"><a href="#二、安装Navicat，导入数据库" class="headerlink" title="二、安装Navicat，导入数据库"></a>二、安装Navicat，导入数据库</h1><h2 id="1-新建MySQL连接"><a href="#1-新建MySQL连接" class="headerlink" title="1.新建MySQL连接"></a>1.新建MySQL连接</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10 0-47.png" alt="2020-11-10 0-47" style="zoom: 50%;">
+
+<h2 id="2-新建连接，导入sql文件"><a href="#2-新建连接，导入sql文件" class="headerlink" title="2.新建连接，导入sql文件"></a>2.新建连接，导入sql文件</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10 0-48.png" alt="2020-11-10 0-48" style="zoom:50%;">
+
+<h1 id="三、运行api"><a href="#三、运行api" class="headerlink" title="三、运行api"></a>三、运行api</h1><p>在目标接口打开Git Bash，输入npm install下载需要的组件，输入$ node app.js运行api接口</p>
+<hr>
+<blockquote>
+<p><strong>遇到问题：</strong>登入失败</p>
+<p><strong>解决方案：</strong>修改D:\Vue\2020.10\vue_shop_api\config\default.json 文件里面的账号密码</p>
+</blockquote>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10 0-49.png" alt="2020-11-10 0-49" style="zoom:80%;">
+
+<h1 id="四、安装Postman检测接口"><a href="#四、安装Postman检测接口" class="headerlink" title="四、安装Postman检测接口"></a>四、安装Postman检测接口</h1><br>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10 0-50.png" alt="2020-11-10 0-50" style="zoom:80%;">
+
+<h1 id="五、参考资料"><a href="#五、参考资料" class="headerlink" title="五、参考资料"></a>五、参考资料</h1><p>1.<a href="https://www.cnblogs.com/winton-nfs/p/11524007.html">安装mysql教程</a></p>
+]]></content>
+      <categories>
+        <category>Vue_Shop项目</category>
+      </categories>
+      <tags>
+        <tag>VUE</tag>
+        <tag>后端</tag>
+        <tag>MySQL</tag>
+        <tag>数据库</tag>
       </tags>
   </entry>
   <entry>
@@ -844,43 +881,6 @@ target 用于链接页面的打开方式
       </tags>
   </entry>
   <entry>
-    <title>后端接口配置</title>
-    <url>/2020/11/03/2020/%E5%90%8E%E7%AB%AF%E6%8E%A5%E5%8F%A3%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="一、安装MySql"><a href="#一、安装MySql" class="headerlink" title="一、安装MySql"></a>一、安装MySql</h1><h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1.安装"></a>1.安装</h2><p>镜像安装（zip），配置初始化的my.ini文件的文件，按照命令操作（管理员打开），</p>
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-45.png" alt="2020-11-10 0-45"></p>
-<a id="more"></a>
-
-<h2 id="2-配置环境变量"><a href="#2-配置环境变量" class="headerlink" title="2.配置环境变量"></a>2.配置环境变量</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10 0-46.png" alt="2020-11-10 0-46" style="zoom:50%;">
-
-<h1 id="二、安装Navicat，导入数据库"><a href="#二、安装Navicat，导入数据库" class="headerlink" title="二、安装Navicat，导入数据库"></a>二、安装Navicat，导入数据库</h1><h2 id="1-新建MySQL连接"><a href="#1-新建MySQL连接" class="headerlink" title="1.新建MySQL连接"></a>1.新建MySQL连接</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10 0-47.png" alt="2020-11-10 0-47" style="zoom: 50%;">
-
-<h2 id="2-新建连接，导入sql文件"><a href="#2-新建连接，导入sql文件" class="headerlink" title="2.新建连接，导入sql文件"></a>2.新建连接，导入sql文件</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10 0-48.png" alt="2020-11-10 0-48" style="zoom:50%;">
-
-<h1 id="三、运行api"><a href="#三、运行api" class="headerlink" title="三、运行api"></a>三、运行api</h1><p>在目标接口打开Git Bash，输入npm install下载需要的组件，输入$ node app.js运行api接口</p>
-<hr>
-<blockquote>
-<p><strong>遇到问题：</strong>登入失败</p>
-<p><strong>解决方案：</strong>修改D:\Vue\2020.10\vue_shop_api\config\default.json 文件里面的账号密码</p>
-</blockquote>
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10 0-49.png" alt="2020-11-10 0-49" style="zoom:80%;">
-
-<h1 id="四、安装Postman检测接口"><a href="#四、安装Postman检测接口" class="headerlink" title="四、安装Postman检测接口"></a>四、安装Postman检测接口</h1><br>
-
-<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10 0-50.png" alt="2020-11-10 0-50" style="zoom:80%;">
-
-<h1 id="五、参考资料"><a href="#五、参考资料" class="headerlink" title="五、参考资料"></a>五、参考资料</h1><p>1.<a href="https://www.cnblogs.com/winton-nfs/p/11524007.html">安装mysql教程</a></p>
-]]></content>
-      <categories>
-        <category>Vue_Shop项目</category>
-      </categories>
-      <tags>
-        <tag>后端</tag>
-        <tag>MySQL</tag>
-        <tag>VUE</tag>
-        <tag>数据库</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>开启MySQL常见问题</title>
     <url>/2020/11/06/2020/%E5%BC%80%E5%90%AFMySQL%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<h1 id="问题一"><a href="#问题一" class="headerlink" title="问题一"></a>问题一</h1><p><strong>问题描述：</strong></p>
@@ -941,9 +941,9 @@ target 用于链接页面的打开方式
         <category>Vue_Shop项目</category>
       </categories>
       <tags>
+        <tag>VUE</tag>
         <tag>后端</tag>
         <tag>MySQL</tag>
-        <tag>VUE</tag>
         <tag>数据库</tag>
       </tags>
   </entry>
@@ -1011,19 +1011,6 @@ target 用于链接页面的打开方式
         <tag>前端</tag>
         <tag>VUE</tag>
         <tag>积分商城</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>误存文件夹到GitHub的解决方法</title>
-    <url>/2021/05/04/2020/%E8%AF%AF%E5%AD%98%E6%96%87%E4%BB%B6%E5%A4%B9%E5%88%B0GitHub%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="误存文件夹到GitHub的解决方法"><a href="#误存文件夹到GitHub的解决方法" class="headerlink" title="误存文件夹到GitHub的解决方法"></a>误存文件夹到GitHub的解决方法</h1><p><strong>将node_modules文件存放到了GitHub的解决方法</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">touch .gitignore</span></pre></td></tr><tr><td class="code"><pre><span class="line">echo &#x2F;node_modules&#x2F; &gt;&gt; .gitignore</span></pre></td></tr><tr><td class="code"><pre><span class="line">git rm -r --cached node_modules</span></pre></td></tr><tr><td class="code"><pre><span class="line">git add . -A</span></pre></td></tr><tr><td class="code"><pre><span class="line">git commit -m &quot;remove node_modules&quot;</span></pre></td></tr><tr><td class="code"><pre><span class="line">git push</span></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Github_desktop</category>
-      </categories>
-      <tags>
-        <tag>Github</tag>
-        <tag>Github_desktop</tag>
       </tags>
   </entry>
   <entry>
@@ -1144,6 +1131,19 @@ target 用于链接页面的打开方式
         <tag>前端</tag>
         <tag>VUE</tag>
         <tag>积分商城</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>误存文件夹到GitHub的解决方法</title>
+    <url>/2021/05/04/2020/%E8%AF%AF%E5%AD%98%E6%96%87%E4%BB%B6%E5%A4%B9%E5%88%B0GitHub%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="误存文件夹到GitHub的解决方法"><a href="#误存文件夹到GitHub的解决方法" class="headerlink" title="误存文件夹到GitHub的解决方法"></a>误存文件夹到GitHub的解决方法</h1><p><strong>将node_modules文件存放到了GitHub的解决方法</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">touch .gitignore</span></pre></td></tr><tr><td class="code"><pre><span class="line">echo &#x2F;node_modules&#x2F; &gt;&gt; .gitignore</span></pre></td></tr><tr><td class="code"><pre><span class="line">git rm -r --cached node_modules</span></pre></td></tr><tr><td class="code"><pre><span class="line">git add . -A</span></pre></td></tr><tr><td class="code"><pre><span class="line">git commit -m &quot;remove node_modules&quot;</span></pre></td></tr><tr><td class="code"><pre><span class="line">git push</span></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Github_desktop</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+        <tag>Github_desktop</tag>
       </tags>
   </entry>
   <entry>
@@ -1523,6 +1523,300 @@ target 用于链接页面的打开方式
       </tags>
   </entry>
   <entry>
+    <title>js中栈和堆的概念和区别</title>
+    <url>/2021/07/11/2021/2021.07/js%E4%B8%AD%E6%A0%88%E5%92%8C%E5%A0%86%E7%9A%84%E6%A6%82%E5%BF%B5%E5%92%8C%E5%8C%BA%E5%88%AB/</url>
+    <content><![CDATA[<h1 id="js中栈和堆的概念和区别"><a href="#js中栈和堆的概念和区别" class="headerlink" title="js中栈和堆的概念和区别"></a>js中栈和堆的概念和区别</h1><h2 id="1-栈-stack-和-堆-heap"><a href="#1-栈-stack-和-堆-heap" class="headerlink" title="1. 栈(stack)和 堆(heap)"></a>1. 栈(stack)和 堆(heap)</h2><h3 id="1-1-栈"><a href="#1-1-栈" class="headerlink" title="1.1 栈"></a>1.1 栈</h3><p><strong>栈内存</strong>的简称，栈是<strong>自动分配</strong>相对<strong>固定大小</strong>的内存空间，由系统<strong>自动释放</strong>，栈数据结构遵循<strong>先进后出</strong>的原则。</p>
+<blockquote>
+<p>乒乓球结构：最先放进去的乒乓球，最后才能取出</p>
+</blockquote>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210619103247" alt="img" style="zoom: 80%;">
+
+
+
+<a id="more"></a>
+
+<h3 id="1-2-堆"><a href="#1-2-堆" class="headerlink" title="1.2 堆"></a>1.2 堆</h3><p><strong>堆内存</strong>的简称，堆是<strong>动态分配</strong>内存，<strong>内存大小也不固定</strong>，<strong>不会自动释放</strong>，堆数据结构是一种无序的树状结构。满足<strong>key-value键值对</strong>的存储方式：知道key名，就可以通过key查找对应的value。</p>
+<blockquote>
+<p>书架存书结构：知道书名，可以找到书名对应的书籍</p>
+</blockquote>
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210619103614" alt="img"></p>
+<h3 id="1-3-特点"><a href="#1-3-特点" class="headerlink" title="1.3 特点"></a>1.3 特点</h3><ul>
+<li><strong>栈的特点</strong>：开口向上、速度快,容量小</li>
+<li><strong>堆的特点</strong>：速度稍慢、容量比较大</li>
+</ul>
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210619103723" alt="img" style="zoom: 67%;">
+
+<h2 id="2-基本类型和引用类型"><a href="#2-基本类型和引用类型" class="headerlink" title="2. 基本类型和引用类型"></a>2. 基本类型和引用类型</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210619103808" alt="img" style="zoom: 80%;">
+
+<h3 id="2-1-基本数据类型"><a href="#2-1-基本数据类型" class="headerlink" title="2.1 基本数据类型"></a>2.1 基本数据类型</h3><ul>
+<li><strong>Undefined</strong></li>
+<li><strong>String</strong></li>
+<li><strong>Boolean</strong></li>
+<li><strong>Null</strong></li>
+<li><strong>Number</strong></li>
+</ul>
+<p><strong>直接</strong>按值存放在<strong>栈内存</strong>中，占用的内存<strong>空间的大小是确定的</strong>，并由系统<strong>自动分配</strong>和<strong>自动释放</strong>。</p>
+<h3 id="2-2-引用数据类型"><a href="#2-2-引用数据类型" class="headerlink" title="2.2 引用数据类型"></a>2.2 引用数据类型</h3><ul>
+<li><strong>对象(Object)</strong></li>
+<li><strong>数组(Array)</strong></li>
+<li><strong>函数(Function)</strong></li>
+</ul>
+<p>将数据存储在<strong>堆内存</strong>中，将地址存储在<strong>栈内存</strong>中</p>
+<h3 id="2-3-传值和传址的区别"><a href="#2-3-传值和传址的区别" class="headerlink" title="2.3 传值和传址的区别"></a>2.3 传值和传址的区别</h3><ul>
+<li><p><strong>基本类型</strong>：采用的是<strong>值传递</strong>。</p>
+</li>
+<li><p><strong>引用类型</strong>：则是<strong>地址传递</strong>。</p>
+<p> 引用类型的数据的<strong>地址指针</strong>存储在<strong>栈内存</strong>中，将存放在<strong>栈内存</strong>中的地址赋值给接收的变量。当访问<strong>引用类型</strong>的值时，会先从<strong>栈</strong>中获取对象的<strong>地址指针</strong>，然后通过<strong>地址指针</strong>找到<strong>堆</strong>中所需的数据。</p>
+</li>
+</ul>
+<blockquote>
+<p>包含<strong>引用类型</strong>的变量保存的不是变量本身，而是指向<strong>该对象的指针</strong></p>
+</blockquote>
+<h2 id="3-内存分配垃圾回收"><a href="#3-内存分配垃圾回收" class="headerlink" title="3. 内存分配垃圾回收"></a>3. 内存分配垃圾回收</h2><h3 id="3-1-内存分配"><a href="#3-1-内存分配" class="headerlink" title="3.1 内存分配"></a>3.1 内存分配</h3><ul>
+<li><strong>栈内存：</strong>线性<strong>有序存储</strong>，容量小，系统分配效率高。</li>
+<li><strong>堆内存：</strong>首先要在<strong>堆内存</strong>分配<strong>新存储区域</strong>，之后又要把<strong>指针</strong>存储到<strong>栈内存</strong>中，效率相对低一些了。  </li>
+</ul>
+<h3 id="3-2-垃圾回收"><a href="#3-2-垃圾回收" class="headerlink" title="3.2 垃圾回收"></a>3.2 垃圾回收</h3><ul>
+<li><strong>栈内存：</strong>变量<strong>用完回收</strong>，相比堆存取速度更快，栈内存中的数据可以共享</li>
+<li><strong>堆内存：</strong>堆内存中的对象<strong>不会随方法的结束而摧毁</strong>，方法结束了，这个对象可能被<strong>其他引用变量引用</strong>。创建对象是为了<strong>反复引用</strong>，对象将被保存到堆内存中。只有当一个对象<strong>没有任何引用变量引用</strong>时，系统的垃圾回收机制才会在<strong>核实的时候</strong>回收它。</li>
+</ul>
+<h2 id="4-参考"><a href="#4-参考" class="headerlink" title="4. 参考"></a>4. 参考</h2><p><a href="https://juejin.cn/post/6854573215327617031">js中栈和堆的概念和区别</a></p>
+]]></content>
+      <categories>
+        <category>日常学习</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>js中this的指向</title>
+    <url>/2021/07/12/2021/2021.07/js%E4%B8%ADthis%E7%9A%84%E6%8C%87%E5%90%91/</url>
+    <content><![CDATA[<h2 id="js中this的指向"><a href="#js中this的指向" class="headerlink" title="js中this的指向"></a>js中this的指向</h2><h3 id="1-概述"><a href="#1-概述" class="headerlink" title="1. 概述"></a>1. 概述</h3><p>​    this的指向在<strong>函数定义的时候</strong>是确定不了的，只有<strong>函数执行</strong>的时候才能确定this到底指向谁，实际上this的最终指向的是那个<strong>调用它的对象</strong>。</p>
+<h3 id="2-实例"><a href="#2-实例" class="headerlink" title="2. 实例"></a>2. 实例</h3><h4 id="2-1-this指向window"><a href="#2-1-this指向window" class="headerlink" title="2.1 this指向window"></a>2.1 this指向window</h4><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// example 1</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">a</span>(<span class="params"></span>) </span>&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="keyword">var</span> user = <span class="string">'XM'</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>.user); <span class="comment">//undefined</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>);  <span class="comment">//Window</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">a();</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// 等同于 window.a();</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// 在浏览器中的页面对象是浏览器窗口(window 对象)</span></span></pre></td></tr></table></figure>
+
+<p>​    函数a实际上被Window对象所点出来的，在浏览器中的页面对象是浏览器窗口(window 对象)，函数会自动变为 window 对象的函数。</p>
+<a id="more"></a>
+
+<h4 id="2-2-this指向调用对象"><a href="#2-2-this指向调用对象" class="headerlink" title="2.2 this指向调用对象"></a>2.2 this指向调用对象</h4><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// example 2</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> o = &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  user: <span class="string">'xm'</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">  fn: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.user); <span class="comment">// xm</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>)  </span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="comment">// 对象o &#123;user: "xm", fn: ƒ&#125;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">o.fn();</span></pre></td></tr></table></figure>
+
+<p>​    this指向的是对象o，因为调用fn是通过o.fn()执行的，所以this指向的对象是o。</p>
+<h4 id="2-3-this指向上一级对象"><a href="#2-3-this指向上一级对象" class="headerlink" title="2.3 this指向上一级对象"></a>2.3 this指向上一级对象</h4><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// example 3</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> o = &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  user: <span class="string">'xm'</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">  fn:<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.user); <span class="comment">// xm</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>);  </span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="comment">// 对象o &#123;user: "xm", fn: ƒ&#125;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="built_in">window</span>.o.fn();</span></pre></td></tr></table></figure>
+
+<p>​    this指向的是调用它的对象（window是js中的全局对象，创建的变量实际上是给window添加属性），所以这里可以用window点o对象。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// example 4</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> o = &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  a: <span class="number">10</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">  b: &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    a: <span class="number">12</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    fn: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      <span class="built_in">console</span>.log(<span class="keyword">this</span>.a);  <span class="comment">// 12</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">o.b.fn();</span></pre></td></tr></table></figure>
+
+<p>​    此时this指向b这个对象。</p>
+<h4 id="2-4-总结"><a href="#2-4-总结" class="headerlink" title="2.4 总结"></a>2.4 总结</h4><ul>
+<li>如果一个函数中有this，但是它没有被<strong>上一级的对象</strong>所调用，那么this指向的就是<strong>window</strong>（严格版除外）</li>
+<li>如果一个函数中有this，这个函数有被<strong>上一级的对象</strong>所调用，那么this指向的就是<strong>上一级的对象</strong>。</li>
+<li>如果一个函数中有this，这个函数中包含多个对象，<strong>尽管</strong>这个函数是被<strong>最外层的对象</strong>所<strong>调用</strong>，this指向的也只是它<strong>上一级的对象</strong></li>
+</ul>
+<h4 id="2-5-例外"><a href="#2-5-例外" class="headerlink" title="2.5 例外"></a>2.5 例外</h4><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// example 5</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> o = &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  a: <span class="number">10</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">  b: &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    a: <span class="number">12</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    fn: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      <span class="built_in">console</span>.log(<span class="keyword">this</span>.a);  <span class="comment">// undefined</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">      <span class="built_in">console</span>.log(<span class="keyword">this</span>);  <span class="comment">// window</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> j = o.b.fn;</span></pre></td></tr><tr><td class="code"><pre><span class="line">j();</span></pre></td></tr></table></figure>
+
+<p>​    this指向的是window，this永远指向的是最后调用它的对象，虽然函数fn是被对象b所<strong>引用</strong>，但是在将fn赋值给变量j的时候并<strong>没有执行</strong>，在<code>j()</code>时执行，所以最终指向的是window。</p>
+<h3 id="3-构造函数版this"><a href="#3-构造函数版this" class="headerlink" title="3. 构造函数版this"></a>3. 构造函数版this</h3><p>new可以改变this的指向</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// example 6</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Fn</span> (<span class="params"></span>) </span>&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="keyword">this</span>.user = <span class="string">'xm'</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>);  <span class="comment">// Fn &#123;user: "xm"&#125;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="keyword">new</span> Fn();</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(a.user);  <span class="comment">// xm</span></span></pre></td></tr></table></figure>
+
+<p>new关键字可以<strong>改变this的指向</strong>，将这个this指向对象a。</p>
+]]></content>
+      <categories>
+        <category>日常学习</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Node后端搭建（express+sequlize)</title>
+    <url>/2021/06/15/2021/2021.06/Node%E5%90%8E%E7%AB%AF%E6%90%AD%E5%BB%BA%EF%BC%88express+sequlize)/</url>
+    <content><![CDATA[<h2 id="1-概述"><a href="#1-概述" class="headerlink" title="1. 概述"></a>1. 概述</h2><p>​    首先编写一个 Express Web 服务器开始；接着为 MySQL 数据库添加配置；使用 Sequelize创建模型<code>Tutorial</code>并编写控制器；自定义所有请求的路由。</p>
+<table>
+<thead>
+<tr>
+<th align="left">Methods</th>
+<th align="left">Urls</th>
+<th align="left">Actions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">GET</td>
+<td align="left">api/tutorials</td>
+<td align="left">获取所有内容</td>
+</tr>
+<tr>
+<td align="left">GET</td>
+<td align="left">api/tutorials/:id</td>
+<td align="left">获取<code>id</code>对应的内容</td>
+</tr>
+<tr>
+<td align="left">POST</td>
+<td align="left">api/tutorials</td>
+<td align="left">添加新的内容</td>
+</tr>
+<tr>
+<td align="left">PUT</td>
+<td align="left">api/tutorials/:id</td>
+<td align="left">更新<code>id</code>对应的内容</td>
+</tr>
+<tr>
+<td align="left">DELETE</td>
+<td align="left">api/tutorials/:id</td>
+<td align="left">删除<code>id</code>对应的内容</td>
+</tr>
+<tr>
+<td align="left">DELETE</td>
+<td align="left">api/tutorials</td>
+<td align="left">删除所有内容</td>
+</tr>
+<tr>
+<td align="left">GET</td>
+<td align="left">api/tutorials/published</td>
+<td align="left">查找 <code>published</code>属性值为<code>true</code>的内容</td>
+</tr>
+<tr>
+<td align="left">GET</td>
+<td align="left">api/tutorials?title=[kw]</td>
+<td align="left">找到标题包含 <code>&#39;kw&#39;</code>的内容</td>
+</tr>
+</tbody></table>
+<a id="more"></a>
+
+<h2 id="2-创建-Node-js-应用程序"><a href="#2-创建-Node-js-应用程序" class="headerlink" title="2. 创建 Node.js 应用程序"></a>2. 创建 Node.js 应用程序</h2><h3 id="2-1-创建一个文件夹"><a href="#2-1-创建一个文件夹" class="headerlink" title="2.1 创建一个文件夹"></a>2.1 创建一个文件夹</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ mkdir nodejs-express-sequelize-mysql</span></pre></td></tr><tr><td class="code"><pre><span class="line">$ cd nodejs-express-sequelize-mysql</span></pre></td></tr></table></figure>
+
+<h3 id="2-2-使用package-json文件初始化-Node-js-应用程序"><a href="#2-2-使用package-json文件初始化-Node-js-应用程序" class="headerlink" title="2.2 使用package.json文件初始化 Node.js 应用程序"></a>2.2 使用<code>package.json</code>文件初始化 Node.js 应用程序</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm init</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">name: (nodejs-express-sequelize-mysql) </span></pre></td></tr><tr><td class="code"><pre><span class="line">version: (1.0.0) </span></pre></td></tr><tr><td class="code"><pre><span class="line">description: Node.js Rest Apis with Express, Sequelize &amp; MySQL.</span></pre></td></tr><tr><td class="code"><pre><span class="line">entry point: (index.js) server.js</span></pre></td></tr><tr><td class="code"><pre><span class="line">test command: </span></pre></td></tr><tr><td class="code"><pre><span class="line">git repository: </span></pre></td></tr><tr><td class="code"><pre><span class="line">keywords: nodejs, express, sequelize, mysql, rest, api</span></pre></td></tr><tr><td class="code"><pre><span class="line">author: bezkoder</span></pre></td></tr><tr><td class="code"><pre><span class="line">license: (ISC)</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">Is this ok? (yes) yes</span></pre></td></tr></table></figure>
+
+<h3 id="2-3-安装必要的模块：express，sequelize，mysql2和body-parser"><a href="#2-3-安装必要的模块：express，sequelize，mysql2和body-parser" class="headerlink" title="2.3 安装必要的模块：express，sequelize，mysql2和body-parser"></a>2.3 安装必要的模块：<code>express</code>，<code>sequelize</code>，<code>mysql2</code>和<code>body-parser</code></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install express sequelize mysql2 body-parser cors --save</span></pre></td></tr></table></figure>
+
+<p>安装后的<em>package.json</em>文件：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">"name"</span>: <span class="string">"nodejs-express-sequelize-mysql"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">"version"</span>: <span class="string">"1.0.0"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">"description"</span>: <span class="string">"Node.js Rest Apis with Express, Sequelize &amp; MySQL"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">"main"</span>: <span class="string">"server.js"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">"scripts"</span>: &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attr">"test"</span>: <span class="string">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  &#125;,</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">"keywords"</span>: [</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="string">"nodejs"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="string">"express"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="string">"rest"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="string">"api"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="string">"sequelize"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="string">"mysql"</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  ],</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">"author"</span>: <span class="string">"bezkoder"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">"license"</span>: <span class="string">"ISC"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="attr">"dependencies"</span>: &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attr">"body-parser"</span>: <span class="string">"^1.19.0"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attr">"cors"</span>: <span class="string">"^2.8.5"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attr">"express"</span>: <span class="string">"^4.17.1"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attr">"mysql2"</span>: <span class="string">"^2.0.2"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="attr">"sequelize"</span>: <span class="string">"^5.21.2"</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+<h2 id="3-设置-Express-Web-服务器"><a href="#3-设置-Express-Web-服务器" class="headerlink" title="3. 设置 Express Web 服务器"></a>3. 设置 Express Web 服务器</h2><h3 id="3-1-创建一个新的server-js文件"><a href="#3-1-创建一个新的server-js文件" class="headerlink" title="3.1 创建一个新的server.js文件"></a>3.1 创建一个新的server.js文件</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">"express"</span>);</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> bodyParser = <span class="built_in">require</span>(<span class="string">"body-parser"</span>);</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> cors = <span class="built_in">require</span>(<span class="string">"cors"</span>);</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> app = express();</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> corsOptions = &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  origin: <span class="string">"http://localhost:8081"</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">app.use(cors(corsOptions));</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// parse requests of content-type - application/json</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">app.use(bodyParser.json());</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// parse requests of content-type - application/x-www-form-urlencoded</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">app.use(bodyParser.urlencoded(&#123; <span class="attr">extended</span>: <span class="literal">true</span> &#125;));</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// simple route</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">app.get(<span class="string">"/"</span>, (req, res) =&gt; &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  res.json(&#123; <span class="attr">message</span>: <span class="string">"Welcome to bezkoder application."</span> &#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// set port, listen for requests</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> PORT = process.env.PORT || <span class="number">8080</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">app.listen(PORT, () =&gt; &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="built_in">console</span>.log(<span class="string">`Server is running on port <span class="subst">$&#123;PORT&#125;</span>.`</span>);</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<h3 id="3-2-模块作用"><a href="#3-2-模块作用" class="headerlink" title="3.2 模块作用"></a>3.2 模块作用</h3><ul>
+<li>Express 用于构建 Rest api</li>
+<li><a href="https://www.npmjs.com/package/body-parser">body-parser</a>帮助解析请求并创建<code>req.body</code>对象</li>
+<li><a href="https://www.npmjs.com/package/cors">cors</a>提供 Express 中间件来启用具有各种选项的 CORS</li>
+</ul>
+<h3 id="3-3-运行程序"><a href="#3-3-运行程序" class="headerlink" title="3.3 运行程序"></a>3.3 运行程序</h3><p>​    创建一个 Express 应用程序，然后添加添加<code>body-parser</code>和<code>cors</code>中间件，通过<code>app.use()</code>方法使用它们。（注意：设置了origin: <code>http://localhost:8081</code>用于接收跨域请求）。</p>
+<p>​    运行命令<code>node server.js</code>可以再<code>http://localhost:8080/</code>看到页面</p>
+<h2 id="4-配置-MySQL-数据库-amp-Sequelize"><a href="#4-配置-MySQL-数据库-amp-Sequelize" class="headerlink" title="4. 配置 MySQL 数据库 &amp; Sequelize"></a>4. 配置 MySQL 数据库 &amp; Sequelize</h2><p>新建一个<code>app</code>文件夹，在文件夹中创建一个单独的<code>config</code>文件夹，用于使用<code>db.config.js</code>文件进行配置</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  HOST: <span class="string">"localhost"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">  USER: <span class="string">"root"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">  PASSWORD: <span class="string">"123456"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">  DB: <span class="string">"testdb"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">  dialect: <span class="string">"mysql"</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">  pool: &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    max: <span class="number">5</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    min: <span class="number">0</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    acquire: <span class="number">30000</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    idle: <span class="number">10000</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr></table></figure>
+
+<p>前五个参数用于 MySQL 连接。<br><code>pool</code>是可选的，它将用于 Sequelize 连接池配置：</p>
+<ul>
+<li><code>max</code>: 池中的最大连接数</li>
+<li><code>min</code>: 池中的最小连接数</li>
+<li><code>idle</code>: 连接在被释放之前可以空闲的最长时间，以毫秒为单位</li>
+<li><code>acquire</code>: 最长时间，以毫秒为单位，该池将在抛出错误之前尝试获取连接</li>
+</ul>
+<h2 id="5-初始化Sequelize"><a href="#5-初始化Sequelize" class="headerlink" title="5. 初始化Sequelize"></a>5. 初始化Sequelize</h2><p>在<strong>app</strong> / <strong>models</strong>文件夹中初始化 Sequelize，该文件夹包含之后数据库的模型</p>
+<h3 id="5-1-创建app-models-index-js"><a href="#5-1-创建app-models-index-js" class="headerlink" title="5.1 创建app / models / index.js"></a>5.1 创建<strong>app</strong> / <strong>models</strong> / <em>index.js</em></h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> dbConfig = <span class="built_in">require</span>(<span class="string">"../config/db.config.js"</span>);</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> Sequelize = <span class="built_in">require</span>(<span class="string">"sequelize"</span>);</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> sequelize = <span class="keyword">new</span> Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  host: dbConfig.HOST,</span></pre></td></tr><tr><td class="code"><pre><span class="line">  dialect: dbConfig.dialect,</span></pre></td></tr><tr><td class="code"><pre><span class="line">  operatorsAliases: <span class="literal">false</span>,</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">  pool: &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    max: dbConfig.pool.max,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    min: dbConfig.pool.min,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    acquire: dbConfig.pool.acquire,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    idle: dbConfig.pool.idle</span></pre></td></tr><tr><td class="code"><pre><span class="line">  &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> db = &#123;&#125;;</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">db.Sequelize = Sequelize;</span></pre></td></tr><tr><td class="code"><pre><span class="line">db.sequelize = sequelize;</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">db.tutorials = <span class="built_in">require</span>(<span class="string">"./tutorial.model.js"</span>)(sequelize, Sequelize);</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = db;</span></pre></td></tr></table></figure>
+
+<h3 id="5-2-在server-js-中调用sync-方法"><a href="#5-2-在server-js-中调用sync-方法" class="headerlink" title="5.2 在server.js 中调用sync()方法"></a>5.2 在server.js 中调用sync()方法</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">...</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> app = express();</span></pre></td></tr><tr><td class="code"><pre><span class="line">app.use(...);</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> db = <span class="built_in">require</span>(<span class="string">"./app/models"</span>);</span></pre></td></tr><tr><td class="code"><pre><span class="line">db.sequelize.sync();</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">...</span></pre></td></tr></table></figure>
+
+<h3 id="5-3-删除现有表并重新同步数据库（一般不用）"><a href="#5-3-删除现有表并重新同步数据库（一般不用）" class="headerlink" title="5.3 删除现有表并重新同步数据库（一般不用）"></a>5.3 删除现有表并重新同步数据库（一般不用）</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">db.sequelize.sync(&#123; <span class="attr">force</span>: <span class="literal">true</span> &#125;).then(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="built_in">console</span>.log(<span class="string">"Drop and re-sync db."</span>);</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
+
+<h2 id="6-定义-Sequelize-模型"><a href="#6-定义-Sequelize-模型" class="headerlink" title="6. 定义 Sequelize 模型"></a>6. 定义 Sequelize 模型</h2><p>在<code>model</code>文件夹中创建<code>tutorial.model.js</code>文件：</p>
+<p>这个Sequelize 模型代表MySQL 数据库中的<strong>教程</strong>表。这些列会自动生成：<em>ID</em>，<em>标题</em>，<em>描述</em>，<em>发布</em>，<em>createdAt</em>，<em>updatedAt</em>。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = <span class="function">(<span class="params">sequelize, Sequelize</span>) =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="keyword">const</span> Tutorial = sequelize.define(<span class="string">"tutorial"</span>, &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    title: &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      type: Sequelize.STRING</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    description: &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      type: Sequelize.STRING</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    published: &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      type: Sequelize.BOOLEAN</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  &#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="keyword">return</span> Tutorial;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr></table></figure>
+
+<blockquote>
+<p>初始化 Sequelize 后，我们不需要编写 CRUD 函数，Sequelize 支持所有这些函数：</p>
+<ul>
+<li>创建一个新教程： <code>create(object)</code></li>
+<li>通过 id 查找教程： <code>findByPk(id)</code></li>
+<li>获取所有教程： <code>findAll()</code></li>
+<li>通过 id 更新教程： <code>update(data, where: { id: id })</code></li>
+<li>删除教程： <code>destroy(where: { id: id })</code></li>
+<li>删除所有教程： <code>destroy(where: {})</code></li>
+<li>按标题查找所有教程： <code>findAll({ where: { title: ... } })</code></li>
+</ul>
+</blockquote>
+<h2 id="7-创建控制器"><a href="#7-创建控制器" class="headerlink" title="7.创建控制器"></a>7.创建控制器</h2><p>新建<code>app/ controllers</code>文件夹，在文件夹中创建文件<code>tutorial.controller.js</code></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> db = <span class="built_in">require</span>(<span class="string">"../models"</span>);</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> Tutorial = db.tutorials;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> Op = db.Sequelize.Op;</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// Create and Save a new Tutorial</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">exports.create = <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  </span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// Retrieve all Tutorials from the database.</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">exports.findAll = <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  </span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// Find a single Tutorial with an id</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">exports.findOne = <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  </span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// Update a Tutorial by the id in the request</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">exports.update = <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  </span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// Delete a Tutorial with the specified id in the request</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">exports.delete = <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  </span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// Delete all Tutorials from the database.</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">exports.deleteAll = <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  </span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// Find all published Tutorials</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">exports.findAllPublished = <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  </span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr></table></figure>
+
+<h3 id="7-1-创建一条新数据"><a href="#7-1-创建一条新数据" class="headerlink" title="7.1 创建一条新数据"></a>7.1 创建一条新数据</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">exports.create = <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">// Validate request</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="keyword">if</span> (!req.body.title) &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    res.status(<span class="number">400</span>).send(&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      message: <span class="string">"Content can not be empty!"</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="keyword">return</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">// Create a Tutorial</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="keyword">const</span> tutorial = &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    title: req.body.title,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    description: req.body.description,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    published: req.body.published ? req.body.published : <span class="literal">false</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  &#125;;</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">// Save Tutorial in the database</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  Tutorial.create(tutorial)</span></pre></td></tr><tr><td class="code"><pre><span class="line">    .then(<span class="function"><span class="params">data</span> =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      res.send(data);</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;)</span></pre></td></tr><tr><td class="code"><pre><span class="line">    .catch(<span class="function"><span class="params">err</span> =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      res.status(<span class="number">500</span>).send(&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        message:</span></pre></td></tr><tr><td class="code"><pre><span class="line">          err.message || <span class="string">"Some error occurred while creating the Tutorial."</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">      &#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr></table></figure>
+
+<h3 id="7-2-检索数据（有条件）"><a href="#7-2-检索数据（有条件）" class="headerlink" title="7.2 检索数据（有条件）"></a>7.2 检索数据（有条件）</h3><p>从数据库中检索所有教程/按标题查找</p>
+<p>使用<code>req.query.title</code>从请求中获取查询字符串并将其视为<code>findAll()</code>方法的条件</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">exports.findAll = <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="keyword">const</span> title = req.query.title;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="keyword">var</span> condition = title ? &#123; <span class="attr">title</span>: &#123; [Op.like]: <span class="string">`%<span class="subst">$&#123;title&#125;</span>%`</span> &#125; &#125; : <span class="literal">null</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">  Tutorial.findAll(&#123; <span class="attr">where</span>: condition &#125;)</span></pre></td></tr><tr><td class="code"><pre><span class="line">    .then(<span class="function"><span class="params">data</span> =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      res.send(data);</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;)</span></pre></td></tr><tr><td class="code"><pre><span class="line">    .catch(<span class="function"><span class="params">err</span> =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      res.status(<span class="number">500</span>).send(&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        message:</span></pre></td></tr><tr><td class="code"><pre><span class="line">          err.message || <span class="string">"Some error occurred while retrieving tutorials."</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">      &#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr></table></figure>
+
+<h3 id="7-3-检索单条数据"><a href="#7-3-检索单条数据" class="headerlink" title="7.3 检索单条数据"></a>7.3 检索单条数据</h3><p>通过<code>id</code>查询数据</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">exports.findOne = <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="keyword">const</span> id = req.params.id;</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">  Tutorial.findByPk(id)</span></pre></td></tr><tr><td class="code"><pre><span class="line">    .then(<span class="function"><span class="params">data</span> =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      res.send(data);</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;)</span></pre></td></tr><tr><td class="code"><pre><span class="line">    .catch(<span class="function"><span class="params">err</span> =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      res.status(<span class="number">500</span>).send(&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        message: <span class="string">"Error retrieving Tutorial with id="</span> + id</span></pre></td></tr><tr><td class="code"><pre><span class="line">      &#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr></table></figure>
+
+<h3 id="7-4-更新一条数据"><a href="#7-4-更新一条数据" class="headerlink" title="7.4 更新一条数据"></a>7.4 更新一条数据</h3><p>以<code>id</code>作为依据</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">exports.update = <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="keyword">const</span> id = req.params.id;</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">  Tutorial.update(req.body, &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    where: &#123; <span class="attr">id</span>: id &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  &#125;)</span></pre></td></tr><tr><td class="code"><pre><span class="line">    .then(<span class="function"><span class="params">num</span> =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      <span class="keyword">if</span> (num == <span class="number">1</span>) &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        res.send(&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">          message: <span class="string">"Tutorial was updated successfully."</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">        &#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">      &#125; <span class="keyword">else</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        res.send(&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">          message: <span class="string">`Cannot update Tutorial with id=<span class="subst">$&#123;id&#125;</span>. Maybe Tutorial was not found or req.body is empty!`</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">        &#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">      &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;)</span></pre></td></tr><tr><td class="code"><pre><span class="line">    .catch(<span class="function"><span class="params">err</span> =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      res.status(<span class="number">500</span>).send(&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        message: <span class="string">"Error updating Tutorial with id="</span> + id</span></pre></td></tr><tr><td class="code"><pre><span class="line">      &#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr></table></figure>
+
+<h3 id="7-4-删除数据"><a href="#7-4-删除数据" class="headerlink" title="7.4 删除数据"></a>7.4 删除数据</h3><p>根据<code>id</code>删除数据：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">exports.delete = <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="keyword">const</span> id = req.params.id;</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">  Tutorial.destroy(&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    where: &#123; <span class="attr">id</span>: id &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  &#125;)</span></pre></td></tr><tr><td class="code"><pre><span class="line">    .then(<span class="function"><span class="params">num</span> =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      <span class="keyword">if</span> (num == <span class="number">1</span>) &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        res.send(&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">          message: <span class="string">"Tutorial was deleted successfully!"</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">        &#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">      &#125; <span class="keyword">else</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        res.send(&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">          message: <span class="string">`Cannot delete Tutorial with id=<span class="subst">$&#123;id&#125;</span>. Maybe Tutorial was not found!`</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">        &#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">      &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;)</span></pre></td></tr><tr><td class="code"><pre><span class="line">    .catch(<span class="function"><span class="params">err</span> =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      res.status(<span class="number">500</span>).send(&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        message: <span class="string">"Could not delete Tutorial with id="</span> + id</span></pre></td></tr><tr><td class="code"><pre><span class="line">      &#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr></table></figure>
+
+<p>删除所有数据：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">exports.deleteAll = <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  Tutorial.destroy(&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    where: &#123;&#125;,</span></pre></td></tr><tr><td class="code"><pre><span class="line">    truncate: <span class="literal">false</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  &#125;)</span></pre></td></tr><tr><td class="code"><pre><span class="line">    .then(<span class="function"><span class="params">nums</span> =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      res.send(&#123; <span class="attr">message</span>: <span class="string">`<span class="subst">$&#123;nums&#125;</span> Tutorials were deleted successfully!`</span> &#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;)</span></pre></td></tr><tr><td class="code"><pre><span class="line">    .catch(<span class="function"><span class="params">err</span> =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      res.status(<span class="number">500</span>).send(&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        message:</span></pre></td></tr><tr><td class="code"><pre><span class="line">          err.message || <span class="string">"Some error occurred while removing all tutorials."</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">      &#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr></table></figure>
+
+<h3 id="7-5-按条件查找数据"><a href="#7-5-按条件查找数据" class="headerlink" title="7.5 按条件查找数据"></a>7.5 按条件查找数据</h3><p>查找属性<code>published = true</code>的数据</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">exports.findAllPublished = <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  Tutorial.findAll(&#123; <span class="attr">where</span>: &#123; <span class="attr">published</span>: <span class="literal">true</span> &#125; &#125;)</span></pre></td></tr><tr><td class="code"><pre><span class="line">    .then(<span class="function"><span class="params">data</span> =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      res.send(data);</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;)</span></pre></td></tr><tr><td class="code"><pre><span class="line">    .catch(<span class="function"><span class="params">err</span> =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">      res.status(<span class="number">500</span>).send(&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        message:</span></pre></td></tr><tr><td class="code"><pre><span class="line">          err.message || <span class="string">"Some error occurred while retrieving tutorials."</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">      &#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;);</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr></table></figure>
+
+<h2 id="8-自定义路由"><a href="#8-自定义路由" class="headerlink" title="8. 自定义路由"></a>8. 自定义路由</h2><p>​    当客户端使用 HTTP 请求（GET、POST、PUT、DELETE）向端点发送请求时，需要通过设置路由来确定服务器将如何响应。</p>
+<p>在<code>app/routes</code>文件夹中创建<code>turorial.routes.js</code>文件</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="params">app</span> =&gt;</span> &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="keyword">const</span> tutorials = <span class="built_in">require</span>(<span class="string">"../controllers/tutorial.controller.js"</span>);</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="keyword">var</span> router = <span class="built_in">require</span>(<span class="string">"express"</span>).Router();</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">// Create a new Tutorial</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  router.post(<span class="string">"/"</span>, tutorials.create);</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">// Retrieve all Tutorials</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  router.get(<span class="string">"/"</span>, tutorials.findAll);</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">// Retrieve all published Tutorials</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  router.get(<span class="string">"/published"</span>, tutorials.findAllPublished);</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">// Retrieve a single Tutorial with id</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  router.get(<span class="string">"/:id"</span>, tutorials.findOne);</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">// Update a Tutorial with id</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  router.put(<span class="string">"/:id"</span>, tutorials.update);</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">// Delete a Tutorial with id</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  router.delete(<span class="string">"/:id"</span>, tutorials.delete);</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">  <span class="comment">// Delete all Tutorials</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">  router.delete(<span class="string">"/"</span>, tutorials.deleteAll);</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line">  app.use(<span class="string">'/api/tutorials'</span>, router);</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr></table></figure>
+
+<p>在<code>server.js</code>中引入路由（在<code>app.listen()</code>前）</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">...</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="built_in">require</span>(<span class="string">"./app/routes/turorial.routes"</span>)(app);</span></pre></td></tr><tr><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">// set port, listen for requests</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> PORT = ...;</span></pre></td></tr><tr><td class="code"><pre><span class="line">app.listen(...);</span></pre></td></tr></table></figure>
+
+<h2 id="9-参考文档"><a href="#9-参考文档" class="headerlink" title="9. 参考文档"></a>9. 参考文档</h2><p><a href="https://bezkoder.com/node-js-express-sequelize-mysql/#Nodejs_Rest_CRUD_API_overview">Node.js Rest APIs example with Express, Sequelize &amp; MySQL</a></p>
+]]></content>
+      <categories>
+        <category>Node后端</category>
+      </categories>
+      <tags>
+        <tag>后端</tag>
+        <tag>MySQL</tag>
+        <tag>数据库</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>js对象属性通过“.”和“\[ \]”访问的区别</title>
+    <url>/2021/07/10/2021/2021.07/js%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E9%80%9A%E8%BF%87%E2%80%9C.%E2%80%9D%E5%92%8C%E2%80%9C%5B%20%5D%E2%80%9D%E8%AE%BF%E9%97%AE%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
+    <content><![CDATA[<h2 id="js对象属性通过“-”和“-”访问的区别"><a href="#js对象属性通过“-”和“-”访问的区别" class="headerlink" title="js对象属性通过“.”和“[ ]”访问的区别"></a>js对象属性通过“.”和“[ ]”访问的区别</h2><h3 id="1-读取和设置对象属性有两种写法"><a href="#1-读取和设置对象属性有两种写法" class="headerlink" title="1. 读取和设置对象属性有两种写法"></a>1. 读取和设置对象属性有两种写法</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">(.) 方法： obj.attr </span></pre></td></tr><tr><td class="code"><pre><span class="line">([])方法： obj[attr]</span></pre></td></tr></table></figure>
+
+<ul>
+<li><p>(.) 点操作符: <strong>静态的</strong>。右侧必须是一个以<strong>属性名称</strong>命名的简单标识符。</p>
+<p>属性名用一个标识符来表示。标识符必须直接出现再js程序中，它们不是数据类型，因此程序无法修改它们。</p>
+</li>
+<li><p>([]) 中括号操作符: <strong>动态的</strong>。方括号里必须是一个<strong>计算结果为字符串</strong>的表达式.</p>
+<p>属性名通过字符串表示。字符串是js的数据类型，在程序运行时可以修改和创建它们。</p>
+</li>
+</ul>
+<a id="more"></a>
+
+<h3 id="2-区别"><a href="#2-区别" class="headerlink" title="2. 区别"></a>2. 区别</h3><h4 id="2-1-“-”可以用变量作为属性名或访问，而点方法不可以"><a href="#2-1-“-”可以用变量作为属性名或访问，而点方法不可以" class="headerlink" title="2.1 “[]”可以用变量作为属性名或访问，而点方法不可以"></a>2.1 “[]”可以用变量作为属性名或访问，而点方法不可以</h4><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;&#125;;</span></pre></td></tr><tr><td class="code"><pre><span class="line">obj.name = <span class="string">'张三'</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> myName = <span class="string">'name'</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line"> </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(obj.myName);<span class="comment">//undefined,访问不到对应的属性</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(obj[myName]);<span class="comment">//张三 此时myName = 'name'</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"> </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> person = &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    name:<span class="string">'gogo'</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr><tr><td class="code"><pre><span class="line"> </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">//  []可以也可以通过字符串访问，但是需要加双引号</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(person[<span class="string">"name"</span>]);<span class="comment">//gogo</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"> </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">//  .直接访问字符串</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(person.name); <span class="comment">//gogo</span></span></pre></td></tr></table></figure>
+
+<blockquote>
+<p>“[]”可以通过<strong>变量</strong>访问，也可以通过<strong>字符串</strong>访问，通过字符串访问时需要加双引号。</p>
+</blockquote>
+<h4 id="2-2-“-”中括号法–可以用数字作为属性名-而点语法不可以"><a href="#2-2-“-”中括号法–可以用数字作为属性名-而点语法不可以" class="headerlink" title="2.2 “[]”中括号法–可以用数字作为属性名,而点语法不可以"></a>2.2 “[]”中括号法–可以用数字作为属性名,而点语法不可以</h4><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> obj=&#123;&#125;;</span></pre></td></tr><tr><td class="code"><pre><span class="line"> </span></pre></td></tr><tr><td class="code"><pre><span class="line">obj[<span class="number">2</span>]=<span class="number">2</span>;   <span class="comment">//给obj对象添加了2 这个属性 --&gt; obj&#123;2:2&#125;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(obj[<span class="number">2</span>]);<span class="comment">//2</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"> </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(obj<span class="number">.2</span>)<span class="comment">//Unexpected number</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"> </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(obj) <span class="comment">//&#123;2: 2&#125;</span></span></pre></td></tr></table></figure>
+
+<h4 id="2-3-“-”可以动态访问的属性名，可以在程序运行时创建和修改属性，点操作符不行，即”-”–可以动态设置和获取"><a href="#2-3-“-”可以动态访问的属性名，可以在程序运行时创建和修改属性，点操作符不行，即”-”–可以动态设置和获取" class="headerlink" title="2.3 “[]”可以动态访问的属性名，可以在程序运行时创建和修改属性，点操作符不行，即”[]”–可以动态设置和获取"></a>2.3 “[]”可以动态访问的属性名，可以在程序运行时创建和修改属性，点操作符不行，即”[]”–可以动态设置和获取</h4><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> customer=&#123;&#125;;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> addr=[<span class="string">'北京'</span>,<span class="string">'上海'</span>,<span class="string">'广州'</span>,<span class="string">'深圳'</span>];</span></pre></td></tr><tr><td class="code"><pre><span class="line"> </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">4</span>;i++)&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    customer[<span class="string">"address"</span>+i]=addr[i];</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"> </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(addr);  <span class="comment">//[ '北京', '上海', '广州', '深圳' ]</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(customer);  <span class="comment">//&#123; address0: '北京', address1: '上海', address2: '广州', address3: '深圳' &#125;</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"> </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">""</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">4</span>;i++)&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    str += customer[<span class="string">"address"</span> + i] + <span class="string">"\t"</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"> </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(str);   <span class="comment">//北京    上海    广州    深圳</span></span></pre></td></tr></table></figure>
+
+<h4 id="2-4-如果属性名中包含会导致语法错误的字符，或者属性名是关键字或者保留字，也可以使用方括号表示法"><a href="#2-4-如果属性名中包含会导致语法错误的字符，或者属性名是关键字或者保留字，也可以使用方括号表示法" class="headerlink" title="2.4 如果属性名中包含会导致语法错误的字符，或者属性名是关键字或者保留字，也可以使用方括号表示法"></a>2.4 如果属性名中包含会导致语法错误的字符，或者属性名是关键字或者保留字，也可以使用方括号表示法</h4><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> person = &#123;&#125;;</span></pre></td></tr><tr><td class="code"><pre><span class="line">person[<span class="string">'first name'</span>] =<span class="string">'ling'</span>;  <span class="comment">//first name包含一个空格</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"> </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(person[<span class="string">'first name'</span>]);<span class="comment">//ling</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="comment">//console.log(person.first name)//书写都通不过</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"> </span></pre></td></tr><tr><td class="code"><pre><span class="line">person[<span class="string">'for'</span>] =<span class="string">'ling_for'</span>; </span></pre></td></tr><tr><td class="code"><pre><span class="line">person.if =<span class="string">'ling_if'</span>;  </span></pre></td></tr><tr><td class="code"><pre><span class="line"> </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(person[<span class="string">'for'</span>]);<span class="comment">//ling_for</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(person.for);<span class="comment">//ling_for</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(person[<span class="string">'if'</span>]);<span class="comment">//gogo_if</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(person.if);<span class="comment">//ling_if</span></span></pre></td></tr></table></figure>
+
+<blockquote>
+<p>属性名有空格，请使用方括号”[]”</p>
+</blockquote>
+<h3 id="3-参考"><a href="#3-参考" class="headerlink" title="3. 参考"></a>3. 参考</h3><p>[js对象属性通过“.”和“[ ]”访问的区别](<a href="https://segmentfault.com/a/1190000021794888">https://segmentfault.com/a/1190000021794888</a>)</p>
+]]></content>
+      <categories>
+        <category>日常学习</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Html简介</title>
     <url>/2021/05/12/2021/2021.05/study_Html/1.HTML%E7%AE%80%E4%BB%8B/</url>
     <content><![CDATA[<h1 id="Html简介"><a href="#Html简介" class="headerlink" title="Html简介"></a>Html简介</h1><h2 id="1．概述"><a href="#1．概述" class="headerlink" title="1．概述"></a>1．概述</h2><p>HTML指的是<strong>超文本标记语言</strong>，它是用来描述网页的一种语言。HTML 不是一种编程语言，而是一种<strong>标记语言</strong>。</p>
@@ -1538,6 +1832,50 @@ target 用于链接页面的打开方式
 <li>行为写到 JavaScript文件中</li>
 </ul>
 </blockquote>
+]]></content>
+      <categories>
+        <category>前端学习之HTML</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>Html</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML基本结构标签</title>
+    <url>/2021/05/12/2021/2021.05/study_Html/2.HTML%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84%E6%A0%87%E7%AD%BE/</url>
+    <content><![CDATA[<h1 id="HTML基本结构标签"><a href="#HTML基本结构标签" class="headerlink" title="HTML基本结构标签"></a>HTML基本结构标签</h1><h2 id="1-单标签和双标签"><a href="#1-单标签和双标签" class="headerlink" title="1. 单标签和双标签"></a>1. 单标签和双标签</h2><ul>
+<li><p>单标签        <code>&lt;br/&gt;</code>  </p>
+</li>
+<li><p>双标签        <code>&lt;html&gt;   &lt;/html&gt;</code></p>
+</li>
+</ul>
+<p>注：HTML 标签通常是成对出现的，标签对中的第一个标签是开始标签，第二个标签是结束标签。</p>
+<h2 id="2-标签关系"><a href="#2-标签关系" class="headerlink" title="2. 标签关系"></a>2. 标签关系</h2><h3 id="2-1-包含关系"><a href="#2-1-包含关系" class="headerlink" title="2.1 包含关系"></a>2.1 包含关系</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span> <span class="tag">&lt;/<span class="name">title</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h3 id="2-2-并列关系"><a href="#2-2-并列关系" class="headerlink" title="2.2 并列关系"></a>2.2 并列关系</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span> <span class="tag">&lt;/<span class="name">head</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span> <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></pre></td></tr></table></figure>
+
+<h3 id="2-3-基本的结构标签（骨架标签）"><a href="#2-3-基本的结构标签（骨架标签）" class="headerlink" title="2.3 基本的结构标签（骨架标签）"></a>2.3 基本的结构标签（骨架标签）</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>第一个页面<span class="tag">&lt;/<span class="name">title</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">    hello world  </span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span></pre></td></tr></table></figure>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512220415.jpg" alt="2"></p>
+<h2 id="4-骨架标签新增代码-lt-DOCTYPE-gt"><a href="#4-骨架标签新增代码-lt-DOCTYPE-gt" class="headerlink" title="4. 骨架标签新增代码 &lt;!DOCTYPE&gt;"></a>4. 骨架标签新增代码 &lt;!DOCTYPE&gt;</h2><p><code>&lt;!DOCTYPE&gt;</code>文档类型声明，作用就是告诉浏览器使用哪种HTML版本来显示网页。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span>	      当前页面采取的是 HTML5 版本来显示网页</span></pre></td></tr></table></figure>
+
+<p><strong>注意：</strong></p>
+<p><code>&lt;!DOCTYPE&gt;</code>声明位于文档中的最前面的位置，处于 <html> 标签之前。</html></p>
+<p><code>&lt;!DOCTYPE&gt;</code> 标签是文档类型声明标签，不是Html标签。</p>
+<h2 id="5-lang语言种类"><a href="#5-lang语言种类" class="headerlink" title="5. lang语言种类"></a>5. lang语言种类</h2><p><strong>作用：</strong>定义当前文档显示的语言</p>
+<p><strong>注意：</strong></p>
+<ul>
+<li>en ：英文   zh-CN : 中文</li>
+<li>定义成en的文档也可以显示中文，定义成zh-CN的文档也可以显示英文</li>
+</ul>
+<h2 id="6-字符集"><a href="#6-字符集" class="headerlink" title="6. 字符集"></a>6. 字符集</h2><p>字符集是多个字符的集合。<meta>标签的charset属性规定HTML文档使用字符编码的类型</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">" UTF-8"</span> /&gt;</span></span></pre></td></tr></table></figure>
+
+<p>注意：一般使用“UTF-8”编码（万国码）</p>
 ]]></content>
       <categories>
         <category>前端学习之HTML</category>
@@ -1752,50 +2090,6 @@ target 用于链接页面的打开方式
 <li>通过 <code>&lt;textarea&gt;</code> 标签可以轻松地创建多行文本输入框。</li>
 <li>cols=“每行中的字符数” ，rows=“显示的行数”（实际开发使用CSS来控制）</li>
 </ul>
-]]></content>
-      <categories>
-        <category>前端学习之HTML</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>Html</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML基本结构标签</title>
-    <url>/2021/05/12/2021/2021.05/study_Html/2.HTML%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84%E6%A0%87%E7%AD%BE/</url>
-    <content><![CDATA[<h1 id="HTML基本结构标签"><a href="#HTML基本结构标签" class="headerlink" title="HTML基本结构标签"></a>HTML基本结构标签</h1><h2 id="1-单标签和双标签"><a href="#1-单标签和双标签" class="headerlink" title="1. 单标签和双标签"></a>1. 单标签和双标签</h2><ul>
-<li><p>单标签        <code>&lt;br/&gt;</code>  </p>
-</li>
-<li><p>双标签        <code>&lt;html&gt;   &lt;/html&gt;</code></p>
-</li>
-</ul>
-<p>注：HTML 标签通常是成对出现的，标签对中的第一个标签是开始标签，第二个标签是结束标签。</p>
-<h2 id="2-标签关系"><a href="#2-标签关系" class="headerlink" title="2. 标签关系"></a>2. 标签关系</h2><h3 id="2-1-包含关系"><a href="#2-1-包含关系" class="headerlink" title="2.1 包含关系"></a>2.1 包含关系</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span> <span class="tag">&lt;/<span class="name">title</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<h3 id="2-2-并列关系"><a href="#2-2-并列关系" class="headerlink" title="2.2 并列关系"></a>2.2 并列关系</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span> <span class="tag">&lt;/<span class="name">head</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span> <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></pre></td></tr></table></figure>
-
-<h3 id="2-3-基本的结构标签（骨架标签）"><a href="#2-3-基本的结构标签（骨架标签）" class="headerlink" title="2.3 基本的结构标签（骨架标签）"></a>2.3 基本的结构标签（骨架标签）</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>第一个页面<span class="tag">&lt;/<span class="name">title</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line">    hello world  </span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span></pre></td></tr></table></figure>
-
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20210512220415.jpg" alt="2"></p>
-<h2 id="4-骨架标签新增代码-lt-DOCTYPE-gt"><a href="#4-骨架标签新增代码-lt-DOCTYPE-gt" class="headerlink" title="4. 骨架标签新增代码 &lt;!DOCTYPE&gt;"></a>4. 骨架标签新增代码 &lt;!DOCTYPE&gt;</h2><p><code>&lt;!DOCTYPE&gt;</code>文档类型声明，作用就是告诉浏览器使用哪种HTML版本来显示网页。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span>	      当前页面采取的是 HTML5 版本来显示网页</span></pre></td></tr></table></figure>
-
-<p><strong>注意：</strong></p>
-<p><code>&lt;!DOCTYPE&gt;</code>声明位于文档中的最前面的位置，处于 <html> 标签之前。</html></p>
-<p><code>&lt;!DOCTYPE&gt;</code> 标签是文档类型声明标签，不是Html标签。</p>
-<h2 id="5-lang语言种类"><a href="#5-lang语言种类" class="headerlink" title="5. lang语言种类"></a>5. lang语言种类</h2><p><strong>作用：</strong>定义当前文档显示的语言</p>
-<p><strong>注意：</strong></p>
-<ul>
-<li>en ：英文   zh-CN : 中文</li>
-<li>定义成en的文档也可以显示中文，定义成zh-CN的文档也可以显示英文</li>
-</ul>
-<h2 id="6-字符集"><a href="#6-字符集" class="headerlink" title="6. 字符集"></a>6. 字符集</h2><p>字符集是多个字符的集合。<meta>标签的charset属性规定HTML文档使用字符编码的类型</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">" UTF-8"</span> /&gt;</span></span></pre></td></tr></table></figure>
-
-<p>注意：一般使用“UTF-8”编码（万国码）</p>
 ]]></content>
       <categories>
         <category>前端学习之HTML</category>

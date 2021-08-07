@@ -74,7 +74,7 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="Ming-Calvin" type="application/atom+xml" />
+  <link rel="alternate" href="/atom.xml" title="Calvin-Ming" type="application/atom+xml" />
 
 
 
@@ -82,9 +82,9 @@
 
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Ming-Calvin">
+<meta property="og:title" content="Calvin-Ming">
 <meta property="og:url" content="https:&#x2F;&#x2F;ming-clavin.github.io&#x2F;page&#x2F;2&#x2F;index.html">
-<meta property="og:site_name" content="Ming-Calvin">
+<meta property="og:site_name" content="Calvin-Ming">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 
@@ -122,7 +122,7 @@
 
 
 
-  <title>Ming-Calvin</title>
+  <title>Calvin-Ming</title>
   
 
 
@@ -154,7 +154,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Ming-Calvin</span>
+        <span class="site-title">Calvin-Ming</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -275,16 +275,632 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ming-clavin.github.io/2020/11/24/2020/img%E5%92%8Cdiv%E4%B9%8B%E9%97%B4%E6%9C%89%E9%97%B4%E9%9A%99%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">
+    <link itemprop="mainEntityOfPage" href="https://ming-clavin.github.io/2021/04/28/2020/%E7%AE%80%E6%98%93Node%E5%90%8E%E7%AB%AF%E6%90%AD%E5%BB%BA/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Ming-Clavin">
+      <meta itemprop="name" content="明同學_Calvin">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/Ming-Calvin.jpg">
+      <meta itemprop="image" content="/images/Calvin-Ming.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ming-Calvin">
+      <meta itemprop="name" content="Calvin-Ming">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/04/28/2020/%E7%AE%80%E6%98%93Node%E5%90%8E%E7%AB%AF%E6%90%AD%E5%BB%BA/" itemprop="url">简易Node后端搭建</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-04-28T15:55:00+08:00">
+                2021-04-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Node%E5%90%8E%E7%AB%AF/" itemprop="url" rel="index">
+                    <span itemprop="name">Node后端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="简易Node后端搭建"><a href="#简易Node后端搭建" class="headerlink" title="简易Node后端搭建"></a>简易Node后端搭建</h1><h2 id="1-Express"><a href="#1-Express" class="headerlink" title="1. Express"></a>1. Express</h2><h3 id="1-1-安装"><a href="#1-1-安装" class="headerlink" title="1.1 安装"></a>1.1 安装</h3><h4 id="1-1-1-安装淘宝镜像"><a href="#1-1-1-安装淘宝镜像" class="headerlink" title="1.1.1 安装淘宝镜像"></a>1.1.1 安装淘宝镜像</h4><p>安装npm之前可先安装淘宝镜像，使用cnpm的来代替npm，使得下载速度提高很多。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span></pre></td></tr></table></figure>
+
+<h4 id="1-1-2-初始化项目"><a href="#1-1-2-初始化项目" class="headerlink" title="1.1.2 初始化项目"></a>1.1.2 初始化项目</h4><p>目录下运行命令来初始化项目，期间所有提示按enter键即可，这会生成<code>package.json</code>，用于描述项目文件的.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">cnpm init</span></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2021/04/28/2020/%E7%AE%80%E6%98%93Node%E5%90%8E%E7%AB%AF%E6%90%AD%E5%BB%BA/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+	
+	<div>
+		
+	</div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ming-clavin.github.io/2020/12/14/2020/Typora%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E6%97%B6-%E6%96%87%E4%BB%B6%E4%BB%A5%E6%97%B6%E9%97%B4%E6%88%B3%E5%91%BD%E5%90%8D/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="明同學_Calvin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Calvin-Ming.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Calvin-Ming">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/12/14/2020/Typora%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E6%97%B6-%E6%96%87%E4%BB%B6%E4%BB%A5%E6%97%B6%E9%97%B4%E6%88%B3%E5%91%BD%E5%90%8D/" itemprop="url">Typora上传图片时,文件以时间戳命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-12-14T22:03:38+08:00">
+                2020-12-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Markdown/" itemprop="url" rel="index">
+                    <span itemprop="name">Markdown</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="一、查询之前安装的PicGo执行路径"><a href="#一、查询之前安装的PicGo执行路径" class="headerlink" title="一、查询之前安装的PicGo执行路径"></a>一、查询之前安装的PicGo执行路径</h1><br>
+
+<img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214170157.png" alt="image-20201214170155882" style="zoom: 67%;">
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/12/14/2020/Typora%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E6%97%B6-%E6%96%87%E4%BB%B6%E4%BB%A5%E6%97%B6%E9%97%B4%E6%88%B3%E5%91%BD%E5%90%8D/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+	
+	<div>
+		
+	</div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ming-clavin.github.io/2020/11/25/2020/js%E8%8E%B7%E5%8F%96%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E5%80%BC%E7%9A%842%E7%A7%8D%E6%96%B9%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="明同學_Calvin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Calvin-Ming.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Calvin-Ming">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/11/25/2020/js%E8%8E%B7%E5%8F%96%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E5%80%BC%E7%9A%842%E7%A7%8D%E6%96%B9%E6%B3%95/" itemprop="url">js获取对象属性值的2种方法</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-11-25T23:00:58+08:00">
+                2020-11-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%97%A5%E5%B8%B8%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">日常学习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="第一种：通过-的方式获取"><a href="#第一种：通过-的方式获取" class="headerlink" title="第一种：通过 . 的方式获取"></a>第一种：通过 . 的方式获取</h1><br>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201125140648489.png" alt="image-20201125140648489"></p>
+<h1 id="第二种：通过-的方式获取"><a href="#第二种：通过-的方式获取" class="headerlink" title="第二种：通过 [ ] 的方式获取"></a>第二种：通过 [ ] 的方式获取</h1><br>
+
+<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201125141041462.png" alt="image-20201125141041462"></p>
+<blockquote>
+<p>注意：用数组下标获取值的方式获取属性，记得要给属性加引号</p>
+</blockquote>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://www.cnblogs.com/tu-0718/p/13218006.html">js获取对象属性值的2种方法</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+	
+	<div>
+		
+	</div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ming-clavin.github.io/2020/11/24/2020/vue-router%E6%A8%A1%E5%9D%97/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="明同學_Calvin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Calvin-Ming.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Calvin-Ming">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/11/24/2020/vue-router%E6%A8%A1%E5%9D%97/" itemprop="url">vue-router模块</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-11-24T21:01:00+08:00">
+                2020-11-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/VUE%E6%95%B4%E7%90%86/" itemprop="url" rel="index">
+                    <span itemprop="name">VUE整理</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="一、Vue路由传参query和params的区别"><a href="#一、Vue路由传参query和params的区别" class="headerlink" title="一、Vue路由传参query和params的区别"></a>一、Vue路由传参query和params的区别</h1><h2 id="1-区别"><a href="#1-区别" class="headerlink" title="1. 区别"></a>1. 区别</h2><ol>
+<li>query使用path和name传参跳转都可以，而params只能使用name传参跳转</li>
+<li>传参跳转页面时，query和params不需要在路由上配参数就能在新的页面获取到参数</li>
+<li>但params不在路由配参数的话，当用户刷新当前页面的时候，参数就会消失。</li>
+</ol>
+<h2 id="2-样例"><a href="#2-样例" class="headerlink" title="2. 样例"></a>2. 样例</h2><h3 id="2-1-query传参"><a href="#2-1-query传参" class="headerlink" title="2.1 query传参"></a>2.1 query传参</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;在方法里面写 也可以用name</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">this.$router.push(&#123; path:&#39;&#x2F;search&#39;, query: &#123; categoryId: this.categoryId &#125;&#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; router-link里面的to</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&lt;router-link :to&#x3D;&quot;&#123;path:&#39;&#x2F;search&#39;,query: &#123;categoryId: item.categoryId&#125;&#125;&quot;&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">接收参数：this.categoryId &#x3D; this.$route.query.categoryId ;</span></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/11/24/2020/vue-router%E6%A8%A1%E5%9D%97/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+	
+	<div>
+		
+	</div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ming-clavin.github.io/2020/11/24/2020/img%E5%92%8Cdiv%E4%B9%8B%E9%97%B4%E6%9C%89%E9%97%B4%E9%9A%99%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="明同學_Calvin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Calvin-Ming.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Calvin-Ming">
     </span>
 
     
@@ -436,13 +1052,13 @@
     <link itemprop="mainEntityOfPage" href="https://ming-clavin.github.io/2020/11/24/2020/a%E6%A0%87%E7%AD%BE%E5%8E%BB%E9%99%A4%E9%BB%98%E8%AE%A4%E6%A0%B7%E5%BC%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Ming-Clavin">
+      <meta itemprop="name" content="明同學_Calvin">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/Ming-Calvin.jpg">
+      <meta itemprop="image" content="/images/Calvin-Ming.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ming-Calvin">
+      <meta itemprop="name" content="Calvin-Ming">
     </span>
 
     
@@ -590,13 +1206,13 @@
     <link itemprop="mainEntityOfPage" href="https://ming-clavin.github.io/2020/11/24/2020/%E7%A7%AF%E5%88%86%E5%95%86%E5%9F%8E%EF%BC%88%E5%B9%B3%E5%8F%B0%E7%AB%AF%EF%BC%89%E6%80%BB%E7%BB%93/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Ming-Clavin">
+      <meta itemprop="name" content="明同學_Calvin">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/Ming-Calvin.jpg">
+      <meta itemprop="image" content="/images/Calvin-Ming.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ming-Calvin">
+      <meta itemprop="name" content="Calvin-Ming">
     </span>
 
     
@@ -743,13 +1359,13 @@
     <link itemprop="mainEntityOfPage" href="https://ming-clavin.github.io/2020/11/11/2020/el-if%E3%80%81el-else-if%E3%80%81el-else/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Ming-Clavin">
+      <meta itemprop="name" content="明同學_Calvin">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/Ming-Calvin.jpg">
+      <meta itemprop="image" content="/images/Calvin-Ming.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ming-Calvin">
+      <meta itemprop="name" content="Calvin-Ming">
     </span>
 
     
@@ -901,13 +1517,13 @@
     <link itemprop="mainEntityOfPage" href="https://ming-clavin.github.io/2020/11/07/2020/%E7%A7%AF%E5%88%86%E5%95%86%E5%9F%8E%EF%BC%88%E5%95%86%E5%AE%B6%E7%AB%AF%EF%BC%89%E6%80%BB%E7%BB%93/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Ming-Clavin">
+      <meta itemprop="name" content="明同學_Calvin">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/Ming-Calvin.jpg">
+      <meta itemprop="image" content="/images/Calvin-Ming.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ming-Calvin">
+      <meta itemprop="name" content="Calvin-Ming">
     </span>
 
     
@@ -1056,13 +1672,13 @@
     <link itemprop="mainEntityOfPage" href="https://ming-clavin.github.io/2020/11/06/2020/%E5%BC%80%E5%90%AFMySQL%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Ming-Clavin">
+      <meta itemprop="name" content="明同學_Calvin">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/Ming-Calvin.jpg">
+      <meta itemprop="image" content="/images/Calvin-Ming.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ming-Calvin">
+      <meta itemprop="name" content="Calvin-Ming">
     </span>
 
     
@@ -1196,601 +1812,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ming-clavin.github.io/2020/11/03/2020/%E5%90%8E%E7%AB%AF%E6%8E%A5%E5%8F%A3%E9%85%8D%E7%BD%AE/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Ming-Clavin">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/Ming-Calvin.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ming-Calvin">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/11/03/2020/%E5%90%8E%E7%AB%AF%E6%8E%A5%E5%8F%A3%E9%85%8D%E7%BD%AE/" itemprop="url">后端接口配置</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-11-03T23:05:48+08:00">
-                2020-11-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Vue-Shop%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index">
-                    <span itemprop="name">Vue_Shop项目</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="一、安装MySql"><a href="#一、安装MySql" class="headerlink" title="一、安装MySql"></a>一、安装MySql</h1><h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1.安装"></a>1.安装</h2><p>镜像安装（zip），配置初始化的my.ini文件的文件，按照命令操作（管理员打开），</p>
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/2020-11-10%200-45.png" alt="2020-11-10 0-45"></p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2020/11/03/2020/%E5%90%8E%E7%AB%AF%E6%8E%A5%E5%8F%A3%E9%85%8D%E7%BD%AE/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-	
-	<div>
-		
-	</div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ming-clavin.github.io/2020/10/31/2020/Typora%E5%9B%BE%E5%BA%8A%E6%95%99%E7%A8%8B-%E9%98%BF%E9%87%8C%E4%BA%91/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Ming-Clavin">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/Ming-Calvin.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ming-Calvin">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/10/31/2020/Typora%E5%9B%BE%E5%BA%8A%E6%95%99%E7%A8%8B-%E9%98%BF%E9%87%8C%E4%BA%91/" itemprop="url">Typora图床教程--阿里云</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-10-31T19:01:32+08:00">
-                2020-10-31
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Markdown/" itemprop="url" rel="index">
-                    <span itemprop="name">Markdown</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="一、下载Typora并安装插件"><a href="#一、下载Typora并安装插件" class="headerlink" title="一、下载Typora并安装插件"></a>一、下载Typora并安装插件</h1><h2 id="1-下载软件"><a href="#1-下载软件" class="headerlink" title="1.下载软件"></a>1.下载软件</h2><p>到官网下载对应版本软件（<a href="[https://typora.io](https://typora.io/)">Typora下载连接</a>）</p>
-<p><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/image-20201031143535666.png" alt="image-20201031143535666"></p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2020/10/31/2020/Typora%E5%9B%BE%E5%BA%8A%E6%95%99%E7%A8%8B-%E9%98%BF%E9%87%8C%E4%BA%91/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-	
-	<div>
-		
-	</div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ming-clavin.github.io/2019/12/02/2020/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Ming-Clavin">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/Ming-Calvin.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ming-Calvin">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/12/02/2020/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" itemprop="url">Mrkdown使用指南</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-02T22:37:06+08:00">
-                2019-12-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Markdown/" itemprop="url" rel="index">
-                    <span itemprop="name">Markdown</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="一、Makedown-标题"><a href="#一、Makedown-标题" class="headerlink" title="一、Makedown 标题"></a>一、Makedown 标题</h1><h2 id="1-使用-和-标记一级和二级标题"><a href="#1-使用-和-标记一级和二级标题" class="headerlink" title="1. 使用 = 和 - 标记一级和二级标题"></a>1. 使用 = 和 - 标记一级和二级标题</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220358.jpg" alt="(1)" style="zoom:80%;">
-
-<h2 id="2-使用-号标记"><a href="#2-使用-号标记" class="headerlink" title="2. 使用 # 号标记"></a>2. 使用 # 号标记</h2><img src="https://calvin-typora-image.oss-cn-hangzhou.aliyuncs.com/img/20201214220409.jpg" alt="(2)" style="zoom:80%;">
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/12/02/2020/Mrkdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-	
-	<div>
-		
-	</div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ming-clavin.github.io/2019/12/01/2020/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Ming-Clavin">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/Ming-Calvin.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ming-Calvin">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/12/01/2020/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-01T22:09:29+08:00">
-                2019-12-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo server</span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo generate</span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-	
-	<div>
-		
-	</div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/">&lt;i class&#x3D;&quot;fa fa-angle-left&quot;&gt;&lt;&#x2F;i&gt;</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">&lt;i class&#x3D;&quot;fa fa-angle-right&quot;&gt;&lt;&#x2F;i&gt;</a>
+    <a class="extend prev" rel="prev" href="/">&lt;</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">&gt;</a>
   </nav>
 
 
@@ -1826,10 +1852,10 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image"
-                src="/images/Ming-Calvin.jpg"
-                alt="Ming-Clavin" />
+                src="/images/Calvin-Ming.jpg"
+                alt="明同學_Calvin" />
             
-              <p class="site-author-name" itemprop="name">Ming-Clavin</p>
+              <p class="site-author-name" itemprop="name">明同學_Calvin</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
@@ -1840,7 +1866,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-count">25</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1926,7 +1952,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Ming-Clavin</span>
+  <span class="author" itemprop="copyrightHolder">明同學_Calvin</span>
 
   
 </div>
